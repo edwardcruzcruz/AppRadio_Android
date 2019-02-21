@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="appColorTheme">#000000</color>
+    <!--color name="appColorTheme">#F95F62</color-->
+    <color name="appColorTheme2">#ff3d56</color>
+    <color name="appColorTheme2Saturated1">#ff7f8a</color>
+    <color name="appColorTheme2Saturated2">#ffa5ad</color>
+    <color name="TitleColor">#ff7f8a</color>
+    <color name="TextColor">#47525e</color>
+    <color name="infoColor">#FFBA5C</color>
+    <color name="seleccion_nav">#FF9100</color>
+    <color name="itemBottomNavColor">#FFFFFF</color>
+    <color name="itemBottomNavSelect">#CCCFFF</color>
+    <color name="bgCintaCiudad">#262626</color>
+    <color name="textoGris">#afaeae</color>
+    <color name="bottomNavColor">#1c1c1c</color>
+    <color name="text_color">#ffffff</color>
+    <color name="tab_color_bg">#5e5e5e</color>
+
+
+    <color name="bgColor">#000000</color>
+
+
+
+
+</resources>

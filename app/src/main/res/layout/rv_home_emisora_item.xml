@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_horizontal">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/card_hitem_home"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="40dp"
+        android:layout_marginStart="40dp"
+        android:background="@android:color/white"
+        android:backgroundTint="#6F000000"
+        app:cardBackgroundColor="@android:color/white"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="5dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/corner_edge">
+
+            <ImageView
+                android:id="@+id/img_hitem_segmento"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/linly_hitem_container"
+                android:layout_alignParentBottom="false"
+                android:layout_alignParentEnd="false"
+                android:layout_alignParentTop="false"
+                android:layout_alignTop="@+id/linly_hitem_container"
+                android:adjustViewBounds="true"
+                android:alpha="0.7"
+                android:padding="2dp"
+                android:scaleType="fitXY"
+                android:tint="#6F000000"
+                app:srcCompat="@color/appColorTheme" />
+
+            <LinearLayout
+                android:id="@+id/linly_hitem_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:elevation="5dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_hitem_radio"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="8dp"
+                    android:fontFamily="@font/app_font"
+                    android:gravity="center_horizontal"
+                    android:text="Nombre Radio"
+                    android:textAllCaps="true"
+                    android:textColor="@android:color/white"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/tv_hitem_frecuencia"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="3dp"
+                    android:fontFamily="@font/app_font"
+                    android:gravity="center_horizontal"
+                    android:text="102.5 FM"
+                    android:textAllCaps="true"
+                    android:textColor="@android:color/white"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <ImageButton
+                    android:id="@+id/btn_hitem_chat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="12dp"
+                    android:background="@drawable/chat" />
+
+                <TextView
+                    android:id="@+id/textView8"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="1dp"
+                    android:fontFamily="@font/app_font"
+                    android:gravity="center"
+                    android:text="Chat"
+                    android:textColor="@color/textoGris"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:id="@+id/tv_hitem_prog_actual"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="@font/app_font"
+                    android:gravity="center_horizontal"
+                    android:text="Nombre Programa"
+                    android:textColor="@android:color/white"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/tv_hitem_horario"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="1dp"
+                    android:fontFamily="@font/app_font"
+                    android:gravity="center_horizontal"
+                    android:text="HH:MM - HH:MM"
+                    android:textColor="@color/textoGris"
+                    android:textSize="15sp" />
+
+                <ImageButton
+                    android:id="@+id/btn_hitem_favorito"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical|center_horizontal"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="12dp"
+                    android:background="@drawable/favorito1"
+                    android:foregroundGravity="center_vertical|center_horizontal" />
+
+                <TextView
+                    android:id="@+id/tv_hitem_favorito"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:fontFamily="@font/app_font"
+                    android:gravity="center"
+                    android:text="Añadir a favoritos"
+                    android:textColor="@color/textoGris"
+                    android:textSize="13sp" />
+            </LinearLayout>
+        </RelativeLayout>
+
+
+    </android.support.v7.widget.CardView>
+</RelativeLayout>

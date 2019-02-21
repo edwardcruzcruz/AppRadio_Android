@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_concursos"
+        android:icon="@drawable/nav_consursos"
+        android:title="@string/title_concursos" />
+
+    <item
+        android:id="@+id/navigation_emisoras"
+        android:icon="@drawable/nav_emisoras"
+        android:title="@string/title_emisoras" />
+
+    <item
+        android:id="@+id/navigation_home"
+        android:icon="@drawable/nav_radio"
+        android:title="@string/title_home" />
+
+
+    <item
+        android:id="@+id/navigation_encuestas"
+        android:icon="@drawable/encuestas"
+        android:title="@string/title_encuestas" />
+
+    <item
+        android:id="@+id/navigation_menu"
+        android:icon="@drawable/menu"
+        android:title="@string/title_navigation" />
+
+</menu>
