@@ -42,6 +42,7 @@ import com.facebook.GraphRequest;
 import com.facebook.GraphResponse;
 import com.facebook.login.LoginResult;
 import com.facebook.login.widget.LoginButton;
+import com.innovasystem.appradio.Classes.SessionConfig;
 import com.innovasystem.appradio.R;
 import com.innovasystem.appradio.Classes.RestServices;
 import com.innovasystem.appradio.Classes.ResultadoLogIn;
@@ -104,18 +105,21 @@ public class LoginActivity extends AppCompatActivity {
         }
 
         // Read Shared Preferences
-        SharedPreferences preferences = getSharedPreferences("account", MODE_PRIVATE);
-        String tokenEncrypted = preferences.getString(encrypt("token"), "default");
+        //SharedPreferences preferences = getSharedPreferences("account", MODE_PRIVATE);
         //String tokenEncrypted = preferences.getString(encrypt("token"), "default");
+        //String tokenEncrypted = preferences.getString(encrypt("token"), "default");
+        String tokenEncrypted = SessionConfig.getSessionConfig(getApplicationContext()).getValue(SessionConfig.userToken);
         String token;
         System.out.println("====> Token encriptado:"+tokenEncrypted);
-        if(!tokenEncrypted.equals("default")){
+        if(tokenEncrypted!=null){
             token = Utils.decrypt(tokenEncrypted);
             Toast.makeText(this,
                     token, Toast.LENGTH_LONG).show();
             entrarHome();
         }else{
-            token="";
+        token="";
+        //
+
         }
 
 
@@ -188,6 +192,7 @@ public class LoginActivity extends AppCompatActivity {
         btn_register.setOnClickListener(new OnClickListener() {
             @Override
             public void onClick(View view) {
+
                 Intent i = new Intent(LoginActivity.this,RegisterOneActivity.class);
                 startActivity(i);
             }
@@ -401,13 +406,15 @@ public class LoginActivity extends AppCompatActivity {
                     boolean seParseo = resultado.loadToken();
                     System.out.println("Se pudo parsear? :"+seParseo);
                     System.out.println("Token:"+resultado.getToken());
+                    String tokenprueb=resultado.getToken();
                     if(seParseo){
-                        SharedPreferences preferences = getSharedPreferences("account", MODE_PRIVATE);
-                        SharedPreferences.Editor editor = preferences.edit();
-                        editor.putString(Utils.encrypt("token"), Utils.encrypt(resultado.getToken()));
-                        editor.putString("username",mEmail);
-                        editor.apply(); // Or commit if targeting old devices
-                        editor.commit();
+                        SessionConfig.getSessionConfig(getApplicationContext()).iniciarConfig(Utils.encrypt(resultado.getToken()),mEmail);
+                        //SharedPreferences preferences = getSharedPreferences("account", MODE_PRIVATE);
+                        //SharedPreferences.Editor editor = preferences.edit();
+                        //editor.putString(Utils.encrypt("token"), Utils.encrypt(resultado.getToken()));
+                        //editor.putString("username",mEmail);
+                        //editor.apply(); // Or commit if targeting old devices
+                        //editor.commit();
                         return true;
                     }else{
                         return false;
@@ -461,6 +468,7 @@ public class LoginActivity extends AppCompatActivity {
     }
     public void entrarHome(){
         Intent i = new Intent(LoginActivity.this,HomeActivity.class);
+        //Intent i =new Intent(LoginActivity.this,SessionConfig.getSessionConfig(getApplicationContext()).isUserLoggedIn() ? LoginActivity.class : HomeActivity.class);
         startActivity(i);
         finish();
     }

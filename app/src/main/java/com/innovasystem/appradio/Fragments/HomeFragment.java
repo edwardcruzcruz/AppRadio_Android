@@ -136,17 +136,19 @@ public class HomeFragment extends Fragment {
             @Override
             public void onItemSelected(int index) {
                 Toast.makeText(getContext(), ciudad_picker.getValues()[index], Toast.LENGTH_SHORT).show();
-                SessionConfig.getSessionConfig(getContext()).provincia= ciudades[index];
-                SharedPreferences preferences= getContext().getSharedPreferences("session", MODE_PRIVATE);
-                SharedPreferences.Editor editor = preferences.edit();
-                editor.putString("provincia",ciudades[index]);
-                editor.apply();
-                editor.commit();
+                SessionConfig.getSessionConfig(getContext()).CrearProvincia(ciudades[index]);
+                System.out.println("Provincia"+ciudades[index]);
+                //SessionConfig.getSessionConfig(getContext()).provincia= ciudades[index];
+                //SharedPreferences preferences= getContext().getSharedPreferences("session", MODE_PRIVATE);
+                //SharedPreferences.Editor editor = preferences.edit();
+                //editor.putString("provincia",ciudades[index]);
+                //editor.apply();
+                //editor.commit();
                 new RestFetchEmisoraHomeTask().execute();
                 new RestFetchProgramacionTask().execute();
             }
         });
-        int indiceProvincia= Arrays.binarySearch(ciudades, SessionConfig.getSessionConfig(getContext()).provincia);
+        int indiceProvincia= Arrays.binarySearch(ciudades, SessionConfig.getSessionConfig(getContext()).getValue("provincia"));
         if(indiceProvincia>=0) {
             ciudad_picker.setSelectedItem(indiceProvincia);
             provinciaActual= ciudades[indiceProvincia];
@@ -319,9 +321,9 @@ public class HomeFragment extends Fragment {
         @Override
         protected Void doInBackground(Void... voids) {
             System.out.println("EXTRAYENDO DATOS");
-            favoritos= RestServices.consultarFavoritos(getContext(),SessionConfig.getSessionConfig(getContext()).usuario);
-            emisoras= RestServices.consultarEmisoras(getContext(),SessionConfig.getSessionConfig(getContext()).provincia);
-            segmentos= RestServices.consultarSegmentosDelDia(getContext(),SessionConfig.getSessionConfig(getContext()).provincia);
+            favoritos= RestServices.consultarFavoritos(getContext(),SessionConfig.getSessionConfig(getContext()).getValue("userEmail"));
+            emisoras= RestServices.consultarEmisoras(getContext(),SessionConfig.getSessionConfig(getContext()).getValue("provincia"));
+            segmentos= RestServices.consultarSegmentosDelDia(getContext(),SessionConfig.getSessionConfig(getContext()).getValue("provincia"));
             return null;
         }
 
@@ -474,8 +476,8 @@ public class HomeFragment extends Fragment {
         @Override
         protected List<Segmento> doInBackground(Void... voids) {
             horaActual= RestServices.consultarHoraActual(getContext());
-            favoritos= (ArrayList) RestServices.consultarFavoritos(getContext(),SessionConfig.getSessionConfig(getContext()).usuario);
-            return RestServices.consultarSegmentosDelDia(getContext(),SessionConfig.getSessionConfig(getContext()).provincia);
+            favoritos= (ArrayList) RestServices.consultarFavoritos(getContext(),SessionConfig.getSessionConfig(getContext()).getValue("usuario"));
+            return RestServices.consultarSegmentosDelDia(getContext(),SessionConfig.getSessionConfig(getContext()).getValue("provincia"));
         }
 
         @Override

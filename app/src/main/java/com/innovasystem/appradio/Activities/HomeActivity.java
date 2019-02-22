@@ -82,8 +82,8 @@ public class HomeActivity extends AppCompatActivity {
         });
 
         //Carga de Provincia Guardada
-        SharedPreferences preferences = getSharedPreferences("session", MODE_PRIVATE);
-        SessionConfig.getSessionConfig(getApplication()).provincia= preferences.getString("provincia","");
+        //SharedPreferences preferences = getSharedPreferences("session", MODE_PRIVATE);
+        //SessionConfig.getSessionConfig(getApplication()).provincia= preferences.getString("provincia","");
 
     }
 

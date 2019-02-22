@@ -166,7 +166,9 @@ public class RestServices {
     public static Fecha consultarHoraActual(Context c){
         HttpHeaders reqHeaders = new HttpHeaders();
         reqHeaders.setAccept(Collections.singletonList(new MediaType("application", "json")));
-        reqHeaders.set("Authorization", SessionConfig.getSessionConfig(c).userToken);
+        String token=SessionConfig.getSessionConfig(c).getValue(SessionConfig.userToken);
+        String tokenDesencriptado=SessionConfig.getSessionConfig(c).DesencriptarToken(token);
+        reqHeaders.set("Authorization", tokenDesencriptado);
         HttpEntity<?> requestEntity = new HttpEntity<Object>(reqHeaders);
         RestTemplate restTemplate = new RestTemplate();
         String url = Constants.serverDomain + Constants.uriHora;
@@ -191,10 +193,12 @@ public class RestServices {
      * @return una Lista con Emisoras
      */
     public static List<Emisora> consultarEmisoras(Context c,String provincia) {
-        System.out.println("USER TOKEN: " + SessionConfig.getSessionConfig(c).userToken);
+        //System.out.println("USER TOKEN: " + SessionConfig.getSessionConfig(c).userToken);
         HttpHeaders reqHeaders = new HttpHeaders();
         reqHeaders.setAccept(Collections.singletonList(new MediaType("application", "json")));
-        reqHeaders.set("Authorization", SessionConfig.getSessionConfig(c).userToken);
+        String token=SessionConfig.getSessionConfig(c).getValue(SessionConfig.userToken);
+        String tokenDesencriptado=SessionConfig.getSessionConfig(c).DesencriptarToken(token);
+        reqHeaders.set("Authorization", tokenDesencriptado);
         HttpEntity<?> requestEntity = new HttpEntity<Object>(reqHeaders);
         Emisora[] emisoras = null;
         RestTemplate restTemplate = new RestTemplate();
@@ -215,7 +219,9 @@ public class RestServices {
     public static List<Segmento> consultarSegmentos(Context c) {
         HttpHeaders reqHeaders = new HttpHeaders();
         reqHeaders.setAccept(Collections.singletonList(new MediaType("application", "json")));
-        reqHeaders.set("Authorization", SessionConfig.getSessionConfig(c).userToken);
+        String token=SessionConfig.getSessionConfig(c).getValue(SessionConfig.userToken);
+        String tokenDesencriptado=SessionConfig.getSessionConfig(c).DesencriptarToken(token);
+        reqHeaders.set("Authorization", tokenDesencriptado);
         HttpEntity<?> requestEntity = new HttpEntity<Object>(reqHeaders);
         Segmento[] segmentos = null;
         RestTemplate restTemplate = new RestTemplate();
@@ -236,7 +242,9 @@ public class RestServices {
     public static List<Segmento> consultarSegmentosEmisora(Context c, int idEmisora) {
         HttpHeaders reqHeaders = new HttpHeaders();
         reqHeaders.setAccept(Collections.singletonList(new MediaType("application", "json")));
-        reqHeaders.set("Authorization", SessionConfig.getSessionConfig(c).userToken);
+        String token=SessionConfig.getSessionConfig(c).getValue(SessionConfig.userToken);
+        String tokenDesencriptado=SessionConfig.getSessionConfig(c).DesencriptarToken(token);
+        reqHeaders.set("Authorization", tokenDesencriptado);
         HttpEntity<?> requestEntity = new HttpEntity<Object>(reqHeaders);
         Segmento[] segmentos = null;
         RestTemplate restTemplate = new RestTemplate();
@@ -264,7 +272,9 @@ public class RestServices {
     public static List<Segmento> consultarSegmentosDelDia(Context c,String provincia) {
         HttpHeaders reqHeaders = new HttpHeaders();
         reqHeaders.setAccept(Collections.singletonList(new MediaType("application", "json")));
-        reqHeaders.set("Authorization", SessionConfig.getSessionConfig(c).userToken);
+        String token=SessionConfig.getSessionConfig(c).getValue(SessionConfig.userToken);
+        String tokenDesencriptado=SessionConfig.getSessionConfig(c).DesencriptarToken(token);
+        reqHeaders.set("Authorization", tokenDesencriptado);
         HttpEntity<?> requestEntity = new HttpEntity<Object>(reqHeaders);
         Segmento[] segmentos = null;
         RestTemplate restTemplate = new RestTemplate();
@@ -286,7 +296,9 @@ public class RestServices {
     public static List<Segmento> consultarSegmentosDelDia(Context c, int idEmisora) {
         HttpHeaders reqHeaders = new HttpHeaders();
         reqHeaders.setAccept(Collections.singletonList(new MediaType("application", "json")));
-        reqHeaders.set("Authorization", SessionConfig.getSessionConfig(c).userToken);
+        String token=SessionConfig.getSessionConfig(c).getValue(SessionConfig.userToken);
+        String tokenDesencriptado=SessionConfig.getSessionConfig(c).DesencriptarToken(token);
+        reqHeaders.set("Authorization", tokenDesencriptado);
         HttpEntity<?> requestEntity = new HttpEntity<Object>(reqHeaders);
         Segmento[] segmentos = null;
         RestTemplate restTemplate = new RestTemplate();
@@ -314,7 +326,9 @@ public class RestServices {
     public static List<TelefonoEmisora> consultarTelefonosEmisora(Context c,int idEmisora){
         HttpHeaders reqHeaders = new HttpHeaders();
         reqHeaders.setAccept(Collections.singletonList(new MediaType("application", "json")));
-        reqHeaders.set("Authorization", SessionConfig.getSessionConfig(c).userToken);
+        String token=SessionConfig.getSessionConfig(c).getValue(SessionConfig.userToken);
+        String tokenDesencriptado=SessionConfig.getSessionConfig(c).DesencriptarToken(token);
+        reqHeaders.set("Authorization", tokenDesencriptado);
         HttpEntity<?> requestEntity = new HttpEntity<Object>(reqHeaders);
         TelefonoEmisora[] telefonos= null;
         RestTemplate restTemplate= new RestTemplate();
@@ -334,7 +348,9 @@ public class RestServices {
     public static List<RedSocialEmisora> consultarRedesEmisora(Context c, int idEmisora){
         HttpHeaders reqHeaders = new HttpHeaders();
         reqHeaders.setAccept(Collections.singletonList(new MediaType("application", "json")));
-        reqHeaders.set("Authorization", SessionConfig.getSessionConfig(c).userToken);
+        String token=SessionConfig.getSessionConfig(c).getValue(SessionConfig.userToken);
+        String tokenDesencriptado=SessionConfig.getSessionConfig(c).DesencriptarToken(token);
+        reqHeaders.set("Authorization", tokenDesencriptado);
         HttpEntity<?> requestEntity = new HttpEntity<Object>(reqHeaders);
         RedSocialEmisora[] redes= null;
         RestTemplate restTemplate= new RestTemplate();
@@ -354,7 +370,9 @@ public class RestServices {
     public static List<Conductor> consultarLocutores(Context c,int idSegmento){
         HttpHeaders reqHeaders = new HttpHeaders();
         reqHeaders.setAccept(Collections.singletonList(new MediaType("application", "json")));
-        reqHeaders.set("Authorization", SessionConfig.getSessionConfig(c).userToken);
+        String token=SessionConfig.getSessionConfig(c).getValue(SessionConfig.userToken);
+        String tokenDesencriptado=SessionConfig.getSessionConfig(c).DesencriptarToken(token);
+        reqHeaders.set("Authorization", tokenDesencriptado);
         HttpEntity<?> requestEntity = new HttpEntity<Object>(reqHeaders);
         Conductor[] conductores= null;
         RestTemplate restTemplate= new RestTemplate();
@@ -374,7 +392,9 @@ public class RestServices {
     public static List<Multimedia> consultarMultimediaSegmento(Context c, int idSegmento,boolean consultarVideos){
         HttpHeaders reqHeaders = new HttpHeaders();
         reqHeaders.setAccept(Collections.singletonList(new MediaType("application", "json")));
-        reqHeaders.set("Authorization", SessionConfig.getSessionConfig(c).userToken);
+        String token=SessionConfig.getSessionConfig(c).getValue(SessionConfig.userToken);
+        String tokenDesencriptado=SessionConfig.getSessionConfig(c).DesencriptarToken(token);
+        reqHeaders.set("Authorization", tokenDesencriptado);
         HttpEntity<?> requestEntity = new HttpEntity<Object>(reqHeaders);
         Multimedia[] recursos_multimedia= null;
         RestTemplate restTemplate= new RestTemplate();
@@ -432,7 +452,9 @@ public class RestServices {
     public static List<Segmento> consultarFavoritos(Context c,String username){
         HttpHeaders reqHeaders = new HttpHeaders();
         reqHeaders.setAccept(Collections.singletonList(new MediaType("application", "json")));
-        reqHeaders.set("Authorization", SessionConfig.getSessionConfig(c).userToken);
+        String token=SessionConfig.getSessionConfig(c).getValue(SessionConfig.userToken);
+        String tokenDesencriptado=SessionConfig.getSessionConfig(c).DesencriptarToken(token);
+        reqHeaders.set("Authorization", tokenDesencriptado);
         HttpEntity<?> requestEntity = new HttpEntity<Object>(reqHeaders);
         Segmento[] segmentos= null;
         RestTemplate restTemplate= new RestTemplate();
@@ -484,7 +506,9 @@ public class RestServices {
 
         HttpHeaders reqHeaders = new HttpHeaders();
         reqHeaders.setAccept(Collections.singletonList(new MediaType("application", "json")));
-        reqHeaders.set("Authorization", SessionConfig.getSessionConfig(c).userToken);
+        String token=SessionConfig.getSessionConfig(c).getValue(SessionConfig.userToken);
+        String tokenDesencriptado=SessionConfig.getSessionConfig(c).DesencriptarToken(token);
+        reqHeaders.set("Authorization", tokenDesencriptado);
         HttpEntity<?> requestEntity = new HttpEntity<Object>(reqHeaders);
         RestTemplate restTemplate= new RestTemplate();
         String url = Constants.serverDomain + String.format(Constants.uriAgregarFavoritosFalse,idSegmento,username);

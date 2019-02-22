@@ -1,5 +1,6 @@
 package com.innovasystem.appradio.Activities;
 
+
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
@@ -7,7 +8,8 @@ import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
-
+import com.innovasystem.appradio.Classes.SessionConfig;
+import com.innovasystem.appradio.Fragments.HomeFragment;
 import com.innovasystem.appradio.R;
 
 import java.util.Timer;
@@ -30,10 +32,10 @@ public class SplashActivity extends AppCompatActivity {
                 handler.post(new Runnable() {
                     @Override
                     public void run() {
-                        SharedPreferences preferences = getSharedPreferences("account", MODE_PRIVATE);
-                        String tokenEncrypted = preferences.getString(encrypt("token"), "default");
-                        Intent i =new Intent(SplashActivity.this,tokenEncrypted.equals("default") ? LoginActivity.class : HomeActivity.class);
-
+                        //SharedPreferences preferences = getSharedPreferences("account", MODE_PRIVATE);
+                        //String tokenEncrypted = preferences.getString(encrypt("token"), "default");
+                        //Intent i =new Intent(SplashActivity.this,tokenEncrypted.equals("default") ? LoginActivity.class : HomeActivity.class);
+                        Intent i =new Intent(SplashActivity.this,SessionConfig.getSessionConfig(getApplicationContext()).isUserLoggedIn() ? HomeActivity.class :  LoginActivity.class);
                         startActivity(i);
                         finish();
                     }
