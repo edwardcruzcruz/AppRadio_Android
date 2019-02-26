@@ -118,7 +118,7 @@ public class EmisoraHomeAdapter extends  RecyclerView.Adapter<EmisoraHomeAdapter
 
             @Override
             public void onClick(View view) {
-                if(RestServices.agregarFavorito(context, SessionConfig.getSessionConfig(context).usuario,emisoras_dataset.get(emisora).getId())) {
+                if(RestServices.agregarFavorito(context, SessionConfig.getSessionConfig(context).getValue(SessionConfig.userEmail),emisoras_dataset.get(emisora).getId())) {
                     Toast.makeText(context, "agregado a favoritos", Toast.LENGTH_SHORT).show();
                     viewHolder.tv_txtfavorito.setText("• Programa Favorito •");
                     viewHolder.btn_addfav.setClickable(false);

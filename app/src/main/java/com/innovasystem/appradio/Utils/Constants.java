@@ -3,7 +3,7 @@ package com.innovasystem.appradio.Utils;
 public class Constants {
 
     public static final String serverDomain = "http://appradio.pythonanywhere.com";
-    //public static final String serverDomain = "http://192.168.100.115:8000";
+    //public static final String serverDomain = "http://192.168.1.6:8000";
 
     //Uri para servicios de logueo
     public static final String uriLogIn = "/api/rest-auth/login/";

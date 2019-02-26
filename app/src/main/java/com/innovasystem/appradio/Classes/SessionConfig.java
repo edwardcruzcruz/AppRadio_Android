@@ -57,8 +57,8 @@ public class SessionConfig{
 
     private static SessionConfig sessionConfig;
 
-    public String provincia="";
-    public String usuario;
+    public static final String provincia="provincia";
+    //public static final String usuario="null";
 
     public SessionConfig(Context context) {
         this._context = context;
@@ -75,8 +75,9 @@ public class SessionConfig{
     public String DesencriptarToken(String tokenEncrypted){
         return Utils.decrypt(tokenEncrypted);
     }
-    public void CrearProvincia(String provincia){
-        editor.putString("provincia", provincia);
+
+    public void CrearProvincia(String Provincia){
+        editor.putString(provincia, Provincia);
         editor.commit();
     }
     public boolean checkLogin() {

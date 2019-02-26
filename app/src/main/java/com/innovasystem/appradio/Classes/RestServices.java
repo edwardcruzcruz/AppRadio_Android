@@ -203,9 +203,9 @@ public class RestServices {
         Emisora[] emisoras = null;
         RestTemplate restTemplate = new RestTemplate();
         String url = Constants.serverDomain + Constants.uriEmisoras + (provincia != null ? String.format("?provincia=%s",provincia) : "" );
-
         try {
             ResponseEntity<Emisora[]> responseEntity = restTemplate.exchange(url, HttpMethod.GET, requestEntity, Emisora[].class);
+            System.out.println(responseEntity.getStatusCode());
             if (responseEntity.getStatusCode() == HttpStatus.OK) {
                 emisoras = responseEntity.getBody();
             }

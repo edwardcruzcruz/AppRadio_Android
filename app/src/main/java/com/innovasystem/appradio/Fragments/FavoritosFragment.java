@@ -77,7 +77,7 @@ public class FavoritosFragment extends Fragment {
 
         @Override
         protected Void doInBackground(Void... voids) {
-            segmentos_favoritos= RestServices.consultarFavoritos(getContext(), SessionConfig.getSessionConfig(getContext()).usuario);
+            segmentos_favoritos= RestServices.consultarFavoritos(getContext(), SessionConfig.getSessionConfig(getContext()).getValue(SessionConfig.userEmail));
             return null;
         }
 

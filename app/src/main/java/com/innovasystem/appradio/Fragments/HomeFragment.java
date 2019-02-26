@@ -131,6 +131,8 @@ public class HomeFragment extends Fragment {
                 ciudadesEmisoras.add(e.getProvincia().toUpperCase());
         }
         ciudades= ciudadesEmisoras.toArray(new String[0]);//getResources().getStringArray(R.array.ciudades);
+        System.out.println(ciudades);
+        SessionConfig.getSessionConfig(getContext()).CrearProvincia(ciudades[0]);//tomar alguna provincia
         ciudad_picker.setValues(ciudades);
         ciudad_picker.setOnItemSelectedListener(new HorizontalPicker.OnItemSelected(){
             @Override
@@ -138,6 +140,7 @@ public class HomeFragment extends Fragment {
                 Toast.makeText(getContext(), ciudad_picker.getValues()[index], Toast.LENGTH_SHORT).show();
                 SessionConfig.getSessionConfig(getContext()).CrearProvincia(ciudades[index]);
                 System.out.println("Provincia"+ciudades[index]);
+
                 //SessionConfig.getSessionConfig(getContext()).provincia= ciudades[index];
                 //SharedPreferences preferences= getContext().getSharedPreferences("session", MODE_PRIVATE);
                 //SharedPreferences.Editor editor = preferences.edit();
@@ -148,14 +151,16 @@ public class HomeFragment extends Fragment {
                 new RestFetchProgramacionTask().execute();
             }
         });
-        int indiceProvincia= Arrays.binarySearch(ciudades, SessionConfig.getSessionConfig(getContext()).getValue("provincia"));
+        String provincia=SessionConfig.getSessionConfig(getContext()).getValue(SessionConfig.provincia);
+        //System.out.println("hey aca puede ser -----"+provincia+"--------\n");
+        int indiceProvincia= Arrays.binarySearch(ciudades, provincia);
         if(indiceProvincia>=0) {
             ciudad_picker.setSelectedItem(indiceProvincia);
             provinciaActual= ciudades[indiceProvincia];
         }
         else{
             ciudad_picker.setSelectedItem(0);
-            SessionConfig.getSessionConfig(getContext()).provincia= ciudades[0];
+            SessionConfig.getSessionConfig(getContext()).CrearProvincia(ciudades[0]);
             provinciaActual= ciudades[0];
         }
 
@@ -321,9 +326,9 @@ public class HomeFragment extends Fragment {
         @Override
         protected Void doInBackground(Void... voids) {
             System.out.println("EXTRAYENDO DATOS");
-            favoritos= RestServices.consultarFavoritos(getContext(),SessionConfig.getSessionConfig(getContext()).getValue("userEmail"));
-            emisoras= RestServices.consultarEmisoras(getContext(),SessionConfig.getSessionConfig(getContext()).getValue("provincia"));
-            segmentos= RestServices.consultarSegmentosDelDia(getContext(),SessionConfig.getSessionConfig(getContext()).getValue("provincia"));
+            favoritos= RestServices.consultarFavoritos(getContext(),SessionConfig.getSessionConfig(getContext()).getValue(SessionConfig.userEmail));
+            emisoras= RestServices.consultarEmisoras(getContext(),SessionConfig.getSessionConfig(getContext()).getValue(SessionConfig.provincia));
+            segmentos= RestServices.consultarSegmentosDelDia(getContext(),SessionConfig.getSessionConfig(getContext()).getValue(SessionConfig.provincia));
             return null;
         }
 
@@ -410,7 +415,7 @@ public class HomeFragment extends Fragment {
                 }
 
                 //Verificar si se ha cambiado de provincia
-                if (!provinciaActual.equals(SessionConfig.getSessionConfig(getContext()).provincia)) {
+                if (!provinciaActual.equals(SessionConfig.getSessionConfig(getContext()).getValue(SessionConfig.provincia))) {
                     System.out.println("****** LA PROVINCIA HA CAMBIADO *******!!!!");
                     streamingActual = adapter.emisoras_keys.get(0).getUrl_streaming();
                     if (radion_on && !muted) {
@@ -424,7 +429,7 @@ public class HomeFragment extends Fragment {
                 }
             }
 
-            provinciaActual= SessionConfig.getSessionConfig(getContext()).provincia;
+            provinciaActual= SessionConfig.getSessionConfig(getContext()).getValue(SessionConfig.provincia);
 
         }
     }
@@ -476,8 +481,10 @@ public class HomeFragment extends Fragment {
         @Override
         protected List<Segmento> doInBackground(Void... voids) {
             horaActual= RestServices.consultarHoraActual(getContext());
-            favoritos= (ArrayList) RestServices.consultarFavoritos(getContext(),SessionConfig.getSessionConfig(getContext()).getValue("usuario"));
-            return RestServices.consultarSegmentosDelDia(getContext(),SessionConfig.getSessionConfig(getContext()).getValue("provincia"));
+            String favoritoSession=SessionConfig.getSessionConfig(getContext()).getValue(SessionConfig.userEmail);
+            favoritos= (ArrayList) RestServices.consultarFavoritos(getContext(), (favoritoSession!=null)?favoritoSession:"default");
+            List<Segmento> listaSegmentos = RestServices.consultarSegmentosDelDia(getContext(),SessionConfig.getSessionConfig(getContext()).getValue("provincia"));
+            return  listaSegmentos;
         }
 
         @Override

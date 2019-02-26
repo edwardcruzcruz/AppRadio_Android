@@ -35,7 +35,9 @@ public class SplashActivity extends AppCompatActivity {
                         //SharedPreferences preferences = getSharedPreferences("account", MODE_PRIVATE);
                         //String tokenEncrypted = preferences.getString(encrypt("token"), "default");
                         //Intent i =new Intent(SplashActivity.this,tokenEncrypted.equals("default") ? LoginActivity.class : HomeActivity.class);
-                        Intent i =new Intent(SplashActivity.this,SessionConfig.getSessionConfig(getApplicationContext()).isUserLoggedIn() ? HomeActivity.class :  LoginActivity.class);
+                        String userSession=SessionConfig.getSessionConfig(getApplicationContext()).getValue(SessionConfig.userEmail);
+
+                        Intent i =new Intent(SplashActivity.this,(userSession!=null)? HomeActivity.class :  LoginActivity.class);
                         startActivity(i);
                         finish();
                     }
