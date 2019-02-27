@@ -12,7 +12,6 @@ import com.android.volley.toolbox.JsonObjectRequest;
 import com.android.volley.toolbox.Volley;
 import com.innovasystem.appradio.Classes.Models.Conductor;
 import com.innovasystem.appradio.Classes.Models.Emisora;
-import com.innovasystem.appradio.Classes.Models.Favorito;
 import com.innovasystem.appradio.Classes.Models.Fecha;
 import com.innovasystem.appradio.Classes.Models.Multimedia;
 import com.innovasystem.appradio.Classes.Models.RedSocialEmisora;
@@ -42,11 +41,10 @@ import java.util.Collections;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
-import java.util.Optional;
+import java.util.concurrent.ExecutionException;
 
 public class RestServices {
 
-    //CON VOLLEY TA JODIDO
     public void postLogin(final Context context, String username, String password) {
         //Genero el string al servicio
         Uri.Builder builder = Uri.parse("" + Constants.serverDomain + Constants.uriLogIn).buildUpon();
@@ -185,16 +183,27 @@ public class RestServices {
         return null;
     }
 
-
     /**
      *
      * @param c Contexto de la actividad que llama a este metodo
      * @param provincia OPCIONAL: especifica de que provincia se desea consultar
      * @return una Lista con Emisoras
      */
-    public static List<Emisora> consultarEmisoras(Context c,String provincia) {
+    public static List<Emisora> consultarEmisoras(Context c, String provincia) {
+        List<Emisora> emisoras= null;
+        try {
+            emisoras = new ConsultaEmisorasAsyc(c).execute(provincia).get();
+            System.out.println(emisoras);
+            return emisoras;
+        } catch (ExecutionException e) {
+            e.printStackTrace();
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+
+        return emisoras;
         //System.out.println("USER TOKEN: " + SessionConfig.getSessionConfig(c).userToken);
-        HttpHeaders reqHeaders = new HttpHeaders();
+        /*HttpHeaders reqHeaders = new HttpHeaders();
         reqHeaders.setAccept(Collections.singletonList(new MediaType("application", "json")));
         String token=SessionConfig.getSessionConfig(c).getValue(SessionConfig.userToken);
         String tokenDesencriptado=SessionConfig.getSessionConfig(c).DesencriptarToken(token);
@@ -213,7 +222,7 @@ public class RestServices {
             Log.e("RestGetError", e.getMessage());
             return null;
         }
-        return new ArrayList<>(Arrays.asList(emisoras));
+        return new ArrayList<>(Arrays.asList(emisoras));*/
     }
 
     public static List<Segmento> consultarSegmentos(Context c) {
