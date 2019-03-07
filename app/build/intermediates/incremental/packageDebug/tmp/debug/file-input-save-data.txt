@@ -1,5 +1,5 @@
 #Internal package file, do not edit.
-#Sun Feb 24 19:12:01 ECT 2019
+#Thu Mar 07 13:41:39 ECT 2019
 2.base=/home/edward/Documents/DJANGO/AppRadio-Android/app/build/intermediates/transforms/dexMerger/debug/1
 0.path=classes.dex
 2.baseType=DIRECTORY

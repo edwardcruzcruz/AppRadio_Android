@@ -4,7 +4,6 @@ import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
 import android.content.IntentFilter;
-import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.design.widget.BottomNavigationView;
@@ -18,6 +17,8 @@ import android.util.Log;
 import android.view.Gravity;
 import android.view.KeyEvent;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -39,13 +40,14 @@ public class HomeActivity extends AppCompatActivity {
     NavigationView nav_view;
 
     boolean menuOpened=false;
-
+    Intent intentService;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
+        intentService=new Intent(this, RadioStreamService.class);
         setContentView(R.layout.activity_home);
-        startService(new Intent(this, RadioStreamService.class));
+        startService(intentService);
+
         registerReceiver(receiverFromservice, new IntentFilter(RadioStreamService.SERVICE_TO_ACTIVITY));
 
         mTextMessage = (TextView) findViewById(R.id.message);
@@ -74,10 +76,24 @@ public class HomeActivity extends AppCompatActivity {
                     case R.id.nav_item_sugerencias:
                         nav_drawer.closeDrawer(Gravity.END);
                         break;
+                    /*case R.id.nav_item_cerrar_sesion:
+                        nav_drawer.closeDrawer(Gravity.END);
+                        SessionConfig.getSessionConfig(getApplication()).logoutUser();
+                        finish();
+                        break;*/
                 }
 
                 nav_drawer.closeDrawer(Gravity.END);
                 return true;
+            }
+        });
+        LinearLayout botoncerrar = (LinearLayout) findViewById(R.id.cerrar_sesion);
+        botoncerrar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                SessionConfig.getSessionConfig(getApplication()).logoutUser();
+                stopService(intentService);
+                finish();
             }
         });
 
@@ -91,7 +107,21 @@ public class HomeActivity extends AppCompatActivity {
     protected void onResume() {
         super.onResume();
         registerReceiver(receiverFromservice, new IntentFilter(RadioStreamService.SERVICE_TO_ACTIVITY));
+        startService(intentService);
     }
+    @Override
+    protected void onStop() {
+        super.onStop();
+
+    }
+    /*
+
+
+    @Override
+    protected void onRestart() {
+        super.onRestart();
+        startService(intentService);
+    }*/
 
     @Override
     protected void onPause() {

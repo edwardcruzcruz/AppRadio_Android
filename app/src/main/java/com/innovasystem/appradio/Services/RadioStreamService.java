@@ -22,6 +22,7 @@ import android.os.Handler;
 import android.os.IBinder;
 import android.os.PowerManager;
 import android.os.RemoteException;
+import android.provider.Settings;
 import android.support.annotation.DrawableRes;
 import android.support.annotation.Nullable;
 import android.support.annotation.RequiresApi;
@@ -57,6 +58,8 @@ import com.innovasystem.appradio.Utils.Utils;
 import java.io.IOException;
 import java.util.HashMap;
 import java.util.Map;
+import java.util.Timer;
+import java.util.TimerTask;
 
 
 /* Servicio que implementa la reproduccion de Streaming de Radio por internet */
@@ -75,6 +78,11 @@ public class RadioStreamService extends Service implements AudioManager.OnAudioF
     public static final int MUTE_MEDIA_PLAYER= 6;
     public static final String PLAYER_STATUS_KEY = "PlayerCurrentStatus";
 
+
+    private Timer timer;
+    public int counter=0;
+    private TimerTask timerTask;
+    long oldTime=0;
 
     /* Variables de la clase */
     private SimpleExoPlayer player;
@@ -112,6 +120,9 @@ public class RadioStreamService extends Service implements AudioManager.OnAudioF
     @Override
     public void onCreate() {
         super.onCreate();
+        IntentFilter intentFilter = new IntentFilter(BROADCAST_TO_SERVICE);
+
+        registerReceiver(playerReceiver, intentFilter);
         callStateListener();
     }
 
@@ -134,23 +145,43 @@ public class RadioStreamService extends Service implements AudioManager.OnAudioF
             //Could not gain focus
             stopSelf();
         }
-        IntentFilter intentFilter = new IntentFilter(BROADCAST_TO_SERVICE);
-        registerReceiver(playerReceiver, intentFilter);
+
+        //unregisterReceiver(playerReceiver);
+
+
+
+
         if (player !=null && isPlaying()) {
             sendPlayerStatus("playing");
         }
 
         handleIncomingActions(intent);
+        startTimer();
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
+            String packageName = getPackageName();
+            PowerManager pm = (PowerManager) getSystemService(Context.POWER_SERVICE);
+            if (!pm.isIgnoringBatteryOptimizations(packageName)) {
 
+                    //some device doesn't has activity to handle this intent
+                    //so add try catch
+                    //intent.setAction(android.provider.Settings.ACTION_REQUEST_IGNORE_BATTERY_OPTIMIZATIONS);
+                    //intent.setData(Uri.parse("package:" + packageName));
+
+            }
+        }
+
+        //intent.setAction(Settings.ACTION_IGNORE_BATTERY_OPTIMIZATION_SETTINGS);
         return START_STICKY;
     }
+
 
     @Override
     public void onDestroy() {
 
         super.onDestroy();
+        /*
         if (player != null) {
-            stopPlayer();
+            //stopPlayer();
             player.release();
             player= null;
         }
@@ -161,7 +192,10 @@ public class RadioStreamService extends Service implements AudioManager.OnAudioF
 
         wifiLock.release();
         wakeLock.release();
+        //Intent broadcastIntent = new Intent(this, Keepalive.class);
 
+        //sendBroadcast(broadcastIntent);
+        stoptimertask();*/
     }
 
 
@@ -225,10 +259,10 @@ public class RadioStreamService extends Service implements AudioManager.OnAudioF
     private void stopPlayer() {
         if (player != null) {
             player.stop();
-            player.release();
-            player = null;
-            wifiLock.release();
-            wakeLock.release();
+            //player.release();
+            //player = null;
+            //wifiLock.release();
+            //wakeLock.release();
             sendPlayerStatus("stopped");
             removeNotification();
             System.out.println("=====> PLAYER STOPPED");
@@ -809,6 +843,39 @@ public class RadioStreamService extends Service implements AudioManager.OnAudioF
             transportControls.skipToPrevious();
         } else if (actionString.equalsIgnoreCase(ACTION_STOP)) {
             transportControls.stop();
+        }
+    }
+
+    public void startTimer() {
+        //set a new Timer
+        timer = new Timer();
+
+        //initialize the TimerTask's job
+        initializeTimerTask();
+
+        //schedule the timer, to wake up every 1 second
+        timer.schedule(timerTask, 1000, 1000); //
+    }
+
+    /**
+     * it sets the timer to print the counter every x seconds
+     */
+    public void initializeTimerTask() {
+        timerTask = new TimerTask() {
+            public void run() {
+                Log.i("in timer", "in timer ++++  "+ (counter++));
+            }
+        };
+    }
+
+    /**
+     * not needed
+     */
+    public void stoptimertask() {
+        //stop the timer, if it's not already null
+        if (timer != null) {
+            timer.cancel();
+            timer = null;
         }
     }
 

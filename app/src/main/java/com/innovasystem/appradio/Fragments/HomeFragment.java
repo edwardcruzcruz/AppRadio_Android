@@ -124,7 +124,11 @@ public class HomeFragment extends Fragment {
         tv_mensaje_programacion.setVisibility(View.INVISIBLE);
 
         //Inicializacion de la cinta de ciudades
-        List<Emisora> emisoras= RestServices.consultarEmisoras(getContext(),null);
+        consultaEmisora(null);
+        //Extraccion de datos de emisoras y programacion
+        new RestFetchEmisoraHomeTask().execute();
+        new RestFetchProgramacionTask().execute();
+        /*List<Emisora> emisoras= RestServices.consultarEmisoras(getContext(),null);
         ArrayList<String> ciudadesEmisoras= new ArrayList<String>();
         for(Emisora e: emisoras){
             if(!ciudadesEmisoras.contains(e.getProvincia().toUpperCase()))
@@ -211,7 +215,7 @@ public class HomeFragment extends Fragment {
 
         //Extraccion de datos de emisoras y programacion
         new RestFetchEmisoraHomeTask().execute();
-        new RestFetchProgramacionTask().execute();
+        new RestFetchProgramacionTask().execute();*/
 
         return root;
     }
@@ -235,7 +239,106 @@ public class HomeFragment extends Fragment {
         if(getActivity()!=null)
             getActivity().sendBroadcast(intent);
     }
+    public void consultaEmisora(final String provincia){
+        new AsyncTask<String,Void,List<Emisora>>() {
+            @Override
+            protected List<Emisora> doInBackground(String... strings) {
+                List<Emisora> listaEmisoras=RestServices.consultarEmisoras(getContext(),provincia);
+                return listaEmisoras;
+            }
 
+            @Override
+            protected void onPostExecute(List<Emisora> emisoras) {
+                super.onPostExecute(emisoras);
+                //List<Emisora> emisoras= RestServices.consultarEmisoras(getContext(),null);
+                ArrayList<String> ciudadesEmisoras= new ArrayList<String>();
+                for(Emisora e: emisoras){
+                    if(!ciudadesEmisoras.contains(e.getProvincia().toUpperCase()))
+                        ciudadesEmisoras.add(e.getProvincia().toUpperCase());
+                }
+                ciudades= ciudadesEmisoras.toArray(new String[0]);//getResources().getStringArray(R.array.ciudades);
+                System.out.println(ciudades);
+                SessionConfig.getSessionConfig(getContext()).CrearProvincia(ciudades[0]);//tomar alguna provincia
+                ciudad_picker.setValues(ciudades);
+                ciudad_picker.setOnItemSelectedListener(new HorizontalPicker.OnItemSelected(){
+                    @Override
+                    public void onItemSelected(int index) {
+                        Toast.makeText(getContext(), ciudad_picker.getValues()[index], Toast.LENGTH_SHORT).show();
+                        SessionConfig.getSessionConfig(getContext()).CrearProvincia(ciudades[index]);
+                        System.out.println("Provincia"+ciudades[index]);
+
+                        //SessionConfig.getSessionConfig(getContext()).provincia= ciudades[index];
+                        //SharedPreferences preferences= getContext().getSharedPreferences("session", MODE_PRIVATE);
+                        //SharedPreferences.Editor editor = preferences.edit();
+                        //editor.putString("provincia",ciudades[index]);
+                        //editor.apply();
+                        //editor.commit();
+                        new RestFetchEmisoraHomeTask().execute();
+                        new RestFetchProgramacionTask().execute();
+                    }
+                });
+                String provincia=SessionConfig.getSessionConfig(getContext()).getValue(SessionConfig.provincia);
+                //System.out.println("hey aca puede ser -----"+provincia+"--------\n");
+                int indiceProvincia= Arrays.binarySearch(ciudades, provincia);
+                if(indiceProvincia>=0) {
+                    ciudad_picker.setSelectedItem(indiceProvincia);
+                    provinciaActual= ciudades[indiceProvincia];
+                }
+                else{
+                    ciudad_picker.setSelectedItem(0);
+                    SessionConfig.getSessionConfig(getContext()).CrearProvincia(ciudades[0]);
+                    provinciaActual= ciudades[0];
+                }
+
+                //Inicializacion de recyclerview para las tarjetas
+                final CarouselLayoutManager lmanager = new CarouselLayoutManager(CarouselLayoutManager.HORIZONTAL,true);
+                lmanager.setPostLayoutListener(new CarouselZoomPostLayoutListener());
+                rv_home.setLayoutManager(lmanager);
+                rv_home.setHasFixedSize(true);
+                rv_home.addOnScrollListener(new CenterScrollListener());
+                rv_home.addOnScrollListener(new RecyclerView.OnScrollListener() {
+                    @Override
+                    public void onScrollStateChanged(@NonNull RecyclerView recyclerView, int newState) {
+                        super.onScrollStateChanged(recyclerView, newState);
+                        if(newState == RecyclerView.SCROLL_STATE_IDLE){
+                            int itemPos= ((CarouselLayoutManager) recyclerView.getLayoutManager()).getCenterItemPosition();
+                            Emisora em=((EmisoraHomeAdapter)recyclerView.getAdapter()).emisoras_keys.get(itemPos);
+                            streamingActual= em.getUrl_streaming();
+                            if(!streamingActual.equals(RadioStreamService.radioURL) && radion_on && !muted) {
+                                Intent intent = new Intent();
+                                intent.setAction(RadioStreamService.BROADCAST_TO_SERVICE);
+                                intent.putExtra(RadioStreamService.PLAYER_FUNCTION_TYPE, RadioStreamService.CHANGE_PLAYER_TRACK);
+                                intent.putExtra(RadioStreamService.PLAYER_TRACK_URL, streamingActual);
+                                getActivity().sendBroadcast(intent);
+                                Utils.mostrarMensajeSnackBar(getActivity().getWindow().getDecorView().getRootView(),"Conectando al servidor de la emisora....");
+                            }
+                        }
+                    }
+
+                    @Override
+                    public void onScrolled(@NonNull RecyclerView recyclerView, int dx, int dy) {
+                        super.onScrolled(recyclerView, dx, dy);
+                    }
+                });
+                SnapHelper snapHelper= new LinearSnapHelper();
+                snapHelper.attachToRecyclerView(rv_home);
+
+                //Inicializacion de listeners de botones
+                btn_apagar.setOnClickListener(btn_apagar_listener);
+                btn_silenciar.setOnClickListener(btn_mute_listener);
+
+                if(radion_on){
+                    btn_apagar.setBackground(getContext().getDrawable(R.drawable.round_button_enabled_left));
+                }
+
+                if(muted){
+                    btn_silenciar.setBackground(getContext().getDrawable(R.drawable.round_button_enabled));
+                }
+
+
+            }
+        }.execute(provincia);
+    }
 
 
     /*---------- Listeners ---------*/

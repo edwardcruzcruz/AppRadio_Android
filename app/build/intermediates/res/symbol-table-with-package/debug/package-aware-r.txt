@@ -1412,6 +1412,7 @@ id card_hitem_home
 id center
 id center_horizontal
 id center_vertical
+id cerrar_sesion
 id chains
 id checkbox
 id chronometer

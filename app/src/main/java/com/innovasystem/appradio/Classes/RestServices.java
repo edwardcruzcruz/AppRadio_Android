@@ -190,7 +190,7 @@ public class RestServices {
      * @return una Lista con Emisoras
      */
     public static List<Emisora> consultarEmisoras(Context c, String provincia) {
-        List<Emisora> emisoras= null;
+        /*List<Emisora> emisoras= null;
         try {
             emisoras = new ConsultaEmisorasAsyc(c).execute(provincia).get();
             System.out.println(emisoras);
@@ -201,9 +201,9 @@ public class RestServices {
             e.printStackTrace();
         }
 
-        return emisoras;
+        return emisoras;*/
         //System.out.println("USER TOKEN: " + SessionConfig.getSessionConfig(c).userToken);
-        /*HttpHeaders reqHeaders = new HttpHeaders();
+        HttpHeaders reqHeaders = new HttpHeaders();
         reqHeaders.setAccept(Collections.singletonList(new MediaType("application", "json")));
         String token=SessionConfig.getSessionConfig(c).getValue(SessionConfig.userToken);
         String tokenDesencriptado=SessionConfig.getSessionConfig(c).DesencriptarToken(token);
@@ -222,7 +222,7 @@ public class RestServices {
             Log.e("RestGetError", e.getMessage());
             return null;
         }
-        return new ArrayList<>(Arrays.asList(emisoras));*/
+        return new ArrayList<>(Arrays.asList(emisoras));
     }
 
     public static List<Segmento> consultarSegmentos(Context c) {

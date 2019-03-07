@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /home/edward/Documents/DJANGO/AppRadio-Android/app/src/main/AndroidManifest.xml:2:1-78:12
-INJECTED from /home/edward/Documents/DJANGO/AppRadio-Android/app/src/main/AndroidManifest.xml:2:1-78:12
-INJECTED from /home/edward/Documents/DJANGO/AppRadio-Android/app/src/main/AndroidManifest.xml:2:1-78:12
-INJECTED from /home/edward/Documents/DJANGO/AppRadio-Android/app/src/main/AndroidManifest.xml:2:1-78:12
+ADDED from /home/edward/Documents/DJANGO/AppRadio-Android/app/src/main/AndroidManifest.xml:2:1-81:12
+INJECTED from /home/edward/Documents/DJANGO/AppRadio-Android/app/src/main/AndroidManifest.xml:2:1-81:12
+INJECTED from /home/edward/Documents/DJANGO/AppRadio-Android/app/src/main/AndroidManifest.xml:2:1-81:12
+INJECTED from /home/edward/Documents/DJANGO/AppRadio-Android/app/src/main/AndroidManifest.xml:2:1-81:12
 MERGED from [com.android.support:design:28.0.0-alpha1] /home/edward/.gradle/caches/transforms-1/files-1.1/design-28.0.0-alpha1.aar/1f055944b7b1096cfce9eb08d3fb6fd9/AndroidManifest.xml:17:1-24:12
 MERGED from [com.android.support:design-bottomappbar:28.0.0-alpha1] /home/edward/.gradle/caches/transforms-1/files-1.1/design-bottomappbar-28.0.0-alpha1.aar/1a0180ad0a5236de7fe3d79cb9c81bd4/AndroidManifest.xml:17:1-24:12
 MERGED from [com.android.support:design-theme:28.0.0-alpha1] /home/edward/.gradle/caches/transforms-1/files-1.1/design-theme-28.0.0-alpha1.aar/d19896ab9ae947474b7fa0a1b3e945f9/AndroidManifest.xml:17:1-24:12
@@ -92,20 +92,20 @@ MERGED from [com.android.support:design-color:28.0.0-alpha1] /home/edward/.gradl
 MERGED from [com.android.support:design-math:28.0.0-alpha1] /home/edward/.gradle/caches/transforms-1/files-1.1/design-math-28.0.0-alpha1.aar/9103c8f71a20db9213077b0d0c477f63/AndroidManifest.xml:17:1-24:12
 MERGED from [com.android.support:design-snackbar:28.0.0-alpha1] /home/edward/.gradle/caches/transforms-1/files-1.1/design-snackbar-28.0.0-alpha1.aar/1bac48ef401cb202c255e9bae03014d1/AndroidManifest.xml:17:1-24:12
 MERGED from [com.google.android.gms:play-services-ads-base:15.0.1] /home/edward/.gradle/caches/transforms-1/files-1.1/play-services-ads-base-15.0.1.aar/14b9e5919cffb9fc59ad548d123857bb/AndroidManifest.xml:17:1-24:12
-INJECTED from /home/edward/Documents/DJANGO/AppRadio-Android/app/src/main/AndroidManifest.xml:2:1-78:12
-INJECTED from /home/edward/Documents/DJANGO/AppRadio-Android/app/src/main/AndroidManifest.xml:2:1-78:12
-INJECTED from /home/edward/Documents/DJANGO/AppRadio-Android/app/src/main/AndroidManifest.xml:2:1-78:12
+INJECTED from /home/edward/Documents/DJANGO/AppRadio-Android/app/src/main/AndroidManifest.xml:2:1-81:12
+INJECTED from /home/edward/Documents/DJANGO/AppRadio-Android/app/src/main/AndroidManifest.xml:2:1-81:12
+INJECTED from /home/edward/Documents/DJANGO/AppRadio-Android/app/src/main/AndroidManifest.xml:2:1-81:12
 	package
 		ADDED from /home/edward/Documents/DJANGO/AppRadio-Android/app/src/main/AndroidManifest.xml:3:5-40
 		INJECTED from /home/edward/Documents/DJANGO/AppRadio-Android/app/src/main/AndroidManifest.xml
 		INJECTED from /home/edward/Documents/DJANGO/AppRadio-Android/app/src/main/AndroidManifest.xml
 	android:versionName
 		INJECTED from /home/edward/Documents/DJANGO/AppRadio-Android/app/src/main/AndroidManifest.xml
-		ADDED from /home/edward/Documents/DJANGO/AppRadio-Android/app/src/main/AndroidManifest.xml:2:1-78:12
+		ADDED from /home/edward/Documents/DJANGO/AppRadio-Android/app/src/main/AndroidManifest.xml:2:1-81:12
 		INJECTED from /home/edward/Documents/DJANGO/AppRadio-Android/app/src/main/AndroidManifest.xml
 	android:versionCode
 		INJECTED from /home/edward/Documents/DJANGO/AppRadio-Android/app/src/main/AndroidManifest.xml
-		ADDED from /home/edward/Documents/DJANGO/AppRadio-Android/app/src/main/AndroidManifest.xml:2:1-78:12
+		ADDED from /home/edward/Documents/DJANGO/AppRadio-Android/app/src/main/AndroidManifest.xml:2:1-81:12
 		INJECTED from /home/edward/Documents/DJANGO/AppRadio-Android/app/src/main/AndroidManifest.xml
 	xmlns:android
 		ADDED from /home/edward/Documents/DJANGO/AppRadio-Android/app/src/main/AndroidManifest.xml:2:11-69
@@ -139,8 +139,12 @@ uses-permission#android.permission.WAKE_LOCK
 ADDED from /home/edward/Documents/DJANGO/AppRadio-Android/app/src/main/AndroidManifest.xml:12:5-84
 	android:name
 		ADDED from /home/edward/Documents/DJANGO/AppRadio-Android/app/src/main/AndroidManifest.xml:12:22-65
+uses-permission#android.settings.IGNORE_BATTERY_OPTIMIZATION_SETTINGS
+ADDED from /home/edward/Documents/DJANGO/AppRadio-Android/app/src/main/AndroidManifest.xml:13:5-109
+	android:name
+		ADDED from /home/edward/Documents/DJANGO/AppRadio-Android/app/src/main/AndroidManifest.xml:13:22-90
 application
-ADDED from /home/edward/Documents/DJANGO/AppRadio-Android/app/src/main/AndroidManifest.xml:14:5-76:19
+ADDED from /home/edward/Documents/DJANGO/AppRadio-Android/app/src/main/AndroidManifest.xml:16:5-79:19
 MERGED from [com.android.support:design:28.0.0-alpha1] /home/edward/.gradle/caches/transforms-1/files-1.1/design-28.0.0-alpha1.aar/1f055944b7b1096cfce9eb08d3fb6fd9/AndroidManifest.xml:22:5-20
 MERGED from [com.android.support:design:28.0.0-alpha1] /home/edward/.gradle/caches/transforms-1/files-1.1/design-28.0.0-alpha1.aar/1f055944b7b1096cfce9eb08d3fb6fd9/AndroidManifest.xml:22:5-20
 MERGED from [com.android.support:design-bottomappbar:28.0.0-alpha1] /home/edward/.gradle/caches/transforms-1/files-1.1/design-bottomappbar-28.0.0-alpha1.aar/1a0180ad0a5236de7fe3d79cb9c81bd4/AndroidManifest.xml:22:5-20
@@ -246,127 +250,129 @@ MERGED from [com.google.android.gms:play-services-ads-base:15.0.1] /home/edward/
 	android:appComponentFactory
 		ADDED from [com.android.support:support-compat:28.0.0] /home/edward/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/9883a873afb1bff598a5f1a319e17bc8/AndroidManifest.xml:22:18-91
 	android:supportsRtl
-		ADDED from /home/edward/Documents/DJANGO/AppRadio-Android/app/src/main/AndroidManifest.xml:19:9-35
+		ADDED from /home/edward/Documents/DJANGO/AppRadio-Android/app/src/main/AndroidManifest.xml:21:9-35
 	android:label
-		ADDED from /home/edward/Documents/DJANGO/AppRadio-Android/app/src/main/AndroidManifest.xml:17:9-41
+		ADDED from /home/edward/Documents/DJANGO/AppRadio-Android/app/src/main/AndroidManifest.xml:19:9-41
 	android:roundIcon
-		ADDED from /home/edward/Documents/DJANGO/AppRadio-Android/app/src/main/AndroidManifest.xml:18:9-59
+		ADDED from /home/edward/Documents/DJANGO/AppRadio-Android/app/src/main/AndroidManifest.xml:20:9-59
 	android:icon
-		ADDED from /home/edward/Documents/DJANGO/AppRadio-Android/app/src/main/AndroidManifest.xml:16:9-54
+		ADDED from /home/edward/Documents/DJANGO/AppRadio-Android/app/src/main/AndroidManifest.xml:18:9-54
 	android:allowBackup
-		ADDED from /home/edward/Documents/DJANGO/AppRadio-Android/app/src/main/AndroidManifest.xml:15:9-35
+		ADDED from /home/edward/Documents/DJANGO/AppRadio-Android/app/src/main/AndroidManifest.xml:17:9-35
 	android:theme
-		ADDED from /home/edward/Documents/DJANGO/AppRadio-Android/app/src/main/AndroidManifest.xml:20:9-40
+		ADDED from /home/edward/Documents/DJANGO/AppRadio-Android/app/src/main/AndroidManifest.xml:22:9-40
 activity#com.innovasystem.appradio.Activities.LoginActivity
-ADDED from /home/edward/Documents/DJANGO/AppRadio-Android/app/src/main/AndroidManifest.xml:21:9-24:52
+ADDED from /home/edward/Documents/DJANGO/AppRadio-Android/app/src/main/AndroidManifest.xml:23:9-26:52
 	android:screenOrientation
-		ADDED from /home/edward/Documents/DJANGO/AppRadio-Android/app/src/main/AndroidManifest.xml:24:13-49
+		ADDED from /home/edward/Documents/DJANGO/AppRadio-Android/app/src/main/AndroidManifest.xml:26:13-49
 	android:label
-		ADDED from /home/edward/Documents/DJANGO/AppRadio-Android/app/src/main/AndroidManifest.xml:23:13-45
+		ADDED from /home/edward/Documents/DJANGO/AppRadio-Android/app/src/main/AndroidManifest.xml:25:13-45
 	android:name
-		ADDED from /home/edward/Documents/DJANGO/AppRadio-Android/app/src/main/AndroidManifest.xml:22:13-53
+		ADDED from /home/edward/Documents/DJANGO/AppRadio-Android/app/src/main/AndroidManifest.xml:24:13-53
 service#com.innovasystem.appradio.Services.RadioStreamService
-ADDED from /home/edward/Documents/DJANGO/AppRadio-Android/app/src/main/AndroidManifest.xml:26:9-27:43
+ADDED from /home/edward/Documents/DJANGO/AppRadio-Android/app/src/main/AndroidManifest.xml:28:9-30:37
+	android:enabled
+		ADDED from /home/edward/Documents/DJANGO/AppRadio-Android/app/src/main/AndroidManifest.xml:30:13-35
 	android:stopWithTask
-		ADDED from /home/edward/Documents/DJANGO/AppRadio-Android/app/src/main/AndroidManifest.xml:27:13-41
+		ADDED from /home/edward/Documents/DJANGO/AppRadio-Android/app/src/main/AndroidManifest.xml:29:13-41
 	android:name
-		ADDED from /home/edward/Documents/DJANGO/AppRadio-Android/app/src/main/AndroidManifest.xml:26:18-61
+		ADDED from /home/edward/Documents/DJANGO/AppRadio-Android/app/src/main/AndroidManifest.xml:28:18-61
 meta-data#com.facebook.sdk.ApplicationId
-ADDED from /home/edward/Documents/DJANGO/AppRadio-Android/app/src/main/AndroidManifest.xml:30:9-32:55
+ADDED from /home/edward/Documents/DJANGO/AppRadio-Android/app/src/main/AndroidManifest.xml:33:9-35:55
 	android:value
-		ADDED from /home/edward/Documents/DJANGO/AppRadio-Android/app/src/main/AndroidManifest.xml:32:13-52
+		ADDED from /home/edward/Documents/DJANGO/AppRadio-Android/app/src/main/AndroidManifest.xml:35:13-52
 	android:name
-		ADDED from /home/edward/Documents/DJANGO/AppRadio-Android/app/src/main/AndroidManifest.xml:31:13-58
+		ADDED from /home/edward/Documents/DJANGO/AppRadio-Android/app/src/main/AndroidManifest.xml:34:13-58
 meta-data#preloaded_fonts
-ADDED from /home/edward/Documents/DJANGO/AppRadio-Android/app/src/main/AndroidManifest.xml:33:9-35:57
+ADDED from /home/edward/Documents/DJANGO/AppRadio-Android/app/src/main/AndroidManifest.xml:36:9-38:57
 	android:resource
-		ADDED from /home/edward/Documents/DJANGO/AppRadio-Android/app/src/main/AndroidManifest.xml:35:13-54
+		ADDED from /home/edward/Documents/DJANGO/AppRadio-Android/app/src/main/AndroidManifest.xml:38:13-54
 	android:name
-		ADDED from /home/edward/Documents/DJANGO/AppRadio-Android/app/src/main/AndroidManifest.xml:34:13-43
+		ADDED from /home/edward/Documents/DJANGO/AppRadio-Android/app/src/main/AndroidManifest.xml:37:13-43
 activity#com.facebook.FacebookActivity
-ADDED from /home/edward/Documents/DJANGO/AppRadio-Android/app/src/main/AndroidManifest.xml:37:9-40:48
+ADDED from /home/edward/Documents/DJANGO/AppRadio-Android/app/src/main/AndroidManifest.xml:40:9-43:48
 MERGED from [com.facebook.android:facebook-common:4.40.0] /home/edward/.gradle/caches/transforms-1/files-1.1/facebook-common-4.40.0.aar/e48be4d0e07cab2f404d96aca3dc90cf/AndroidManifest.xml:29:9-32:66
 MERGED from [com.facebook.android:facebook-common:4.40.0] /home/edward/.gradle/caches/transforms-1/files-1.1/facebook-common-4.40.0.aar/e48be4d0e07cab2f404d96aca3dc90cf/AndroidManifest.xml:29:9-32:66
 	android:label
-		ADDED from /home/edward/Documents/DJANGO/AppRadio-Android/app/src/main/AndroidManifest.xml:40:13-45
+		ADDED from /home/edward/Documents/DJANGO/AppRadio-Android/app/src/main/AndroidManifest.xml:43:13-45
 	android:configChanges
-		ADDED from /home/edward/Documents/DJANGO/AppRadio-Android/app/src/main/AndroidManifest.xml:39:13-96
+		ADDED from /home/edward/Documents/DJANGO/AppRadio-Android/app/src/main/AndroidManifest.xml:42:13-96
 	android:theme
 		ADDED from [com.facebook.android:facebook-common:4.40.0] /home/edward/.gradle/caches/transforms-1/files-1.1/facebook-common-4.40.0.aar/e48be4d0e07cab2f404d96aca3dc90cf/AndroidManifest.xml:32:13-63
 	android:name
-		ADDED from /home/edward/Documents/DJANGO/AppRadio-Android/app/src/main/AndroidManifest.xml:38:13-57
+		ADDED from /home/edward/Documents/DJANGO/AppRadio-Android/app/src/main/AndroidManifest.xml:41:13-57
 activity#com.facebook.CustomTabActivity
-ADDED from /home/edward/Documents/DJANGO/AppRadio-Android/app/src/main/AndroidManifest.xml:41:9-52:20
+ADDED from /home/edward/Documents/DJANGO/AppRadio-Android/app/src/main/AndroidManifest.xml:44:9-55:20
 MERGED from [com.facebook.android:facebook-common:4.40.0] /home/edward/.gradle/caches/transforms-1/files-1.1/facebook-common-4.40.0.aar/e48be4d0e07cab2f404d96aca3dc90cf/AndroidManifest.xml:34:9-67
 MERGED from [com.facebook.android:facebook-common:4.40.0] /home/edward/.gradle/caches/transforms-1/files-1.1/facebook-common-4.40.0.aar/e48be4d0e07cab2f404d96aca3dc90cf/AndroidManifest.xml:34:9-67
 	android:exported
-		ADDED from /home/edward/Documents/DJANGO/AppRadio-Android/app/src/main/AndroidManifest.xml:43:13-36
+		ADDED from /home/edward/Documents/DJANGO/AppRadio-Android/app/src/main/AndroidManifest.xml:46:13-36
 	android:name
-		ADDED from /home/edward/Documents/DJANGO/AppRadio-Android/app/src/main/AndroidManifest.xml:42:13-58
+		ADDED from /home/edward/Documents/DJANGO/AppRadio-Android/app/src/main/AndroidManifest.xml:45:13-58
 intent-filter#action:name:android.intent.action.VIEW+category:name:android.intent.category.BROWSABLE+category:name:android.intent.category.DEFAULT+data:scheme:@string/fb_login_protocol_scheme
-ADDED from /home/edward/Documents/DJANGO/AppRadio-Android/app/src/main/AndroidManifest.xml:44:13-51:29
+ADDED from /home/edward/Documents/DJANGO/AppRadio-Android/app/src/main/AndroidManifest.xml:47:13-54:29
 action#android.intent.action.VIEW
-ADDED from /home/edward/Documents/DJANGO/AppRadio-Android/app/src/main/AndroidManifest.xml:45:17-69
+ADDED from /home/edward/Documents/DJANGO/AppRadio-Android/app/src/main/AndroidManifest.xml:48:17-69
 	android:name
-		ADDED from /home/edward/Documents/DJANGO/AppRadio-Android/app/src/main/AndroidManifest.xml:45:25-66
+		ADDED from /home/edward/Documents/DJANGO/AppRadio-Android/app/src/main/AndroidManifest.xml:48:25-66
 category#android.intent.category.DEFAULT
-ADDED from /home/edward/Documents/DJANGO/AppRadio-Android/app/src/main/AndroidManifest.xml:47:17-76
+ADDED from /home/edward/Documents/DJANGO/AppRadio-Android/app/src/main/AndroidManifest.xml:50:17-76
 	android:name
-		ADDED from /home/edward/Documents/DJANGO/AppRadio-Android/app/src/main/AndroidManifest.xml:47:27-73
+		ADDED from /home/edward/Documents/DJANGO/AppRadio-Android/app/src/main/AndroidManifest.xml:50:27-73
 category#android.intent.category.BROWSABLE
-ADDED from /home/edward/Documents/DJANGO/AppRadio-Android/app/src/main/AndroidManifest.xml:48:17-78
+ADDED from /home/edward/Documents/DJANGO/AppRadio-Android/app/src/main/AndroidManifest.xml:51:17-78
 	android:name
-		ADDED from /home/edward/Documents/DJANGO/AppRadio-Android/app/src/main/AndroidManifest.xml:48:27-75
+		ADDED from /home/edward/Documents/DJANGO/AppRadio-Android/app/src/main/AndroidManifest.xml:51:27-75
 data
-ADDED from /home/edward/Documents/DJANGO/AppRadio-Android/app/src/main/AndroidManifest.xml:50:17-75
+ADDED from /home/edward/Documents/DJANGO/AppRadio-Android/app/src/main/AndroidManifest.xml:53:17-75
 	android:scheme
-		ADDED from /home/edward/Documents/DJANGO/AppRadio-Android/app/src/main/AndroidManifest.xml:50:23-72
+		ADDED from /home/edward/Documents/DJANGO/AppRadio-Android/app/src/main/AndroidManifest.xml:53:23-72
 activity#com.innovasystem.appradio.Activities.RegisterActivity
-ADDED from /home/edward/Documents/DJANGO/AppRadio-Android/app/src/main/AndroidManifest.xml:53:9-55:52
+ADDED from /home/edward/Documents/DJANGO/AppRadio-Android/app/src/main/AndroidManifest.xml:56:9-58:52
 	android:screenOrientation
-		ADDED from /home/edward/Documents/DJANGO/AppRadio-Android/app/src/main/AndroidManifest.xml:55:13-49
+		ADDED from /home/edward/Documents/DJANGO/AppRadio-Android/app/src/main/AndroidManifest.xml:58:13-49
 	android:name
-		ADDED from /home/edward/Documents/DJANGO/AppRadio-Android/app/src/main/AndroidManifest.xml:54:13-56
+		ADDED from /home/edward/Documents/DJANGO/AppRadio-Android/app/src/main/AndroidManifest.xml:57:13-56
 activity#com.innovasystem.appradio.Activities.HomeActivity
-ADDED from /home/edward/Documents/DJANGO/AppRadio-Android/app/src/main/AndroidManifest.xml:56:9-59:52
-	android:screenOrientation
-		ADDED from /home/edward/Documents/DJANGO/AppRadio-Android/app/src/main/AndroidManifest.xml:59:13-49
-	android:label
-		ADDED from /home/edward/Documents/DJANGO/AppRadio-Android/app/src/main/AndroidManifest.xml:58:13-56
-	android:name
-		ADDED from /home/edward/Documents/DJANGO/AppRadio-Android/app/src/main/AndroidManifest.xml:57:13-52
-activity#com.innovasystem.appradio.Activities.SplashActivity
-ADDED from /home/edward/Documents/DJANGO/AppRadio-Android/app/src/main/AndroidManifest.xml:60:9-68:20
+ADDED from /home/edward/Documents/DJANGO/AppRadio-Android/app/src/main/AndroidManifest.xml:59:9-62:52
 	android:screenOrientation
 		ADDED from /home/edward/Documents/DJANGO/AppRadio-Android/app/src/main/AndroidManifest.xml:62:13-49
+	android:label
+		ADDED from /home/edward/Documents/DJANGO/AppRadio-Android/app/src/main/AndroidManifest.xml:61:13-56
 	android:name
-		ADDED from /home/edward/Documents/DJANGO/AppRadio-Android/app/src/main/AndroidManifest.xml:61:13-54
-intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from /home/edward/Documents/DJANGO/AppRadio-Android/app/src/main/AndroidManifest.xml:63:13-67:29
-action#android.intent.action.MAIN
-ADDED from /home/edward/Documents/DJANGO/AppRadio-Android/app/src/main/AndroidManifest.xml:64:17-69
-	android:name
-		ADDED from /home/edward/Documents/DJANGO/AppRadio-Android/app/src/main/AndroidManifest.xml:64:25-66
-category#android.intent.category.LAUNCHER
-ADDED from /home/edward/Documents/DJANGO/AppRadio-Android/app/src/main/AndroidManifest.xml:66:17-77
-	android:name
-		ADDED from /home/edward/Documents/DJANGO/AppRadio-Android/app/src/main/AndroidManifest.xml:66:27-74
-activity#com.innovasystem.appradio.Activities.RegisterOneActivity
-ADDED from /home/edward/Documents/DJANGO/AppRadio-Android/app/src/main/AndroidManifest.xml:69:9-71:52
+		ADDED from /home/edward/Documents/DJANGO/AppRadio-Android/app/src/main/AndroidManifest.xml:60:13-52
+activity#com.innovasystem.appradio.Activities.SplashActivity
+ADDED from /home/edward/Documents/DJANGO/AppRadio-Android/app/src/main/AndroidManifest.xml:63:9-71:20
 	android:screenOrientation
-		ADDED from /home/edward/Documents/DJANGO/AppRadio-Android/app/src/main/AndroidManifest.xml:71:13-49
+		ADDED from /home/edward/Documents/DJANGO/AppRadio-Android/app/src/main/AndroidManifest.xml:65:13-49
 	android:name
-		ADDED from /home/edward/Documents/DJANGO/AppRadio-Android/app/src/main/AndroidManifest.xml:70:13-59
-activity#com.innovasystem.appradio.Activities.RegisterTwoActivity
+		ADDED from /home/edward/Documents/DJANGO/AppRadio-Android/app/src/main/AndroidManifest.xml:64:13-54
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from /home/edward/Documents/DJANGO/AppRadio-Android/app/src/main/AndroidManifest.xml:66:13-70:29
+action#android.intent.action.MAIN
+ADDED from /home/edward/Documents/DJANGO/AppRadio-Android/app/src/main/AndroidManifest.xml:67:17-69
+	android:name
+		ADDED from /home/edward/Documents/DJANGO/AppRadio-Android/app/src/main/AndroidManifest.xml:67:25-66
+category#android.intent.category.LAUNCHER
+ADDED from /home/edward/Documents/DJANGO/AppRadio-Android/app/src/main/AndroidManifest.xml:69:17-77
+	android:name
+		ADDED from /home/edward/Documents/DJANGO/AppRadio-Android/app/src/main/AndroidManifest.xml:69:27-74
+activity#com.innovasystem.appradio.Activities.RegisterOneActivity
 ADDED from /home/edward/Documents/DJANGO/AppRadio-Android/app/src/main/AndroidManifest.xml:72:9-74:52
 	android:screenOrientation
 		ADDED from /home/edward/Documents/DJANGO/AppRadio-Android/app/src/main/AndroidManifest.xml:74:13-49
 	android:name
 		ADDED from /home/edward/Documents/DJANGO/AppRadio-Android/app/src/main/AndroidManifest.xml:73:13-59
-activity#com.innovasystem.appradio.Activities.ForgotPasswordActivity
-ADDED from /home/edward/Documents/DJANGO/AppRadio-Android/app/src/main/AndroidManifest.xml:75:9-80
+activity#com.innovasystem.appradio.Activities.RegisterTwoActivity
+ADDED from /home/edward/Documents/DJANGO/AppRadio-Android/app/src/main/AndroidManifest.xml:75:9-77:52
+	android:screenOrientation
+		ADDED from /home/edward/Documents/DJANGO/AppRadio-Android/app/src/main/AndroidManifest.xml:77:13-49
 	android:name
-		ADDED from /home/edward/Documents/DJANGO/AppRadio-Android/app/src/main/AndroidManifest.xml:75:19-68
+		ADDED from /home/edward/Documents/DJANGO/AppRadio-Android/app/src/main/AndroidManifest.xml:76:13-59
+activity#com.innovasystem.appradio.Activities.ForgotPasswordActivity
+ADDED from /home/edward/Documents/DJANGO/AppRadio-Android/app/src/main/AndroidManifest.xml:78:9-80
+	android:name
+		ADDED from /home/edward/Documents/DJANGO/AppRadio-Android/app/src/main/AndroidManifest.xml:78:19-68
 uses-sdk
 INJECTED from /home/edward/Documents/DJANGO/AppRadio-Android/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from /home/edward/Documents/DJANGO/AppRadio-Android/app/src/main/AndroidManifest.xml

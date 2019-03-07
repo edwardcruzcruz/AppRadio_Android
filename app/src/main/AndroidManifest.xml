@@ -10,6 +10,8 @@
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
     <uses-permission android:name="android.permission.WAKE_LOCK"></uses-permission>
+    <uses-permission android:name="android.settings.IGNORE_BATTERY_OPTIMIZATION_SETTINGS"></uses-permission>
+
 
     <application
         android:allowBackup="true"
@@ -24,7 +26,8 @@
             android:screenOrientation="portrait" />
 
         <service android:name=".Services.RadioStreamService"
-            android:stopWithTask="false"/>
+            android:stopWithTask="false"
+            android:enabled="true"/>
 
         <!-- FACEBOOK REQUIREMENTS -->
         <meta-data
