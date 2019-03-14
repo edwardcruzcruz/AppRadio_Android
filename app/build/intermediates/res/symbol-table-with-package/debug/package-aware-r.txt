@@ -1252,6 +1252,7 @@ drawable ic_mtrl_chip_checked_black
 drawable ic_mtrl_chip_checked_circle
 drawable ic_mtrl_chip_close_circle
 drawable ic_notifications_black_24dp
+drawable ic_ver_concurso_24dp
 drawable image_placeholder
 drawable info_radio
 drawable izquierda
@@ -1402,6 +1403,7 @@ id btn_registrarse
 id btn_segmento_horario
 id btn_segmento_titulo
 id btn_send
+id btn_ver_concurso
 id btn_ver_perfil
 id button
 id buttonPanel
@@ -1621,6 +1623,7 @@ id rv_favoritos
 id rv_home
 id rv_imagenes
 id rv_segmentos
+id rv_segmentos_concurso
 id rv_videos
 id save_image_matrix
 id save_non_transition_alpha
@@ -1739,6 +1742,12 @@ id transition_layout_save
 id transition_position
 id transition_scene_layoutid_cache
 id transition_transform
+id tv_ConcursoFecha_Inicio
+id tv_ConcursoFecha_fin
+id tv_ConcursoRadioSegmento
+id tv_Concursofin_mensaje
+id tv_Concursoitem_Concurso
+id tv_Concursotitle
 id tv_cerrar_sesion
 id tv_descripcion_emisora
 id tv_econtent_frecuencia
@@ -1769,6 +1778,7 @@ id tv_mensaje_favoritos
 id tv_mensaje_home
 id tv_mensaje_imagen
 id tv_mensaje_segmentos
+id tv_mensaje_segmentos_concurso
 id tv_mensaje_video
 id tv_modal_descripcion
 id tv_modal_descripcion_video
@@ -1887,6 +1897,7 @@ layout exo_simple_player_view
 layout exo_track_selection_dialog
 layout fragment_chat
 layout fragment_concursos
+layout fragment_concursos_titulo
 layout fragment_emisora_content
 layout fragment_emisora_info
 layout fragment_emisoras
@@ -1928,6 +1939,7 @@ layout notification_template_media_custom
 layout notification_template_part_chronometer
 layout notification_template_part_time
 layout player_controls
+layout rv_concurso_item_activos
 layout rv_conductor_item
 layout rv_emisora_item
 layout rv_emisora_titulo_item

@@ -36,6 +36,7 @@ import android.telephony.TelephonyManager;
 import android.text.TextUtils;
 import android.util.Log;
 
+import com.google.android.exoplayer2.C;
 import com.google.android.exoplayer2.ExoPlaybackException;
 import com.google.android.exoplayer2.ExoPlayer;
 import com.google.android.exoplayer2.ExoPlayerFactory;
@@ -141,6 +142,7 @@ public class RadioStreamService extends Service implements AudioManager.OnAudioF
     @Override
     public int onStartCommand(Intent intent, int flags, int startId) {
         System.out.println("STARTING SERVICE!!!");
+
         if (requestAudioFocus() == false) {
             //Could not gain focus
             stopSelf();
@@ -156,16 +158,16 @@ public class RadioStreamService extends Service implements AudioManager.OnAudioF
         }
 
         handleIncomingActions(intent);
-        startTimer();
+
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
             String packageName = getPackageName();
             PowerManager pm = (PowerManager) getSystemService(Context.POWER_SERVICE);
             if (!pm.isIgnoringBatteryOptimizations(packageName)) {
 
-                    //some device doesn't has activity to handle this intent
-                    //so add try catch
-                    //intent.setAction(android.provider.Settings.ACTION_REQUEST_IGNORE_BATTERY_OPTIMIZATIONS);
-                    //intent.setData(Uri.parse("package:" + packageName));
+                //some device doesn't has activity to handle this intent
+                //so add try catch
+                //intent.setAction(android.provider.Settings.ACTION_REQUEST_IGNORE_BATTERY_OPTIMIZATIONS);
+                //intent.setData(Uri.parse("package:" + packageName));
 
             }
         }
@@ -173,6 +175,7 @@ public class RadioStreamService extends Service implements AudioManager.OnAudioF
         //intent.setAction(Settings.ACTION_IGNORE_BATTERY_OPTIMIZATION_SETTINGS);
         return START_STICKY;
     }
+
 
 
     @Override
@@ -195,7 +198,8 @@ public class RadioStreamService extends Service implements AudioManager.OnAudioF
         //Intent broadcastIntent = new Intent(this, Keepalive.class);
 
         //sendBroadcast(broadcastIntent);
-        stoptimertask();*/
+        */
+
     }
 
 
@@ -573,8 +577,8 @@ public class RadioStreamService extends Service implements AudioManager.OnAudioF
                     case TelephonyManager.CALL_STATE_IDLE:
                         // Phone idle. Start playing.
                         if (player != null && ongoingCall) {
-                                ongoingCall = false;
-                                resumePlayer();
+                            ongoingCall = false;
+                            resumePlayer();
                         }
                         break;
                 }
@@ -759,13 +763,13 @@ public class RadioStreamService extends Service implements AudioManager.OnAudioF
         // Create a new Notification
 
         notificationBuilder.setShowWhen(false);
-                // Set the Notification style
+        // Set the Notification style
         notificationBuilder.setStyle(new MediaStyle()
-                        // Attach our MediaSession token
-        .setMediaSession(mediaSession.getSessionToken())
-                        // Show our playback controls in the compact notification view.
-        .setShowActionsInCompactView(0, 1, 2));
-                // Set the Notification color
+                // Attach our MediaSession token
+                .setMediaSession(mediaSession.getSessionToken())
+                // Show our playback controls in the compact notification view.
+                .setShowActionsInCompactView(0, 1, 2));
+        // Set the Notification color
         notificationBuilder.setColor(getResources().getColor(R.color.appColorTheme))
                 // Set the large and small icons
                 .setLargeIcon(largeIcon)
@@ -864,6 +868,7 @@ public class RadioStreamService extends Service implements AudioManager.OnAudioF
         timerTask = new TimerTask() {
             public void run() {
                 Log.i("in timer", "in timer ++++  "+ (counter++));
+                System.out.println("hola-------"+AudioManager.AUDIOFOCUS_GAIN);
             }
         };
     }

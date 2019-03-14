@@ -12,6 +12,7 @@ import com.android.volley.toolbox.JsonObjectRequest;
 import com.android.volley.toolbox.Volley;
 import com.innovasystem.appradio.Classes.Models.Conductor;
 import com.innovasystem.appradio.Classes.Models.Emisora;
+import com.innovasystem.appradio.Classes.Models.Encuesta;
 import com.innovasystem.appradio.Classes.Models.Fecha;
 import com.innovasystem.appradio.Classes.Models.Multimedia;
 import com.innovasystem.appradio.Classes.Models.RedSocialEmisora;
@@ -248,7 +249,7 @@ public class RestServices {
         return new ArrayList<>(Arrays.asList(segmentos));
     }
 
-    public static List<Segmento> consultarSegmentosEmisora(Context c, int idEmisora) {
+    public static List<Segmento> consultarSegmentosToday(Context c) {
         HttpHeaders reqHeaders = new HttpHeaders();
         reqHeaders.setAccept(Collections.singletonList(new MediaType("application", "json")));
         String token=SessionConfig.getSessionConfig(c).getValue(SessionConfig.userToken);
@@ -257,7 +258,7 @@ public class RestServices {
         HttpEntity<?> requestEntity = new HttpEntity<Object>(reqHeaders);
         Segmento[] segmentos = null;
         RestTemplate restTemplate = new RestTemplate();
-        String url = Constants.serverDomain + String.format(Constants.uriSegmentosEmisora, idEmisora);
+        String url = Constants.serverDomain +Constants.uriSegmentosDelDia;
 
         try {
             ResponseEntity<Segmento[]> responseEntity = restTemplate.exchange(url, HttpMethod.GET, requestEntity, Segmento[].class);
@@ -286,6 +287,7 @@ public class RestServices {
         reqHeaders.set("Authorization", tokenDesencriptado);
         HttpEntity<?> requestEntity = new HttpEntity<Object>(reqHeaders);
         Segmento[] segmentos = null;
+        provincia=null;
         RestTemplate restTemplate = new RestTemplate();
         String url = Constants.serverDomain + Constants.uriSegmentosDelDia + (provincia != null ? String.format("?provincia=%s",provincia) : "" );
 
@@ -302,7 +304,7 @@ public class RestServices {
         return new ArrayList<>(Arrays.asList(segmentos));
     }
 
-    public static List<Segmento> consultarSegmentosDelDia(Context c, int idEmisora) {
+    public static List<Segmento>    consultarSegmentosDelDia(Context c, int idEmisora) {
         HttpHeaders reqHeaders = new HttpHeaders();
         reqHeaders.setAccept(Collections.singletonList(new MediaType("application", "json")));
         String token=SessionConfig.getSessionConfig(c).getValue(SessionConfig.userToken);
@@ -326,6 +328,55 @@ public class RestServices {
         return new ArrayList<>(Arrays.asList(segmentos));
     }
 
+    /*si es concusro agregar las preguntas y lo adicional ...*/
+    public static List<Encuesta>    consultarConcursos(Context c, int idSegmentos) {
+        HttpHeaders reqHeaders = new HttpHeaders();
+        reqHeaders.setAccept(Collections.singletonList(new MediaType("application", "json")));
+        String token=SessionConfig.getSessionConfig(c).getValue(SessionConfig.userToken);
+        String tokenDesencriptado=SessionConfig.getSessionConfig(c).DesencriptarToken(token);
+        reqHeaders.set("Authorization", tokenDesencriptado);
+        HttpEntity<?> requestEntity = new HttpEntity<Object>(reqHeaders);
+        Encuesta[] Encuestas = null;
+        RestTemplate restTemplate = new RestTemplate();
+        String url = Constants.serverDomain + String.format(Constants.uriSegmentosConcurso, idSegmentos);
+
+        try {
+            ResponseEntity<Encuesta[]> responseEntity = restTemplate.exchange(url, HttpMethod.GET, requestEntity, Encuesta[].class);
+            if (responseEntity.getStatusCode() == HttpStatus.OK) {
+                Encuestas = responseEntity.getBody();
+            }
+        } catch (Exception e) {
+            Log.e("RestGetError", e.getMessage());
+            return null;
+        }
+
+        return new ArrayList<>(Arrays.asList(Encuestas));
+    }
+
+    /*si es concusro agregar las preguntas y lo adicional ...*/
+    public static List<Encuesta>    consultarEncuesta(Context c, int idSegmentos) {
+        HttpHeaders reqHeaders = new HttpHeaders();
+        reqHeaders.setAccept(Collections.singletonList(new MediaType("application", "json")));
+        String token=SessionConfig.getSessionConfig(c).getValue(SessionConfig.userToken);
+        String tokenDesencriptado=SessionConfig.getSessionConfig(c).DesencriptarToken(token);
+        reqHeaders.set("Authorization", tokenDesencriptado);
+        HttpEntity<?> requestEntity = new HttpEntity<Object>(reqHeaders);
+        Encuesta[] Encuestas = null;
+        RestTemplate restTemplate = new RestTemplate();
+        String url = Constants.serverDomain + String.format(Constants.uriSegmentosEncuesta, idSegmentos);
+
+        try {
+            ResponseEntity<Encuesta[]> responseEntity = restTemplate.exchange(url, HttpMethod.GET, requestEntity, Encuesta[].class);
+            if (responseEntity.getStatusCode() == HttpStatus.OK) {
+                Encuestas = responseEntity.getBody();
+            }
+        } catch (Exception e) {
+            Log.e("RestGetError", e.getMessage());
+            return null;
+        }
+
+        return new ArrayList<>(Arrays.asList(Encuestas));
+    }
     /**
      * Obtiene los telefonos de una emisora dada
      * @param c

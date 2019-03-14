@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /home/edward/Documents/DJANGO/AppRadio-Android/app/src/main/AndroidManifest.xml:2:1-81:12
-INJECTED from /home/edward/Documents/DJANGO/AppRadio-Android/app/src/main/AndroidManifest.xml:2:1-81:12
-INJECTED from /home/edward/Documents/DJANGO/AppRadio-Android/app/src/main/AndroidManifest.xml:2:1-81:12
-INJECTED from /home/edward/Documents/DJANGO/AppRadio-Android/app/src/main/AndroidManifest.xml:2:1-81:12
+ADDED from /home/edward/Documents/DJANGO/AppRadio-Android/app/src/main/AndroidManifest.xml:2:1-82:12
+INJECTED from /home/edward/Documents/DJANGO/AppRadio-Android/app/src/main/AndroidManifest.xml:2:1-82:12
+INJECTED from /home/edward/Documents/DJANGO/AppRadio-Android/app/src/main/AndroidManifest.xml:2:1-82:12
+INJECTED from /home/edward/Documents/DJANGO/AppRadio-Android/app/src/main/AndroidManifest.xml:2:1-82:12
 MERGED from [com.android.support:design:28.0.0-alpha1] /home/edward/.gradle/caches/transforms-1/files-1.1/design-28.0.0-alpha1.aar/1f055944b7b1096cfce9eb08d3fb6fd9/AndroidManifest.xml:17:1-24:12
 MERGED from [com.android.support:design-bottomappbar:28.0.0-alpha1] /home/edward/.gradle/caches/transforms-1/files-1.1/design-bottomappbar-28.0.0-alpha1.aar/1a0180ad0a5236de7fe3d79cb9c81bd4/AndroidManifest.xml:17:1-24:12
 MERGED from [com.android.support:design-theme:28.0.0-alpha1] /home/edward/.gradle/caches/transforms-1/files-1.1/design-theme-28.0.0-alpha1.aar/d19896ab9ae947474b7fa0a1b3e945f9/AndroidManifest.xml:17:1-24:12
@@ -23,10 +23,10 @@ MERGED from [com.android.support:design-tabs:28.0.0-alpha1] /home/edward/.gradle
 MERGED from [com.android.support:design-textfield:28.0.0-alpha1] /home/edward/.gradle/caches/transforms-1/files-1.1/design-textfield-28.0.0-alpha1.aar/60ab611258bc0b30594ebd9942638d35/AndroidManifest.xml:17:1-24:12
 MERGED from [com.android.support:design-typography:28.0.0-alpha1] /home/edward/.gradle/caches/transforms-1/files-1.1/design-typography-28.0.0-alpha1.aar/c141e5948280ba3a541af3d508bf4689/AndroidManifest.xml:17:1-24:12
 MERGED from [com.android.support:design-shape:28.0.0-alpha1] /home/edward/.gradle/caches/transforms-1/files-1.1/design-shape-28.0.0-alpha1.aar/4c9cee5edba5c7812e08e4b2c93a6d39/AndroidManifest.xml:17:1-24:12
-MERGED from [com.facebook.android:facebook-android-sdk:4.40.0] /home/edward/.gradle/caches/transforms-1/files-1.1/facebook-android-sdk-4.40.0.aar/e8f1ad799aeca9ed563f2d8e098b632f/AndroidManifest.xml:21:1-31:12
-MERGED from [com.facebook.android:facebook-login:4.40.0] /home/edward/.gradle/caches/transforms-1/files-1.1/facebook-login-4.40.0.aar/72e8a726e7660935eadda00dc1a0f069/AndroidManifest.xml:21:1-31:12
-MERGED from [com.facebook.android:facebook-share:4.40.0] /home/edward/.gradle/caches/transforms-1/files-1.1/facebook-share-4.40.0.aar/eca50478697054dbf0c43acb8984cac6/AndroidManifest.xml:21:1-31:12
-MERGED from [com.facebook.android:facebook-common:4.40.0] /home/edward/.gradle/caches/transforms-1/files-1.1/facebook-common-4.40.0.aar/e48be4d0e07cab2f404d96aca3dc90cf/AndroidManifest.xml:21:1-37:12
+MERGED from [com.facebook.android:facebook-android-sdk:4.41.0] /home/edward/.gradle/caches/transforms-1/files-1.1/facebook-android-sdk-4.41.0.aar/2a4825d559363403cab6b336462348bb/AndroidManifest.xml:21:1-31:12
+MERGED from [com.facebook.android:facebook-login:4.41.0] /home/edward/.gradle/caches/transforms-1/files-1.1/facebook-login-4.41.0.aar/2206671704f0892b0c40f6f59383fe9d/AndroidManifest.xml:21:1-31:12
+MERGED from [com.facebook.android:facebook-share:4.41.0] /home/edward/.gradle/caches/transforms-1/files-1.1/facebook-share-4.41.0.aar/0062a19928b5ca48d87609faa8ecdcac/AndroidManifest.xml:21:1-31:12
+MERGED from [com.facebook.android:facebook-common:4.41.0] /home/edward/.gradle/caches/transforms-1/files-1.1/facebook-common-4.41.0.aar/e7f2a9979ecbe553e621cd21bbaf9cf6/AndroidManifest.xml:21:1-37:12
 MERGED from [com.android.support:appcompat-v7:28.0.0-alpha1] /home/edward/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0-alpha1.aar/d23513c54d692dee502b176c855d54fe/AndroidManifest.xml:17:1-23:12
 MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /home/edward/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.3.aar/56036e91c1154f1592468153b3a5430d/AndroidManifest.xml:2:1-11:12
 MERGED from [com.android.support:animated-vector-drawable:28.0.0-alpha1] /home/edward/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-28.0.0-alpha1.aar/073261d85275651b7943ad91da67b8fe/AndroidManifest.xml:17:1-23:12
@@ -53,11 +53,11 @@ MERGED from [com.android.support:design-drawable:28.0.0-alpha1] /home/edward/.gr
 MERGED from [com.android.support:design-expandable:28.0.0-alpha1] /home/edward/.gradle/caches/transforms-1/files-1.1/design-expandable-28.0.0-alpha1.aar/711d84d5291fd53bf76f246cf0095f9b/AndroidManifest.xml:17:1-24:12
 MERGED from [com.android.support:design-ripple:28.0.0-alpha1] /home/edward/.gradle/caches/transforms-1/files-1.1/design-ripple-28.0.0-alpha1.aar/26ab1cd478fabbe7ddbfcc42b41279d2/AndroidManifest.xml:17:1-24:12
 MERGED from [com.android.support:design-stateful:28.0.0-alpha1] /home/edward/.gradle/caches/transforms-1/files-1.1/design-stateful-28.0.0-alpha1.aar/79c1a90b6294e4acab9072ad5bfeeeef/AndroidManifest.xml:17:1-24:12
-MERGED from [com.facebook.android:facebook-places:4.40.0] /home/edward/.gradle/caches/transforms-1/files-1.1/facebook-places-4.40.0.aar/bd608e4b6bded6fbef56adeaee95b123/AndroidManifest.xml:21:1-31:12
-MERGED from [com.facebook.android:facebook-applinks:4.40.0] /home/edward/.gradle/caches/transforms-1/files-1.1/facebook-applinks-4.40.0.aar/2d42d1102b08ae51617cacb604074999/AndroidManifest.xml:21:1-31:12
-MERGED from [com.facebook.android:facebook-messenger:4.40.0] /home/edward/.gradle/caches/transforms-1/files-1.1/facebook-messenger-4.40.0.aar/b903ed65bbe13fab58fc7b77729bdfcb/AndroidManifest.xml:21:1-31:12
-MERGED from [com.facebook.android:facebook-marketing:4.40.0] /home/edward/.gradle/caches/transforms-1/files-1.1/facebook-marketing-4.40.0.aar/ce5450e96d5c10f0c970ad8b2f9367c5/AndroidManifest.xml:21:1-35:12
-MERGED from [com.facebook.android:facebook-core:4.40.0] /home/edward/.gradle/caches/transforms-1/files-1.1/facebook-core-4.40.0.aar/b561e99c197b4679beedad1d24c18802/AndroidManifest.xml:21:1-53:12
+MERGED from [com.facebook.android:facebook-places:4.41.0] /home/edward/.gradle/caches/transforms-1/files-1.1/facebook-places-4.41.0.aar/c58f4ad2e623aab7a5a9f0a1574a84e4/AndroidManifest.xml:21:1-31:12
+MERGED from [com.facebook.android:facebook-applinks:4.41.0] /home/edward/.gradle/caches/transforms-1/files-1.1/facebook-applinks-4.41.0.aar/e43597b78a907eb7aad2681478b5a9f4/AndroidManifest.xml:21:1-31:12
+MERGED from [com.facebook.android:facebook-messenger:4.41.0] /home/edward/.gradle/caches/transforms-1/files-1.1/facebook-messenger-4.41.0.aar/2b0177b3d500b5c3f88e75f78c058225/AndroidManifest.xml:21:1-31:12
+MERGED from [com.facebook.android:facebook-marketing:4.41.0] /home/edward/.gradle/caches/transforms-1/files-1.1/facebook-marketing-4.41.0.aar/c021184c306060d33dba57587fe35e2d/AndroidManifest.xml:21:1-35:12
+MERGED from [com.facebook.android:facebook-core:4.41.0] /home/edward/.gradle/caches/transforms-1/files-1.1/facebook-core-4.41.0.aar/6f4a896d07843595e24220166c4f23b1/AndroidManifest.xml:21:1-53:12
 MERGED from [com.google.android.exoplayer:exoplayer-dash:2.9.0] /home/edward/.gradle/caches/transforms-1/files-1.1/exoplayer-dash-2.9.0.aar/091662fff24668dd8b807f46127fa8a2/AndroidManifest.xml:17:1-24:12
 MERGED from [com.google.android.exoplayer:exoplayer-hls:2.9.0] /home/edward/.gradle/caches/transforms-1/files-1.1/exoplayer-hls-2.9.0.aar/cdcefd55097199da179680baeb5843e4/AndroidManifest.xml:17:1-24:12
 MERGED from [com.google.android.exoplayer:exoplayer-smoothstreaming:2.9.0] /home/edward/.gradle/caches/transforms-1/files-1.1/exoplayer-smoothstreaming-2.9.0.aar/444a664f196d1571f9dfb6bda4f02079/AndroidManifest.xml:17:1-24:12
@@ -92,59 +92,61 @@ MERGED from [com.android.support:design-color:28.0.0-alpha1] /home/edward/.gradl
 MERGED from [com.android.support:design-math:28.0.0-alpha1] /home/edward/.gradle/caches/transforms-1/files-1.1/design-math-28.0.0-alpha1.aar/9103c8f71a20db9213077b0d0c477f63/AndroidManifest.xml:17:1-24:12
 MERGED from [com.android.support:design-snackbar:28.0.0-alpha1] /home/edward/.gradle/caches/transforms-1/files-1.1/design-snackbar-28.0.0-alpha1.aar/1bac48ef401cb202c255e9bae03014d1/AndroidManifest.xml:17:1-24:12
 MERGED from [com.google.android.gms:play-services-ads-base:15.0.1] /home/edward/.gradle/caches/transforms-1/files-1.1/play-services-ads-base-15.0.1.aar/14b9e5919cffb9fc59ad548d123857bb/AndroidManifest.xml:17:1-24:12
-INJECTED from /home/edward/Documents/DJANGO/AppRadio-Android/app/src/main/AndroidManifest.xml:2:1-81:12
-INJECTED from /home/edward/Documents/DJANGO/AppRadio-Android/app/src/main/AndroidManifest.xml:2:1-81:12
-INJECTED from /home/edward/Documents/DJANGO/AppRadio-Android/app/src/main/AndroidManifest.xml:2:1-81:12
+INJECTED from /home/edward/Documents/DJANGO/AppRadio-Android/app/src/main/AndroidManifest.xml:2:1-82:12
+INJECTED from /home/edward/Documents/DJANGO/AppRadio-Android/app/src/main/AndroidManifest.xml:2:1-82:12
+INJECTED from /home/edward/Documents/DJANGO/AppRadio-Android/app/src/main/AndroidManifest.xml:2:1-82:12
 	package
-		ADDED from /home/edward/Documents/DJANGO/AppRadio-Android/app/src/main/AndroidManifest.xml:3:5-40
+		ADDED from /home/edward/Documents/DJANGO/AppRadio-Android/app/src/main/AndroidManifest.xml:4:5-40
 		INJECTED from /home/edward/Documents/DJANGO/AppRadio-Android/app/src/main/AndroidManifest.xml
 		INJECTED from /home/edward/Documents/DJANGO/AppRadio-Android/app/src/main/AndroidManifest.xml
 	android:versionName
 		INJECTED from /home/edward/Documents/DJANGO/AppRadio-Android/app/src/main/AndroidManifest.xml
-		ADDED from /home/edward/Documents/DJANGO/AppRadio-Android/app/src/main/AndroidManifest.xml:2:1-81:12
+		ADDED from /home/edward/Documents/DJANGO/AppRadio-Android/app/src/main/AndroidManifest.xml:2:1-82:12
 		INJECTED from /home/edward/Documents/DJANGO/AppRadio-Android/app/src/main/AndroidManifest.xml
+	xmlns:tools
+		ADDED from /home/edward/Documents/DJANGO/AppRadio-Android/app/src/main/AndroidManifest.xml:3:5-51
 	android:versionCode
 		INJECTED from /home/edward/Documents/DJANGO/AppRadio-Android/app/src/main/AndroidManifest.xml
-		ADDED from /home/edward/Documents/DJANGO/AppRadio-Android/app/src/main/AndroidManifest.xml:2:1-81:12
+		ADDED from /home/edward/Documents/DJANGO/AppRadio-Android/app/src/main/AndroidManifest.xml:2:1-82:12
 		INJECTED from /home/edward/Documents/DJANGO/AppRadio-Android/app/src/main/AndroidManifest.xml
 	xmlns:android
 		ADDED from /home/edward/Documents/DJANGO/AppRadio-Android/app/src/main/AndroidManifest.xml:2:11-69
 uses-permission#android.permission.GET_ACCOUNTS
-ADDED from /home/edward/Documents/DJANGO/AppRadio-Android/app/src/main/AndroidManifest.xml:6:5-71
-	android:name
-		ADDED from /home/edward/Documents/DJANGO/AppRadio-Android/app/src/main/AndroidManifest.xml:6:22-68
-uses-permission#android.permission.READ_PROFILE
 ADDED from /home/edward/Documents/DJANGO/AppRadio-Android/app/src/main/AndroidManifest.xml:7:5-71
 	android:name
 		ADDED from /home/edward/Documents/DJANGO/AppRadio-Android/app/src/main/AndroidManifest.xml:7:22-68
+uses-permission#android.permission.READ_PROFILE
+ADDED from /home/edward/Documents/DJANGO/AppRadio-Android/app/src/main/AndroidManifest.xml:8:5-71
+	android:name
+		ADDED from /home/edward/Documents/DJANGO/AppRadio-Android/app/src/main/AndroidManifest.xml:8:22-68
 uses-permission#android.permission.READ_CONTACTS
-ADDED from /home/edward/Documents/DJANGO/AppRadio-Android/app/src/main/AndroidManifest.xml:8:5-72
+ADDED from /home/edward/Documents/DJANGO/AppRadio-Android/app/src/main/AndroidManifest.xml:9:5-72
 	android:name
-		ADDED from /home/edward/Documents/DJANGO/AppRadio-Android/app/src/main/AndroidManifest.xml:8:22-69
+		ADDED from /home/edward/Documents/DJANGO/AppRadio-Android/app/src/main/AndroidManifest.xml:9:22-69
 uses-permission#android.permission.READ_PHONE_STATE
-ADDED from /home/edward/Documents/DJANGO/AppRadio-Android/app/src/main/AndroidManifest.xml:9:5-75
+ADDED from /home/edward/Documents/DJANGO/AppRadio-Android/app/src/main/AndroidManifest.xml:10:5-75
 	android:name
-		ADDED from /home/edward/Documents/DJANGO/AppRadio-Android/app/src/main/AndroidManifest.xml:9:22-72
+		ADDED from /home/edward/Documents/DJANGO/AppRadio-Android/app/src/main/AndroidManifest.xml:10:22-72
 uses-permission#android.permission.INTERNET
-ADDED from /home/edward/Documents/DJANGO/AppRadio-Android/app/src/main/AndroidManifest.xml:10:5-67
+ADDED from /home/edward/Documents/DJANGO/AppRadio-Android/app/src/main/AndroidManifest.xml:11:5-67
 MERGED from [com.google.android.gms:play-services-ads-lite:15.0.1] /home/edward/.gradle/caches/transforms-1/files-1.1/play-services-ads-lite-15.0.1.aar/8f5f3277b966062108fdb0074c41c67e/AndroidManifest.xml:23:5-67
 MERGED from [com.google.android.gms:play-services-ads-lite:15.0.1] /home/edward/.gradle/caches/transforms-1/files-1.1/play-services-ads-lite-15.0.1.aar/8f5f3277b966062108fdb0074c41c67e/AndroidManifest.xml:23:5-67
 	android:name
-		ADDED from /home/edward/Documents/DJANGO/AppRadio-Android/app/src/main/AndroidManifest.xml:10:22-64
+		ADDED from /home/edward/Documents/DJANGO/AppRadio-Android/app/src/main/AndroidManifest.xml:11:22-64
 uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
-ADDED from /home/edward/Documents/DJANGO/AppRadio-Android/app/src/main/AndroidManifest.xml:11:5-80
+ADDED from /home/edward/Documents/DJANGO/AppRadio-Android/app/src/main/AndroidManifest.xml:12:5-80
 	android:name
-		ADDED from /home/edward/Documents/DJANGO/AppRadio-Android/app/src/main/AndroidManifest.xml:11:22-78
+		ADDED from /home/edward/Documents/DJANGO/AppRadio-Android/app/src/main/AndroidManifest.xml:12:22-78
 uses-permission#android.permission.WAKE_LOCK
-ADDED from /home/edward/Documents/DJANGO/AppRadio-Android/app/src/main/AndroidManifest.xml:12:5-84
+ADDED from /home/edward/Documents/DJANGO/AppRadio-Android/app/src/main/AndroidManifest.xml:13:5-84
 	android:name
-		ADDED from /home/edward/Documents/DJANGO/AppRadio-Android/app/src/main/AndroidManifest.xml:12:22-65
+		ADDED from /home/edward/Documents/DJANGO/AppRadio-Android/app/src/main/AndroidManifest.xml:13:22-65
 uses-permission#android.settings.IGNORE_BATTERY_OPTIMIZATION_SETTINGS
-ADDED from /home/edward/Documents/DJANGO/AppRadio-Android/app/src/main/AndroidManifest.xml:13:5-109
+ADDED from /home/edward/Documents/DJANGO/AppRadio-Android/app/src/main/AndroidManifest.xml:14:5-109
 	android:name
-		ADDED from /home/edward/Documents/DJANGO/AppRadio-Android/app/src/main/AndroidManifest.xml:13:22-90
+		ADDED from /home/edward/Documents/DJANGO/AppRadio-Android/app/src/main/AndroidManifest.xml:14:22-90
 application
-ADDED from /home/edward/Documents/DJANGO/AppRadio-Android/app/src/main/AndroidManifest.xml:16:5-79:19
+ADDED from /home/edward/Documents/DJANGO/AppRadio-Android/app/src/main/AndroidManifest.xml:17:5-80:19
 MERGED from [com.android.support:design:28.0.0-alpha1] /home/edward/.gradle/caches/transforms-1/files-1.1/design-28.0.0-alpha1.aar/1f055944b7b1096cfce9eb08d3fb6fd9/AndroidManifest.xml:22:5-20
 MERGED from [com.android.support:design:28.0.0-alpha1] /home/edward/.gradle/caches/transforms-1/files-1.1/design-28.0.0-alpha1.aar/1f055944b7b1096cfce9eb08d3fb6fd9/AndroidManifest.xml:22:5-20
 MERGED from [com.android.support:design-bottomappbar:28.0.0-alpha1] /home/edward/.gradle/caches/transforms-1/files-1.1/design-bottomappbar-28.0.0-alpha1.aar/1a0180ad0a5236de7fe3d79cb9c81bd4/AndroidManifest.xml:22:5-20
@@ -183,14 +185,14 @@ MERGED from [com.android.support:design-typography:28.0.0-alpha1] /home/edward/.
 MERGED from [com.android.support:design-typography:28.0.0-alpha1] /home/edward/.gradle/caches/transforms-1/files-1.1/design-typography-28.0.0-alpha1.aar/c141e5948280ba3a541af3d508bf4689/AndroidManifest.xml:22:5-20
 MERGED from [com.android.support:design-shape:28.0.0-alpha1] /home/edward/.gradle/caches/transforms-1/files-1.1/design-shape-28.0.0-alpha1.aar/4c9cee5edba5c7812e08e4b2c93a6d39/AndroidManifest.xml:22:5-20
 MERGED from [com.android.support:design-shape:28.0.0-alpha1] /home/edward/.gradle/caches/transforms-1/files-1.1/design-shape-28.0.0-alpha1.aar/4c9cee5edba5c7812e08e4b2c93a6d39/AndroidManifest.xml:22:5-20
-MERGED from [com.facebook.android:facebook-android-sdk:4.40.0] /home/edward/.gradle/caches/transforms-1/files-1.1/facebook-android-sdk-4.40.0.aar/e8f1ad799aeca9ed563f2d8e098b632f/AndroidManifest.xml:28:5-29:19
-MERGED from [com.facebook.android:facebook-android-sdk:4.40.0] /home/edward/.gradle/caches/transforms-1/files-1.1/facebook-android-sdk-4.40.0.aar/e8f1ad799aeca9ed563f2d8e098b632f/AndroidManifest.xml:28:5-29:19
-MERGED from [com.facebook.android:facebook-login:4.40.0] /home/edward/.gradle/caches/transforms-1/files-1.1/facebook-login-4.40.0.aar/72e8a726e7660935eadda00dc1a0f069/AndroidManifest.xml:28:5-29:19
-MERGED from [com.facebook.android:facebook-login:4.40.0] /home/edward/.gradle/caches/transforms-1/files-1.1/facebook-login-4.40.0.aar/72e8a726e7660935eadda00dc1a0f069/AndroidManifest.xml:28:5-29:19
-MERGED from [com.facebook.android:facebook-share:4.40.0] /home/edward/.gradle/caches/transforms-1/files-1.1/facebook-share-4.40.0.aar/eca50478697054dbf0c43acb8984cac6/AndroidManifest.xml:28:5-29:19
-MERGED from [com.facebook.android:facebook-share:4.40.0] /home/edward/.gradle/caches/transforms-1/files-1.1/facebook-share-4.40.0.aar/eca50478697054dbf0c43acb8984cac6/AndroidManifest.xml:28:5-29:19
-MERGED from [com.facebook.android:facebook-common:4.40.0] /home/edward/.gradle/caches/transforms-1/files-1.1/facebook-common-4.40.0.aar/e48be4d0e07cab2f404d96aca3dc90cf/AndroidManifest.xml:28:5-35:19
-MERGED from [com.facebook.android:facebook-common:4.40.0] /home/edward/.gradle/caches/transforms-1/files-1.1/facebook-common-4.40.0.aar/e48be4d0e07cab2f404d96aca3dc90cf/AndroidManifest.xml:28:5-35:19
+MERGED from [com.facebook.android:facebook-android-sdk:4.41.0] /home/edward/.gradle/caches/transforms-1/files-1.1/facebook-android-sdk-4.41.0.aar/2a4825d559363403cab6b336462348bb/AndroidManifest.xml:28:5-29:19
+MERGED from [com.facebook.android:facebook-android-sdk:4.41.0] /home/edward/.gradle/caches/transforms-1/files-1.1/facebook-android-sdk-4.41.0.aar/2a4825d559363403cab6b336462348bb/AndroidManifest.xml:28:5-29:19
+MERGED from [com.facebook.android:facebook-login:4.41.0] /home/edward/.gradle/caches/transforms-1/files-1.1/facebook-login-4.41.0.aar/2206671704f0892b0c40f6f59383fe9d/AndroidManifest.xml:28:5-29:19
+MERGED from [com.facebook.android:facebook-login:4.41.0] /home/edward/.gradle/caches/transforms-1/files-1.1/facebook-login-4.41.0.aar/2206671704f0892b0c40f6f59383fe9d/AndroidManifest.xml:28:5-29:19
+MERGED from [com.facebook.android:facebook-share:4.41.0] /home/edward/.gradle/caches/transforms-1/files-1.1/facebook-share-4.41.0.aar/0062a19928b5ca48d87609faa8ecdcac/AndroidManifest.xml:28:5-29:19
+MERGED from [com.facebook.android:facebook-share:4.41.0] /home/edward/.gradle/caches/transforms-1/files-1.1/facebook-share-4.41.0.aar/0062a19928b5ca48d87609faa8ecdcac/AndroidManifest.xml:28:5-29:19
+MERGED from [com.facebook.android:facebook-common:4.41.0] /home/edward/.gradle/caches/transforms-1/files-1.1/facebook-common-4.41.0.aar/e7f2a9979ecbe553e621cd21bbaf9cf6/AndroidManifest.xml:28:5-35:19
+MERGED from [com.facebook.android:facebook-common:4.41.0] /home/edward/.gradle/caches/transforms-1/files-1.1/facebook-common-4.41.0.aar/e7f2a9979ecbe553e621cd21bbaf9cf6/AndroidManifest.xml:28:5-35:19
 MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /home/edward/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.3.aar/56036e91c1154f1592468153b3a5430d/AndroidManifest.xml:9:5-20
 MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /home/edward/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.3.aar/56036e91c1154f1592468153b3a5430d/AndroidManifest.xml:9:5-20
 MERGED from [com.wefika:horizontal-picker:1.1.1] /home/edward/.gradle/caches/transforms-1/files-1.1/horizontal-picker-1.1.1.aar/589b34e67eb81bf705be4d7f772987de/AndroidManifest.xml:11:5-12:19
@@ -225,16 +227,16 @@ MERGED from [com.android.support:design-ripple:28.0.0-alpha1] /home/edward/.grad
 MERGED from [com.android.support:design-ripple:28.0.0-alpha1] /home/edward/.gradle/caches/transforms-1/files-1.1/design-ripple-28.0.0-alpha1.aar/26ab1cd478fabbe7ddbfcc42b41279d2/AndroidManifest.xml:22:5-20
 MERGED from [com.android.support:design-stateful:28.0.0-alpha1] /home/edward/.gradle/caches/transforms-1/files-1.1/design-stateful-28.0.0-alpha1.aar/79c1a90b6294e4acab9072ad5bfeeeef/AndroidManifest.xml:22:5-20
 MERGED from [com.android.support:design-stateful:28.0.0-alpha1] /home/edward/.gradle/caches/transforms-1/files-1.1/design-stateful-28.0.0-alpha1.aar/79c1a90b6294e4acab9072ad5bfeeeef/AndroidManifest.xml:22:5-20
-MERGED from [com.facebook.android:facebook-places:4.40.0] /home/edward/.gradle/caches/transforms-1/files-1.1/facebook-places-4.40.0.aar/bd608e4b6bded6fbef56adeaee95b123/AndroidManifest.xml:28:5-29:19
-MERGED from [com.facebook.android:facebook-places:4.40.0] /home/edward/.gradle/caches/transforms-1/files-1.1/facebook-places-4.40.0.aar/bd608e4b6bded6fbef56adeaee95b123/AndroidManifest.xml:28:5-29:19
-MERGED from [com.facebook.android:facebook-applinks:4.40.0] /home/edward/.gradle/caches/transforms-1/files-1.1/facebook-applinks-4.40.0.aar/2d42d1102b08ae51617cacb604074999/AndroidManifest.xml:28:5-29:19
-MERGED from [com.facebook.android:facebook-applinks:4.40.0] /home/edward/.gradle/caches/transforms-1/files-1.1/facebook-applinks-4.40.0.aar/2d42d1102b08ae51617cacb604074999/AndroidManifest.xml:28:5-29:19
-MERGED from [com.facebook.android:facebook-messenger:4.40.0] /home/edward/.gradle/caches/transforms-1/files-1.1/facebook-messenger-4.40.0.aar/b903ed65bbe13fab58fc7b77729bdfcb/AndroidManifest.xml:28:5-29:19
-MERGED from [com.facebook.android:facebook-messenger:4.40.0] /home/edward/.gradle/caches/transforms-1/files-1.1/facebook-messenger-4.40.0.aar/b903ed65bbe13fab58fc7b77729bdfcb/AndroidManifest.xml:28:5-29:19
-MERGED from [com.facebook.android:facebook-marketing:4.40.0] /home/edward/.gradle/caches/transforms-1/files-1.1/facebook-marketing-4.40.0.aar/ce5450e96d5c10f0c970ad8b2f9367c5/AndroidManifest.xml:28:5-33:19
-MERGED from [com.facebook.android:facebook-marketing:4.40.0] /home/edward/.gradle/caches/transforms-1/files-1.1/facebook-marketing-4.40.0.aar/ce5450e96d5c10f0c970ad8b2f9367c5/AndroidManifest.xml:28:5-33:19
-MERGED from [com.facebook.android:facebook-core:4.40.0] /home/edward/.gradle/caches/transforms-1/files-1.1/facebook-core-4.40.0.aar/b561e99c197b4679beedad1d24c18802/AndroidManifest.xml:28:5-51:19
-MERGED from [com.facebook.android:facebook-core:4.40.0] /home/edward/.gradle/caches/transforms-1/files-1.1/facebook-core-4.40.0.aar/b561e99c197b4679beedad1d24c18802/AndroidManifest.xml:28:5-51:19
+MERGED from [com.facebook.android:facebook-places:4.41.0] /home/edward/.gradle/caches/transforms-1/files-1.1/facebook-places-4.41.0.aar/c58f4ad2e623aab7a5a9f0a1574a84e4/AndroidManifest.xml:28:5-29:19
+MERGED from [com.facebook.android:facebook-places:4.41.0] /home/edward/.gradle/caches/transforms-1/files-1.1/facebook-places-4.41.0.aar/c58f4ad2e623aab7a5a9f0a1574a84e4/AndroidManifest.xml:28:5-29:19
+MERGED from [com.facebook.android:facebook-applinks:4.41.0] /home/edward/.gradle/caches/transforms-1/files-1.1/facebook-applinks-4.41.0.aar/e43597b78a907eb7aad2681478b5a9f4/AndroidManifest.xml:28:5-29:19
+MERGED from [com.facebook.android:facebook-applinks:4.41.0] /home/edward/.gradle/caches/transforms-1/files-1.1/facebook-applinks-4.41.0.aar/e43597b78a907eb7aad2681478b5a9f4/AndroidManifest.xml:28:5-29:19
+MERGED from [com.facebook.android:facebook-messenger:4.41.0] /home/edward/.gradle/caches/transforms-1/files-1.1/facebook-messenger-4.41.0.aar/2b0177b3d500b5c3f88e75f78c058225/AndroidManifest.xml:28:5-29:19
+MERGED from [com.facebook.android:facebook-messenger:4.41.0] /home/edward/.gradle/caches/transforms-1/files-1.1/facebook-messenger-4.41.0.aar/2b0177b3d500b5c3f88e75f78c058225/AndroidManifest.xml:28:5-29:19
+MERGED from [com.facebook.android:facebook-marketing:4.41.0] /home/edward/.gradle/caches/transforms-1/files-1.1/facebook-marketing-4.41.0.aar/c021184c306060d33dba57587fe35e2d/AndroidManifest.xml:28:5-33:19
+MERGED from [com.facebook.android:facebook-marketing:4.41.0] /home/edward/.gradle/caches/transforms-1/files-1.1/facebook-marketing-4.41.0.aar/c021184c306060d33dba57587fe35e2d/AndroidManifest.xml:28:5-33:19
+MERGED from [com.facebook.android:facebook-core:4.41.0] /home/edward/.gradle/caches/transforms-1/files-1.1/facebook-core-4.41.0.aar/6f4a896d07843595e24220166c4f23b1/AndroidManifest.xml:28:5-51:19
+MERGED from [com.facebook.android:facebook-core:4.41.0] /home/edward/.gradle/caches/transforms-1/files-1.1/facebook-core-4.41.0.aar/6f4a896d07843595e24220166c4f23b1/AndroidManifest.xml:28:5-51:19
 MERGED from [com.android.support:support-compat:28.0.0] /home/edward/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/9883a873afb1bff598a5f1a319e17bc8/AndroidManifest.xml:22:5-94
 MERGED from [com.android.support:support-compat:28.0.0] /home/edward/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/9883a873afb1bff598a5f1a319e17bc8/AndroidManifest.xml:22:5-94
 MERGED from [com.android.support:versionedparcelable:28.0.0] /home/edward/.gradle/caches/transforms-1/files-1.1/versionedparcelable-28.0.0.aar/70a34992562777df56053ee62ab2ba6b/AndroidManifest.xml:22:5-23:19
@@ -250,129 +252,129 @@ MERGED from [com.google.android.gms:play-services-ads-base:15.0.1] /home/edward/
 	android:appComponentFactory
 		ADDED from [com.android.support:support-compat:28.0.0] /home/edward/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/9883a873afb1bff598a5f1a319e17bc8/AndroidManifest.xml:22:18-91
 	android:supportsRtl
-		ADDED from /home/edward/Documents/DJANGO/AppRadio-Android/app/src/main/AndroidManifest.xml:21:9-35
+		ADDED from /home/edward/Documents/DJANGO/AppRadio-Android/app/src/main/AndroidManifest.xml:22:9-35
 	android:label
-		ADDED from /home/edward/Documents/DJANGO/AppRadio-Android/app/src/main/AndroidManifest.xml:19:9-41
+		ADDED from /home/edward/Documents/DJANGO/AppRadio-Android/app/src/main/AndroidManifest.xml:20:9-41
 	android:roundIcon
-		ADDED from /home/edward/Documents/DJANGO/AppRadio-Android/app/src/main/AndroidManifest.xml:20:9-59
+		ADDED from /home/edward/Documents/DJANGO/AppRadio-Android/app/src/main/AndroidManifest.xml:21:9-59
 	android:icon
-		ADDED from /home/edward/Documents/DJANGO/AppRadio-Android/app/src/main/AndroidManifest.xml:18:9-54
+		ADDED from /home/edward/Documents/DJANGO/AppRadio-Android/app/src/main/AndroidManifest.xml:19:9-54
 	android:allowBackup
-		ADDED from /home/edward/Documents/DJANGO/AppRadio-Android/app/src/main/AndroidManifest.xml:17:9-35
+		ADDED from /home/edward/Documents/DJANGO/AppRadio-Android/app/src/main/AndroidManifest.xml:18:9-35
 	android:theme
-		ADDED from /home/edward/Documents/DJANGO/AppRadio-Android/app/src/main/AndroidManifest.xml:22:9-40
+		ADDED from /home/edward/Documents/DJANGO/AppRadio-Android/app/src/main/AndroidManifest.xml:23:9-40
 activity#com.innovasystem.appradio.Activities.LoginActivity
-ADDED from /home/edward/Documents/DJANGO/AppRadio-Android/app/src/main/AndroidManifest.xml:23:9-26:52
+ADDED from /home/edward/Documents/DJANGO/AppRadio-Android/app/src/main/AndroidManifest.xml:24:9-27:52
 	android:screenOrientation
-		ADDED from /home/edward/Documents/DJANGO/AppRadio-Android/app/src/main/AndroidManifest.xml:26:13-49
+		ADDED from /home/edward/Documents/DJANGO/AppRadio-Android/app/src/main/AndroidManifest.xml:27:13-49
 	android:label
-		ADDED from /home/edward/Documents/DJANGO/AppRadio-Android/app/src/main/AndroidManifest.xml:25:13-45
+		ADDED from /home/edward/Documents/DJANGO/AppRadio-Android/app/src/main/AndroidManifest.xml:26:13-45
 	android:name
-		ADDED from /home/edward/Documents/DJANGO/AppRadio-Android/app/src/main/AndroidManifest.xml:24:13-53
+		ADDED from /home/edward/Documents/DJANGO/AppRadio-Android/app/src/main/AndroidManifest.xml:25:13-53
 service#com.innovasystem.appradio.Services.RadioStreamService
-ADDED from /home/edward/Documents/DJANGO/AppRadio-Android/app/src/main/AndroidManifest.xml:28:9-30:37
+ADDED from /home/edward/Documents/DJANGO/AppRadio-Android/app/src/main/AndroidManifest.xml:29:9-31:37
 	android:enabled
-		ADDED from /home/edward/Documents/DJANGO/AppRadio-Android/app/src/main/AndroidManifest.xml:30:13-35
+		ADDED from /home/edward/Documents/DJANGO/AppRadio-Android/app/src/main/AndroidManifest.xml:31:13-35
 	android:stopWithTask
-		ADDED from /home/edward/Documents/DJANGO/AppRadio-Android/app/src/main/AndroidManifest.xml:29:13-41
+		ADDED from /home/edward/Documents/DJANGO/AppRadio-Android/app/src/main/AndroidManifest.xml:30:13-41
 	android:name
-		ADDED from /home/edward/Documents/DJANGO/AppRadio-Android/app/src/main/AndroidManifest.xml:28:18-61
+		ADDED from /home/edward/Documents/DJANGO/AppRadio-Android/app/src/main/AndroidManifest.xml:29:18-61
 meta-data#com.facebook.sdk.ApplicationId
-ADDED from /home/edward/Documents/DJANGO/AppRadio-Android/app/src/main/AndroidManifest.xml:33:9-35:55
+ADDED from /home/edward/Documents/DJANGO/AppRadio-Android/app/src/main/AndroidManifest.xml:34:9-36:55
 	android:value
-		ADDED from /home/edward/Documents/DJANGO/AppRadio-Android/app/src/main/AndroidManifest.xml:35:13-52
+		ADDED from /home/edward/Documents/DJANGO/AppRadio-Android/app/src/main/AndroidManifest.xml:36:13-52
 	android:name
-		ADDED from /home/edward/Documents/DJANGO/AppRadio-Android/app/src/main/AndroidManifest.xml:34:13-58
+		ADDED from /home/edward/Documents/DJANGO/AppRadio-Android/app/src/main/AndroidManifest.xml:35:13-58
 meta-data#preloaded_fonts
-ADDED from /home/edward/Documents/DJANGO/AppRadio-Android/app/src/main/AndroidManifest.xml:36:9-38:57
+ADDED from /home/edward/Documents/DJANGO/AppRadio-Android/app/src/main/AndroidManifest.xml:37:9-39:57
 	android:resource
-		ADDED from /home/edward/Documents/DJANGO/AppRadio-Android/app/src/main/AndroidManifest.xml:38:13-54
+		ADDED from /home/edward/Documents/DJANGO/AppRadio-Android/app/src/main/AndroidManifest.xml:39:13-54
 	android:name
-		ADDED from /home/edward/Documents/DJANGO/AppRadio-Android/app/src/main/AndroidManifest.xml:37:13-43
+		ADDED from /home/edward/Documents/DJANGO/AppRadio-Android/app/src/main/AndroidManifest.xml:38:13-43
 activity#com.facebook.FacebookActivity
-ADDED from /home/edward/Documents/DJANGO/AppRadio-Android/app/src/main/AndroidManifest.xml:40:9-43:48
-MERGED from [com.facebook.android:facebook-common:4.40.0] /home/edward/.gradle/caches/transforms-1/files-1.1/facebook-common-4.40.0.aar/e48be4d0e07cab2f404d96aca3dc90cf/AndroidManifest.xml:29:9-32:66
-MERGED from [com.facebook.android:facebook-common:4.40.0] /home/edward/.gradle/caches/transforms-1/files-1.1/facebook-common-4.40.0.aar/e48be4d0e07cab2f404d96aca3dc90cf/AndroidManifest.xml:29:9-32:66
+ADDED from /home/edward/Documents/DJANGO/AppRadio-Android/app/src/main/AndroidManifest.xml:41:9-44:48
+MERGED from [com.facebook.android:facebook-common:4.41.0] /home/edward/.gradle/caches/transforms-1/files-1.1/facebook-common-4.41.0.aar/e7f2a9979ecbe553e621cd21bbaf9cf6/AndroidManifest.xml:29:9-32:66
+MERGED from [com.facebook.android:facebook-common:4.41.0] /home/edward/.gradle/caches/transforms-1/files-1.1/facebook-common-4.41.0.aar/e7f2a9979ecbe553e621cd21bbaf9cf6/AndroidManifest.xml:29:9-32:66
 	android:label
-		ADDED from /home/edward/Documents/DJANGO/AppRadio-Android/app/src/main/AndroidManifest.xml:43:13-45
+		ADDED from /home/edward/Documents/DJANGO/AppRadio-Android/app/src/main/AndroidManifest.xml:44:13-45
 	android:configChanges
-		ADDED from /home/edward/Documents/DJANGO/AppRadio-Android/app/src/main/AndroidManifest.xml:42:13-96
+		ADDED from /home/edward/Documents/DJANGO/AppRadio-Android/app/src/main/AndroidManifest.xml:43:13-96
 	android:theme
-		ADDED from [com.facebook.android:facebook-common:4.40.0] /home/edward/.gradle/caches/transforms-1/files-1.1/facebook-common-4.40.0.aar/e48be4d0e07cab2f404d96aca3dc90cf/AndroidManifest.xml:32:13-63
+		ADDED from [com.facebook.android:facebook-common:4.41.0] /home/edward/.gradle/caches/transforms-1/files-1.1/facebook-common-4.41.0.aar/e7f2a9979ecbe553e621cd21bbaf9cf6/AndroidManifest.xml:32:13-63
 	android:name
-		ADDED from /home/edward/Documents/DJANGO/AppRadio-Android/app/src/main/AndroidManifest.xml:41:13-57
+		ADDED from /home/edward/Documents/DJANGO/AppRadio-Android/app/src/main/AndroidManifest.xml:42:13-57
 activity#com.facebook.CustomTabActivity
-ADDED from /home/edward/Documents/DJANGO/AppRadio-Android/app/src/main/AndroidManifest.xml:44:9-55:20
-MERGED from [com.facebook.android:facebook-common:4.40.0] /home/edward/.gradle/caches/transforms-1/files-1.1/facebook-common-4.40.0.aar/e48be4d0e07cab2f404d96aca3dc90cf/AndroidManifest.xml:34:9-67
-MERGED from [com.facebook.android:facebook-common:4.40.0] /home/edward/.gradle/caches/transforms-1/files-1.1/facebook-common-4.40.0.aar/e48be4d0e07cab2f404d96aca3dc90cf/AndroidManifest.xml:34:9-67
+ADDED from /home/edward/Documents/DJANGO/AppRadio-Android/app/src/main/AndroidManifest.xml:45:9-56:20
+MERGED from [com.facebook.android:facebook-common:4.41.0] /home/edward/.gradle/caches/transforms-1/files-1.1/facebook-common-4.41.0.aar/e7f2a9979ecbe553e621cd21bbaf9cf6/AndroidManifest.xml:34:9-67
+MERGED from [com.facebook.android:facebook-common:4.41.0] /home/edward/.gradle/caches/transforms-1/files-1.1/facebook-common-4.41.0.aar/e7f2a9979ecbe553e621cd21bbaf9cf6/AndroidManifest.xml:34:9-67
 	android:exported
-		ADDED from /home/edward/Documents/DJANGO/AppRadio-Android/app/src/main/AndroidManifest.xml:46:13-36
+		ADDED from /home/edward/Documents/DJANGO/AppRadio-Android/app/src/main/AndroidManifest.xml:47:13-36
 	android:name
-		ADDED from /home/edward/Documents/DJANGO/AppRadio-Android/app/src/main/AndroidManifest.xml:45:13-58
+		ADDED from /home/edward/Documents/DJANGO/AppRadio-Android/app/src/main/AndroidManifest.xml:46:13-58
 intent-filter#action:name:android.intent.action.VIEW+category:name:android.intent.category.BROWSABLE+category:name:android.intent.category.DEFAULT+data:scheme:@string/fb_login_protocol_scheme
-ADDED from /home/edward/Documents/DJANGO/AppRadio-Android/app/src/main/AndroidManifest.xml:47:13-54:29
+ADDED from /home/edward/Documents/DJANGO/AppRadio-Android/app/src/main/AndroidManifest.xml:48:13-55:29
 action#android.intent.action.VIEW
-ADDED from /home/edward/Documents/DJANGO/AppRadio-Android/app/src/main/AndroidManifest.xml:48:17-69
+ADDED from /home/edward/Documents/DJANGO/AppRadio-Android/app/src/main/AndroidManifest.xml:49:17-69
 	android:name
-		ADDED from /home/edward/Documents/DJANGO/AppRadio-Android/app/src/main/AndroidManifest.xml:48:25-66
+		ADDED from /home/edward/Documents/DJANGO/AppRadio-Android/app/src/main/AndroidManifest.xml:49:25-66
 category#android.intent.category.DEFAULT
-ADDED from /home/edward/Documents/DJANGO/AppRadio-Android/app/src/main/AndroidManifest.xml:50:17-76
+ADDED from /home/edward/Documents/DJANGO/AppRadio-Android/app/src/main/AndroidManifest.xml:51:17-76
 	android:name
-		ADDED from /home/edward/Documents/DJANGO/AppRadio-Android/app/src/main/AndroidManifest.xml:50:27-73
+		ADDED from /home/edward/Documents/DJANGO/AppRadio-Android/app/src/main/AndroidManifest.xml:51:27-73
 category#android.intent.category.BROWSABLE
-ADDED from /home/edward/Documents/DJANGO/AppRadio-Android/app/src/main/AndroidManifest.xml:51:17-78
+ADDED from /home/edward/Documents/DJANGO/AppRadio-Android/app/src/main/AndroidManifest.xml:52:17-78
 	android:name
-		ADDED from /home/edward/Documents/DJANGO/AppRadio-Android/app/src/main/AndroidManifest.xml:51:27-75
+		ADDED from /home/edward/Documents/DJANGO/AppRadio-Android/app/src/main/AndroidManifest.xml:52:27-75
 data
-ADDED from /home/edward/Documents/DJANGO/AppRadio-Android/app/src/main/AndroidManifest.xml:53:17-75
+ADDED from /home/edward/Documents/DJANGO/AppRadio-Android/app/src/main/AndroidManifest.xml:54:17-75
 	android:scheme
-		ADDED from /home/edward/Documents/DJANGO/AppRadio-Android/app/src/main/AndroidManifest.xml:53:23-72
+		ADDED from /home/edward/Documents/DJANGO/AppRadio-Android/app/src/main/AndroidManifest.xml:54:23-72
 activity#com.innovasystem.appradio.Activities.RegisterActivity
-ADDED from /home/edward/Documents/DJANGO/AppRadio-Android/app/src/main/AndroidManifest.xml:56:9-58:52
+ADDED from /home/edward/Documents/DJANGO/AppRadio-Android/app/src/main/AndroidManifest.xml:57:9-59:52
 	android:screenOrientation
-		ADDED from /home/edward/Documents/DJANGO/AppRadio-Android/app/src/main/AndroidManifest.xml:58:13-49
+		ADDED from /home/edward/Documents/DJANGO/AppRadio-Android/app/src/main/AndroidManifest.xml:59:13-49
 	android:name
-		ADDED from /home/edward/Documents/DJANGO/AppRadio-Android/app/src/main/AndroidManifest.xml:57:13-56
+		ADDED from /home/edward/Documents/DJANGO/AppRadio-Android/app/src/main/AndroidManifest.xml:58:13-56
 activity#com.innovasystem.appradio.Activities.HomeActivity
-ADDED from /home/edward/Documents/DJANGO/AppRadio-Android/app/src/main/AndroidManifest.xml:59:9-62:52
+ADDED from /home/edward/Documents/DJANGO/AppRadio-Android/app/src/main/AndroidManifest.xml:60:9-63:52
 	android:screenOrientation
-		ADDED from /home/edward/Documents/DJANGO/AppRadio-Android/app/src/main/AndroidManifest.xml:62:13-49
+		ADDED from /home/edward/Documents/DJANGO/AppRadio-Android/app/src/main/AndroidManifest.xml:63:13-49
 	android:label
-		ADDED from /home/edward/Documents/DJANGO/AppRadio-Android/app/src/main/AndroidManifest.xml:61:13-56
+		ADDED from /home/edward/Documents/DJANGO/AppRadio-Android/app/src/main/AndroidManifest.xml:62:13-56
 	android:name
-		ADDED from /home/edward/Documents/DJANGO/AppRadio-Android/app/src/main/AndroidManifest.xml:60:13-52
+		ADDED from /home/edward/Documents/DJANGO/AppRadio-Android/app/src/main/AndroidManifest.xml:61:13-52
 activity#com.innovasystem.appradio.Activities.SplashActivity
-ADDED from /home/edward/Documents/DJANGO/AppRadio-Android/app/src/main/AndroidManifest.xml:63:9-71:20
+ADDED from /home/edward/Documents/DJANGO/AppRadio-Android/app/src/main/AndroidManifest.xml:64:9-72:20
 	android:screenOrientation
-		ADDED from /home/edward/Documents/DJANGO/AppRadio-Android/app/src/main/AndroidManifest.xml:65:13-49
+		ADDED from /home/edward/Documents/DJANGO/AppRadio-Android/app/src/main/AndroidManifest.xml:66:13-49
 	android:name
-		ADDED from /home/edward/Documents/DJANGO/AppRadio-Android/app/src/main/AndroidManifest.xml:64:13-54
+		ADDED from /home/edward/Documents/DJANGO/AppRadio-Android/app/src/main/AndroidManifest.xml:65:13-54
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from /home/edward/Documents/DJANGO/AppRadio-Android/app/src/main/AndroidManifest.xml:66:13-70:29
+ADDED from /home/edward/Documents/DJANGO/AppRadio-Android/app/src/main/AndroidManifest.xml:67:13-71:29
 action#android.intent.action.MAIN
-ADDED from /home/edward/Documents/DJANGO/AppRadio-Android/app/src/main/AndroidManifest.xml:67:17-69
+ADDED from /home/edward/Documents/DJANGO/AppRadio-Android/app/src/main/AndroidManifest.xml:68:17-69
 	android:name
-		ADDED from /home/edward/Documents/DJANGO/AppRadio-Android/app/src/main/AndroidManifest.xml:67:25-66
+		ADDED from /home/edward/Documents/DJANGO/AppRadio-Android/app/src/main/AndroidManifest.xml:68:25-66
 category#android.intent.category.LAUNCHER
-ADDED from /home/edward/Documents/DJANGO/AppRadio-Android/app/src/main/AndroidManifest.xml:69:17-77
+ADDED from /home/edward/Documents/DJANGO/AppRadio-Android/app/src/main/AndroidManifest.xml:70:17-77
 	android:name
-		ADDED from /home/edward/Documents/DJANGO/AppRadio-Android/app/src/main/AndroidManifest.xml:69:27-74
+		ADDED from /home/edward/Documents/DJANGO/AppRadio-Android/app/src/main/AndroidManifest.xml:70:27-74
 activity#com.innovasystem.appradio.Activities.RegisterOneActivity
-ADDED from /home/edward/Documents/DJANGO/AppRadio-Android/app/src/main/AndroidManifest.xml:72:9-74:52
+ADDED from /home/edward/Documents/DJANGO/AppRadio-Android/app/src/main/AndroidManifest.xml:73:9-75:52
 	android:screenOrientation
-		ADDED from /home/edward/Documents/DJANGO/AppRadio-Android/app/src/main/AndroidManifest.xml:74:13-49
+		ADDED from /home/edward/Documents/DJANGO/AppRadio-Android/app/src/main/AndroidManifest.xml:75:13-49
 	android:name
-		ADDED from /home/edward/Documents/DJANGO/AppRadio-Android/app/src/main/AndroidManifest.xml:73:13-59
+		ADDED from /home/edward/Documents/DJANGO/AppRadio-Android/app/src/main/AndroidManifest.xml:74:13-59
 activity#com.innovasystem.appradio.Activities.RegisterTwoActivity
-ADDED from /home/edward/Documents/DJANGO/AppRadio-Android/app/src/main/AndroidManifest.xml:75:9-77:52
+ADDED from /home/edward/Documents/DJANGO/AppRadio-Android/app/src/main/AndroidManifest.xml:76:9-78:52
 	android:screenOrientation
-		ADDED from /home/edward/Documents/DJANGO/AppRadio-Android/app/src/main/AndroidManifest.xml:77:13-49
+		ADDED from /home/edward/Documents/DJANGO/AppRadio-Android/app/src/main/AndroidManifest.xml:78:13-49
 	android:name
-		ADDED from /home/edward/Documents/DJANGO/AppRadio-Android/app/src/main/AndroidManifest.xml:76:13-59
+		ADDED from /home/edward/Documents/DJANGO/AppRadio-Android/app/src/main/AndroidManifest.xml:77:13-59
 activity#com.innovasystem.appradio.Activities.ForgotPasswordActivity
-ADDED from /home/edward/Documents/DJANGO/AppRadio-Android/app/src/main/AndroidManifest.xml:78:9-80
+ADDED from /home/edward/Documents/DJANGO/AppRadio-Android/app/src/main/AndroidManifest.xml:79:9-80
 	android:name
-		ADDED from /home/edward/Documents/DJANGO/AppRadio-Android/app/src/main/AndroidManifest.xml:78:19-68
+		ADDED from /home/edward/Documents/DJANGO/AppRadio-Android/app/src/main/AndroidManifest.xml:79:19-68
 uses-sdk
 INJECTED from /home/edward/Documents/DJANGO/AppRadio-Android/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from /home/edward/Documents/DJANGO/AppRadio-Android/app/src/main/AndroidManifest.xml
@@ -415,14 +417,14 @@ MERGED from [com.android.support:design-typography:28.0.0-alpha1] /home/edward/.
 MERGED from [com.android.support:design-typography:28.0.0-alpha1] /home/edward/.gradle/caches/transforms-1/files-1.1/design-typography-28.0.0-alpha1.aar/c141e5948280ba3a541af3d508bf4689/AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:design-shape:28.0.0-alpha1] /home/edward/.gradle/caches/transforms-1/files-1.1/design-shape-28.0.0-alpha1.aar/4c9cee5edba5c7812e08e4b2c93a6d39/AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:design-shape:28.0.0-alpha1] /home/edward/.gradle/caches/transforms-1/files-1.1/design-shape-28.0.0-alpha1.aar/4c9cee5edba5c7812e08e4b2c93a6d39/AndroidManifest.xml:20:5-44
-MERGED from [com.facebook.android:facebook-android-sdk:4.40.0] /home/edward/.gradle/caches/transforms-1/files-1.1/facebook-android-sdk-4.40.0.aar/e8f1ad799aeca9ed563f2d8e098b632f/AndroidManifest.xml:24:5-26:41
-MERGED from [com.facebook.android:facebook-android-sdk:4.40.0] /home/edward/.gradle/caches/transforms-1/files-1.1/facebook-android-sdk-4.40.0.aar/e8f1ad799aeca9ed563f2d8e098b632f/AndroidManifest.xml:24:5-26:41
-MERGED from [com.facebook.android:facebook-login:4.40.0] /home/edward/.gradle/caches/transforms-1/files-1.1/facebook-login-4.40.0.aar/72e8a726e7660935eadda00dc1a0f069/AndroidManifest.xml:24:5-26:41
-MERGED from [com.facebook.android:facebook-login:4.40.0] /home/edward/.gradle/caches/transforms-1/files-1.1/facebook-login-4.40.0.aar/72e8a726e7660935eadda00dc1a0f069/AndroidManifest.xml:24:5-26:41
-MERGED from [com.facebook.android:facebook-share:4.40.0] /home/edward/.gradle/caches/transforms-1/files-1.1/facebook-share-4.40.0.aar/eca50478697054dbf0c43acb8984cac6/AndroidManifest.xml:24:5-26:41
-MERGED from [com.facebook.android:facebook-share:4.40.0] /home/edward/.gradle/caches/transforms-1/files-1.1/facebook-share-4.40.0.aar/eca50478697054dbf0c43acb8984cac6/AndroidManifest.xml:24:5-26:41
-MERGED from [com.facebook.android:facebook-common:4.40.0] /home/edward/.gradle/caches/transforms-1/files-1.1/facebook-common-4.40.0.aar/e48be4d0e07cab2f404d96aca3dc90cf/AndroidManifest.xml:24:5-26:41
-MERGED from [com.facebook.android:facebook-common:4.40.0] /home/edward/.gradle/caches/transforms-1/files-1.1/facebook-common-4.40.0.aar/e48be4d0e07cab2f404d96aca3dc90cf/AndroidManifest.xml:24:5-26:41
+MERGED from [com.facebook.android:facebook-android-sdk:4.41.0] /home/edward/.gradle/caches/transforms-1/files-1.1/facebook-android-sdk-4.41.0.aar/2a4825d559363403cab6b336462348bb/AndroidManifest.xml:24:5-26:41
+MERGED from [com.facebook.android:facebook-android-sdk:4.41.0] /home/edward/.gradle/caches/transforms-1/files-1.1/facebook-android-sdk-4.41.0.aar/2a4825d559363403cab6b336462348bb/AndroidManifest.xml:24:5-26:41
+MERGED from [com.facebook.android:facebook-login:4.41.0] /home/edward/.gradle/caches/transforms-1/files-1.1/facebook-login-4.41.0.aar/2206671704f0892b0c40f6f59383fe9d/AndroidManifest.xml:24:5-26:41
+MERGED from [com.facebook.android:facebook-login:4.41.0] /home/edward/.gradle/caches/transforms-1/files-1.1/facebook-login-4.41.0.aar/2206671704f0892b0c40f6f59383fe9d/AndroidManifest.xml:24:5-26:41
+MERGED from [com.facebook.android:facebook-share:4.41.0] /home/edward/.gradle/caches/transforms-1/files-1.1/facebook-share-4.41.0.aar/0062a19928b5ca48d87609faa8ecdcac/AndroidManifest.xml:24:5-26:41
+MERGED from [com.facebook.android:facebook-share:4.41.0] /home/edward/.gradle/caches/transforms-1/files-1.1/facebook-share-4.41.0.aar/0062a19928b5ca48d87609faa8ecdcac/AndroidManifest.xml:24:5-26:41
+MERGED from [com.facebook.android:facebook-common:4.41.0] /home/edward/.gradle/caches/transforms-1/files-1.1/facebook-common-4.41.0.aar/e7f2a9979ecbe553e621cd21bbaf9cf6/AndroidManifest.xml:24:5-26:41
+MERGED from [com.facebook.android:facebook-common:4.41.0] /home/edward/.gradle/caches/transforms-1/files-1.1/facebook-common-4.41.0.aar/e7f2a9979ecbe553e621cd21bbaf9cf6/AndroidManifest.xml:24:5-26:41
 MERGED from [com.android.support:appcompat-v7:28.0.0-alpha1] /home/edward/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0-alpha1.aar/d23513c54d692dee502b176c855d54fe/AndroidManifest.xml:21:5-44
 MERGED from [com.android.support:appcompat-v7:28.0.0-alpha1] /home/edward/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0-alpha1.aar/d23513c54d692dee502b176c855d54fe/AndroidManifest.xml:21:5-44
 MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /home/edward/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.3.aar/56036e91c1154f1592468153b3a5430d/AndroidManifest.xml:5:5-7:41
@@ -475,16 +477,16 @@ MERGED from [com.android.support:design-ripple:28.0.0-alpha1] /home/edward/.grad
 MERGED from [com.android.support:design-ripple:28.0.0-alpha1] /home/edward/.gradle/caches/transforms-1/files-1.1/design-ripple-28.0.0-alpha1.aar/26ab1cd478fabbe7ddbfcc42b41279d2/AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:design-stateful:28.0.0-alpha1] /home/edward/.gradle/caches/transforms-1/files-1.1/design-stateful-28.0.0-alpha1.aar/79c1a90b6294e4acab9072ad5bfeeeef/AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:design-stateful:28.0.0-alpha1] /home/edward/.gradle/caches/transforms-1/files-1.1/design-stateful-28.0.0-alpha1.aar/79c1a90b6294e4acab9072ad5bfeeeef/AndroidManifest.xml:20:5-44
-MERGED from [com.facebook.android:facebook-places:4.40.0] /home/edward/.gradle/caches/transforms-1/files-1.1/facebook-places-4.40.0.aar/bd608e4b6bded6fbef56adeaee95b123/AndroidManifest.xml:24:5-26:41
-MERGED from [com.facebook.android:facebook-places:4.40.0] /home/edward/.gradle/caches/transforms-1/files-1.1/facebook-places-4.40.0.aar/bd608e4b6bded6fbef56adeaee95b123/AndroidManifest.xml:24:5-26:41
-MERGED from [com.facebook.android:facebook-applinks:4.40.0] /home/edward/.gradle/caches/transforms-1/files-1.1/facebook-applinks-4.40.0.aar/2d42d1102b08ae51617cacb604074999/AndroidManifest.xml:24:5-26:41
-MERGED from [com.facebook.android:facebook-applinks:4.40.0] /home/edward/.gradle/caches/transforms-1/files-1.1/facebook-applinks-4.40.0.aar/2d42d1102b08ae51617cacb604074999/AndroidManifest.xml:24:5-26:41
-MERGED from [com.facebook.android:facebook-messenger:4.40.0] /home/edward/.gradle/caches/transforms-1/files-1.1/facebook-messenger-4.40.0.aar/b903ed65bbe13fab58fc7b77729bdfcb/AndroidManifest.xml:24:5-26:41
-MERGED from [com.facebook.android:facebook-messenger:4.40.0] /home/edward/.gradle/caches/transforms-1/files-1.1/facebook-messenger-4.40.0.aar/b903ed65bbe13fab58fc7b77729bdfcb/AndroidManifest.xml:24:5-26:41
-MERGED from [com.facebook.android:facebook-marketing:4.40.0] /home/edward/.gradle/caches/transforms-1/files-1.1/facebook-marketing-4.40.0.aar/ce5450e96d5c10f0c970ad8b2f9367c5/AndroidManifest.xml:24:5-26:41
-MERGED from [com.facebook.android:facebook-marketing:4.40.0] /home/edward/.gradle/caches/transforms-1/files-1.1/facebook-marketing-4.40.0.aar/ce5450e96d5c10f0c970ad8b2f9367c5/AndroidManifest.xml:24:5-26:41
-MERGED from [com.facebook.android:facebook-core:4.40.0] /home/edward/.gradle/caches/transforms-1/files-1.1/facebook-core-4.40.0.aar/b561e99c197b4679beedad1d24c18802/AndroidManifest.xml:24:5-26:41
-MERGED from [com.facebook.android:facebook-core:4.40.0] /home/edward/.gradle/caches/transforms-1/files-1.1/facebook-core-4.40.0.aar/b561e99c197b4679beedad1d24c18802/AndroidManifest.xml:24:5-26:41
+MERGED from [com.facebook.android:facebook-places:4.41.0] /home/edward/.gradle/caches/transforms-1/files-1.1/facebook-places-4.41.0.aar/c58f4ad2e623aab7a5a9f0a1574a84e4/AndroidManifest.xml:24:5-26:41
+MERGED from [com.facebook.android:facebook-places:4.41.0] /home/edward/.gradle/caches/transforms-1/files-1.1/facebook-places-4.41.0.aar/c58f4ad2e623aab7a5a9f0a1574a84e4/AndroidManifest.xml:24:5-26:41
+MERGED from [com.facebook.android:facebook-applinks:4.41.0] /home/edward/.gradle/caches/transforms-1/files-1.1/facebook-applinks-4.41.0.aar/e43597b78a907eb7aad2681478b5a9f4/AndroidManifest.xml:24:5-26:41
+MERGED from [com.facebook.android:facebook-applinks:4.41.0] /home/edward/.gradle/caches/transforms-1/files-1.1/facebook-applinks-4.41.0.aar/e43597b78a907eb7aad2681478b5a9f4/AndroidManifest.xml:24:5-26:41
+MERGED from [com.facebook.android:facebook-messenger:4.41.0] /home/edward/.gradle/caches/transforms-1/files-1.1/facebook-messenger-4.41.0.aar/2b0177b3d500b5c3f88e75f78c058225/AndroidManifest.xml:24:5-26:41
+MERGED from [com.facebook.android:facebook-messenger:4.41.0] /home/edward/.gradle/caches/transforms-1/files-1.1/facebook-messenger-4.41.0.aar/2b0177b3d500b5c3f88e75f78c058225/AndroidManifest.xml:24:5-26:41
+MERGED from [com.facebook.android:facebook-marketing:4.41.0] /home/edward/.gradle/caches/transforms-1/files-1.1/facebook-marketing-4.41.0.aar/c021184c306060d33dba57587fe35e2d/AndroidManifest.xml:24:5-26:41
+MERGED from [com.facebook.android:facebook-marketing:4.41.0] /home/edward/.gradle/caches/transforms-1/files-1.1/facebook-marketing-4.41.0.aar/c021184c306060d33dba57587fe35e2d/AndroidManifest.xml:24:5-26:41
+MERGED from [com.facebook.android:facebook-core:4.41.0] /home/edward/.gradle/caches/transforms-1/files-1.1/facebook-core-4.41.0.aar/6f4a896d07843595e24220166c4f23b1/AndroidManifest.xml:24:5-26:41
+MERGED from [com.facebook.android:facebook-core:4.41.0] /home/edward/.gradle/caches/transforms-1/files-1.1/facebook-core-4.41.0.aar/6f4a896d07843595e24220166c4f23b1/AndroidManifest.xml:24:5-26:41
 MERGED from [com.google.android.exoplayer:exoplayer-dash:2.9.0] /home/edward/.gradle/caches/transforms-1/files-1.1/exoplayer-dash-2.9.0.aar/091662fff24668dd8b807f46127fa8a2/AndroidManifest.xml:20:5-22:41
 MERGED from [com.google.android.exoplayer:exoplayer-dash:2.9.0] /home/edward/.gradle/caches/transforms-1/files-1.1/exoplayer-dash-2.9.0.aar/091662fff24668dd8b807f46127fa8a2/AndroidManifest.xml:20:5-22:41
 MERGED from [com.google.android.exoplayer:exoplayer-hls:2.9.0] /home/edward/.gradle/caches/transforms-1/files-1.1/exoplayer-hls-2.9.0.aar/cdcefd55097199da179680baeb5843e4/AndroidManifest.xml:20:5-22:41
@@ -566,9 +568,9 @@ INJECTED from /home/edward/Documents/DJANGO/AppRadio-Android/app/src/main/Androi
 		ADDED from /home/edward/Documents/DJANGO/AppRadio-Android/app/src/main/AndroidManifest.xml
 		INJECTED from /home/edward/Documents/DJANGO/AppRadio-Android/app/src/main/AndroidManifest.xml
 activity#com.facebook.CustomTabMainActivity
-ADDED from [com.facebook.android:facebook-common:4.40.0] /home/edward/.gradle/caches/transforms-1/files-1.1/facebook-common-4.40.0.aar/e48be4d0e07cab2f404d96aca3dc90cf/AndroidManifest.xml:33:9-71
+ADDED from [com.facebook.android:facebook-common:4.41.0] /home/edward/.gradle/caches/transforms-1/files-1.1/facebook-common-4.41.0.aar/e7f2a9979ecbe553e621cd21bbaf9cf6/AndroidManifest.xml:33:9-71
 	android:name
-		ADDED from [com.facebook.android:facebook-common:4.40.0] /home/edward/.gradle/caches/transforms-1/files-1.1/facebook-common-4.40.0.aar/e48be4d0e07cab2f404d96aca3dc90cf/AndroidManifest.xml:33:19-68
+		ADDED from [com.facebook.android:facebook-common:4.41.0] /home/edward/.gradle/caches/transforms-1/files-1.1/facebook-common-4.41.0.aar/e7f2a9979ecbe553e621cd21bbaf9cf6/AndroidManifest.xml:33:19-68
 uses-permission#android.permission.ACCESS_NETWORK_STATE
 ADDED from [com.google.android.gms:play-services-ads-lite:15.0.1] /home/edward/.gradle/caches/transforms-1/files-1.1/play-services-ads-lite-15.0.1.aar/8f5f3277b966062108fdb0074c41c67e/AndroidManifest.xml:24:5-79
 MERGED from [com.google.android.exoplayer:exoplayer-core:2.9.0] /home/edward/.gradle/caches/transforms-1/files-1.1/exoplayer-core-2.9.0.aar/d9f836cfe204a4ea4643a918cd7a598e/AndroidManifest.xml:24:5-79
@@ -592,30 +594,30 @@ ADDED from [com.google.android.gms:play-services-basement:15.0.1] /home/edward/.
 	android:name
 		ADDED from [com.google.android.gms:play-services-basement:15.0.1] /home/edward/.gradle/caches/transforms-1/files-1.1/play-services-basement-15.0.1.aar/c387f1f2b722c9a6e78619c278143261/AndroidManifest.xml:24:13-58
 provider#com.facebook.marketing.internal.MarketingInitProvider
-ADDED from [com.facebook.android:facebook-marketing:4.40.0] /home/edward/.gradle/caches/transforms-1/files-1.1/facebook-marketing-4.40.0.aar/ce5450e96d5c10f0c970ad8b2f9367c5/AndroidManifest.xml:29:9-32:40
+ADDED from [com.facebook.android:facebook-marketing:4.41.0] /home/edward/.gradle/caches/transforms-1/files-1.1/facebook-marketing-4.41.0.aar/c021184c306060d33dba57587fe35e2d/AndroidManifest.xml:29:9-32:40
 	android:authorities
-		ADDED from [com.facebook.android:facebook-marketing:4.40.0] /home/edward/.gradle/caches/transforms-1/files-1.1/facebook-marketing-4.40.0.aar/ce5450e96d5c10f0c970ad8b2f9367c5/AndroidManifest.xml:31:13-73
+		ADDED from [com.facebook.android:facebook-marketing:4.41.0] /home/edward/.gradle/caches/transforms-1/files-1.1/facebook-marketing-4.41.0.aar/c021184c306060d33dba57587fe35e2d/AndroidManifest.xml:31:13-73
 	android:exported
-		ADDED from [com.facebook.android:facebook-marketing:4.40.0] /home/edward/.gradle/caches/transforms-1/files-1.1/facebook-marketing-4.40.0.aar/ce5450e96d5c10f0c970ad8b2f9367c5/AndroidManifest.xml:32:13-37
+		ADDED from [com.facebook.android:facebook-marketing:4.41.0] /home/edward/.gradle/caches/transforms-1/files-1.1/facebook-marketing-4.41.0.aar/c021184c306060d33dba57587fe35e2d/AndroidManifest.xml:32:13-37
 	android:name
-		ADDED from [com.facebook.android:facebook-marketing:4.40.0] /home/edward/.gradle/caches/transforms-1/files-1.1/facebook-marketing-4.40.0.aar/ce5450e96d5c10f0c970ad8b2f9367c5/AndroidManifest.xml:30:13-81
+		ADDED from [com.facebook.android:facebook-marketing:4.41.0] /home/edward/.gradle/caches/transforms-1/files-1.1/facebook-marketing-4.41.0.aar/c021184c306060d33dba57587fe35e2d/AndroidManifest.xml:30:13-81
 provider#com.facebook.internal.FacebookInitProvider
-ADDED from [com.facebook.android:facebook-core:4.40.0] /home/edward/.gradle/caches/transforms-1/files-1.1/facebook-core-4.40.0.aar/b561e99c197b4679beedad1d24c18802/AndroidManifest.xml:39:9-42:40
+ADDED from [com.facebook.android:facebook-core:4.41.0] /home/edward/.gradle/caches/transforms-1/files-1.1/facebook-core-4.41.0.aar/6f4a896d07843595e24220166c4f23b1/AndroidManifest.xml:39:9-42:40
 	android:authorities
-		ADDED from [com.facebook.android:facebook-core:4.40.0] /home/edward/.gradle/caches/transforms-1/files-1.1/facebook-core-4.40.0.aar/b561e99c197b4679beedad1d24c18802/AndroidManifest.xml:41:13-72
+		ADDED from [com.facebook.android:facebook-core:4.41.0] /home/edward/.gradle/caches/transforms-1/files-1.1/facebook-core-4.41.0.aar/6f4a896d07843595e24220166c4f23b1/AndroidManifest.xml:41:13-72
 	android:exported
-		ADDED from [com.facebook.android:facebook-core:4.40.0] /home/edward/.gradle/caches/transforms-1/files-1.1/facebook-core-4.40.0.aar/b561e99c197b4679beedad1d24c18802/AndroidManifest.xml:42:13-37
+		ADDED from [com.facebook.android:facebook-core:4.41.0] /home/edward/.gradle/caches/transforms-1/files-1.1/facebook-core-4.41.0.aar/6f4a896d07843595e24220166c4f23b1/AndroidManifest.xml:42:13-37
 	android:name
-		ADDED from [com.facebook.android:facebook-core:4.40.0] /home/edward/.gradle/caches/transforms-1/files-1.1/facebook-core-4.40.0.aar/b561e99c197b4679beedad1d24c18802/AndroidManifest.xml:40:13-70
+		ADDED from [com.facebook.android:facebook-core:4.41.0] /home/edward/.gradle/caches/transforms-1/files-1.1/facebook-core-4.41.0.aar/6f4a896d07843595e24220166c4f23b1/AndroidManifest.xml:40:13-70
 receiver#com.facebook.CurrentAccessTokenExpirationBroadcastReceiver
-ADDED from [com.facebook.android:facebook-core:4.40.0] /home/edward/.gradle/caches/transforms-1/files-1.1/facebook-core-4.40.0.aar/b561e99c197b4679beedad1d24c18802/AndroidManifest.xml:44:9-50:20
+ADDED from [com.facebook.android:facebook-core:4.41.0] /home/edward/.gradle/caches/transforms-1/files-1.1/facebook-core-4.41.0.aar/6f4a896d07843595e24220166c4f23b1/AndroidManifest.xml:44:9-50:20
 	android:exported
-		ADDED from [com.facebook.android:facebook-core:4.40.0] /home/edward/.gradle/caches/transforms-1/files-1.1/facebook-core-4.40.0.aar/b561e99c197b4679beedad1d24c18802/AndroidManifest.xml:46:13-37
+		ADDED from [com.facebook.android:facebook-core:4.41.0] /home/edward/.gradle/caches/transforms-1/files-1.1/facebook-core-4.41.0.aar/6f4a896d07843595e24220166c4f23b1/AndroidManifest.xml:46:13-37
 	android:name
-		ADDED from [com.facebook.android:facebook-core:4.40.0] /home/edward/.gradle/caches/transforms-1/files-1.1/facebook-core-4.40.0.aar/b561e99c197b4679beedad1d24c18802/AndroidManifest.xml:45:13-86
+		ADDED from [com.facebook.android:facebook-core:4.41.0] /home/edward/.gradle/caches/transforms-1/files-1.1/facebook-core-4.41.0.aar/6f4a896d07843595e24220166c4f23b1/AndroidManifest.xml:45:13-86
 intent-filter#action:name:com.facebook.sdk.ACTION_CURRENT_ACCESS_TOKEN_CHANGED
-ADDED from [com.facebook.android:facebook-core:4.40.0] /home/edward/.gradle/caches/transforms-1/files-1.1/facebook-core-4.40.0.aar/b561e99c197b4679beedad1d24c18802/AndroidManifest.xml:47:13-49:29
+ADDED from [com.facebook.android:facebook-core:4.41.0] /home/edward/.gradle/caches/transforms-1/files-1.1/facebook-core-4.41.0.aar/6f4a896d07843595e24220166c4f23b1/AndroidManifest.xml:47:13-49:29
 action#com.facebook.sdk.ACTION_CURRENT_ACCESS_TOKEN_CHANGED
-ADDED from [com.facebook.android:facebook-core:4.40.0] /home/edward/.gradle/caches/transforms-1/files-1.1/facebook-core-4.40.0.aar/b561e99c197b4679beedad1d24c18802/AndroidManifest.xml:48:17-95
+ADDED from [com.facebook.android:facebook-core:4.41.0] /home/edward/.gradle/caches/transforms-1/files-1.1/facebook-core-4.41.0.aar/6f4a896d07843595e24220166c4f23b1/AndroidManifest.xml:48:17-95
 	android:name
-		ADDED from [com.facebook.android:facebook-core:4.40.0] /home/edward/.gradle/caches/transforms-1/files-1.1/facebook-core-4.40.0.aar/b561e99c197b4679beedad1d24c18802/AndroidManifest.xml:48:25-92
+		ADDED from [com.facebook.android:facebook-core:4.41.0] /home/edward/.gradle/caches/transforms-1/files-1.1/facebook-core-4.41.0.aar/6f4a896d07843595e24220166c4f23b1/AndroidManifest.xml:48:25-92

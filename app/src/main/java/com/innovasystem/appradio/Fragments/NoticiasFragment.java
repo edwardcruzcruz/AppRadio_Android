@@ -139,7 +139,7 @@ public class NoticiasFragment extends Fragment {
 
     private class RestFetchEmisoraRedesTask extends AsyncTask<Void,Void,Void> {
         List<RedSocialEmisora> redesG;
-        //List<RedSocialEmisora> redesTwitter;
+        List<RedSocialEmisora> redesTwitter;
 
         @Override
         protected Void doInBackground(Void... voids) {

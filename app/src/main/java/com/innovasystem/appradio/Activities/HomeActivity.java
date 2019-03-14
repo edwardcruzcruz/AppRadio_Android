@@ -48,6 +48,7 @@ public class HomeActivity extends AppCompatActivity {
         setContentView(R.layout.activity_home);
         startService(intentService);
 
+
         registerReceiver(receiverFromservice, new IntentFilter(RadioStreamService.SERVICE_TO_ACTIVITY));
 
         mTextMessage = (TextView) findViewById(R.id.message);
@@ -106,27 +107,29 @@ public class HomeActivity extends AppCompatActivity {
     @Override
     protected void onResume() {
         super.onResume();
-        registerReceiver(receiverFromservice, new IntentFilter(RadioStreamService.SERVICE_TO_ACTIVITY));
-        startService(intentService);
     }
+
     @Override
     protected void onStop() {
         super.onStop();
-
     }
-    /*
+
 
 
     @Override
     protected void onRestart() {
         super.onRestart();
-        startService(intentService);
-    }*/
+    }
 
     @Override
     protected void onPause() {
         super.onPause();
-        unregisterReceiver(receiverFromservice);
+    }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        //unregisterReceiver(receiverFromservice);
     }
 
     @Override

@@ -586,7 +586,7 @@ public class HomeFragment extends Fragment {
             horaActual= RestServices.consultarHoraActual(getContext());
             String favoritoSession=SessionConfig.getSessionConfig(getContext()).getValue(SessionConfig.userEmail);
             favoritos= (ArrayList) RestServices.consultarFavoritos(getContext(), (favoritoSession!=null)?favoritoSession:"default");
-            List<Segmento> listaSegmentos = RestServices.consultarSegmentosDelDia(getContext(),SessionConfig.getSessionConfig(getContext()).getValue("provincia"));
+            List<Segmento> listaSegmentos = RestServices.consultarSegmentosDelDia(getContext(),SessionConfig.getSessionConfig(getContext()).getValue(SessionConfig.provincia));
             return  listaSegmentos;
         }
 

@@ -14,6 +14,8 @@ public class Constants {
     public static final String uriEmisoras= "/api/emisoras/";
     public static final String uriSegmentos= "/api/segmentos";
     public static final String uriSegmentosEmisora= "/api/%d/segmentos";
+    public static final String uriSegmentosConcurso= "/api/segmentos/%d/encuestas/1";
+    public static final String uriSegmentosEncuesta= "/api/segmentos/%d/encuestas/0";
     public static final String uriSegmentosDelDia= "/api/segmentos/today";
     public static final String uriSegmentosDelDiaEmisora= "/api/emisoras/%d/segmentos/today";
     public static final String uriTelefonosEmisora= "/api/emisoras/%d/telefonos";
