@@ -81,6 +81,7 @@ public class HomeFragment extends Fragment {
 
     public HomeFragment() {
         // Required empty public constructor
+        SessionConfig.getSessionConfig(getContext()).AsignarTarea("En_curso");
     }
 
     /**
@@ -601,6 +602,7 @@ public class HomeFragment extends Fragment {
                     Toast.makeText(getContext(), "Ocurrio un error con el servidor, intente mas tarde", Toast.LENGTH_SHORT).show();
                 tv_mensaje_programacion.setVisibility(View.VISIBLE);
                 listview_programacion.setAdapter(null);
+                SessionConfig.getSessionConfig(getContext()).AsignarTarea("vacio");
                 return;
             }
             else if(listaSegmentos.size()==0){
@@ -608,6 +610,7 @@ public class HomeFragment extends Fragment {
                     Toast.makeText(getContext(), "No hay programacion para presentar o ocurrio algun error!", Toast.LENGTH_SHORT).show();
                 tv_mensaje_programacion.setVisibility(View.VISIBLE);
                 listview_programacion.setAdapter(null);
+                SessionConfig.getSessionConfig(getContext()).AsignarTarea("vacio");
                 return;
             }
 
@@ -653,7 +656,7 @@ public class HomeFragment extends Fragment {
 
             ProgramacionAdapter adapter= new ProgramacionAdapter(getContext(),horarios,segmentos,horaActual,favoritos);
             listview_programacion.setAdapter(adapter);
-
+            SessionConfig.getSessionConfig(getContext()).AsignarTarea("vacio");
         }
 
     }

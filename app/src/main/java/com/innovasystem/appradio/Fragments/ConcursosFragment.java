@@ -38,7 +38,6 @@ public class ConcursosFragment extends Fragment {
     private String mParam1;
     private String mParam2;
     FragmentsAdapter adapter;
-
     public ConcursosFragment() {
         // Required empty public constructor
     }
@@ -78,7 +77,6 @@ public class ConcursosFragment extends Fragment {
         View root= inflater.inflate(R.layout.fragment_concursos, container, false);
         ViewPager vpager= root.findViewById(R.id.vpager_concursos);
         TabLayout tabLayout= root.findViewById(R.id.tablayout_concursos);
-
         adapter= new FragmentsAdapter(getChildFragmentManager());
         setupViewPager(vpager);
         tabLayout.setupWithViewPager(vpager);
@@ -98,7 +96,6 @@ public class ConcursosFragment extends Fragment {
 
     private void setupViewPager(ViewPager viewPager) {
         adapter = new ConcursosFragment.FragmentsAdapter(getChildFragmentManager());
-        /*configurar los respectivos fragementos "activos", "finalizados"*/
         adapter.addFragment(new ConcursoActivosFragment(),"Activos");
         adapter.addFragment(new ConcursoFinalizadosFragment(),"Finalizados");
         viewPager.setAdapter(adapter);

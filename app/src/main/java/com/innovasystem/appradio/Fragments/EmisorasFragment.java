@@ -17,6 +17,7 @@ import android.support.v4.app.Fragment;
 import com.innovasystem.appradio.Classes.Adapters.EmisorasAdapter;
 import com.innovasystem.appradio.Classes.Models.Emisora;
 import com.innovasystem.appradio.Classes.RestServices;
+import com.innovasystem.appradio.Classes.SessionConfig;
 import com.innovasystem.appradio.R;
 
 import java.util.ArrayList;
@@ -43,6 +44,7 @@ public class EmisorasFragment extends Fragment{
 
     public EmisorasFragment() {
         // Required empty public constructor
+        SessionConfig.getSessionConfig(getContext()).AsignarTarea("En_curso");
     }
 
     /**
@@ -129,6 +131,7 @@ public class EmisorasFragment extends Fragment{
         protected void onPostExecute(List<Object> listaEmisoras){
             progressBar.setVisibility(View.GONE);
             if(listaEmisoras == null){
+                SessionConfig.getSessionConfig(getContext()).AsignarTarea("vacio");
                 Toast.makeText(getContext(), "Ocurrio un error con el servidor, intente mas tarde", Toast.LENGTH_SHORT).show();
                 return;
             }
@@ -154,7 +157,7 @@ public class EmisorasFragment extends Fragment{
                     return adapter.isTitle(adapter.emisoras_dataset.get(i)) ? lmanager.getSpanCount() : 1;
                 }
             });
-
+            SessionConfig.getSessionConfig(getContext()).AsignarTarea("vacio");
 
         }
     }

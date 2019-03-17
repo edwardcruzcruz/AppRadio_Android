@@ -68,9 +68,9 @@ public class EncuestasFragment extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         //return inflater.inflate(R.layout.fragment_concursos, container, false);
-        View root= inflater.inflate(R.layout.fragment_concursos, container, false);
-        ViewPager vpager= root.findViewById(R.id.vpager_concursos);
-        TabLayout tabLayout= root.findViewById(R.id.tablayout_concursos);
+        View root= inflater.inflate(R.layout.fragment_encuestas, container, false);
+        ViewPager vpager= root.findViewById(R.id.vpager_encuestas);
+        TabLayout tabLayout= root.findViewById(R.id.tablayout_encuestas);
 
         adapter= new EncuestasFragment.FragmentsAdapter(getChildFragmentManager());
         setupViewPager(vpager);

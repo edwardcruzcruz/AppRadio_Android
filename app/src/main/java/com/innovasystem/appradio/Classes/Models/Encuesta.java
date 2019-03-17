@@ -34,7 +34,7 @@ public class Encuesta implements Parcelable,Comparable<Encuesta>{
     }
 
     public String getFecha_inicio() {
-        return fecha_inicio;
+        return fecha_inicio.substring(0,9)+" "+fecha_inicio.substring(11,18);
     }
 
     public void setFecha_inicio(String fecha_inicio) {

@@ -134,12 +134,14 @@ public class ConcursoFinalizadosFragment extends Fragment {
             super.onPostExecute(aVoid);
             System.out.println("IMPRIMIENDO RESULTADO_______");
             if(encuestas == null){
+                SessionConfig.getSessionConfig(getContext()).AsignarTarea("vacio");
                 Toast.makeText(getContext(), "Ocurrio un error con el servidor, intente mas tarde", Toast.LENGTH_SHORT).show();
                 tv_mensaje.setVisibility(View.VISIBLE);
                 return;
             }
 
             if(encuestas.size() == 0){
+                SessionConfig.getSessionConfig(getContext()).AsignarTarea("vacio");
                 tv_mensaje.setVisibility(View.VISIBLE);
                 return;
             }
@@ -177,6 +179,8 @@ public class ConcursoFinalizadosFragment extends Fragment {
             ConcursosActivosAdapter segmentoAdapter=new ConcursosActivosAdapter(getContext(),encuestas_resultado,segmentos_resultado);
             rv_segmentos_concurso.setAdapter(segmentoAdapter);
             rv_segmentos_concurso.getAdapter().notifyDataSetChanged();
+            SessionConfig.getSessionConfig(getContext()).AsignarTarea("vacio");
+            //System.out.println("Aqui -----------------------"+SessionConfig.getSessionConfig(getContext()).getValue(SessionConfig.AsyncTask));
 
         }
     }

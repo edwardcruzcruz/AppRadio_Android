@@ -4,6 +4,7 @@ import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
 import android.content.IntentFilter;
+import android.media.AudioManager;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.design.widget.BottomNavigationView;
@@ -32,12 +33,21 @@ import com.innovasystem.appradio.R;
 import com.innovasystem.appradio.Services.RadioStreamService;
 import com.innovasystem.appradio.Utils.Utils;
 
+import java.util.Timer;
+import java.util.TimerTask;
+
 public class HomeActivity extends AppCompatActivity {
 
     private TextView mTextMessage;
     BottomNavigationView navigation;
     DrawerLayout nav_drawer;
     NavigationView nav_view;
+
+    //threadddd----init
+    private Timer timer;
+    public int counter=0;
+    private TimerTask timerTask;
+    //threadddd----fin
 
     boolean menuOpened=false;
     Intent intentService;
@@ -187,23 +197,44 @@ public class HomeActivity extends AppCompatActivity {
             Fragment contentFragmet;
             switch (item.getItemId()) {
                 case R.id.navigation_home:
-                    contentFragmet= new HomeFragment();
-                    HomeActivity.this.changeFragment(contentFragmet,R.id.frame_container,false);
+                    //SessionConfig.getSessionConfig(getApplicationContext()).AsignarTarea("vacio");
+                    if(SessionConfig.getSessionConfig(getApplicationContext()).getValue(SessionConfig.AsyncTask).equals("En_curso")){
+                        System.out.println("aunnn no esta listo-------------------------------XDDDDDDDDDDDDDDDDDDDDDDDDDDDDDD");
+                    }else{
+                        System.out.println(SessionConfig.getSessionConfig(getApplicationContext()).getValue(SessionConfig.AsyncTask));
+                        contentFragmet= new HomeFragment();
+                        HomeActivity.this.changeFragment(contentFragmet,R.id.frame_container,false);
+                    }
                     return true;
 
                 case R.id.navigation_concursos:
-                    contentFragmet= new ConcursosFragment();
-                    HomeActivity.this.changeFragment(contentFragmet,R.id.frame_container,false);
+                    if(SessionConfig.getSessionConfig(getApplicationContext()).getValue(SessionConfig.AsyncTask).equals("En_curso")){
+                        System.out.println("aunnn no esta listo-------------------------------XDDDDDDDDDDDDDDDDDDDDDDDDDDDDDD");
+                    }else{
+                        System.out.println("ya est listo--------------------------------------XDDDDDDDDDDDDDDDDDDDDDDDDDDDDDd");
+                        contentFragmet= new ConcursosFragment();
+                        HomeActivity.this.changeFragment(contentFragmet,R.id.frame_container,false);
+                    }
                     return true;
 
                 case R.id.navigation_emisoras:
-                    contentFragmet= new EmisorasFragment();
-                    HomeActivity.this.changeFragment(contentFragmet,R.id.frame_container,false);
+                    if(SessionConfig.getSessionConfig(getApplicationContext()).getValue(SessionConfig.AsyncTask).equals("En_curso")){
+                        System.out.println("aunnn no esta listo-------------------------------XDDDDDDDDDDDDDDDDDDDDDDDDDDDDDD");
+                    }else{
+                        System.out.println("ya est listo--------------------------------------XDDDDDDDDDDDDDDDDDDDDDDDDDDDDDd");
+                        contentFragmet= new EmisorasFragment();
+                        HomeActivity.this.changeFragment(contentFragmet,R.id.frame_container,false);
+                    }
                     return true;
 
                 case R.id.navigation_encuestas:
-                    contentFragmet= new EncuestasFragment();
-                    HomeActivity.this.changeFragment(contentFragmet,R.id.frame_container,false);
+                    if(SessionConfig.getSessionConfig(getApplicationContext()).getValue(SessionConfig.AsyncTask).equals("En_curso")){
+                        System.out.println("aunnn no esta listo-------------------------------XDDDDDDDDDDDDDDDDDDDDDDDDDDDDDD");
+                    }else{
+                        System.out.println("ya est listo--------------------------------------XDDDDDDDDDDDDDDDDDDDDDDDDDDDDDd");
+                        contentFragmet= new EncuestasFragment();
+                        HomeActivity.this.changeFragment(contentFragmet,R.id.frame_container,false);
+                    }
                     return true;
 
                 case R.id.navigation_menu:

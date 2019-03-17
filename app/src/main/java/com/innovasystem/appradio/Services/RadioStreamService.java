@@ -146,6 +146,7 @@ public class RadioStreamService extends Service implements AudioManager.OnAudioF
         if (requestAudioFocus() == false) {
             //Could not gain focus
             stopSelf();
+            System.out.println("Aqui esta la parada del servicio");
         }
 
         //unregisterReceiver(playerReceiver);
@@ -155,6 +156,8 @@ public class RadioStreamService extends Service implements AudioManager.OnAudioF
 
         if (player !=null && isPlaying()) {
             sendPlayerStatus("playing");
+        }else{
+            System.out.println("Aca no se tiene ya al reproductor reproduciendo en cuestion");
         }
 
         handleIncomingActions(intent);
@@ -850,39 +853,7 @@ public class RadioStreamService extends Service implements AudioManager.OnAudioF
         }
     }
 
-    public void startTimer() {
-        //set a new Timer
-        timer = new Timer();
 
-        //initialize the TimerTask's job
-        initializeTimerTask();
-
-        //schedule the timer, to wake up every 1 second
-        timer.schedule(timerTask, 1000, 1000); //
-    }
-
-    /**
-     * it sets the timer to print the counter every x seconds
-     */
-    public void initializeTimerTask() {
-        timerTask = new TimerTask() {
-            public void run() {
-                Log.i("in timer", "in timer ++++  "+ (counter++));
-                System.out.println("hola-------"+AudioManager.AUDIOFOCUS_GAIN);
-            }
-        };
-    }
-
-    /**
-     * not needed
-     */
-    public void stoptimertask() {
-        //stop the timer, if it's not already null
-        if (timer != null) {
-            timer.cancel();
-            timer = null;
-        }
-    }
 
 
 }

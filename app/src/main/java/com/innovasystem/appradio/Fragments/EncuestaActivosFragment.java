@@ -16,6 +16,7 @@ import com.innovasystem.appradio.Classes.Models.Emisora;
 import com.innovasystem.appradio.Classes.Models.Encuesta;
 import com.innovasystem.appradio.Classes.Models.Segmento;
 import com.innovasystem.appradio.Classes.RestServices;
+import com.innovasystem.appradio.Classes.SessionConfig;
 import com.innovasystem.appradio.R;
 import com.innovasystem.appradio.Utils.Utils;
 
@@ -33,7 +34,7 @@ public class EncuestaActivosFragment extends Fragment {
 
 
     public EncuestaActivosFragment() {
-
+        SessionConfig.getSessionConfig(getContext()).AsignarTarea("En_curso");
     }
 
     @Override

@@ -18,7 +18,7 @@
         app:layout_constraintStart_toStartOf="parent">
 
         <LinearLayout
-            android:layout_width="0dp"
+            android:layout_width="28dp"
             android:layout_height="61dp"
             android:layout_gravity="center_vertical"
             android:layout_weight="0.3"
@@ -93,8 +93,8 @@
 
         <ImageButton
             android:id="@+id/btn_ver_concurso"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
+            android:layout_width="3dp"
+            android:layout_height="31dp"
             android:layout_gravity="center"
             android:layout_weight="0.1"
             android:background="@android:color/transparent"

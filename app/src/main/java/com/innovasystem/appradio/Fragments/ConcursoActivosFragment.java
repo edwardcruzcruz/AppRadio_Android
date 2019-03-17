@@ -40,11 +40,8 @@ public class ConcursoActivosFragment extends Fragment {
     RecyclerView rv_segmentos_concurso;
     Emisora emisora;
     TextView tv_mensaje;
-
-
-
     public ConcursoActivosFragment() {
-
+        SessionConfig.getSessionConfig(getContext()).AsignarTarea("En_curso");
     }
 
     @Override
@@ -58,6 +55,7 @@ public class ConcursoActivosFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
+
         View root= inflater.inflate(R.layout.fragment_concursos_titulo, container, false);
         rv_segmentos_concurso= root.findViewById(R.id.rv_segmentos_concurso);
         tv_mensaje= root.findViewById(R.id.tv_mensaje_segmentos_concurso);
@@ -69,7 +67,7 @@ public class ConcursoActivosFragment extends Fragment {
         emisora= EmisoraContentFragment.emisora;
 
         new RestFetchConcursoActivoTask().execute();
-
+        //System.out.println("hey ------------------------------------------------------------------------------------------------------------"+nuevo.getStatus());
         return root;
 
 
@@ -122,8 +120,16 @@ public class ConcursoActivosFragment extends Fragment {
         List<List<Encuesta>> encuestas;
         List<Encuesta> encuestas_resultado;
         List<Segmento> segmentos_resultado;
+
+        @Override
+        protected void onPreExecute() {
+            super.onPreExecute();
+
+        }
+
         @Override
         protected Void doInBackground(Void... voids) {
+
             encuestas=new ArrayList<>();
             segmentos_resultado=new ArrayList<>();
             Segmentos=RestServices.consultarSegmentosToday(getActivity().getApplicationContext());
@@ -142,6 +148,7 @@ public class ConcursoActivosFragment extends Fragment {
         @Override
         protected void onPostExecute(Void aVoid){
             super.onPostExecute(aVoid);
+
             System.out.println("IMPRIMIENDO RESULTADO_______");
             if(encuestas == null){
                 Toast.makeText(getContext(), "Ocurrio un error con el servidor, intente mas tarde", Toast.LENGTH_SHORT).show();
@@ -188,7 +195,6 @@ public class ConcursoActivosFragment extends Fragment {
             ConcursosActivosAdapter segmentoAdapter=new ConcursosActivosAdapter(getContext(),encuestas_resultado,segmentos_resultado);
             rv_segmentos_concurso.setAdapter(segmentoAdapter);
             rv_segmentos_concurso.getAdapter().notifyDataSetChanged();
-
         }
     }
 }

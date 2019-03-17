@@ -14,37 +14,6 @@ import static android.content.Context.MODE_PRIVATE;
 import static com.innovasystem.appradio.Utils.Utils.encrypt;
 
 public class SessionConfig{
-    /*
-    public String userToken;
-    public String provincia="";
-    public String usuario;
-    private static SessionConfig sessionConfig;
-
-    private SessionConfig(Context c){
-        iniciarConfig(c);
-    }
-
-    @Override
-    public void iniciarConfig(Context context) {
-        SharedPreferences preferences = context.getSharedPreferences("account", MODE_PRIVATE);
-        String tokenEncrypted = preferences.getString(encrypt("token"), "default");
-        this.userToken= Utils.decrypt(tokenEncrypted);
-        this.usuario= preferences.getString("username","default");
-    }
-
-    @Override
-    public void actualizarConfig() {
-
-    }
-
-
-    public static SessionConfig getSessionConfig(Context c) {
-        if(sessionConfig == null){
-            sessionConfig= new SessionConfig(c);
-        }
-        return sessionConfig;
-    }*/
-    ///*
     public static SharedPreferences pref;
     public static SharedPreferences.Editor editor;
     public static Context _context;
@@ -58,7 +27,7 @@ public class SessionConfig{
     private static SessionConfig sessionConfig;
 
     public static final String provincia="provincia";
-    //public static final String usuario="null";
+    public static final String AsyncTask="vacio";
 
     public SessionConfig(Context context) {
         this._context = context;
@@ -78,6 +47,10 @@ public class SessionConfig{
 
     public void CrearProvincia(String Provincia){
         editor.putString(provincia, Provincia);
+        editor.commit();
+    }
+    public void AsignarTarea(String tarea){
+        editor.putString(AsyncTask, tarea);
         editor.commit();
     }
     public boolean checkLogin() {

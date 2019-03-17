@@ -41,7 +41,7 @@ public class ConcursosActivosAdapter extends RecyclerView.Adapter<ConcursosActiv
         Segmento seg= Segmentos.get(i);
 
         vholder.tv_Fecha_Inicio.setText(en.getFecha_inicio());
-        vholder.tv_Fecha_Fin.setText(en.getDia_fin()+"-"+en.getHora_fin());
+        vholder.tv_Fecha_Fin.setText(en.getDia_fin()+" "+en.getHora_fin());
         vholder.tv_Concurso.setText(en.getTitulo());
         vholder.tv_emisora_segmento.setText(seg.getEmisora().getNombre()+"-"+seg.getNombre());
     }
