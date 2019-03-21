@@ -26,20 +26,19 @@
     </style>
 
     <style name="AppTabLayout" parent="Widget.Design.TabLayout">
-        <item name="tabIndicatorColor">@color/tab_color_bg</item>
+        <item name="tabIndicatorColor">@color/color_text</item>
+        <item name="tabIndicatorHeight">1dp</item>
         <item name="tabPaddingStart">2dp</item>
         <item name="tabPaddingEnd">2dp</item>
         <!--item name="tabBackground">@drawable/underline_background</item-->
         <item name="tabTextAppearance">@style/AppTabTextAppearance</item>
-        <item name="tabSelectedTextColor">@color/seleccion_nav</item>
-        <item name="tabIndicatorHeight">5000dp</item>
+        <item name="tabSelectedTextColor">@color/color_text</item>
     </style>
 
     <!-- for text -->
     <style name="AppTabTextAppearance" parent="TextAppearance.Design.Tab">
-        <item name="android:textSize">16sp</item>
-        <item name="android:textColor">@color/text_color</item>
-        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:textColor">@color/color_text2</item>
         <item name="textAllCaps">false</item>
     </style>
 

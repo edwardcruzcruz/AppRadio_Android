@@ -20,6 +20,13 @@
     <color name="bottomNavColor">#1c1c1c</color>
     <color name="text_color">#ffffff</color>
     <color name="tab_color_bg">#5e5e5e</color>
+    <color name="background">#0f0f13</color>
+    <color name="color_text">#ffdc41</color>
+    <color name="color_text2">#606073</color>
+    <color name="color_casillas_boton">#2e2e39</color>
+    <color name="color_menu">#13131b</color>
+
+
 
 
     <color name="bgColor">#000000</color>

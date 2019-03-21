@@ -30,7 +30,7 @@ public class ConcursosActivosAdapter extends RecyclerView.Adapter<ConcursosActiv
     @NonNull
     @Override
     public ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int i) {
-        View v = LayoutInflater.from(parent.getContext()).inflate(R.layout.rv_concurso_item_activos, parent, false);
+        View v = LayoutInflater.from(parent.getContext()).inflate(R.layout.rv_concurso_items, parent, false);
         ConcursosActivosAdapter.ViewHolder vh = new ConcursosActivosAdapter.ViewHolder(v);
         return vh;
     }
@@ -39,11 +39,9 @@ public class ConcursosActivosAdapter extends RecyclerView.Adapter<ConcursosActiv
     public void onBindViewHolder(@NonNull ConcursosActivosAdapter.ViewHolder vholder, int i) {
         Encuesta en =encuestas_dataset.get(i);
         Segmento seg= Segmentos.get(i);
-
-        vholder.tv_Fecha_Inicio.setText(en.getFecha_inicio());
-        vholder.tv_Fecha_Fin.setText(en.getDia_fin()+" "+en.getHora_fin());
         vholder.tv_Concurso.setText(en.getTitulo());
-        vholder.tv_emisora_segmento.setText(seg.getEmisora().getNombre()+"-"+seg.getNombre());
+        vholder.radio.setText(seg.getEmisora().getNombre());
+        vholder.segmento.setText(seg.getNombre());
     }
 
     @Override
@@ -52,17 +50,15 @@ public class ConcursosActivosAdapter extends RecyclerView.Adapter<ConcursosActiv
     }
 
     public static class ViewHolder extends  RecyclerView.ViewHolder{
-        TextView tv_Fecha_Inicio,tv_Fecha_Fin,tv_Concurso,tv_emisora_segmento;
+        TextView segmento,radio,tv_Concurso;
         ImageButton btn_ver;
 
 
         public ViewHolder(@NonNull View itemView){
             super(itemView);
-            tv_Fecha_Inicio= itemView.findViewById(R.id.tv_ConcursoFecha_Inicio);
-            tv_Fecha_Fin= itemView.findViewById(R.id.tv_ConcursoFecha_fin);
+            segmento= itemView.findViewById(R.id.tv_Concursosegmento);
+            radio= itemView.findViewById(R.id.tv_ConcursoEmisora);
             tv_Concurso= itemView.findViewById(R.id.tv_Concursoitem_Concurso);
-            tv_emisora_segmento= itemView.findViewById(R.id.tv_ConcursoRadioSegmento);
-            btn_ver= itemView.findViewById(R.id.btn_ver_concurso);
 
         }
     }

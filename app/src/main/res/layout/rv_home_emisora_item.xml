@@ -20,7 +20,7 @@
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@drawable/corner_edge">
+            android:background="@null">
 
             <ImageView
                 android:id="@+id/img_hitem_segmento"
@@ -78,7 +78,7 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
                     android:layout_marginTop="12dp"
-                    android:background="@drawable/chat" />
+                    android:background="@drawable/chat_btn" />
 
                 <TextView
                     android:id="@+id/textView8"

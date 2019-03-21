@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/bgColor"
+    android:background="@color/background"
     android:padding="10dp"
     tools:context=".Activities.RegisterOneActivity">
 
@@ -53,6 +53,7 @@
                 android:ems="10"
                 android:hint="@string/hint_names_lastnames"
                 android:inputType="textPersonName"
+                android:textColorHint="@color/color_text2"
                 android:padding="3dp" />
 
             <TextView
@@ -75,6 +76,7 @@
                 android:ems="10"
                 android:hint="@string/hint_lastnames"
                 android:inputType="textPersonName"
+                android:textColorHint="@color/color_text2"
                 android:padding="3dp" />
 
             <TextView
@@ -97,6 +99,7 @@
                 android:ems="10"
                 android:hint="@string/hint_mail"
                 android:inputType="textPersonName"
+                android:textColorHint="@color/color_text2"
                 android:padding="3dp" />
 
         </LinearLayout>

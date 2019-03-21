@@ -39,29 +39,23 @@ public class EmisorasFragment extends Fragment{
 
     RecyclerView rv_emisoras;
     GridLayoutManager lmanager;
+    AsyncTask tarea;
     ProgressBar progressBar;
 
 
     public EmisorasFragment() {
         // Required empty public constructor
-        SessionConfig.getSessionConfig(getContext()).AsignarTarea("En_curso");
     }
 
     /**
      * Use this factory method to create a new instance of
      * this fragment using the provided parameters.
      *
-     * @param param1 Parameter 1.
-     * @param param2 Parameter 2.
      * @return A new instance of fragment EmisorasFragment.
      */
     // TODO: Rename and change types and number of parameters
-    public static EmisorasFragment newInstance(String param1, String param2) {
+    public static EmisorasFragment newInstance() {
         EmisorasFragment fragment = new EmisorasFragment();
-        Bundle args = new Bundle();
-        args.putString(ARG_PARAM1, param1);
-        args.putString(ARG_PARAM2, param2);
-        fragment.setArguments(args);
         return fragment;
     }
 
@@ -85,11 +79,15 @@ public class EmisorasFragment extends Fragment{
         rv_emisoras.setLayoutManager(lmanager);
         progressBar= root.findViewById(R.id.progressBar_emisoras);
 
-        new RestFetchEmisoraTask().execute();
+        tarea=new RestFetchEmisoraTask().execute();
 
         return root;
     }
-
+    @Override
+    public void onDetach() {
+        super.onDetach();
+        tarea.cancel(true);
+    }
 
     private class RestFetchEmisoraTask extends AsyncTask<Void,Void,List<Object>> {
 
@@ -131,7 +129,6 @@ public class EmisorasFragment extends Fragment{
         protected void onPostExecute(List<Object> listaEmisoras){
             progressBar.setVisibility(View.GONE);
             if(listaEmisoras == null){
-                SessionConfig.getSessionConfig(getContext()).AsignarTarea("vacio");
                 Toast.makeText(getContext(), "Ocurrio un error con el servidor, intente mas tarde", Toast.LENGTH_SHORT).show();
                 return;
             }
@@ -157,7 +154,6 @@ public class EmisorasFragment extends Fragment{
                     return adapter.isTitle(adapter.emisoras_dataset.get(i)) ? lmanager.getSpanCount() : 1;
                 }
             });
-            SessionConfig.getSessionConfig(getContext()).AsignarTarea("vacio");
 
         }
     }

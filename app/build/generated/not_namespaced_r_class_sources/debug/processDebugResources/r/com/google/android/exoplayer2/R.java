@@ -32,26 +32,26 @@ public final class R {
         public static final int hide_during_ads = 0x7f04011e;
         public static final int hide_on_touch = 0x7f04011f;
         public static final int keep_content_on_player_reset = 0x7f04013e;
-        public static final int played_ad_marker_color = 0x7f0401b0;
-        public static final int played_color = 0x7f0401b1;
-        public static final int player_layout_id = 0x7f0401b2;
-        public static final int repeat_toggle_modes = 0x7f0401c0;
-        public static final int resize_mode = 0x7f0401c1;
-        public static final int rewind_increment = 0x7f0401c3;
-        public static final int scrubber_color = 0x7f0401c8;
-        public static final int scrubber_disabled_size = 0x7f0401c9;
-        public static final int scrubber_dragged_size = 0x7f0401ca;
-        public static final int scrubber_drawable = 0x7f0401cb;
-        public static final int scrubber_enabled_size = 0x7f0401cc;
-        public static final int show_buffering = 0x7f0401d8;
-        public static final int show_shuffle_button = 0x7f0401d9;
-        public static final int show_timeout = 0x7f0401da;
-        public static final int shutter_background_color = 0x7f0401db;
-        public static final int surface_type = 0x7f0401f5;
-        public static final int touch_target_height = 0x7f040249;
-        public static final int unplayed_color = 0x7f04024e;
-        public static final int use_artwork = 0x7f040250;
-        public static final int use_controller = 0x7f040251;
+        public static final int played_ad_marker_color = 0x7f0401ba;
+        public static final int played_color = 0x7f0401bb;
+        public static final int player_layout_id = 0x7f0401bc;
+        public static final int repeat_toggle_modes = 0x7f0401ca;
+        public static final int resize_mode = 0x7f0401cb;
+        public static final int rewind_increment = 0x7f0401cd;
+        public static final int scrubber_color = 0x7f0401d2;
+        public static final int scrubber_disabled_size = 0x7f0401d3;
+        public static final int scrubber_dragged_size = 0x7f0401d4;
+        public static final int scrubber_drawable = 0x7f0401d5;
+        public static final int scrubber_enabled_size = 0x7f0401d6;
+        public static final int show_buffering = 0x7f0401e2;
+        public static final int show_shuffle_button = 0x7f0401e3;
+        public static final int show_timeout = 0x7f0401e4;
+        public static final int shutter_background_color = 0x7f0401e5;
+        public static final int surface_type = 0x7f0401ff;
+        public static final int touch_target_height = 0x7f040253;
+        public static final int unplayed_color = 0x7f040258;
+        public static final int use_artwork = 0x7f04025a;
+        public static final int use_controller = 0x7f04025b;
     }
     public static final class bool {
         private bool() {}
@@ -61,15 +61,15 @@ public final class R {
     public static final class color {
         private color() {}
 
-        public static final int exo_edit_mode_background_color = 0x7f06005e;
-        public static final int exo_error_message_background_color = 0x7f06005f;
-        public static final int notification_action_color_filter = 0x7f06008d;
-        public static final int notification_icon_bg_color = 0x7f06008e;
-        public static final int notification_material_background_media_default_color = 0x7f06008f;
-        public static final int primary_text_default_material_dark = 0x7f060094;
-        public static final int ripple_material_light = 0x7f060099;
-        public static final int secondary_text_default_material_dark = 0x7f06009a;
-        public static final int secondary_text_default_material_light = 0x7f06009b;
+        public static final int exo_edit_mode_background_color = 0x7f060063;
+        public static final int exo_error_message_background_color = 0x7f060064;
+        public static final int notification_action_color_filter = 0x7f060092;
+        public static final int notification_icon_bg_color = 0x7f060093;
+        public static final int notification_material_background_media_default_color = 0x7f060094;
+        public static final int primary_text_default_material_dark = 0x7f060099;
+        public static final int ripple_material_light = 0x7f06009e;
+        public static final int secondary_text_default_material_dark = 0x7f06009f;
+        public static final int secondary_text_default_material_light = 0x7f0600a0;
     }
     public static final class dimen {
         private dimen() {}
@@ -100,46 +100,46 @@ public final class R {
     public static final class drawable {
         private drawable() {}
 
-        public static final int exo_controls_fastforward = 0x7f080096;
-        public static final int exo_controls_fullscreen_enter = 0x7f080097;
-        public static final int exo_controls_fullscreen_exit = 0x7f080098;
-        public static final int exo_controls_next = 0x7f080099;
-        public static final int exo_controls_pause = 0x7f08009a;
-        public static final int exo_controls_play = 0x7f08009b;
-        public static final int exo_controls_previous = 0x7f08009c;
-        public static final int exo_controls_repeat_all = 0x7f08009d;
-        public static final int exo_controls_repeat_off = 0x7f08009e;
-        public static final int exo_controls_repeat_one = 0x7f08009f;
-        public static final int exo_controls_rewind = 0x7f0800a0;
-        public static final int exo_controls_shuffle = 0x7f0800a1;
-        public static final int exo_edit_mode_logo = 0x7f0800a2;
-        public static final int exo_icon_fastforward = 0x7f0800a3;
-        public static final int exo_icon_next = 0x7f0800a4;
-        public static final int exo_icon_pause = 0x7f0800a5;
-        public static final int exo_icon_play = 0x7f0800a6;
-        public static final int exo_icon_previous = 0x7f0800a7;
-        public static final int exo_icon_rewind = 0x7f0800a8;
-        public static final int exo_icon_stop = 0x7f0800a9;
-        public static final int exo_notification_fastforward = 0x7f0800aa;
-        public static final int exo_notification_next = 0x7f0800ab;
-        public static final int exo_notification_pause = 0x7f0800ac;
-        public static final int exo_notification_play = 0x7f0800ad;
-        public static final int exo_notification_previous = 0x7f0800ae;
-        public static final int exo_notification_rewind = 0x7f0800af;
-        public static final int exo_notification_small_icon = 0x7f0800b0;
-        public static final int exo_notification_stop = 0x7f0800b1;
-        public static final int notification_action_background = 0x7f0800eb;
-        public static final int notification_bg = 0x7f0800ec;
-        public static final int notification_bg_low = 0x7f0800ed;
-        public static final int notification_bg_low_normal = 0x7f0800ee;
-        public static final int notification_bg_low_pressed = 0x7f0800ef;
-        public static final int notification_bg_normal = 0x7f0800f0;
-        public static final int notification_bg_normal_pressed = 0x7f0800f1;
-        public static final int notification_icon_background = 0x7f0800f2;
-        public static final int notification_template_icon_bg = 0x7f0800f3;
-        public static final int notification_template_icon_low_bg = 0x7f0800f4;
-        public static final int notification_tile_bg = 0x7f0800f5;
-        public static final int notify_panel_notification_icon_bg = 0x7f0800f6;
+        public static final int exo_controls_fastforward = 0x7f08009b;
+        public static final int exo_controls_fullscreen_enter = 0x7f08009c;
+        public static final int exo_controls_fullscreen_exit = 0x7f08009d;
+        public static final int exo_controls_next = 0x7f08009e;
+        public static final int exo_controls_pause = 0x7f08009f;
+        public static final int exo_controls_play = 0x7f0800a0;
+        public static final int exo_controls_previous = 0x7f0800a1;
+        public static final int exo_controls_repeat_all = 0x7f0800a2;
+        public static final int exo_controls_repeat_off = 0x7f0800a3;
+        public static final int exo_controls_repeat_one = 0x7f0800a4;
+        public static final int exo_controls_rewind = 0x7f0800a5;
+        public static final int exo_controls_shuffle = 0x7f0800a6;
+        public static final int exo_edit_mode_logo = 0x7f0800a7;
+        public static final int exo_icon_fastforward = 0x7f0800a8;
+        public static final int exo_icon_next = 0x7f0800a9;
+        public static final int exo_icon_pause = 0x7f0800aa;
+        public static final int exo_icon_play = 0x7f0800ab;
+        public static final int exo_icon_previous = 0x7f0800ac;
+        public static final int exo_icon_rewind = 0x7f0800ad;
+        public static final int exo_icon_stop = 0x7f0800ae;
+        public static final int exo_notification_fastforward = 0x7f0800af;
+        public static final int exo_notification_next = 0x7f0800b0;
+        public static final int exo_notification_pause = 0x7f0800b1;
+        public static final int exo_notification_play = 0x7f0800b2;
+        public static final int exo_notification_previous = 0x7f0800b3;
+        public static final int exo_notification_rewind = 0x7f0800b4;
+        public static final int exo_notification_small_icon = 0x7f0800b5;
+        public static final int exo_notification_stop = 0x7f0800b6;
+        public static final int notification_action_background = 0x7f0800f3;
+        public static final int notification_bg = 0x7f0800f4;
+        public static final int notification_bg_low = 0x7f0800f5;
+        public static final int notification_bg_low_normal = 0x7f0800f6;
+        public static final int notification_bg_low_pressed = 0x7f0800f7;
+        public static final int notification_bg_normal = 0x7f0800f8;
+        public static final int notification_bg_normal_pressed = 0x7f0800f9;
+        public static final int notification_icon_background = 0x7f0800fa;
+        public static final int notification_template_icon_bg = 0x7f0800fb;
+        public static final int notification_template_icon_low_bg = 0x7f0800fc;
+        public static final int notification_tile_bg = 0x7f0800fd;
+        public static final int notify_panel_notification_icon_bg = 0x7f0800fe;
     }
     public static final class id {
         private id() {}
@@ -195,19 +195,19 @@ public final class R {
         public static final int notification_background = 0x7f0a00ef;
         public static final int notification_main_column = 0x7f0a00f0;
         public static final int notification_main_column_container = 0x7f0a00f1;
-        public static final int right_icon = 0x7f0a010c;
-        public static final int right_side = 0x7f0a010d;
-        public static final int spherical_view = 0x7f0a0136;
-        public static final int status_bar_latest_event_content = 0x7f0a0142;
-        public static final int surface_view = 0x7f0a0146;
-        public static final int tag_transition_group = 0x7f0a014c;
-        public static final int text = 0x7f0a014f;
-        public static final int text2 = 0x7f0a0150;
-        public static final int texture_view = 0x7f0a017a;
-        public static final int time = 0x7f0a017f;
-        public static final int title = 0x7f0a0180;
-        public static final int when_playing = 0x7f0a01d2;
-        public static final int zoom = 0x7f0a01d6;
+        public static final int right_icon = 0x7f0a010d;
+        public static final int right_side = 0x7f0a010e;
+        public static final int spherical_view = 0x7f0a0137;
+        public static final int status_bar_latest_event_content = 0x7f0a0143;
+        public static final int surface_view = 0x7f0a0147;
+        public static final int tag_transition_group = 0x7f0a014d;
+        public static final int text = 0x7f0a0150;
+        public static final int text2 = 0x7f0a0151;
+        public static final int texture_view = 0x7f0a017b;
+        public static final int time = 0x7f0a0180;
+        public static final int title = 0x7f0a0181;
+        public static final int when_playing = 0x7f0a01d5;
+        public static final int zoom = 0x7f0a01d9;
     }
     public static final class integer {
         private integer() {}
@@ -224,21 +224,21 @@ public final class R {
         public static final int exo_player_view = 0x7f0d0038;
         public static final int exo_simple_player_view = 0x7f0d0039;
         public static final int exo_track_selection_dialog = 0x7f0d003a;
-        public static final int notification_action = 0x7f0d0057;
-        public static final int notification_action_tombstone = 0x7f0d0058;
-        public static final int notification_media_action = 0x7f0d0059;
-        public static final int notification_media_cancel_action = 0x7f0d005a;
-        public static final int notification_template_big_media = 0x7f0d005b;
-        public static final int notification_template_big_media_custom = 0x7f0d005c;
-        public static final int notification_template_big_media_narrow = 0x7f0d005d;
-        public static final int notification_template_big_media_narrow_custom = 0x7f0d005e;
-        public static final int notification_template_custom_big = 0x7f0d005f;
-        public static final int notification_template_icon_group = 0x7f0d0060;
-        public static final int notification_template_lines_media = 0x7f0d0061;
-        public static final int notification_template_media = 0x7f0d0062;
-        public static final int notification_template_media_custom = 0x7f0d0063;
-        public static final int notification_template_part_chronometer = 0x7f0d0064;
-        public static final int notification_template_part_time = 0x7f0d0065;
+        public static final int notification_action = 0x7f0d0058;
+        public static final int notification_action_tombstone = 0x7f0d0059;
+        public static final int notification_media_action = 0x7f0d005a;
+        public static final int notification_media_cancel_action = 0x7f0d005b;
+        public static final int notification_template_big_media = 0x7f0d005c;
+        public static final int notification_template_big_media_custom = 0x7f0d005d;
+        public static final int notification_template_big_media_narrow = 0x7f0d005e;
+        public static final int notification_template_big_media_narrow_custom = 0x7f0d005f;
+        public static final int notification_template_custom_big = 0x7f0d0060;
+        public static final int notification_template_icon_group = 0x7f0d0061;
+        public static final int notification_template_lines_media = 0x7f0d0062;
+        public static final int notification_template_media = 0x7f0d0063;
+        public static final int notification_template_media_custom = 0x7f0d0064;
+        public static final int notification_template_part_chronometer = 0x7f0d0065;
+        public static final int notification_template_part_time = 0x7f0d0066;
     }
     public static final class string {
         private string() {}
@@ -304,9 +304,9 @@ public final class R {
     public static final class styleable {
         private styleable() {}
 
-        public static final int[] AspectRatioFrameLayout = { 0x7f0401c1 };
+        public static final int[] AspectRatioFrameLayout = { 0x7f0401cb };
         public static final int AspectRatioFrameLayout_resize_mode = 0;
-        public static final int[] DefaultTimeBar = { 0x7f040025, 0x7f040026, 0x7f04003f, 0x7f04005c, 0x7f0401b0, 0x7f0401b1, 0x7f0401c8, 0x7f0401c9, 0x7f0401ca, 0x7f0401cb, 0x7f0401cc, 0x7f040249, 0x7f04024e };
+        public static final int[] DefaultTimeBar = { 0x7f040025, 0x7f040026, 0x7f04003f, 0x7f04005c, 0x7f0401ba, 0x7f0401bb, 0x7f0401d2, 0x7f0401d3, 0x7f0401d4, 0x7f0401d5, 0x7f0401d6, 0x7f040253, 0x7f040258 };
         public static final int DefaultTimeBar_ad_marker_color = 0;
         public static final int DefaultTimeBar_ad_marker_width = 1;
         public static final int DefaultTimeBar_bar_height = 2;
@@ -327,7 +327,7 @@ public final class R {
         public static final int FontFamily_fontProviderFetchTimeout = 3;
         public static final int FontFamily_fontProviderPackage = 4;
         public static final int FontFamily_fontProviderQuery = 5;
-        public static final int[] FontFamilyFont = { 0x1010532, 0x1010533, 0x101053f, 0x101056f, 0x1010570, 0x7f040109, 0x7f040111, 0x7f040112, 0x7f040113, 0x7f04024d };
+        public static final int[] FontFamilyFont = { 0x1010532, 0x1010533, 0x101053f, 0x101056f, 0x1010570, 0x7f040109, 0x7f040111, 0x7f040112, 0x7f040113, 0x7f040257 };
         public static final int FontFamilyFont_android_font = 0;
         public static final int FontFamilyFont_android_fontWeight = 1;
         public static final int FontFamilyFont_android_fontStyle = 2;
@@ -338,14 +338,14 @@ public final class R {
         public static final int FontFamilyFont_fontVariationSettings = 7;
         public static final int FontFamilyFont_fontWeight = 8;
         public static final int FontFamilyFont_ttcIndex = 9;
-        public static final int[] PlayerControlView = { 0x7f0400d3, 0x7f040107, 0x7f0401c0, 0x7f0401c3, 0x7f0401d9, 0x7f0401da };
+        public static final int[] PlayerControlView = { 0x7f0400d3, 0x7f040107, 0x7f0401ca, 0x7f0401cd, 0x7f0401e3, 0x7f0401e4 };
         public static final int PlayerControlView_controller_layout_id = 0;
         public static final int PlayerControlView_fastforward_increment = 1;
         public static final int PlayerControlView_repeat_toggle_modes = 2;
         public static final int PlayerControlView_rewind_increment = 3;
         public static final int PlayerControlView_show_shuffle_button = 4;
         public static final int PlayerControlView_show_timeout = 5;
-        public static final int[] PlayerView = { 0x7f040038, 0x7f0400d3, 0x7f0400dc, 0x7f040107, 0x7f04011e, 0x7f04011f, 0x7f04013e, 0x7f0401b2, 0x7f0401c0, 0x7f0401c1, 0x7f0401c3, 0x7f0401d8, 0x7f0401d9, 0x7f0401da, 0x7f0401db, 0x7f0401f5, 0x7f040250, 0x7f040251 };
+        public static final int[] PlayerView = { 0x7f040038, 0x7f0400d3, 0x7f0400dc, 0x7f040107, 0x7f04011e, 0x7f04011f, 0x7f04013e, 0x7f0401bc, 0x7f0401ca, 0x7f0401cb, 0x7f0401cd, 0x7f0401e2, 0x7f0401e3, 0x7f0401e4, 0x7f0401e5, 0x7f0401ff, 0x7f04025a, 0x7f04025b };
         public static final int PlayerView_auto_show = 0;
         public static final int PlayerView_controller_layout_id = 1;
         public static final int PlayerView_default_artwork = 2;

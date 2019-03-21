@@ -4,8 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/appColorTheme"
-    android:backgroundTint="@color/appColorTheme"
+    android:background="@color/background"
+    android:backgroundTint="@color/background"
     tools:context=".Fragments.FavoritosFragment">
 
     <!-- TODO: Update blank fragment layout -->
@@ -24,7 +24,7 @@
             android:fontFamily="@font/app_font"
             android:text="FAVORITOS"
             android:textAlignment="center"
-            android:textColor="@color/text_color"
+            android:textColor="@color/color_text"
             android:textSize="24sp"
             android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="parent"

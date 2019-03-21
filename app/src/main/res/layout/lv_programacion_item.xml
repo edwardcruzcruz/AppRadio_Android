@@ -9,7 +9,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="15dp"
-        android:background="@color/appColorTheme"
+        android:background="@drawable/line_divider"
         android:orientation="horizontal">
 
         <LinearLayout

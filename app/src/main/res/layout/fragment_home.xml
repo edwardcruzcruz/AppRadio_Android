@@ -17,16 +17,16 @@
         <android.support.constraint.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@android:color/background_dark">
+            android:background="@drawable/background_app2">
 
             <ProgressBar
                 android:id="@+id/progressBar_emisoras"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="8dp"
-                android:layout_marginEnd="8dp"
                 android:layout_marginStart="8dp"
                 android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="8dp"
                 android:elevation="5dp"
                 android:theme="@style/CircularProgress"
                 android:visibility="gone"
@@ -50,8 +50,8 @@
                 android:id="@+id/tv_mensaje_home"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginEnd="8dp"
                 android:layout_marginTop="40dp"
+                android:layout_marginEnd="8dp"
                 android:text="No hay informacion para mostrar"
                 android:textColor="@color/text_color"
                 android:textSize="18sp"
@@ -92,10 +92,10 @@
                 android:id="@+id/iv_izq"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="8dp"
-                android:layout_marginEnd="130dp"
                 android:layout_marginStart="8dp"
                 android:layout_marginTop="8dp"
+                android:layout_marginEnd="130dp"
+                android:layout_marginBottom="8dp"
                 android:elevation="10dp"
                 android:src="@drawable/izquierda"
                 app:layout_constraintBottom_toTopOf="@+id/rv_home"
@@ -107,10 +107,10 @@
                 android:id="@+id/iv_der"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="8dp"
-                android:layout_marginEnd="8dp"
                 android:layout_marginStart="130dp"
                 android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="8dp"
                 android:elevation="10dp"
                 android:src="@drawable/derecha"
                 app:layout_constraintBottom_toTopOf="@+id/rv_home"
@@ -122,43 +122,44 @@
                 android:id="@+id/rv_home"
                 android:layout_width="match_parent"
                 android:layout_height="270dp"
+                android:background="@drawable/background_app"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/ciudad_picker" />
+                app:layout_constraintTop_toBottomOf="@+id/ciudad_picker"/>
 
             <ImageButton
                 android:id="@+id/btn_apagar"
                 android:layout_width="50dp"
                 android:layout_height="27dp"
-                android:layout_marginEnd="80dp"
+                android:layout_marginEnd="76dp"
                 android:adjustViewBounds="true"
-                android:background="@drawable/round_button_left"
+                android:background="@null"
                 android:cropToPadding="true"
                 android:padding="7dp"
-                android:paddingEnd="20dp"
                 android:paddingStart="12dp"
+                android:paddingEnd="20dp"
                 android:scaleType="fitXY"
                 android:src="@drawable/apagarmdpi"
-                android:tint="@android:color/background_light"
+                android:tint="@color/color_text2"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/rv_home" />
 
             <ImageButton
                 android:id="@+id/btn_mute"
-                android:layout_width="50dp"
+                android:layout_width="47dp"
                 android:layout_height="27dp"
                 android:layout_marginStart="5dp"
                 android:adjustViewBounds="false"
-                android:background="@drawable/round_button_right"
+                android:background="@null"
                 android:cropToPadding="true"
                 android:padding="7dp"
-                android:paddingEnd="10dp"
                 android:paddingStart="15dp"
+                android:paddingEnd="10dp"
                 android:scaleType="fitXY"
                 android:src="@drawable/silenciar"
-                android:tint="@android:color/background_light"
+                android:tint="@color/color_text2"
                 app:layout_constraintStart_toEndOf="@+id/btn_apagar"
-                app:layout_constraintTop_toBottomOf="@+id/rv_home" />
+                app:layout_constraintTop_toBottomOf="@+id/rv_home"/>
 
             <LinearLayout
                 android:id="@+id/linearLayout"
@@ -178,7 +179,7 @@
                     android:layout_gravity="center_vertical"
                     android:layout_marginStart="10dp"
                     android:layout_weight="1"
-                    android:background="@color/text_color" />
+                    android:background="@null" />
 
                 <TextView
                     android:id="@+id/textView15"
@@ -188,7 +189,7 @@
                     android:fontFamily="@font/app_font"
                     android:text="PROGRAMACIÓN"
                     android:textAlignment="center"
-                    android:textColor="@android:color/background_light"
+                    android:textColor="@color/color_text"
                     android:textSize="14sp" />
 
                 <View
@@ -198,7 +199,7 @@
                     android:layout_gravity="center_vertical"
                     android:layout_marginEnd="10dp"
                     android:layout_weight="1"
-                    android:background="@color/text_color" />
+                    android:background="@null" />
 
             </LinearLayout>
 
@@ -207,8 +208,8 @@
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_marginLeft="10dp"
-                android:layout_marginRight="10dp"
                 android:layout_marginTop="12dp"
+                android:layout_marginRight="10dp"
                 android:layout_weight="1"
                 android:orientation="horizontal"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -222,7 +223,7 @@
                     android:layout_weight="1"
                     android:fontFamily="@font/app_font"
                     android:text="HORARIO"
-                    android:textColor="@color/textoGris"
+                    android:textColor="@color/color_text2"
                     android:textSize="11sp" />
 
                 <TextView
@@ -232,7 +233,7 @@
                     android:layout_weight="1"
                     android:fontFamily="@font/app_font"
                     android:text="PROGRAMA"
-                    android:textColor="@color/textoGris"
+                    android:textColor="@color/color_text2"
                     android:textSize="11sp" />
 
                 <TextView
@@ -243,7 +244,7 @@
                     android:fontFamily="@font/app_font"
                     android:text="EMISORA"
                     android:textAlignment="textStart"
-                    android:textColor="@color/textoGris"
+                    android:textColor="@color/color_text2"
                     android:textSize="11sp" />
 
             </LinearLayout>
@@ -252,10 +253,10 @@
                 android:id="@+id/listv_programas"
                 android:layout_width="match_parent"
                 android:layout_height="200dp"
-                android:layout_marginBottom="8dp"
-                android:layout_marginEnd="10dp"
                 android:layout_marginStart="10dp"
                 android:layout_marginTop="12dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="8dp"
                 android:layout_weight="1"
                 android:nestedScrollingEnabled="true"
                 app:layout_constraintBottom_toBottomOf="parent"

@@ -11,8 +11,8 @@
         android:id="@+id/imageView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="30dp"
-        android:layout_marginStart="30dp"
+        android:layout_marginStart="55dp"
+        android:layout_marginEnd="55dp"
         android:elevation="10dp"
         android:scaleType="fitCenter"
         app:srcCompat="@drawable/logo_caravana_login" />

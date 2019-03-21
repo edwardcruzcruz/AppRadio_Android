@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
+
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/appColorTheme"
+    android:background="@color/background"
     tools:context=".Fragments.SegmentosFragment">
 
     <LinearLayout
@@ -18,26 +19,6 @@
             android:layout_height="wrap_content"
             android:orientation="horizontal">
 
-            <TextView
-                android:id="@+id/textView19"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="0.4"
-                android:text="FECHA"
-                android:textAlignment="center"
-                android:textColor="@color/text_color"
-                android:textSize="18sp" />
-
-            <TextView
-                android:id="@+id/textView20"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="0.6"
-                android:text="CONCURSO"
-                android:textAlignment="center"
-                android:textColor="@color/text_color"
-                android:textSize="18sp" />
-
         </LinearLayout>
 
 
@@ -45,10 +26,23 @@
             android:id="@+id/rv_segmentos_concurso"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_marginTop="8dp"></android.support.v7.widget.RecyclerView>
+            android:layout_marginTop="8dp">
+
+        </android.support.v7.widget.RecyclerView>
 
     </LinearLayout>
 
+    <ProgressBar
+        android:id="@+id/progressBar_concurso"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:theme="@style/CircularProgress"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
     <TextView
         android:id="@+id/tv_mensaje_segmentos_concurso"
         android:layout_width="wrap_content"

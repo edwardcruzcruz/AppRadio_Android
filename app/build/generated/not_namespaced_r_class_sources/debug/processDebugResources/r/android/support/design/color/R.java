@@ -37,16 +37,16 @@ public final class R {
         public static final int colorSecondaryDark = 0x7f0400b2;
         public static final int colorSecondaryLight = 0x7f0400b3;
         public static final int floatingActionButtonStyle = 0x7f040108;
-        public static final int materialButtonStyle = 0x7f040195;
-        public static final int materialSwitchStyle = 0x7f040197;
-        public static final int rippleColor = 0x7f0401c4;
-        public static final int scrimBackground = 0x7f0401c6;
+        public static final int materialButtonStyle = 0x7f04019f;
+        public static final int materialSwitchStyle = 0x7f0401a1;
+        public static final int rippleColor = 0x7f0401ce;
+        public static final int scrimBackground = 0x7f0401d0;
     }
     public static final class color {
         private color() {}
 
-        public static final int design_default_color_primary = 0x7f06004c;
-        public static final int design_default_color_primary_dark = 0x7f06004d;
-        public static final int mtrl_scrim_color = 0x7f060082;
+        public static final int design_default_color_primary = 0x7f060051;
+        public static final int design_default_color_primary_dark = 0x7f060052;
+        public static final int mtrl_scrim_color = 0x7f060087;
     }
 }

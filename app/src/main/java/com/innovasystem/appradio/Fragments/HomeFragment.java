@@ -66,6 +66,7 @@ public class HomeFragment extends Fragment {
     private String streamingActual;
     public static boolean radion_on=true;
     public static boolean muted= false;
+    static AsyncTask tarea1,tarea2,tarea3,tarea4,tarea5,tarea6,tarea7;
     String[] ciudades;
     String provinciaActual="";
     Snackbar snackMessage;
@@ -81,8 +82,9 @@ public class HomeFragment extends Fragment {
 
     public HomeFragment() {
         // Required empty public constructor
-        SessionConfig.getSessionConfig(getContext()).AsignarTarea("En_curso");
+
     }
+
 
     /**
      * Use this factory method to create a new instance of
@@ -93,8 +95,6 @@ public class HomeFragment extends Fragment {
     // TODO: Rename and change types and number of parameters
     public static HomeFragment newInstance() {
         HomeFragment fragment = new HomeFragment();
-        Bundle args = new Bundle();
-        fragment.setArguments(args);
         return fragment;
     }
 
@@ -124,17 +124,21 @@ public class HomeFragment extends Fragment {
         tv_mensaje_emisoras_envivo.setVisibility(View.INVISIBLE);
         tv_mensaje_programacion.setVisibility(View.INVISIBLE);
 
+        //inicializando tarea asincronica
         //Inicializacion de la cinta de ciudades
         consultaEmisora(null);
+        //tarea3=new Consular_emisora().execute(null);
         //Extraccion de datos de emisoras y programacion
-        new RestFetchEmisoraHomeTask().execute();
-        new RestFetchProgramacionTask().execute();
+        tarea1=new RestFetchEmisoraHomeTask().execute();
+        tarea2=new RestFetchProgramacionTask().execute();
+
         /*List<Emisora> emisoras= RestServices.consultarEmisoras(getContext(),null);
         ArrayList<String> ciudadesEmisoras= new ArrayList<String>();
         for(Emisora e: emisoras){
             if(!ciudadesEmisoras.contains(e.getProvincia().toUpperCase()))
                 ciudadesEmisoras.add(e.getProvincia().toUpperCase());
         }
+
         ciudades= ciudadesEmisoras.toArray(new String[0]);//getResources().getStringArray(R.array.ciudades);
         System.out.println(ciudades);
         SessionConfig.getSessionConfig(getContext()).CrearProvincia(ciudades[0]);//tomar alguna provincia
@@ -221,8 +225,13 @@ public class HomeFragment extends Fragment {
         return root;
     }
 
-
-
+    @Override
+    public void onDetach() {
+        super.onDetach();
+        tarea1.cancel(true);
+        tarea2.cancel(true);
+        //tarea3.cancel(true);
+    }
     /*----Metodos Utilitarios-----*/
 
     /**
@@ -274,8 +283,8 @@ public class HomeFragment extends Fragment {
                         //editor.putString("provincia",ciudades[index]);
                         //editor.apply();
                         //editor.commit();
-                        new RestFetchEmisoraHomeTask().execute();
-                        new RestFetchProgramacionTask().execute();
+                        tarea4=new RestFetchEmisoraHomeTask().execute();
+                        tarea5=new RestFetchProgramacionTask().execute();
                     }
                 });
                 String provincia=SessionConfig.getSessionConfig(getContext()).getValue(SessionConfig.provincia);
@@ -356,7 +365,7 @@ public class HomeFragment extends Fragment {
                 if(Utils.isNetworkAvailable(getContext())) {
                     btn_apagar.setBackground(getContext().getDrawable(R.drawable.round_button_enabled_left));
                     radion_on = true;
-                    new StartStreamingTask().execute();
+                    tarea6=new StartStreamingTask().execute();
                     if(muted){
                         btn_silenciar.setBackground(getContext().getDrawable(R.drawable.round_button_right));
                         muted= false;
@@ -413,6 +422,106 @@ public class HomeFragment extends Fragment {
 
     /*---------- Tasks -------------*/
 
+    private class Consular_emisora extends AsyncTask<String,Void,List<Emisora>> {
+        @Override
+        protected List<Emisora> doInBackground(String... strings) {
+            String provincia=strings[0];
+            List<Emisora> listaEmisoras=RestServices.consultarEmisoras(getContext(),provincia);
+            return listaEmisoras;
+        }
+
+        @Override
+        protected void onPostExecute(List<Emisora> emisoras) {
+            super.onPostExecute(emisoras);
+            //List<Emisora> emisoras= RestServices.consultarEmisoras(getContext(),null);
+            ArrayList<String> ciudadesEmisoras= new ArrayList<String>();
+            for(Emisora e: emisoras){
+                if(!ciudadesEmisoras.contains(e.getProvincia().toUpperCase()))
+                    ciudadesEmisoras.add(e.getProvincia().toUpperCase());
+            }
+            ciudades= ciudadesEmisoras.toArray(new String[0]);//getResources().getStringArray(R.array.ciudades);
+            System.out.println(ciudades);
+            SessionConfig.getSessionConfig(getContext()).CrearProvincia(ciudades[0]);//tomar alguna provincia
+            ciudad_picker.setValues(ciudades);
+            ciudad_picker.setOnItemSelectedListener(new HorizontalPicker.OnItemSelected(){
+                @Override
+                public void onItemSelected(int index) {
+                    Toast.makeText(getContext(), ciudad_picker.getValues()[index], Toast.LENGTH_SHORT).show();
+                    SessionConfig.getSessionConfig(getContext()).CrearProvincia(ciudades[index]);
+                    System.out.println("Provincia"+ciudades[index]);
+
+                    //SessionConfig.getSessionConfig(getContext()).provincia= ciudades[index];
+                    //SharedPreferences preferences= getContext().getSharedPreferences("session", MODE_PRIVATE);
+                    //SharedPreferences.Editor editor = preferences.edit();
+                    //editor.putString("provincia",ciudades[index]);
+                    //editor.apply();
+                    //editor.commit();
+                    tarea4=new RestFetchEmisoraHomeTask().execute();
+                    tarea5=new RestFetchProgramacionTask().execute();
+                }
+            });
+            String provincia=SessionConfig.getSessionConfig(getContext()).getValue(SessionConfig.provincia);
+            //System.out.println("hey aca puede ser -----"+provincia+"--------\n");
+            int indiceProvincia= Arrays.binarySearch(ciudades, provincia);
+            if(indiceProvincia>=0) {
+                ciudad_picker.setSelectedItem(indiceProvincia);
+                provinciaActual= ciudades[indiceProvincia];
+            }
+            else{
+                ciudad_picker.setSelectedItem(0);
+                SessionConfig.getSessionConfig(getContext()).CrearProvincia(ciudades[0]);
+                provinciaActual= ciudades[0];
+            }
+
+            //Inicializacion de recyclerview para las tarjetas
+            final CarouselLayoutManager lmanager = new CarouselLayoutManager(CarouselLayoutManager.HORIZONTAL,true);
+            lmanager.setPostLayoutListener(new CarouselZoomPostLayoutListener());
+            rv_home.setLayoutManager(lmanager);
+            rv_home.setHasFixedSize(true);
+            rv_home.addOnScrollListener(new CenterScrollListener());
+            rv_home.addOnScrollListener(new RecyclerView.OnScrollListener() {
+                @Override
+                public void onScrollStateChanged(@NonNull RecyclerView recyclerView, int newState) {
+                    super.onScrollStateChanged(recyclerView, newState);
+                    if(newState == RecyclerView.SCROLL_STATE_IDLE){
+                        int itemPos= ((CarouselLayoutManager) recyclerView.getLayoutManager()).getCenterItemPosition();
+                        Emisora em=((EmisoraHomeAdapter)recyclerView.getAdapter()).emisoras_keys.get(itemPos);
+                        streamingActual= em.getUrl_streaming();
+                        if(!streamingActual.equals(RadioStreamService.radioURL) && radion_on && !muted) {
+                            Intent intent = new Intent();
+                            intent.setAction(RadioStreamService.BROADCAST_TO_SERVICE);
+                            intent.putExtra(RadioStreamService.PLAYER_FUNCTION_TYPE, RadioStreamService.CHANGE_PLAYER_TRACK);
+                            intent.putExtra(RadioStreamService.PLAYER_TRACK_URL, streamingActual);
+                            getActivity().sendBroadcast(intent);
+                            Utils.mostrarMensajeSnackBar(getActivity().getWindow().getDecorView().getRootView(),"Conectando al servidor de la emisora....");
+                        }
+                    }
+                }
+
+                @Override
+                public void onScrolled(@NonNull RecyclerView recyclerView, int dx, int dy) {
+                    super.onScrolled(recyclerView, dx, dy);
+                }
+            });
+            SnapHelper snapHelper= new LinearSnapHelper();
+            snapHelper.attachToRecyclerView(rv_home);
+
+            //Inicializacion de listeners de botones
+            btn_apagar.setOnClickListener(btn_apagar_listener);
+            btn_silenciar.setOnClickListener(btn_mute_listener);
+
+            if(radion_on){
+                btn_apagar.setBackground(getContext().getDrawable(R.drawable.round_button_enabled_left));
+            }
+
+            if(muted){
+                btn_silenciar.setBackground(getContext().getDrawable(R.drawable.round_button_enabled));
+            }
+
+
+        }
+
+    }
     /**
      * Esta clase asincrona obtiene los datos de emisoras para presentarlos en la pantalla principal
      * como tarjetas
@@ -514,7 +623,7 @@ public class HomeFragment extends Fragment {
                 } else if (!RadioStreamService.radioURL.equals(adapter.emisoras_keys.get(0).getUrl_streaming())) {
                     streamingActual = adapter.emisoras_keys.get(0).getUrl_streaming();
                     if (radion_on && !muted) {
-                        new StartStreamingTask().execute();
+                        tarea7=new StartStreamingTask().execute();
                     }
                 }
 
@@ -602,7 +711,7 @@ public class HomeFragment extends Fragment {
                     Toast.makeText(getContext(), "Ocurrio un error con el servidor, intente mas tarde", Toast.LENGTH_SHORT).show();
                 tv_mensaje_programacion.setVisibility(View.VISIBLE);
                 listview_programacion.setAdapter(null);
-                SessionConfig.getSessionConfig(getContext()).AsignarTarea("vacio");
+                //SessionConfig.getSessionConfig(getContext()).AsignarTarea("vacio");
                 return;
             }
             else if(listaSegmentos.size()==0){
@@ -610,7 +719,7 @@ public class HomeFragment extends Fragment {
                     Toast.makeText(getContext(), "No hay programacion para presentar o ocurrio algun error!", Toast.LENGTH_SHORT).show();
                 tv_mensaje_programacion.setVisibility(View.VISIBLE);
                 listview_programacion.setAdapter(null);
-                SessionConfig.getSessionConfig(getContext()).AsignarTarea("vacio");
+                //SessionConfig.getSessionConfig(getContext()).AsignarTarea("vacio");
                 return;
             }
 
@@ -656,7 +765,6 @@ public class HomeFragment extends Fragment {
 
             ProgramacionAdapter adapter= new ProgramacionAdapter(getContext(),horarios,segmentos,horaActual,favoritos);
             listview_programacion.setAdapter(adapter);
-            SessionConfig.getSessionConfig(getContext()).AsignarTarea("vacio");
         }
 
     }

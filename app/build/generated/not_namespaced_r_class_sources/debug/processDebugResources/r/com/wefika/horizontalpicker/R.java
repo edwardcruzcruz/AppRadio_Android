@@ -14,13 +14,13 @@ public final class R {
 
         public static final int dividerSize = 0x7f0400e4;
         public static final int horizontalPickerStyle = 0x7f040125;
-        public static final int sideItems = 0x7f0401dc;
-        public static final int values = 0x7f040252;
+        public static final int sideItems = 0x7f0401e6;
+        public static final int values = 0x7f04025c;
     }
     public static final class styleable {
         private styleable() {}
 
-        public static final int[] HorizontalPicker = { 0x1010095, 0x1010098, 0x10100ab, 0x101021d, 0x7f0400e4, 0x7f0401dc, 0x7f040252 };
+        public static final int[] HorizontalPicker = { 0x1010095, 0x1010098, 0x10100ab, 0x101021d, 0x7f0400e4, 0x7f0401e6, 0x7f04025c };
         public static final int HorizontalPicker_android_textSize = 0;
         public static final int HorizontalPicker_android_textColor = 1;
         public static final int HorizontalPicker_android_ellipsize = 2;

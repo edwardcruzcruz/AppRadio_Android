@@ -358,6 +358,7 @@ attr layout
 attr layoutManager
 attr layout_anchor
 attr layout_anchorGravity
+attr layout_aspectRatio
 attr layout_behavior
 attr layout_collapseMode
 attr layout_collapseParallaxMultiplier
@@ -414,8 +415,16 @@ attr layout_goneMarginLeft
 attr layout_goneMarginRight
 attr layout_goneMarginStart
 attr layout_goneMarginTop
+attr layout_heightPercent
 attr layout_insetEdge
 attr layout_keyline
+attr layout_marginBottomPercent
+attr layout_marginEndPercent
+attr layout_marginLeftPercent
+attr layout_marginPercent
+attr layout_marginRightPercent
+attr layout_marginStartPercent
+attr layout_marginTopPercent
 attr layout_maxHeight
 attr layout_maxWidth
 attr layout_minHeight
@@ -424,6 +433,7 @@ attr layout_optimizationLevel
 attr layout_order
 attr layout_scrollFlags
 attr layout_scrollInterpolator
+attr layout_widthPercent
 attr layout_wrapBefore
 attr listChoiceBackgroundIndicator
 attr listDividerAlertDialog
@@ -677,6 +687,7 @@ color appColorTheme
 color appColorTheme2
 color appColorTheme2Saturated1
 color appColorTheme2Saturated2
+color background
 color background_floating_material_dark
 color background_floating_material_light
 color background_material_dark
@@ -699,6 +710,10 @@ color cardview_shadow_start_color
 color colorAccent
 color colorPrimary
 color colorPrimaryDark
+color color_casillas_boton
+color color_menu
+color color_text
+color color_text2
 color com_facebook_blue
 color com_facebook_button_background_color
 color com_facebook_button_background_color_disabled
@@ -1143,13 +1158,17 @@ drawable abc_textfield_search_activated_mtrl_alpha
 drawable abc_textfield_search_default_mtrl_alpha
 drawable abc_textfield_search_material
 drawable abc_vector_test
+drawable antenna
 drawable apagar
 drawable apagarmdpi
 drawable avd_hide_password
 drawable avd_show_password
+drawable background_app
+drawable background_app2
 drawable background_modal_info
 drawable banner
 drawable bg_calendar
+drawable boton_silencio
 drawable bottom_nav_item_colors
 drawable btn_ver_prog
 drawable btn_ver_programacion
@@ -1190,6 +1209,7 @@ drawable com_facebook_tooltip_blue_topnub
 drawable com_facebook_tooltip_blue_xout
 drawable consursosmdpi
 drawable corner_edge
+drawable cup_concurso
 drawable derecha
 drawable derechamdpi
 drawable design_bottom_navigation_item_background
@@ -1239,11 +1259,13 @@ drawable favorito2mdpi
 drawable favoritos_nav_lateralhdpi
 drawable favoritos_nav_lateralmdpi
 drawable favoritos_nav_lateralxhdpi
+drawable fondosplash_01
 drawable google
 drawable googlemdpi
 drawable horariohdpi
 drawable horariomdpi
 drawable horarioxhdpi
+drawable ic_chat
 drawable ic_dashboard_black_24dp
 drawable ic_home_black_24dp
 drawable ic_launcher_background
@@ -1257,6 +1279,7 @@ drawable image_placeholder
 drawable info_radio
 drawable izquierda
 drawable izquierdamdpi
+drawable line_divider
 drawable logo_caravana_login
 drawable logo_caravana_splash
 drawable logo_radio_caravana
@@ -1299,6 +1322,7 @@ drawable notification_template_icon_bg
 drawable notification_template_icon_low_bg
 drawable notification_tile_bg
 drawable notify_panel_notification_icon_bg
+drawable onoff
 drawable play_button
 drawable portada_radio
 drawable radio_banner
@@ -1310,10 +1334,12 @@ drawable radio_placeholder
 drawable radio_placeholder2
 drawable radiomdpi
 drawable round_button
+drawable round_button2
 drawable round_button_enabled
 drawable round_button_enabled_left
 drawable round_button_left
 drawable round_button_right
+drawable round_item
 drawable silenciar
 drawable silenciarmdpi
 drawable social_media_icon
@@ -1603,6 +1629,7 @@ id percent
 id pin
 id proginfo_container
 id progressBarNoticias
+id progressBar_concurso
 id progressBar_emisoras
 id progressBar_favoritos
 id progressBar_programacion
@@ -1742,11 +1769,13 @@ id transition_layout_save
 id transition_position
 id transition_scene_layoutid_cache
 id transition_transform
+id tv_ConcursoEmisora
 id tv_ConcursoFecha_Inicio
 id tv_ConcursoFecha_fin
 id tv_ConcursoRadioSegmento
 id tv_Concursofin_mensaje
 id tv_Concursoitem_Concurso
+id tv_Concursosegmento
 id tv_Concursotitle
 id tv_cerrar_sesion
 id tv_descripcion_emisora
@@ -1895,6 +1924,7 @@ layout exo_player_control_view
 layout exo_player_view
 layout exo_simple_player_view
 layout exo_track_selection_dialog
+layout fragment_blank
 layout fragment_chat
 layout fragment_concursos
 layout fragment_concursos_titulo
@@ -1940,6 +1970,7 @@ layout notification_template_part_chronometer
 layout notification_template_part_time
 layout player_controls
 layout rv_concurso_item_activos
+layout rv_concurso_items
 layout rv_conductor_item
 layout rv_emisora_item
 layout rv_emisora_titulo_item
@@ -2092,6 +2123,7 @@ string search_menu_title
 string status_bar_notification_info_overflow
 string text_birthday
 string text_btn_send
+string text_concursar
 string text_day
 string text_enter_with
 string text_forgot_password
@@ -2693,6 +2725,7 @@ styleable MenuGroup android_enabled android_id android_visible android_menuCateg
 styleable MenuItem android_icon android_enabled android_id android_checked android_visible android_menuCategory android_orderInCategory android_title android_titleCondensed android_alphabeticShortcut android_numericShortcut android_checkable android_onClick actionLayout actionProviderClass actionViewClass alphabeticModifiers contentDescription iconTint iconTintMode numericModifiers showAsAction tooltipText
 styleable MenuView android_windowAnimationStyle android_itemTextAppearance android_horizontalDivider android_verticalDivider android_headerBackground android_itemBackground android_itemIconDisabledAlpha preserveIconSpacing subMenuArrow
 styleable NavigationView android_background android_fitsSystemWindows android_maxWidth elevation headerLayout itemBackground itemHorizontalPadding itemIconPadding itemIconTint itemTextAppearance itemTextColor menu
+styleable PercentLayout_Layout layout_aspectRatio layout_heightPercent layout_marginBottomPercent layout_marginEndPercent layout_marginLeftPercent layout_marginPercent layout_marginRightPercent layout_marginStartPercent layout_marginTopPercent layout_widthPercent
 styleable PlayerControlView controller_layout_id fastforward_increment repeat_toggle_modes rewind_increment show_shuffle_button show_timeout
 styleable PlayerView auto_show controller_layout_id default_artwork fastforward_increment hide_during_ads hide_on_touch keep_content_on_player_reset player_layout_id repeat_toggle_modes resize_mode rewind_increment show_buffering show_shuffle_button show_timeout shutter_background_color surface_type use_artwork use_controller
 styleable PopupWindow android_popupBackground android_popupAnimationStyle overlapAnchor

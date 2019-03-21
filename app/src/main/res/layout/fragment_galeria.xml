@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/appColorTheme"
+    android:background="@color/background"
     tools:context=".Fragments.GaleriaFragment">
 
     <!-- TODO: Update blank fragment layout -->
@@ -25,7 +25,7 @@
             android:text="GALERÍA"
             android:textAlignment="center"
             android:textAllCaps="true"
-            android:textColor="@color/text_color"
+            android:textColor="@color/color_text"
             android:textSize="22sp"
             android:textStyle="bold" />
 
@@ -39,7 +39,7 @@
             android:gravity="center_horizontal"
             android:text="TextView"
             android:textAlignment="center"
-            android:textColor="@color/textoGris"
+            android:textColor="@color/color_text"
             android:textSize="18sp" />
 
         <android.support.design.widget.TabLayout
@@ -50,7 +50,7 @@
             android:layout_marginEnd="10dp"
             android:layout_marginStart="10dp"
             android:layout_marginTop="45dp"
-            android:background="@drawable/underline_background"
+            android:background="@null"
             app:tabTextAppearance="@style/AppTabTextAppearance">
 
             <android.support.design.widget.TabItem

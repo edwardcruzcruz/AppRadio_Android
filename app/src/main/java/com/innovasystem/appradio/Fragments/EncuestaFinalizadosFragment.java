@@ -8,6 +8,7 @@ import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -28,7 +29,9 @@ public class EncuestaFinalizadosFragment extends Fragment {
 
     /* Variables de referencia de las views de la ventana */
     RecyclerView rv_segmentos_concurso;
+    ProgressBar progressBar;
     Emisora emisora;
+    AsyncTask tarea;
     TextView tv_mensaje;
 
 
@@ -51,6 +54,7 @@ public class EncuestaFinalizadosFragment extends Fragment {
         View root= inflater.inflate(R.layout.fragment_concursos_titulo, container, false);
         rv_segmentos_concurso= root.findViewById(R.id.rv_segmentos_concurso);
         tv_mensaje= root.findViewById(R.id.tv_mensaje_segmentos_concurso);
+        progressBar= root.findViewById(R.id.progressBar_concurso);
 
         rv_segmentos_concurso.setHasFixedSize(true);
         RecyclerView.LayoutManager lmanager= new LinearLayoutManager(getContext());
@@ -58,13 +62,18 @@ public class EncuestaFinalizadosFragment extends Fragment {
 
         emisora= EmisoraContentFragment.emisora;
 
-        new RestFetchConcursoActivoTask().execute();
+        tarea=new RestFetchConcursoActivoTask().execute();
 
         return root;
 
 
     }
 
+    @Override
+    public void onDetach() {
+        super.onDetach();
+        tarea.cancel(true);
+    }
 
     /* ====== Listeners de botones =======*/
 
@@ -132,16 +141,15 @@ public class EncuestaFinalizadosFragment extends Fragment {
         @Override
         protected void onPostExecute(Void aVoid){
             super.onPostExecute(aVoid);
+            progressBar.setVisibility(View.GONE);
             System.out.println("IMPRIMIENDO RESULTADO_______");
             if(encuestas == null){
-                SessionConfig.getSessionConfig(getContext()).AsignarTarea("vacio");
                 Toast.makeText(getContext(), "Ocurrio un error con el servidor, intente mas tarde", Toast.LENGTH_SHORT).show();
                 tv_mensaje.setVisibility(View.VISIBLE);
                 return;
             }
 
             if(encuestas.size() == 0){
-                SessionConfig.getSessionConfig(getContext()).AsignarTarea("vacio");
                 tv_mensaje.setVisibility(View.VISIBLE);
                 return;
             }
@@ -179,7 +187,6 @@ public class EncuestaFinalizadosFragment extends Fragment {
             ConcursosActivosAdapter segmentoAdapter=new ConcursosActivosAdapter(getContext(),encuestas_resultado,segmentos_resultado);
             rv_segmentos_concurso.setAdapter(segmentoAdapter);
             rv_segmentos_concurso.getAdapter().notifyDataSetChanged();
-            SessionConfig.getSessionConfig(getContext()).AsignarTarea("vacio");
         }
     }
 }
