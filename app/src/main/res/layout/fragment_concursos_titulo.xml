@@ -50,7 +50,7 @@
         android:layout_gravity="center"
         android:gravity="center"
         android:text="No hay informacion para mostrar"
-        android:textColor="@color/text_color"
+        android:textColor="@color/color_text"
         android:textSize="18sp"
         android:visibility="invisible" />
 

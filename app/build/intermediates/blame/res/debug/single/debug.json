@@ -20,6 +20,10 @@
         "source": "/home/edward/Documents/DJANGO/AppRadio-Android/app/src/main/res/drawable/telefono_emisorahdpi.png"
     },
     {
+        "merged": "/home/edward/Documents/DJANGO/AppRadio-Android/app/build/intermediates/res/merged/debug/drawable_logo_diblu.png.flat",
+        "source": "/home/edward/Documents/DJANGO/AppRadio-Android/app/src/main/res/drawable/logo_diblu.png"
+    },
+    {
         "merged": "/home/edward/Documents/DJANGO/AppRadio-Android/app/build/intermediates/res/merged/debug/drawable_navigation_empty_icon.xml.flat",
         "source": "/home/edward/.gradle/caches/transforms-1/files-1.1/design-internal-28.0.0-alpha1.aar/c8365e6d8e6a8801fff8b907a2fa048b/res/drawable/navigation_empty_icon.xml"
     },
@@ -82,6 +86,10 @@
     {
         "merged": "/home/edward/Documents/DJANGO/AppRadio-Android/app/build/intermediates/res/merged/debug/color-v23_abc_btn_colored_text_material.xml.flat",
         "source": "/home/edward/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0-alpha1.aar/d23513c54d692dee502b176c855d54fe/res/color-v23/abc_btn_colored_text_material.xml"
+    },
+    {
+        "merged": "/home/edward/Documents/DJANGO/AppRadio-Android/app/build/intermediates/res/merged/debug/drawable_radio.png.flat",
+        "source": "/home/edward/Documents/DJANGO/AppRadio-Android/app/src/main/res/drawable/radio.png"
     },
     {
         "merged": "/home/edward/Documents/DJANGO/AppRadio-Android/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_abc_text_select_handle_middle_mtrl_dark.png.flat",
@@ -180,12 +188,12 @@
         "source": "/home/edward/Documents/DJANGO/AppRadio-Android/app/src/main/res/layout/fragment_emisora_info.xml"
     },
     {
-        "merged": "/home/edward/Documents/DJANGO/AppRadio-Android/app/build/intermediates/res/merged/debug/color-v23_abc_color_highlight_material.xml.flat",
-        "source": "/home/edward/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0-alpha1.aar/d23513c54d692dee502b176c855d54fe/res/color-v23/abc_color_highlight_material.xml"
-    },
-    {
         "merged": "/home/edward/Documents/DJANGO/AppRadio-Android/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_exo_icon_previous.png.flat",
         "source": "/home/edward/.gradle/caches/transforms-1/files-1.1/exoplayer-ui-2.9.0.aar/a1f0bc420557ad7dc09909e246a8ce71/res/drawable-hdpi-v4/exo_icon_previous.png"
+    },
+    {
+        "merged": "/home/edward/Documents/DJANGO/AppRadio-Android/app/build/intermediates/res/merged/debug/color-v23_abc_color_highlight_material.xml.flat",
+        "source": "/home/edward/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0-alpha1.aar/d23513c54d692dee502b176c855d54fe/res/color-v23/abc_color_highlight_material.xml"
     },
     {
         "merged": "/home/edward/Documents/DJANGO/AppRadio-Android/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_messenger_bubble_small_white.png.flat",
@@ -226,6 +234,10 @@
     {
         "merged": "/home/edward/Documents/DJANGO/AppRadio-Android/app/build/intermediates/res/merged/debug/drawable_abc_ratingbar_material.xml.flat",
         "source": "/home/edward/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0-alpha1.aar/d23513c54d692dee502b176c855d54fe/res/drawable/abc_ratingbar_material.xml"
+    },
+    {
+        "merged": "/home/edward/Documents/DJANGO/AppRadio-Android/app/build/intermediates/res/merged/debug/mipmap-hdpi_ic_back_navigation.png.flat",
+        "source": "/home/edward/Documents/DJANGO/AppRadio-Android/app/src/main/res/mipmap-hdpi/ic_back_navigation.png"
     },
     {
         "merged": "/home/edward/Documents/DJANGO/AppRadio-Android/app/build/intermediates/res/merged/debug/layout_com_facebook_device_auth_dialog_fragment.xml.flat",
@@ -312,24 +324,24 @@
         "source": "/home/edward/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0-alpha1.aar/d23513c54d692dee502b176c855d54fe/res/color/abc_primary_text_material_light.xml"
     },
     {
-        "merged": "/home/edward/Documents/DJANGO/AppRadio-Android/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_exo_controls_fullscreen_exit.png.flat",
-        "source": "/home/edward/.gradle/caches/transforms-1/files-1.1/exoplayer-ui-2.9.0.aar/a1f0bc420557ad7dc09909e246a8ce71/res/drawable-xxhdpi-v4/exo_controls_fullscreen_exit.png"
-    },
-    {
         "merged": "/home/edward/Documents/DJANGO/AppRadio-Android/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_abc_ic_star_half_black_36dp.png.flat",
         "source": "/home/edward/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0-alpha1.aar/d23513c54d692dee502b176c855d54fe/res/drawable-xxhdpi-v4/abc_ic_star_half_black_36dp.png"
+    },
+    {
+        "merged": "/home/edward/Documents/DJANGO/AppRadio-Android/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_exo_controls_fullscreen_exit.png.flat",
+        "source": "/home/edward/.gradle/caches/transforms-1/files-1.1/exoplayer-ui-2.9.0.aar/a1f0bc420557ad7dc09909e246a8ce71/res/drawable-xxhdpi-v4/exo_controls_fullscreen_exit.png"
     },
     {
         "merged": "/home/edward/Documents/DJANGO/AppRadio-Android/app/build/intermediates/res/merged/debug/anim_abc_slide_out_bottom.xml.flat",
         "source": "/home/edward/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0-alpha1.aar/d23513c54d692dee502b176c855d54fe/res/anim/abc_slide_out_bottom.xml"
     },
     {
-        "merged": "/home/edward/Documents/DJANGO/AppRadio-Android/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4_abc_text_select_handle_right_mtrl_light.png.flat",
-        "source": "/home/edward/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0-alpha1.aar/d23513c54d692dee502b176c855d54fe/res/drawable-xxxhdpi-v4/abc_text_select_handle_right_mtrl_light.png"
-    },
-    {
         "merged": "/home/edward/Documents/DJANGO/AppRadio-Android/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_abc_btn_check_to_on_mtrl_000.png.flat",
         "source": "/home/edward/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0-alpha1.aar/d23513c54d692dee502b176c855d54fe/res/drawable-xxhdpi-v4/abc_btn_check_to_on_mtrl_000.png"
+    },
+    {
+        "merged": "/home/edward/Documents/DJANGO/AppRadio-Android/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4_abc_text_select_handle_right_mtrl_light.png.flat",
+        "source": "/home/edward/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0-alpha1.aar/d23513c54d692dee502b176c855d54fe/res/drawable-xxxhdpi-v4/abc_text_select_handle_right_mtrl_light.png"
     },
     {
         "merged": "/home/edward/Documents/DJANGO/AppRadio-Android/app/build/intermediates/res/merged/debug/layout_rv_concurso_item_activos.xml.flat",
@@ -372,12 +384,16 @@
         "source": "/home/edward/Documents/DJANGO/AppRadio-Android/app/src/main/res/layout/fragment_chat.xml"
     },
     {
+        "merged": "/home/edward/Documents/DJANGO/AppRadio-Android/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_abc_ic_star_black_48dp.png.flat",
+        "source": "/home/edward/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0-alpha1.aar/d23513c54d692dee502b176c855d54fe/res/drawable-xxhdpi-v4/abc_ic_star_black_48dp.png"
+    },
+    {
         "merged": "/home/edward/Documents/DJANGO/AppRadio-Android/app/build/intermediates/res/merged/debug/drawable_no_image.jpg.flat",
         "source": "/home/edward/Documents/DJANGO/AppRadio-Android/app/src/main/res/drawable/no_image.jpg"
     },
     {
-        "merged": "/home/edward/Documents/DJANGO/AppRadio-Android/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_abc_ic_star_black_48dp.png.flat",
-        "source": "/home/edward/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0-alpha1.aar/d23513c54d692dee502b176c855d54fe/res/drawable-xxhdpi-v4/abc_ic_star_black_48dp.png"
+        "merged": "/home/edward/Documents/DJANGO/AppRadio-Android/app/build/intermediates/res/merged/debug/drawable_logo_caravana.png.flat",
+        "source": "/home/edward/Documents/DJANGO/AppRadio-Android/app/src/main/res/drawable/logo_caravana.png"
     },
     {
         "merged": "/home/edward/Documents/DJANGO/AppRadio-Android/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_abc_spinner_mtrl_am_alpha.9.png.flat",
@@ -404,12 +420,12 @@
         "source": "/home/edward/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0-alpha1.aar/d23513c54d692dee502b176c855d54fe/res/drawable-hdpi-v4/abc_ic_menu_copy_mtrl_am_alpha.png"
     },
     {
-        "merged": "/home/edward/Documents/DJANGO/AppRadio-Android/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_abc_ic_star_half_black_48dp.png.flat",
-        "source": "/home/edward/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0-alpha1.aar/d23513c54d692dee502b176c855d54fe/res/drawable-xhdpi-v4/abc_ic_star_half_black_48dp.png"
-    },
-    {
         "merged": "/home/edward/Documents/DJANGO/AppRadio-Android/app/build/intermediates/res/merged/debug/layout_design_navigation_menu.xml.flat",
         "source": "/home/edward/.gradle/caches/transforms-1/files-1.1/design-internal-28.0.0-alpha1.aar/c8365e6d8e6a8801fff8b907a2fa048b/res/layout/design_navigation_menu.xml"
+    },
+    {
+        "merged": "/home/edward/Documents/DJANGO/AppRadio-Android/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_abc_ic_star_half_black_48dp.png.flat",
+        "source": "/home/edward/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0-alpha1.aar/d23513c54d692dee502b176c855d54fe/res/drawable-xhdpi-v4/abc_ic_star_half_black_48dp.png"
     },
     {
         "merged": "/home/edward/Documents/DJANGO/AppRadio-Android/app/build/intermediates/res/merged/debug/layout_abc_popup_menu_item_layout.xml.flat",
@@ -456,12 +472,12 @@
         "source": "/home/edward/.gradle/caches/transforms-1/files-1.1/facebook-login-4.41.0.aar/2206671704f0892b0c40f6f59383fe9d/res/drawable-mdpi-v4/com_facebook_tooltip_blue_topnub.png"
     },
     {
-        "merged": "/home/edward/Documents/DJANGO/AppRadio-Android/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_exo_icon_next.png.flat",
-        "source": "/home/edward/.gradle/caches/transforms-1/files-1.1/exoplayer-ui-2.9.0.aar/a1f0bc420557ad7dc09909e246a8ce71/res/drawable-mdpi-v4/exo_icon_next.png"
-    },
-    {
         "merged": "/home/edward/Documents/DJANGO/AppRadio-Android/app/build/intermediates/res/merged/debug/layout_modal_video.xml.flat",
         "source": "/home/edward/Documents/DJANGO/AppRadio-Android/app/src/main/res/layout/modal_video.xml"
+    },
+    {
+        "merged": "/home/edward/Documents/DJANGO/AppRadio-Android/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_exo_icon_next.png.flat",
+        "source": "/home/edward/.gradle/caches/transforms-1/files-1.1/exoplayer-ui-2.9.0.aar/a1f0bc420557ad7dc09909e246a8ce71/res/drawable-mdpi-v4/exo_icon_next.png"
     },
     {
         "merged": "/home/edward/Documents/DJANGO/AppRadio-Android/app/build/intermediates/res/merged/debug/layout-watch-v20_abc_alert_dialog_title_material.xml.flat",
@@ -484,12 +500,12 @@
         "source": "/home/edward/Documents/DJANGO/AppRadio-Android/app/src/main/res/drawable/silenciar.png"
     },
     {
-        "merged": "/home/edward/Documents/DJANGO/AppRadio-Android/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4_abc_ic_menu_paste_mtrl_am_alpha.png.flat",
-        "source": "/home/edward/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0-alpha1.aar/d23513c54d692dee502b176c855d54fe/res/drawable-xxxhdpi-v4/abc_ic_menu_paste_mtrl_am_alpha.png"
-    },
-    {
         "merged": "/home/edward/Documents/DJANGO/AppRadio-Android/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_abc_list_divider_mtrl_alpha.9.png.flat",
         "source": "/home/edward/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0-alpha1.aar/d23513c54d692dee502b176c855d54fe/res/drawable-mdpi-v4/abc_list_divider_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "/home/edward/Documents/DJANGO/AppRadio-Android/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4_abc_ic_menu_paste_mtrl_am_alpha.png.flat",
+        "source": "/home/edward/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0-alpha1.aar/d23513c54d692dee502b176c855d54fe/res/drawable-xxxhdpi-v4/abc_ic_menu_paste_mtrl_am_alpha.png"
     },
     {
         "merged": "/home/edward/Documents/DJANGO/AppRadio-Android/app/build/intermediates/res/merged/debug/drawable_btn_ver_prog.png.flat",
@@ -564,12 +580,12 @@
         "source": "/home/edward/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0-alpha1.aar/d23513c54d692dee502b176c855d54fe/res/layout/abc_action_mode_close_item_material.xml"
     },
     {
-        "merged": "/home/edward/Documents/DJANGO/AppRadio-Android/app/build/intermediates/res/merged/debug/color_mtrl_fab_ripple_color.xml.flat",
-        "source": "/home/edward/.gradle/caches/transforms-1/files-1.1/design-floatingactionbutton-28.0.0-alpha1.aar/693f3b1d9ad72d742977a533606b5637/res/color/mtrl_fab_ripple_color.xml"
-    },
-    {
         "merged": "/home/edward/Documents/DJANGO/AppRadio-Android/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_abc_spinner_mtrl_am_alpha.9.png.flat",
         "source": "/home/edward/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0-alpha1.aar/d23513c54d692dee502b176c855d54fe/res/drawable-xhdpi-v4/abc_spinner_mtrl_am_alpha.9.png"
+    },
+    {
+        "merged": "/home/edward/Documents/DJANGO/AppRadio-Android/app/build/intermediates/res/merged/debug/color_mtrl_fab_ripple_color.xml.flat",
+        "source": "/home/edward/.gradle/caches/transforms-1/files-1.1/design-floatingactionbutton-28.0.0-alpha1.aar/693f3b1d9ad72d742977a533606b5637/res/color/mtrl_fab_ripple_color.xml"
     },
     {
         "merged": "/home/edward/Documents/DJANGO/AppRadio-Android/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_abc_btn_radio_to_on_mtrl_000.png.flat",
@@ -592,12 +608,20 @@
         "source": "/home/edward/.gradle/caches/transforms-1/files-1.1/facebook-login-4.41.0.aar/2206671704f0892b0c40f6f59383fe9d/res/drawable/com_facebook_button_login_silver_background.xml"
     },
     {
+        "merged": "/home/edward/Documents/DJANGO/AppRadio-Android/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_abc_ic_menu_selectall_mtrl_alpha.png.flat",
+        "source": "/home/edward/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0-alpha1.aar/d23513c54d692dee502b176c855d54fe/res/drawable-mdpi-v4/abc_ic_menu_selectall_mtrl_alpha.png"
+    },
+    {
         "merged": "/home/edward/Documents/DJANGO/AppRadio-Android/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_abc_scrubber_control_off_mtrl_alpha.png.flat",
         "source": "/home/edward/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0-alpha1.aar/d23513c54d692dee502b176c855d54fe/res/drawable-xhdpi-v4/abc_scrubber_control_off_mtrl_alpha.png"
     },
     {
-        "merged": "/home/edward/Documents/DJANGO/AppRadio-Android/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_abc_ic_menu_selectall_mtrl_alpha.png.flat",
-        "source": "/home/edward/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0-alpha1.aar/d23513c54d692dee502b176c855d54fe/res/drawable-mdpi-v4/abc_ic_menu_selectall_mtrl_alpha.png"
+        "merged": "/home/edward/Documents/DJANGO/AppRadio-Android/app/build/intermediates/res/merged/debug/drawable_web.png.flat",
+        "source": "/home/edward/Documents/DJANGO/AppRadio-Android/app/src/main/res/drawable/web.png"
+    },
+    {
+        "merged": "/home/edward/Documents/DJANGO/AppRadio-Android/app/build/intermediates/res/merged/debug/drawable_ic_navigate_before_black_24dp.xml.flat",
+        "source": "/home/edward/Documents/DJANGO/AppRadio-Android/app/src/main/res/drawable/ic_navigate_before_black_24dp.xml"
     },
     {
         "merged": "/home/edward/Documents/DJANGO/AppRadio-Android/app/build/intermediates/res/merged/debug/drawable_abc_item_background_holo_dark.xml.flat",
@@ -624,12 +648,12 @@
         "source": "/home/edward/.gradle/caches/transforms-1/files-1.1/support-media-compat-28.0.0-alpha1.aar/07f3b7adf12fdbec82208878986850e3/res/layout/notification_template_lines_media.xml"
     },
     {
-        "merged": "/home/edward/Documents/DJANGO/AppRadio-Android/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_exo_controls_fullscreen_enter.png.flat",
-        "source": "/home/edward/.gradle/caches/transforms-1/files-1.1/exoplayer-ui-2.9.0.aar/a1f0bc420557ad7dc09909e246a8ce71/res/drawable-xxhdpi-v4/exo_controls_fullscreen_enter.png"
-    },
-    {
         "merged": "/home/edward/Documents/DJANGO/AppRadio-Android/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4_abc_btn_switch_to_on_mtrl_00012.9.png.flat",
         "source": "/home/edward/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0-alpha1.aar/d23513c54d692dee502b176c855d54fe/res/drawable-xxxhdpi-v4/abc_btn_switch_to_on_mtrl_00012.9.png"
+    },
+    {
+        "merged": "/home/edward/Documents/DJANGO/AppRadio-Android/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_exo_controls_fullscreen_enter.png.flat",
+        "source": "/home/edward/.gradle/caches/transforms-1/files-1.1/exoplayer-ui-2.9.0.aar/a1f0bc420557ad7dc09909e246a8ce71/res/drawable-xxhdpi-v4/exo_controls_fullscreen_enter.png"
     },
     {
         "merged": "/home/edward/Documents/DJANGO/AppRadio-Android/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_notification_bg_normal.9.png.flat",
@@ -650,6 +674,10 @@
     {
         "merged": "/home/edward/Documents/DJANGO/AppRadio-Android/app/build/intermediates/res/merged/debug/layout_activity_register.xml.flat",
         "source": "/home/edward/Documents/DJANGO/AppRadio-Android/app/src/main/res/layout/activity_register.xml"
+    },
+    {
+        "merged": "/home/edward/Documents/DJANGO/AppRadio-Android/app/build/intermediates/res/merged/debug/drawable_ic_password.xml.flat",
+        "source": "/home/edward/Documents/DJANGO/AppRadio-Android/app/src/main/res/drawable/ic_password.xml"
     },
     {
         "merged": "/home/edward/Documents/DJANGO/AppRadio-Android/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_com_facebook_tooltip_black_bottomnub.png.flat",
@@ -676,12 +704,12 @@
         "source": "/home/edward/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0-alpha1.aar/d23513c54d692dee502b176c855d54fe/res/drawable-xxhdpi-v4/abc_scrubber_primary_mtrl_alpha.9.png"
     },
     {
-        "merged": "/home/edward/Documents/DJANGO/AppRadio-Android/app/build/intermediates/res/merged/debug/drawable_twitter_icon.png.flat",
-        "source": "/home/edward/Documents/DJANGO/AppRadio-Android/app/src/main/res/drawable/twitter_icon.png"
-    },
-    {
         "merged": "/home/edward/Documents/DJANGO/AppRadio-Android/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_abc_menu_hardkey_panel_mtrl_mult.9.png.flat",
         "source": "/home/edward/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0-alpha1.aar/d23513c54d692dee502b176c855d54fe/res/drawable-xhdpi-v4/abc_menu_hardkey_panel_mtrl_mult.9.png"
+    },
+    {
+        "merged": "/home/edward/Documents/DJANGO/AppRadio-Android/app/build/intermediates/res/merged/debug/drawable_twitter_icon.png.flat",
+        "source": "/home/edward/Documents/DJANGO/AppRadio-Android/app/src/main/res/drawable/twitter_icon.png"
     },
     {
         "merged": "/home/edward/Documents/DJANGO/AppRadio-Android/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_abc_cab_background_top_mtrl_alpha.9.png.flat",
@@ -712,12 +740,12 @@
         "source": "/home/edward/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0-alpha1.aar/d23513c54d692dee502b176c855d54fe/res/drawable-xhdpi-v4/abc_btn_radio_to_on_mtrl_000.png"
     },
     {
-        "merged": "/home/edward/Documents/DJANGO/AppRadio-Android/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_abc_btn_check_to_on_mtrl_015.png.flat",
-        "source": "/home/edward/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0-alpha1.aar/d23513c54d692dee502b176c855d54fe/res/drawable-xhdpi-v4/abc_btn_check_to_on_mtrl_015.png"
-    },
-    {
         "merged": "/home/edward/Documents/DJANGO/AppRadio-Android/app/build/intermediates/res/merged/debug/drawable_cerrar_sesionmdpi.png.flat",
         "source": "/home/edward/Documents/DJANGO/AppRadio-Android/app/src/main/res/drawable/cerrar_sesionmdpi.png"
+    },
+    {
+        "merged": "/home/edward/Documents/DJANGO/AppRadio-Android/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_abc_btn_check_to_on_mtrl_015.png.flat",
+        "source": "/home/edward/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0-alpha1.aar/d23513c54d692dee502b176c855d54fe/res/drawable-xhdpi-v4/abc_btn_check_to_on_mtrl_015.png"
     },
     {
         "merged": "/home/edward/Documents/DJANGO/AppRadio-Android/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_com_facebook_tooltip_black_xout.png.flat",
@@ -728,12 +756,12 @@
         "source": "/home/edward/.gradle/caches/transforms-1/files-1.1/facebook-messenger-4.41.0.aar/2b0177b3d500b5c3f88e75f78c058225/res/layout/messenger_button_send_white_round.xml"
     },
     {
-        "merged": "/home/edward/Documents/DJANGO/AppRadio-Android/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_abc_text_select_handle_middle_mtrl_light.png.flat",
-        "source": "/home/edward/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0-alpha1.aar/d23513c54d692dee502b176c855d54fe/res/drawable-hdpi-v4/abc_text_select_handle_middle_mtrl_light.png"
-    },
-    {
         "merged": "/home/edward/Documents/DJANGO/AppRadio-Android/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_com_facebook_button_like_icon_selected.png.flat",
         "source": "/home/edward/.gradle/caches/transforms-1/files-1.1/facebook-common-4.41.0.aar/e7f2a9979ecbe553e621cd21bbaf9cf6/res/drawable-xhdpi-v4/com_facebook_button_like_icon_selected.png"
+    },
+    {
+        "merged": "/home/edward/Documents/DJANGO/AppRadio-Android/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_abc_text_select_handle_middle_mtrl_light.png.flat",
+        "source": "/home/edward/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0-alpha1.aar/d23513c54d692dee502b176c855d54fe/res/drawable-hdpi-v4/abc_text_select_handle_middle_mtrl_light.png"
     },
     {
         "merged": "/home/edward/Documents/DJANGO/AppRadio-Android/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_abc_scrubber_control_to_pressed_mtrl_000.png.flat",
@@ -832,6 +860,10 @@
         "source": "/home/edward/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0-alpha1.aar/d23513c54d692dee502b176c855d54fe/res/layout/abc_expanded_menu_layout.xml"
     },
     {
+        "merged": "/home/edward/Documents/DJANGO/AppRadio-Android/app/build/intermediates/res/merged/debug/mipmap-xhdpi_ic_back_navigation.png.flat",
+        "source": "/home/edward/Documents/DJANGO/AppRadio-Android/app/src/main/res/mipmap-xhdpi/ic_back_navigation.png"
+    },
+    {
         "merged": "/home/edward/Documents/DJANGO/AppRadio-Android/app/build/intermediates/res/merged/debug/drawable_com_facebook_auth_dialog_header_background.xml.flat",
         "source": "/home/edward/.gradle/caches/transforms-1/files-1.1/facebook-common-4.41.0.aar/e7f2a9979ecbe553e621cd21bbaf9cf6/res/drawable/com_facebook_auth_dialog_header_background.xml"
     },
@@ -842,6 +874,10 @@
     {
         "merged": "/home/edward/Documents/DJANGO/AppRadio-Android/app/build/intermediates/res/merged/debug/interpolator_mtrl_linear.xml.flat",
         "source": "/home/edward/.gradle/caches/transforms-1/files-1.1/design-animation-28.0.0-alpha1.aar/29061f1c9cf4578f6396b084491eb17f/res/interpolator/mtrl_linear.xml"
+    },
+    {
+        "merged": "/home/edward/Documents/DJANGO/AppRadio-Android/app/build/intermediates/res/merged/debug/mipmap-hdpi_ic_back.png.flat",
+        "source": "/home/edward/Documents/DJANGO/AppRadio-Android/app/src/main/res/mipmap-hdpi/ic_back.png"
     },
     {
         "merged": "/home/edward/Documents/DJANGO/AppRadio-Android/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4_abc_btn_switch_to_on_mtrl_00001.9.png.flat",
@@ -860,16 +896,20 @@
         "source": "/home/edward/Documents/DJANGO/AppRadio-Android/app/src/main/res/drawable/splash_screen.png"
     },
     {
-        "merged": "/home/edward/Documents/DJANGO/AppRadio-Android/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_abc_ic_menu_paste_mtrl_am_alpha.png.flat",
-        "source": "/home/edward/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0-alpha1.aar/d23513c54d692dee502b176c855d54fe/res/drawable-mdpi-v4/abc_ic_menu_paste_mtrl_am_alpha.png"
-    },
-    {
         "merged": "/home/edward/Documents/DJANGO/AppRadio-Android/app/build/intermediates/res/merged/debug/drawable_com_facebook_auth_dialog_cancel_background.xml.flat",
         "source": "/home/edward/.gradle/caches/transforms-1/files-1.1/facebook-common-4.41.0.aar/e7f2a9979ecbe553e621cd21bbaf9cf6/res/drawable/com_facebook_auth_dialog_cancel_background.xml"
     },
     {
+        "merged": "/home/edward/Documents/DJANGO/AppRadio-Android/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_abc_ic_menu_paste_mtrl_am_alpha.png.flat",
+        "source": "/home/edward/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0-alpha1.aar/d23513c54d692dee502b176c855d54fe/res/drawable-mdpi-v4/abc_ic_menu_paste_mtrl_am_alpha.png"
+    },
+    {
         "merged": "/home/edward/Documents/DJANGO/AppRadio-Android/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_abc_list_selector_disabled_holo_dark.9.png.flat",
         "source": "/home/edward/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0-alpha1.aar/d23513c54d692dee502b176c855d54fe/res/drawable-hdpi-v4/abc_list_selector_disabled_holo_dark.9.png"
+    },
+    {
+        "merged": "/home/edward/Documents/DJANGO/AppRadio-Android/app/build/intermediates/res/merged/debug/drawable_heart_2.png.flat",
+        "source": "/home/edward/Documents/DJANGO/AppRadio-Android/app/src/main/res/drawable/heart_2.png"
     },
     {
         "merged": "/home/edward/Documents/DJANGO/AppRadio-Android/app/build/intermediates/res/merged/debug/drawable_image_placeholder.png.flat",
@@ -892,12 +932,12 @@
         "source": "/home/edward/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0-alpha1.aar/d23513c54d692dee502b176c855d54fe/res/drawable-mdpi-v4/abc_ic_star_black_48dp.png"
     },
     {
-        "merged": "/home/edward/Documents/DJANGO/AppRadio-Android/app/build/intermediates/res/merged/debug/drawable_consursosmdpi.png.flat",
-        "source": "/home/edward/Documents/DJANGO/AppRadio-Android/app/src/main/res/drawable/consursosmdpi.png"
-    },
-    {
         "merged": "/home/edward/Documents/DJANGO/AppRadio-Android/app/build/intermediates/res/merged/debug/drawable_abc_cab_background_internal_bg.xml.flat",
         "source": "/home/edward/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0-alpha1.aar/d23513c54d692dee502b176c855d54fe/res/drawable/abc_cab_background_internal_bg.xml"
+    },
+    {
+        "merged": "/home/edward/Documents/DJANGO/AppRadio-Android/app/build/intermediates/res/merged/debug/drawable_consursosmdpi.png.flat",
+        "source": "/home/edward/Documents/DJANGO/AppRadio-Android/app/src/main/res/drawable/consursosmdpi.png"
     },
     {
         "merged": "/home/edward/Documents/DJANGO/AppRadio-Android/app/build/intermediates/res/merged/debug/layout_fragment_concursos_titulo.xml.flat",
@@ -956,20 +996,24 @@
         "source": "/home/edward/Documents/DJANGO/AppRadio-Android/app/src/main/res/drawable/radio_placeholder.jpg"
     },
     {
-        "merged": "/home/edward/Documents/DJANGO/AppRadio-Android/app/build/intermediates/res/merged/debug/drawable_facebook.png.flat",
-        "source": "/home/edward/Documents/DJANGO/AppRadio-Android/app/src/main/res/drawable/facebook.png"
-    },
-    {
         "merged": "/home/edward/Documents/DJANGO/AppRadio-Android/app/build/intermediates/res/merged/debug/drawable-v23_abc_control_background_material.xml.flat",
         "source": "/home/edward/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0-alpha1.aar/d23513c54d692dee502b176c855d54fe/res/drawable-v23/abc_control_background_material.xml"
     },
     {
-        "merged": "/home/edward/Documents/DJANGO/AppRadio-Android/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_abc_tab_indicator_mtrl_alpha.9.png.flat",
-        "source": "/home/edward/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0-alpha1.aar/d23513c54d692dee502b176c855d54fe/res/drawable-mdpi-v4/abc_tab_indicator_mtrl_alpha.9.png"
+        "merged": "/home/edward/Documents/DJANGO/AppRadio-Android/app/build/intermediates/res/merged/debug/drawable_facebook.png.flat",
+        "source": "/home/edward/Documents/DJANGO/AppRadio-Android/app/src/main/res/drawable/facebook.png"
+    },
+    {
+        "merged": "/home/edward/Documents/DJANGO/AppRadio-Android/app/build/intermediates/res/merged/debug/drawable_ic_menu.xml.flat",
+        "source": "/home/edward/Documents/DJANGO/AppRadio-Android/app/src/main/res/drawable/ic_menu.xml"
     },
     {
         "merged": "/home/edward/Documents/DJANGO/AppRadio-Android/app/build/intermediates/res/merged/debug/layout_fragment_home.xml.flat",
         "source": "/home/edward/Documents/DJANGO/AppRadio-Android/app/src/main/res/layout/fragment_home.xml"
+    },
+    {
+        "merged": "/home/edward/Documents/DJANGO/AppRadio-Android/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_abc_tab_indicator_mtrl_alpha.9.png.flat",
+        "source": "/home/edward/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0-alpha1.aar/d23513c54d692dee502b176c855d54fe/res/drawable-mdpi-v4/abc_tab_indicator_mtrl_alpha.9.png"
     },
     {
         "merged": "/home/edward/Documents/DJANGO/AppRadio-Android/app/build/intermediates/res/merged/debug/color_abc_secondary_text_material_light.xml.flat",
@@ -1024,6 +1068,10 @@
         "source": "/home/edward/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0-alpha1.aar/d23513c54d692dee502b176c855d54fe/res/drawable/abc_ic_voice_search_api_material.xml"
     },
     {
+        "merged": "/home/edward/Documents/DJANGO/AppRadio-Android/app/build/intermediates/res/merged/debug/drawable_ic_person_iniciar_session.xml.flat",
+        "source": "/home/edward/Documents/DJANGO/AppRadio-Android/app/src/main/res/drawable/ic_person_iniciar_session.xml"
+    },
+    {
         "merged": "/home/edward/Documents/DJANGO/AppRadio-Android/app/build/intermediates/res/merged/debug/layout_design_bottom_sheet_dialog.xml.flat",
         "source": "/home/edward/.gradle/caches/transforms-1/files-1.1/design-widget-28.0.0-alpha1.aar/b48ac6293f2b56c5d3baaa4fcfff7274/res/layout/design_bottom_sheet_dialog.xml"
     },
@@ -1034,6 +1082,10 @@
     {
         "merged": "/home/edward/Documents/DJANGO/AppRadio-Android/app/build/intermediates/res/merged/debug/drawable_abc_ic_menu_overflow_material.xml.flat",
         "source": "/home/edward/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0-alpha1.aar/d23513c54d692dee502b176c855d54fe/res/drawable/abc_ic_menu_overflow_material.xml"
+    },
+    {
+        "merged": "/home/edward/Documents/DJANGO/AppRadio-Android/app/build/intermediates/res/merged/debug/drawable_background_app3.xml.flat",
+        "source": "/home/edward/Documents/DJANGO/AppRadio-Android/app/src/main/res/drawable/background_app3.xml"
     },
     {
         "merged": "/home/edward/Documents/DJANGO/AppRadio-Android/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_exo_icon_next.png.flat",
@@ -1072,12 +1124,12 @@
         "source": "/home/edward/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0-alpha1.aar/d23513c54d692dee502b176c855d54fe/res/drawable/abc_btn_check_material.xml"
     },
     {
-        "merged": "/home/edward/Documents/DJANGO/AppRadio-Android/app/build/intermediates/res/merged/debug/drawable_abc_ic_go_search_api_material.xml.flat",
-        "source": "/home/edward/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0-alpha1.aar/d23513c54d692dee502b176c855d54fe/res/drawable/abc_ic_go_search_api_material.xml"
-    },
-    {
         "merged": "/home/edward/Documents/DJANGO/AppRadio-Android/app/build/intermediates/res/merged/debug/font_nexa_light.otf.flat",
         "source": "/home/edward/Documents/DJANGO/AppRadio-Android/app/src/main/res/font/nexa_light.otf"
+    },
+    {
+        "merged": "/home/edward/Documents/DJANGO/AppRadio-Android/app/build/intermediates/res/merged/debug/drawable_abc_ic_go_search_api_material.xml.flat",
+        "source": "/home/edward/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0-alpha1.aar/d23513c54d692dee502b176c855d54fe/res/drawable/abc_ic_go_search_api_material.xml"
     },
     {
         "merged": "/home/edward/Documents/DJANGO/AppRadio-Android/app/build/intermediates/res/merged/debug/drawable_background_app.xml.flat",
@@ -1102,6 +1154,10 @@
     {
         "merged": "/home/edward/Documents/DJANGO/AppRadio-Android/app/build/intermediates/res/merged/debug/layout_fragment_blank.xml.flat",
         "source": "/home/edward/Documents/DJANGO/AppRadio-Android/app/src/main/res/layout/fragment_blank.xml"
+    },
+    {
+        "merged": "/home/edward/Documents/DJANGO/AppRadio-Android/app/build/intermediates/res/merged/debug/mipmap-xxxhdpi_ic_back_navigation.png.flat",
+        "source": "/home/edward/Documents/DJANGO/AppRadio-Android/app/src/main/res/mipmap-xxxhdpi/ic_back_navigation.png"
     },
     {
         "merged": "/home/edward/Documents/DJANGO/AppRadio-Android/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_exo_icon_next.png.flat",
@@ -1144,12 +1200,16 @@
         "source": "/home/edward/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0-alpha1.aar/d23513c54d692dee502b176c855d54fe/res/drawable-xhdpi-v4/abc_scrubber_control_to_pressed_mtrl_000.png"
     },
     {
+        "merged": "/home/edward/Documents/DJANGO/AppRadio-Android/app/build/intermediates/res/merged/debug/drawable_round_item.xml.flat",
+        "source": "/home/edward/Documents/DJANGO/AppRadio-Android/app/src/main/res/drawable/round_item.xml"
+    },
+    {
         "merged": "/home/edward/Documents/DJANGO/AppRadio-Android/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_exo_controls_shuffle.png.flat",
         "source": "/home/edward/.gradle/caches/transforms-1/files-1.1/exoplayer-ui-2.9.0.aar/a1f0bc420557ad7dc09909e246a8ce71/res/drawable-xxhdpi-v4/exo_controls_shuffle.png"
     },
     {
-        "merged": "/home/edward/Documents/DJANGO/AppRadio-Android/app/build/intermediates/res/merged/debug/drawable_round_item.xml.flat",
-        "source": "/home/edward/Documents/DJANGO/AppRadio-Android/app/src/main/res/drawable/round_item.xml"
+        "merged": "/home/edward/Documents/DJANGO/AppRadio-Android/app/build/intermediates/res/merged/debug/drawable_menu_lateral_notificaciones.png.flat",
+        "source": "/home/edward/Documents/DJANGO/AppRadio-Android/app/src/main/res/drawable/menu_lateral_notificaciones.png"
     },
     {
         "merged": "/home/edward/Documents/DJANGO/AppRadio-Android/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_abc_btn_check_to_on_mtrl_000.png.flat",
@@ -1182,6 +1242,10 @@
     {
         "merged": "/home/edward/Documents/DJANGO/AppRadio-Android/app/build/intermediates/res/merged/debug/drawable_bg_calendar.xml.flat",
         "source": "/home/edward/Documents/DJANGO/AppRadio-Android/app/src/main/res/drawable/bg_calendar.xml"
+    },
+    {
+        "merged": "/home/edward/Documents/DJANGO/AppRadio-Android/app/build/intermediates/res/merged/debug/drawable_ondas_radio.png.flat",
+        "source": "/home/edward/Documents/DJANGO/AppRadio-Android/app/src/main/res/drawable/ondas_radio.png"
     },
     {
         "merged": "/home/edward/Documents/DJANGO/AppRadio-Android/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_com_facebook_tooltip_blue_xout.png.flat",
@@ -1232,6 +1296,10 @@
         "source": "/home/edward/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0-alpha1.aar/d23513c54d692dee502b176c855d54fe/res/drawable-hdpi-v4/abc_list_pressed_holo_dark.9.png"
     },
     {
+        "merged": "/home/edward/Documents/DJANGO/AppRadio-Android/app/build/intermediates/res/merged/debug/drawable_boton_atras.png.flat",
+        "source": "/home/edward/Documents/DJANGO/AppRadio-Android/app/src/main/res/drawable/boton_atras.png"
+    },
+    {
         "merged": "/home/edward/Documents/DJANGO/AppRadio-Android/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_abc_ic_star_half_black_36dp.png.flat",
         "source": "/home/edward/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0-alpha1.aar/d23513c54d692dee502b176c855d54fe/res/drawable-mdpi-v4/abc_ic_star_half_black_36dp.png"
     },
@@ -1280,12 +1348,12 @@
         "source": "/home/edward/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0-alpha1.aar/d23513c54d692dee502b176c855d54fe/res/drawable-xhdpi-v4/abc_ic_star_black_48dp.png"
     },
     {
-        "merged": "/home/edward/Documents/DJANGO/AppRadio-Android/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_abc_cab_background_top_mtrl_alpha.9.png.flat",
-        "source": "/home/edward/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0-alpha1.aar/d23513c54d692dee502b176c855d54fe/res/drawable-mdpi-v4/abc_cab_background_top_mtrl_alpha.9.png"
-    },
-    {
         "merged": "/home/edward/Documents/DJANGO/AppRadio-Android/app/build/intermediates/res/merged/debug/drawable-v21_abc_btn_colored_material.xml.flat",
         "source": "/home/edward/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0-alpha1.aar/d23513c54d692dee502b176c855d54fe/res/drawable-v21/abc_btn_colored_material.xml"
+    },
+    {
+        "merged": "/home/edward/Documents/DJANGO/AppRadio-Android/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_abc_cab_background_top_mtrl_alpha.9.png.flat",
+        "source": "/home/edward/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0-alpha1.aar/d23513c54d692dee502b176c855d54fe/res/drawable-mdpi-v4/abc_cab_background_top_mtrl_alpha.9.png"
     },
     {
         "merged": "/home/edward/Documents/DJANGO/AppRadio-Android/app/build/intermediates/res/merged/debug/layout-v21_notification_action.xml.flat",
@@ -1472,6 +1540,10 @@
         "source": "/home/edward/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0-alpha1.aar/d23513c54d692dee502b176c855d54fe/res/drawable-mdpi-v4/abc_popup_background_mtrl_mult.9.png"
     },
     {
+        "merged": "/home/edward/Documents/DJANGO/AppRadio-Android/app/build/intermediates/res/merged/debug/drawable_heart.png.flat",
+        "source": "/home/edward/Documents/DJANGO/AppRadio-Android/app/src/main/res/drawable/heart.png"
+    },
+    {
         "merged": "/home/edward/Documents/DJANGO/AppRadio-Android/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_exo_icon_pause.png.flat",
         "source": "/home/edward/.gradle/caches/transforms-1/files-1.1/exoplayer-ui-2.9.0.aar/a1f0bc420557ad7dc09909e246a8ce71/res/drawable-mdpi-v4/exo_icon_pause.png"
     },
@@ -1526,6 +1598,10 @@
     {
         "merged": "/home/edward/Documents/DJANGO/AppRadio-Android/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_abc_list_focused_holo.9.png.flat",
         "source": "/home/edward/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0-alpha1.aar/d23513c54d692dee502b176c855d54fe/res/drawable-xxhdpi-v4/abc_list_focused_holo.9.png"
+    },
+    {
+        "merged": "/home/edward/Documents/DJANGO/AppRadio-Android/app/build/intermediates/res/merged/debug/mipmap-mdpi_ic_back.png.flat",
+        "source": "/home/edward/Documents/DJANGO/AppRadio-Android/app/src/main/res/mipmap-mdpi/ic_back.png"
     },
     {
         "merged": "/home/edward/Documents/DJANGO/AppRadio-Android/app/build/intermediates/res/merged/debug/drawable-v21_abc_edit_text_material.xml.flat",
@@ -1740,6 +1816,10 @@
         "source": "/home/edward/.gradle/caches/transforms-1/files-1.1/facebook-common-4.41.0.aar/e7f2a9979ecbe553e621cd21bbaf9cf6/res/drawable/com_facebook_favicon_blue.xml"
     },
     {
+        "merged": "/home/edward/Documents/DJANGO/AppRadio-Android/app/build/intermediates/res/merged/debug/layout_rv_encuesta_items.xml.flat",
+        "source": "/home/edward/Documents/DJANGO/AppRadio-Android/app/src/main/res/layout/rv_encuesta_items.xml"
+    },
+    {
         "merged": "/home/edward/Documents/DJANGO/AppRadio-Android/app/build/intermediates/res/merged/debug/drawable_logo_caravana_login.png.flat",
         "source": "/home/edward/Documents/DJANGO/AppRadio-Android/app/src/main/res/drawable/logo_caravana_login.png"
     },
@@ -1808,6 +1888,10 @@
         "source": "/home/edward/.gradle/caches/transforms-1/files-1.1/design-bottomsheet-28.0.0-alpha1.aar/5d6830717e8968db5af592cbc9f85b71/res/anim-v21/design_bottom_sheet_slide_out.xml"
     },
     {
+        "merged": "/home/edward/Documents/DJANGO/AppRadio-Android/app/build/intermediates/res/merged/debug/mipmap-xhdpi_ic_back.png.flat",
+        "source": "/home/edward/Documents/DJANGO/AppRadio-Android/app/src/main/res/mipmap-xhdpi/ic_back.png"
+    },
+    {
         "merged": "/home/edward/Documents/DJANGO/AppRadio-Android/app/build/intermediates/res/merged/debug/drawable_com_facebook_button_login_logo.xml.flat",
         "source": "/home/edward/.gradle/caches/transforms-1/files-1.1/facebook-login-4.41.0.aar/2206671704f0892b0c40f6f59383fe9d/res/drawable/com_facebook_button_login_logo.xml"
     },
@@ -1824,10 +1908,6 @@
         "source": "/home/edward/Documents/DJANGO/AppRadio-Android/app/src/main/res/drawable/round_button_left.xml"
     },
     {
-        "merged": "/home/edward/Documents/DJANGO/AppRadio-Android/app/build/intermediates/res/merged/debug/drawable_boton_silencio.png.flat",
-        "source": "/home/edward/Documents/DJANGO/AppRadio-Android/app/src/main/res/drawable/boton_silencio.png"
-    },
-    {
         "merged": "/home/edward/Documents/DJANGO/AppRadio-Android/app/build/intermediates/res/merged/debug/drawable-ldpi-v4_exo_icon_previous.png.flat",
         "source": "/home/edward/.gradle/caches/transforms-1/files-1.1/exoplayer-ui-2.9.0.aar/a1f0bc420557ad7dc09909e246a8ce71/res/drawable-ldpi-v4/exo_icon_previous.png"
     },
@@ -1836,12 +1916,20 @@
         "source": "/home/edward/.gradle/caches/transforms-1/files-1.1/design-tabs-28.0.0-alpha1.aar/c693907b7804ac717bce527b0a70c1c7/res/drawable/mtrl_tabs_default_indicator.xml"
     },
     {
+        "merged": "/home/edward/Documents/DJANGO/AppRadio-Android/app/build/intermediates/res/merged/debug/drawable_boton_sonido.png.flat",
+        "source": "/home/edward/Documents/DJANGO/AppRadio-Android/app/src/main/res/drawable/boton_sonido.png"
+    },
+    {
         "merged": "/home/edward/Documents/DJANGO/AppRadio-Android/app/build/intermediates/res/merged/debug/drawable_logo_radio_caravana.png.flat",
         "source": "/home/edward/Documents/DJANGO/AppRadio-Android/app/src/main/res/drawable/logo_radio_caravana.png"
     },
     {
         "merged": "/home/edward/Documents/DJANGO/AppRadio-Android/app/build/intermediates/res/merged/debug/drawable-v21_abc_list_divider_material.xml.flat",
         "source": "/home/edward/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0-alpha1.aar/d23513c54d692dee502b176c855d54fe/res/drawable-v21/abc_list_divider_material.xml"
+    },
+    {
+        "merged": "/home/edward/Documents/DJANGO/AppRadio-Android/app/build/intermediates/res/merged/debug/drawable_telefono.png.flat",
+        "source": "/home/edward/Documents/DJANGO/AppRadio-Android/app/src/main/res/drawable/telefono.png"
     },
     {
         "merged": "/home/edward/Documents/DJANGO/AppRadio-Android/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_abc_btn_switch_to_on_mtrl_00012.9.png.flat",
@@ -1902,6 +1990,10 @@
     {
         "merged": "/home/edward/Documents/DJANGO/AppRadio-Android/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_com_facebook_button_icon_blue.png.flat",
         "source": "/home/edward/.gradle/caches/transforms-1/files-1.1/facebook-common-4.41.0.aar/e7f2a9979ecbe553e621cd21bbaf9cf6/res/drawable-xxhdpi-v4/com_facebook_button_icon_blue.png"
+    },
+    {
+        "merged": "/home/edward/Documents/DJANGO/AppRadio-Android/app/build/intermediates/res/merged/debug/mipmap-xxhdpi_ic_back_navigation.png.flat",
+        "source": "/home/edward/Documents/DJANGO/AppRadio-Android/app/src/main/res/mipmap-xxhdpi/ic_back_navigation.png"
     },
     {
         "merged": "/home/edward/Documents/DJANGO/AppRadio-Android/app/build/intermediates/res/merged/debug/layout_com_facebook_tooltip_bubble.xml.flat",
@@ -2000,12 +2092,12 @@
         "source": "/home/edward/.gradle/caches/transforms-1/files-1.1/facebook-login-4.41.0.aar/2206671704f0892b0c40f6f59383fe9d/res/drawable-xhdpi-v4/com_facebook_tooltip_blue_bottomnub.png"
     },
     {
-        "merged": "/home/edward/Documents/DJANGO/AppRadio-Android/app/build/intermediates/res/merged/debug/drawable-anydpi-v21_exo_icon_pause.xml.flat",
-        "source": "/home/edward/.gradle/caches/transforms-1/files-1.1/exoplayer-ui-2.9.0.aar/a1f0bc420557ad7dc09909e246a8ce71/res/drawable-anydpi-v21/exo_icon_pause.xml"
-    },
-    {
         "merged": "/home/edward/Documents/DJANGO/AppRadio-Android/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_abc_text_select_handle_right_mtrl_dark.png.flat",
         "source": "/home/edward/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0-alpha1.aar/d23513c54d692dee502b176c855d54fe/res/drawable-xxhdpi-v4/abc_text_select_handle_right_mtrl_dark.png"
+    },
+    {
+        "merged": "/home/edward/Documents/DJANGO/AppRadio-Android/app/build/intermediates/res/merged/debug/drawable-anydpi-v21_exo_icon_pause.xml.flat",
+        "source": "/home/edward/.gradle/caches/transforms-1/files-1.1/exoplayer-ui-2.9.0.aar/a1f0bc420557ad7dc09909e246a8ce71/res/drawable-anydpi-v21/exo_icon_pause.xml"
     },
     {
         "merged": "/home/edward/Documents/DJANGO/AppRadio-Android/app/build/intermediates/res/merged/debug/layout_activity_register_two.xml.flat",
@@ -2046,6 +2138,10 @@
     {
         "merged": "/home/edward/Documents/DJANGO/AppRadio-Android/app/build/intermediates/res/merged/debug/drawable_favorito1mdpi.png.flat",
         "source": "/home/edward/Documents/DJANGO/AppRadio-Android/app/src/main/res/drawable/favorito1mdpi.png"
+    },
+    {
+        "merged": "/home/edward/Documents/DJANGO/AppRadio-Android/app/build/intermediates/res/merged/debug/mipmap-xxxhdpi_ic_back.png.flat",
+        "source": "/home/edward/Documents/DJANGO/AppRadio-Android/app/src/main/res/mipmap-xxxhdpi/ic_back.png"
     },
     {
         "merged": "/home/edward/Documents/DJANGO/AppRadio-Android/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_notification_bg_normal.9.png.flat",
@@ -2324,6 +2420,10 @@
         "source": "/home/edward/Documents/DJANGO/AppRadio-Android/app/src/main/res/mipmap-hdpi/launcher.png"
     },
     {
+        "merged": "/home/edward/Documents/DJANGO/AppRadio-Android/app/build/intermediates/res/merged/debug/mipmap-anydpi-v26_ic_back_round.xml.flat",
+        "source": "/home/edward/Documents/DJANGO/AppRadio-Android/app/src/main/res/mipmap-anydpi-v26/ic_back_round.xml"
+    },
+    {
         "merged": "/home/edward/Documents/DJANGO/AppRadio-Android/app/build/intermediates/res/merged/debug/drawable_navigation_favoritos.png.flat",
         "source": "/home/edward/Documents/DJANGO/AppRadio-Android/app/src/main/res/drawable/navigation_favoritos.png"
     },
@@ -2348,6 +2448,10 @@
         "source": "/home/edward/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0-alpha1.aar/d23513c54d692dee502b176c855d54fe/res/color-v23/abc_tint_btn_checkable.xml"
     },
     {
+        "merged": "/home/edward/Documents/DJANGO/AppRadio-Android/app/build/intermediates/res/merged/debug/mipmap-xxhdpi_ic_back_round.png.flat",
+        "source": "/home/edward/Documents/DJANGO/AppRadio-Android/app/src/main/res/mipmap-xxhdpi/ic_back_round.png"
+    },
+    {
         "merged": "/home/edward/Documents/DJANGO/AppRadio-Android/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_abc_scrubber_primary_mtrl_alpha.9.png.flat",
         "source": "/home/edward/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0-alpha1.aar/d23513c54d692dee502b176c855d54fe/res/drawable-hdpi-v4/abc_scrubber_primary_mtrl_alpha.9.png"
     },
@@ -2364,8 +2468,16 @@
         "source": "/home/edward/.gradle/caches/transforms-1/files-1.1/facebook-common-4.41.0.aar/e7f2a9979ecbe553e621cd21bbaf9cf6/res/drawable/com_facebook_auth_dialog_background.xml"
     },
     {
+        "merged": "/home/edward/Documents/DJANGO/AppRadio-Android/app/build/intermediates/res/merged/debug/drawable_facebook_blanco.png.flat",
+        "source": "/home/edward/Documents/DJANGO/AppRadio-Android/app/src/main/res/drawable/facebook_blanco.png"
+    },
+    {
         "merged": "/home/edward/Documents/DJANGO/AppRadio-Android/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_exo_icon_play.png.flat",
         "source": "/home/edward/.gradle/caches/transforms-1/files-1.1/exoplayer-ui-2.9.0.aar/a1f0bc420557ad7dc09909e246a8ce71/res/drawable-xhdpi-v4/exo_icon_play.png"
+    },
+    {
+        "merged": "/home/edward/Documents/DJANGO/AppRadio-Android/app/build/intermediates/res/merged/debug/drawable_ubicacion.png.flat",
+        "source": "/home/edward/Documents/DJANGO/AppRadio-Android/app/src/main/res/drawable/ubicacion.png"
     },
     {
         "merged": "/home/edward/Documents/DJANGO/AppRadio-Android/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_exo_controls_repeat_all.png.flat",
@@ -2378,6 +2490,10 @@
     {
         "merged": "/home/edward/Documents/DJANGO/AppRadio-Android/app/build/intermediates/res/merged/debug/anim_abc_fade_in.xml.flat",
         "source": "/home/edward/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0-alpha1.aar/d23513c54d692dee502b176c855d54fe/res/anim/abc_fade_in.xml"
+    },
+    {
+        "merged": "/home/edward/Documents/DJANGO/AppRadio-Android/app/build/intermediates/res/merged/debug/mipmap-xxxhdpi_ic_back_round.png.flat",
+        "source": "/home/edward/Documents/DJANGO/AppRadio-Android/app/src/main/res/mipmap-xxxhdpi/ic_back_round.png"
     },
     {
         "merged": "/home/edward/Documents/DJANGO/AppRadio-Android/app/build/intermediates/res/merged/debug/mipmap-xxxhdpi_ic_launcher.png.flat",
@@ -2468,6 +2584,14 @@
         "source": "/home/edward/Documents/DJANGO/AppRadio-Android/app/src/main/res/drawable/chatmdpi.png"
     },
     {
+        "merged": "/home/edward/Documents/DJANGO/AppRadio-Android/app/build/intermediates/res/merged/debug/drawable_logout.png.flat",
+        "source": "/home/edward/Documents/DJANGO/AppRadio-Android/app/src/main/res/drawable/logout.png"
+    },
+    {
+        "merged": "/home/edward/Documents/DJANGO/AppRadio-Android/app/build/intermediates/res/merged/debug/mipmap-xxhdpi_ic_back.png.flat",
+        "source": "/home/edward/Documents/DJANGO/AppRadio-Android/app/src/main/res/mipmap-xxhdpi/ic_back.png"
+    },
+    {
         "merged": "/home/edward/Documents/DJANGO/AppRadio-Android/app/build/intermediates/res/merged/debug/layout_messenger_button_send_white_large.xml.flat",
         "source": "/home/edward/.gradle/caches/transforms-1/files-1.1/facebook-messenger-4.41.0.aar/2b0177b3d500b5c3f88e75f78c058225/res/layout/messenger_button_send_white_large.xml"
     },
@@ -2512,8 +2636,20 @@
         "source": "/home/edward/.gradle/caches/transforms-1/files-1.1/exoplayer-ui-2.9.0.aar/a1f0bc420557ad7dc09909e246a8ce71/res/drawable-xxhdpi-v4/exo_icon_rewind.png"
     },
     {
+        "merged": "/home/edward/Documents/DJANGO/AppRadio-Android/app/build/intermediates/res/merged/debug/mipmap-hdpi_ic_back_round.png.flat",
+        "source": "/home/edward/Documents/DJANGO/AppRadio-Android/app/src/main/res/mipmap-hdpi/ic_back_round.png"
+    },
+    {
         "merged": "/home/edward/Documents/DJANGO/AppRadio-Android/app/build/intermediates/res/merged/debug/drawable_onoff.png.flat",
         "source": "/home/edward/Documents/DJANGO/AppRadio-Android/app/src/main/res/drawable/onoff.png"
+    },
+    {
+        "merged": "/home/edward/Documents/DJANGO/AppRadio-Android/app/build/intermediates/res/merged/debug/drawable_line_divider_top_border.xml.flat",
+        "source": "/home/edward/Documents/DJANGO/AppRadio-Android/app/src/main/res/drawable/line_divider_top_border.xml"
+    },
+    {
+        "merged": "/home/edward/Documents/DJANGO/AppRadio-Android/app/build/intermediates/res/merged/debug/drawable_logo.png.flat",
+        "source": "/home/edward/Documents/DJANGO/AppRadio-Android/app/src/main/res/drawable/logo.png"
     },
     {
         "merged": "/home/edward/Documents/DJANGO/AppRadio-Android/app/build/intermediates/res/merged/debug/drawable-ldpi-v4_exo_controls_fullscreen_exit.png.flat",
@@ -2584,6 +2720,10 @@
         "source": "/home/edward/.gradle/caches/transforms-1/files-1.1/design-textfield-28.0.0-alpha1.aar/60ab611258bc0b30594ebd9942638d35/res/layout/design_text_input_password_icon.xml"
     },
     {
+        "merged": "/home/edward/Documents/DJANGO/AppRadio-Android/app/build/intermediates/res/merged/debug/mipmap-mdpi_ic_back_navigation.png.flat",
+        "source": "/home/edward/Documents/DJANGO/AppRadio-Android/app/src/main/res/mipmap-mdpi/ic_back_navigation.png"
+    },
+    {
         "merged": "/home/edward/Documents/DJANGO/AppRadio-Android/app/build/intermediates/res/merged/debug/drawable_abc_list_selector_background_transition_holo_dark.xml.flat",
         "source": "/home/edward/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0-alpha1.aar/d23513c54d692dee502b176c855d54fe/res/drawable/abc_list_selector_background_transition_holo_dark.xml"
     },
@@ -2604,6 +2744,14 @@
         "source": "/home/edward/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0-alpha1.aar/d23513c54d692dee502b176c855d54fe/res/drawable-watch-v20/abc_dialog_material_background.xml"
     },
     {
+        "merged": "/home/edward/Documents/DJANGO/AppRadio-Android/app/build/intermediates/res/merged/debug/mipmap-xhdpi_ic_back_round.png.flat",
+        "source": "/home/edward/Documents/DJANGO/AppRadio-Android/app/src/main/res/mipmap-xhdpi/ic_back_round.png"
+    },
+    {
+        "merged": "/home/edward/Documents/DJANGO/AppRadio-Android/app/build/intermediates/res/merged/debug/drawable_splash.png.flat",
+        "source": "/home/edward/Documents/DJANGO/AppRadio-Android/app/src/main/res/drawable/splash.png"
+    },
+    {
         "merged": "/home/edward/Documents/DJANGO/AppRadio-Android/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_messenger_bubble_small_blue.png.flat",
         "source": "/home/edward/.gradle/caches/transforms-1/files-1.1/facebook-messenger-4.41.0.aar/2b0177b3d500b5c3f88e75f78c058225/res/drawable-mdpi-v4/messenger_bubble_small_blue.png"
     },
@@ -2614,6 +2762,10 @@
     {
         "merged": "/home/edward/Documents/DJANGO/AppRadio-Android/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4_abc_ic_star_half_black_36dp.png.flat",
         "source": "/home/edward/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0-alpha1.aar/d23513c54d692dee502b176c855d54fe/res/drawable-xxxhdpi-v4/abc_ic_star_half_black_36dp.png"
+    },
+    {
+        "merged": "/home/edward/Documents/DJANGO/AppRadio-Android/app/build/intermediates/res/merged/debug/drawable_menu_lateral_sugerencias.png.flat",
+        "source": "/home/edward/Documents/DJANGO/AppRadio-Android/app/src/main/res/drawable/menu_lateral_sugerencias.png"
     },
     {
         "merged": "/home/edward/Documents/DJANGO/AppRadio-Android/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_exo_controls_fullscreen_exit.png.flat",
@@ -2720,6 +2872,10 @@
         "source": "/home/edward/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/9883a873afb1bff598a5f1a319e17bc8/res/layout/notification_template_part_chronometer.xml"
     },
     {
+        "merged": "/home/edward/Documents/DJANGO/AppRadio-Android/app/build/intermediates/res/merged/debug/drawable_menu_encuesta_gris.png.flat",
+        "source": "/home/edward/Documents/DJANGO/AppRadio-Android/app/src/main/res/drawable/menu_encuesta_gris.png"
+    },
+    {
         "merged": "/home/edward/Documents/DJANGO/AppRadio-Android/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_abc_btn_switch_to_on_mtrl_00001.9.png.flat",
         "source": "/home/edward/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0-alpha1.aar/d23513c54d692dee502b176c855d54fe/res/drawable-xhdpi-v4/abc_btn_switch_to_on_mtrl_00001.9.png"
     },
@@ -2736,10 +2892,6 @@
         "source": "/home/edward/.gradle/caches/transforms-1/files-1.1/exoplayer-ui-2.9.0.aar/a1f0bc420557ad7dc09909e246a8ce71/res/drawable-xxhdpi-v4/exo_notification_small_icon.png"
     },
     {
-        "merged": "/home/edward/Documents/DJANGO/AppRadio-Android/app/build/intermediates/res/merged/debug/drawable_fondosplash_01.png.flat",
-        "source": "/home/edward/Documents/DJANGO/AppRadio-Android/app/src/main/res/drawable/fondosplash_01.png"
-    },
-    {
         "merged": "/home/edward/Documents/DJANGO/AppRadio-Android/app/build/intermediates/res/merged/debug/layout_notification_template_big_media_narrow_custom.xml.flat",
         "source": "/home/edward/.gradle/caches/transforms-1/files-1.1/support-media-compat-28.0.0-alpha1.aar/07f3b7adf12fdbec82208878986850e3/res/layout/notification_template_big_media_narrow_custom.xml"
     },
@@ -2750,6 +2902,10 @@
     {
         "merged": "/home/edward/Documents/DJANGO/AppRadio-Android/app/build/intermediates/res/merged/debug/animator_mtrl_btn_unelevated_state_list_anim.xml.flat",
         "source": "/home/edward/.gradle/caches/transforms-1/files-1.1/design-button-28.0.0-alpha1.aar/ec09c470b1bb2e287c9163f630dc3f80/res/animator/mtrl_btn_unelevated_state_list_anim.xml"
+    },
+    {
+        "merged": "/home/edward/Documents/DJANGO/AppRadio-Android/app/build/intermediates/res/merged/debug/drawable_round_textfield.xml.flat",
+        "source": "/home/edward/Documents/DJANGO/AppRadio-Android/app/src/main/res/drawable/round_textfield.xml"
     },
     {
         "merged": "/home/edward/Documents/DJANGO/AppRadio-Android/app/build/intermediates/res/merged/debug/drawable_video_placeholder.jpg.flat",
@@ -3044,6 +3200,10 @@
         "source": "/home/edward/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0-alpha1.aar/d23513c54d692dee502b176c855d54fe/res/drawable-xxxhdpi-v4/abc_spinner_mtrl_am_alpha.9.png"
     },
     {
+        "merged": "/home/edward/Documents/DJANGO/AppRadio-Android/app/build/intermediates/res/merged/debug/mipmap-mdpi_ic_back_round.png.flat",
+        "source": "/home/edward/Documents/DJANGO/AppRadio-Android/app/src/main/res/mipmap-mdpi/ic_back_round.png"
+    },
+    {
         "merged": "/home/edward/Documents/DJANGO/AppRadio-Android/app/build/intermediates/res/merged/debug/drawable_sugerencias_nav_lateralhdpi.png.flat",
         "source": "/home/edward/Documents/DJANGO/AppRadio-Android/app/src/main/res/drawable/sugerencias_nav_lateralhdpi.png"
     },
@@ -3070,6 +3230,14 @@
     {
         "merged": "/home/edward/Documents/DJANGO/AppRadio-Android/app/build/intermediates/res/merged/debug/drawable-ldpi-v4_exo_icon_fastforward.png.flat",
         "source": "/home/edward/.gradle/caches/transforms-1/files-1.1/exoplayer-ui-2.9.0.aar/a1f0bc420557ad7dc09909e246a8ce71/res/drawable-ldpi-v4/exo_icon_fastforward.png"
+    },
+    {
+        "merged": "/home/edward/Documents/DJANGO/AppRadio-Android/app/build/intermediates/res/merged/debug/drawable_boton_adelante.png.flat",
+        "source": "/home/edward/Documents/DJANGO/AppRadio-Android/app/src/main/res/drawable/boton_adelante.png"
+    },
+    {
+        "merged": "/home/edward/Documents/DJANGO/AppRadio-Android/app/build/intermediates/res/merged/debug/drawable_emisora.png.flat",
+        "source": "/home/edward/Documents/DJANGO/AppRadio-Android/app/src/main/res/drawable/emisora.png"
     },
     {
         "merged": "/home/edward/Documents/DJANGO/AppRadio-Android/app/build/intermediates/res/merged/debug/mipmap-xxhdpi_ic_launcher_round.png.flat",
@@ -3110,6 +3278,10 @@
     {
         "merged": "/home/edward/Documents/DJANGO/AppRadio-Android/app/build/intermediates/res/merged/debug/mipmap-xxxhdpi_logo_caravana_launcher.png.flat",
         "source": "/home/edward/Documents/DJANGO/AppRadio-Android/app/src/main/res/mipmap-xxxhdpi/logo_caravana_launcher.png"
+    },
+    {
+        "merged": "/home/edward/Documents/DJANGO/AppRadio-Android/app/build/intermediates/res/merged/debug/drawable_ic_radio.xml.flat",
+        "source": "/home/edward/Documents/DJANGO/AppRadio-Android/app/src/main/res/drawable/ic_radio.xml"
     },
     {
         "merged": "/home/edward/Documents/DJANGO/AppRadio-Android/app/build/intermediates/res/merged/debug/layout_activity_login.xml.flat",
@@ -3198,10 +3370,6 @@
     {
         "merged": "/home/edward/Documents/DJANGO/AppRadio-Android/app/build/intermediates/res/merged/debug/color_abc_btn_colored_text_material.xml.flat",
         "source": "/home/edward/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0-alpha1.aar/d23513c54d692dee502b176c855d54fe/res/color/abc_btn_colored_text_material.xml"
-    },
-    {
-        "merged": "/home/edward/Documents/DJANGO/AppRadio-Android/app/build/intermediates/res/merged/debug/drawable_antenna.png.flat",
-        "source": "/home/edward/Documents/DJANGO/AppRadio-Android/app/src/main/res/drawable/antenna.png"
     },
     {
         "merged": "/home/edward/Documents/DJANGO/AppRadio-Android/app/build/intermediates/res/merged/debug/drawable_com_facebook_button_icon.xml.flat",
@@ -3302,6 +3470,10 @@
     {
         "merged": "/home/edward/Documents/DJANGO/AppRadio-Android/app/build/intermediates/res/merged/debug/drawable-ldrtl-xxhdpi-v17_abc_ic_menu_copy_mtrl_am_alpha.png.flat",
         "source": "/home/edward/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0-alpha1.aar/d23513c54d692dee502b176c855d54fe/res/drawable-ldrtl-xxhdpi-v17/abc_ic_menu_copy_mtrl_am_alpha.png"
+    },
+    {
+        "merged": "/home/edward/Documents/DJANGO/AppRadio-Android/app/build/intermediates/res/merged/debug/mipmap-anydpi-v26_ic_back.xml.flat",
+        "source": "/home/edward/Documents/DJANGO/AppRadio-Android/app/src/main/res/mipmap-anydpi-v26/ic_back.xml"
     },
     {
         "merged": "/home/edward/Documents/DJANGO/AppRadio-Android/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_exo_controls_fullscreen_enter.png.flat",

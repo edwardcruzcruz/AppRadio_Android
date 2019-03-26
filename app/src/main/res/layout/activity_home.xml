@@ -41,7 +41,7 @@
         android:layout_height="wrap_content"
         android:background="@color/color_menu"
         app:itemIconTint="@drawable/bottom_nav_item_colors"
-        app:itemTextColor="@color/text_color"
+        app:itemTextColor="@color/color_text2"
         app:labelVisibilityMode="labeled"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
@@ -55,10 +55,10 @@
         android:layout_width="200dp"
         android:layout_height="match_parent"
         android:layout_gravity="end"
-        android:backgroundTint="@color/appColorTheme"
+        android:backgroundTint="@color/background"
         app:menu="@menu/menu_lateral"
-        app:itemTextColor="@color/text_color"
-        app:itemIconTint="@color/seleccion_nav"
+        app:itemTextColor="@color/color_text2"
+        app:itemIconTint="@color/color_text"
         >
 
         <LinearLayout
@@ -67,22 +67,26 @@
             android:layout_height="wrap_content"
             android:layout_gravity="bottom"
             android:clickable="true"
+            android:background="@drawable/line_divider_top_border"
             android:orientation="horizontal"
             android:layout_marginBottom="20dp">
 
             <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:src="@drawable/cerrar_sesionmdpi"
-                android:layout_marginStart="15dp"/>
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="15dp"
+                android:src="@drawable/logout"/>
 
             <TextView
                 android:id="@+id/tv_cerrar_sesion"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginLeft="2dp"
+                android:layout_marginTop="7dp"
                 android:gravity="start"
                 android:text="Cerrar Sesion"
-                android:textColor="@color/text_color"
+                android:textColor="@color/color_text2"
                 android:layout_marginStart="25dp"
                 android:layout_gravity="center"
                 />

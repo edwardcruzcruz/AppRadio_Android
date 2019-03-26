@@ -1,6 +1,7 @@
 package com.innovasystem.appradio.Classes.Adapters;
 
 import android.content.Context;
+import android.graphics.Bitmap;
 import android.support.annotation.NonNull;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
@@ -8,6 +9,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageButton;
 import android.widget.ImageView;
+import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -87,7 +89,9 @@ public class EmisoraHomeAdapter extends  RecyclerView.Adapter<EmisoraHomeAdapter
             if(favoritos!=null && favoritos.contains(this.emisoras_dataset.get(emisora))){
                 viewHolder.tv_txtfavorito.setText("• Programa Favorito •");
                 viewHolder.btn_addfav.setClickable(false);
-                viewHolder.btn_addfav.setImageDrawable(context.getResources().getDrawable(R.drawable.favoritos_nav_lateralmdpi));
+                //aquiii revisar el tamaño _________________________________________________________________________
+                viewHolder.btn_addfav.setImageDrawable(context.getResources().getDrawable(R.drawable.heart));
+                viewHolder.btn_addfav.getImageMatrix().setScale(5,5);
             }
         }
         else{
@@ -122,7 +126,7 @@ public class EmisoraHomeAdapter extends  RecyclerView.Adapter<EmisoraHomeAdapter
                     Toast.makeText(context, "agregado a favoritos", Toast.LENGTH_SHORT).show();
                     viewHolder.tv_txtfavorito.setText("• Programa Favorito •");
                     viewHolder.btn_addfav.setClickable(false);
-                    viewHolder.btn_addfav.setImageDrawable(context.getResources().getDrawable(R.drawable.favoritos_nav_lateralmdpi));
+                    viewHolder.btn_addfav.setImageDrawable(context.getResources().getDrawable(R.drawable.heart));
                 }
                 else{
                     Toast.makeText(context, "Ha ocurrido un error al procesar su solicitud, intente luego", Toast.LENGTH_SHORT).show();

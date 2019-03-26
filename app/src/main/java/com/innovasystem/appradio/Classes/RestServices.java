@@ -10,11 +10,13 @@ import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.JsonObjectRequest;
 import com.android.volley.toolbox.Volley;
+import com.innovasystem.appradio.Classes.Models.Alternativa;
 import com.innovasystem.appradio.Classes.Models.Conductor;
 import com.innovasystem.appradio.Classes.Models.Emisora;
 import com.innovasystem.appradio.Classes.Models.Encuesta;
 import com.innovasystem.appradio.Classes.Models.Fecha;
 import com.innovasystem.appradio.Classes.Models.Multimedia;
+import com.innovasystem.appradio.Classes.Models.Pregunta;
 import com.innovasystem.appradio.Classes.Models.RedSocialEmisora;
 import com.innovasystem.appradio.Classes.Models.Segmento;
 import com.innovasystem.appradio.Classes.Models.TelefonoEmisora;
@@ -327,7 +329,52 @@ public class RestServices {
 
         return new ArrayList<>(Arrays.asList(segmentos));
     }
+    public static List<Pregunta>    consultarPreguntasEncuesta(Context c, int idEncuesta) {
+        HttpHeaders reqHeaders = new HttpHeaders();
+        reqHeaders.setAccept(Collections.singletonList(new MediaType("application", "json")));
+        String token=SessionConfig.getSessionConfig(c).getValue(SessionConfig.userToken);
+        String tokenDesencriptado=SessionConfig.getSessionConfig(c).DesencriptarToken(token);
+        reqHeaders.set("Authorization", tokenDesencriptado);
+        HttpEntity<?> requestEntity = new HttpEntity<Object>(reqHeaders);
+        Pregunta[] preguntas = null;
+        RestTemplate restTemplate = new RestTemplate();
+        String url = Constants.serverDomain + String.format(Constants.uripreguntas, idEncuesta);
 
+        try {
+            ResponseEntity<Pregunta[]> responseEntity = restTemplate.exchange(url, HttpMethod.GET, requestEntity, Pregunta[].class);
+            if (responseEntity.getStatusCode() == HttpStatus.OK) {
+                preguntas = responseEntity.getBody();
+            }
+        } catch (Exception e) {
+            Log.e("RestGetError", e.getMessage());
+            return null;
+        }
+
+        return new ArrayList<>(Arrays.asList(preguntas));
+    }
+    public static List<Alternativa>    consultarAlternativasPregunta(Context c, int idPregunta) {
+        HttpHeaders reqHeaders = new HttpHeaders();
+        reqHeaders.setAccept(Collections.singletonList(new MediaType("application", "json")));
+        String token=SessionConfig.getSessionConfig(c).getValue(SessionConfig.userToken);
+        String tokenDesencriptado=SessionConfig.getSessionConfig(c).DesencriptarToken(token);
+        reqHeaders.set("Authorization", tokenDesencriptado);
+        HttpEntity<?> requestEntity = new HttpEntity<Object>(reqHeaders);
+        Alternativa[] alternativas = null;
+        RestTemplate restTemplate = new RestTemplate();
+        String url = Constants.serverDomain + String.format(Constants.urialternativas, idPregunta);
+
+        try {
+            ResponseEntity<Alternativa[]> responseEntity = restTemplate.exchange(url, HttpMethod.GET, requestEntity, Alternativa[].class);
+            if (responseEntity.getStatusCode() == HttpStatus.OK) {
+                alternativas = responseEntity.getBody();
+            }
+        } catch (Exception e) {
+            Log.e("RestGetError", e.getMessage());
+            return null;
+        }
+
+        return new ArrayList<>(Arrays.asList(alternativas));
+    }
     /*si es concusro agregar las preguntas y lo adicional ...*/
     public static List<Encuesta>    consultarConcursos(Context c, int idSegmentos) {
         HttpHeaders reqHeaders = new HttpHeaders();

@@ -1,8 +1,10 @@
 package com.innovasystem.appradio.Fragments;
 
 
+import android.content.Context;
 import android.os.AsyncTask;
 import android.os.Bundle;
+import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
 import android.text.SpannableString;
 import android.text.style.UnderlineSpan;
@@ -37,7 +39,7 @@ public class EmisoraInfoFragment extends Fragment {
     JustifiedTextView tv_descripcion_emisora;
     TextView tv_web_emisora,tv_telef_emisora,tv_ubicacion_emisora;
     LinearLayout layoutManager;
-
+    ImageView logo;
     Emisora emisora;
 
 
@@ -46,16 +48,19 @@ public class EmisoraInfoFragment extends Fragment {
     }
 
 
+
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View root= inflater.inflate(R.layout.fragment_emisora_info, container, false);
         tv_descripcion_emisora= root.findViewById(R.id.tv_descripcion_emisora);
+        logo=root.findViewById(R.id.logo_radio);
         tv_web_emisora= root.findViewById(R.id.tv_web_emisora);
         tv_telef_emisora= root.findViewById(R.id.tv_telef_emisora);
         tv_ubicacion_emisora= root.findViewById(R.id.tv_ubicacion_emisora);
         layoutManager= root.findViewById(R.id.lin_layout_info_emisora);
+
 
         emisora= EmisoraContentFragment.emisora;
 
@@ -68,6 +73,7 @@ public class EmisoraInfoFragment extends Fragment {
 
         return root;
     }
+
 
     /**
      * Clase Task que obtiene los datos de telefono y redes sociales de la emisora
@@ -96,7 +102,12 @@ public class EmisoraInfoFragment extends Fragment {
             else{
                 tv_telef_emisora.setText("Ninguno");
             }
-
+            if(emisora.getNombre().equals("Radio Diblu")){
+                logo.setBackground(getContext().getDrawable(R.drawable.logo_diblu));
+            }
+            if(emisora.getNombre().equals("Radio Caravana")){
+                logo.setBackground(getContext().getDrawable(R.drawable.logo_caravana));
+            }
             if(redes!= null){
                 LinearLayout container;
                 Button button;

@@ -69,9 +69,9 @@ public class EmisoraContentFragment extends Fragment {
 
     private void setupViewPager(ViewPager viewPager) {
         adapter = new FragmentsAdapter(getChildFragmentManager());
-        adapter.addFragment(new EmisoraInfoFragment(),"Info");
-        adapter.addFragment(new NoticiasFragment(),"Noticias");
-        adapter.addFragment(new SegmentosFragment(),"Programación");
+        adapter.addFragment(new EmisoraInfoFragment(),"INFO");
+        adapter.addFragment(new NoticiasFragment(),"NOTICIAS");
+        adapter.addFragment(new SegmentosFragment(),"PROGRAMACIÓN");
         viewPager.setAdapter(adapter);
     }
 

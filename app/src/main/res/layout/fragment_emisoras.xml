@@ -23,6 +23,7 @@
             android:fontFamily="@font/app_font"
             android:text="EMISORAS"
             android:textAlignment="center"
+            android:visibility="gone"
             android:textColor="@color/text_color"
             android:textSize="24sp"
             android:textStyle="bold"

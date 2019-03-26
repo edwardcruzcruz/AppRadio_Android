@@ -3,28 +3,28 @@
 
     <item
         android:id="@+id/navigation_concursos"
-        android:icon="@drawable/nav_consursos"
+        android:icon="@drawable/cup_concurso"
         android:title="@string/title_concursos" />
 
     <item
         android:id="@+id/navigation_emisoras"
-        android:icon="@drawable/nav_emisoras"
+        android:icon="@drawable/emisora"
         android:title="@string/title_emisoras" />
 
     <item
         android:id="@+id/navigation_home"
-        android:icon="@drawable/nav_radio"
+        android:icon="@drawable/ic_radio"
         android:title="@string/title_home" />
 
 
     <item
         android:id="@+id/navigation_encuestas"
-        android:icon="@drawable/encuestas"
+        android:icon="@drawable/menu_encuesta_gris"
         android:title="@string/title_encuestas" />
 
     <item
         android:id="@+id/navigation_menu"
-        android:icon="@drawable/menu"
+        android:icon="@drawable/ic_menu"
         android:title="@string/title_navigation" />
 
 </menu>

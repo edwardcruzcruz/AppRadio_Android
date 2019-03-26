@@ -17,6 +17,12 @@
 
         <!-- TODO: Update blank fragment layout -->
 
+        <ImageView
+            android:id="@+id/logo_radio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:srcCompat="@null" />
+
         <com.uncopt.android.widget.text.justify.JustifiedTextView
             android:id="@+id/tv_descripcion_emisora"
             android:layout_width="match_parent"
@@ -34,13 +40,13 @@
 
             <ImageView
                 android:id="@+id/imageView"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="15dp"
+                android:layout_height="25dp"
                 android:layout_gravity="center"
                 android:layout_marginStart="5dp"
                 android:layout_weight="0.05"
                 android:adjustViewBounds="true"
-                android:src="@drawable/website_emisoramdpi" />
+                android:src="@drawable/web" />
 
             <TextView
                 android:id="@+id/tv_web_emisora"
@@ -50,7 +56,7 @@
                 android:layout_marginStart="12dp"
                 android:layout_weight="0.95"
                 android:text="Ninguna"
-                android:textColor="@color/text_color"
+                android:textColor="@color/color_text"
                 android:textSize="17sp" />
 
         </LinearLayout>
@@ -63,15 +69,15 @@
 
             <ImageView
                 android:id="@+id/imageView4"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="15dp"
+                android:layout_height="25dp"
                 android:layout_gravity="center"
                 android:layout_marginStart="5dp"
                 android:layout_weight="0.05"
                 android:adjustViewBounds="true"
                 android:baselineAlignBottom="false"
                 android:cropToPadding="false"
-                android:src="@drawable/telefono_emisoramdpi" />
+                android:src="@drawable/telefono" />
 
             <TextView
                 android:id="@+id/tv_telef_emisora"
@@ -81,7 +87,7 @@
                 android:layout_marginStart="20dp"
                 android:layout_weight="0.95"
                 android:text="Ninguna"
-                android:textColor="@color/text_color"
+                android:textColor="@color/color_text"
                 android:textSize="17sp" />
 
         </LinearLayout>
@@ -94,14 +100,14 @@
 
             <ImageView
                 android:id="@+id/imageView5"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="15dp"
+                android:layout_height="25dp"
                 android:layout_gravity="center"
                 android:layout_marginStart="5dp"
                 android:layout_weight="0.05"
                 android:adjustViewBounds="true"
                 android:cropToPadding="false"
-                android:src="@drawable/ubicacion_emisoramdpi" />
+                android:src="@drawable/ubicacion" />
 
             <TextView
                 android:id="@+id/tv_ubicacion_emisora"
@@ -112,7 +118,7 @@
                 android:layout_weight="0.95"
                 android:lines="2"
                 android:text="Ninguna"
-                android:textColor="@color/text_color"
+                android:textColor="@color/color_text"
                 android:textSize="17sp" />
 
         </LinearLayout>

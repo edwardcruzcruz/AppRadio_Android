@@ -96,7 +96,7 @@ public class ProgramacionAdapter extends BaseAdapter{
             System.out.println("HORA EN VIVO!");
             System.out.println(String.format("HORAS: %s - %s - %s\n",h_inicio,h_fin,horaActual.getHora()));
             //linear_container.setBackgroundColor(Color.TRANSPARENT);
-            tv_transimision.setVisibility(View.GONE);
+            tv_transimision.setVisibility(View.INVISIBLE);
         }
 
         if(favoritos.contains(segmento)){

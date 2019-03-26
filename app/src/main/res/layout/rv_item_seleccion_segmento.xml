@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content">
 
@@ -11,39 +12,75 @@
         android:orientation="horizontal"
         android:paddingBottom="10dp"
         android:textAlignment="center"
+        android:background="@drawable/round_item"
         android:weightSum="10">
+        <LinearLayout
+            android:layout_width="135dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="Programa"
+                android:layout_marginTop="10dp"
+                android:textSize="10dp"
+                android:textAlignment="center"
+                android:layout_gravity="center_horizontal"
+                android:textColor="@color/color_text"/>
+            <TextView
+                android:id="@+id/programa_nombre"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="3.5"
+                android:textColor="@color/text_color"
+                android:paddingTop="10dp"
+                android:text="nulo" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Hora"
+                android:textSize="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="5dp"
+                android:textAlignment="center"
+                android:layout_gravity="center_horizontal"
+                android:textColor="@color/color_text"/>
+            <Button
+                android:id="@+id/btn_segmento_horario"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_weight="3.5"
+                android:background="@null"
+                android:backgroundTint="@color/TextColor"
+                android:paddingTop="10dp"
+                android:text="Button"
+                android:textAllCaps="false"
+                android:textColor="@color/text_color"
+                android:textSize="12sp" />
+        </LinearLayout>
 
-        <Button
-            android:id="@+id/btn_segmento_horario"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="10dp"
-            android:layout_weight="3.5"
-            android:background="@drawable/round_button"
-            android:backgroundTint="@color/TextColor"
-            android:paddingTop="10dp"
-            android:text="Button"
-            android:textAllCaps="false"
-            android:textColor="@color/text_color"
-            android:textSize="12sp" />
 
         <Button
             android:id="@+id/btn_segmento_titulo"
-            android:layout_width="0dp"
+            android:layout_width="90dp"
             android:layout_height="wrap_content"
-            android:layout_marginEnd="10dp"
-            android:layout_marginStart="6dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="5dp"
             android:layout_weight="6.5"
-            android:background="@drawable/round_button"
-            android:backgroundTint="@color/seleccion_nav"
+            android:background="@drawable/round_button2"
+            android:backgroundTint="@color/color_text"
             android:elevation="11dp"
             android:lines="3"
-            android:paddingEnd="5dp"
-            android:paddingStart="5dp"
-            android:paddingTop="10dp"
-            android:text="sagsdgasdgadsgasdgasdgagasdgasd"
+            android:text="MAS INFORMACIÓN"
             android:textAllCaps="false"
-            android:textColor="@color/text_color"
+            android:textColor="@color/appColorTheme"
             android:textSize="12sp" />
 
     </LinearLayout>

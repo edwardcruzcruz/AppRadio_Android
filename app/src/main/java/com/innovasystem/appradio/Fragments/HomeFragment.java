@@ -1,11 +1,14 @@
 package com.innovasystem.appradio.Fragments;
 
 
+import android.annotation.TargetApi;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.AsyncTask;
+import android.os.Build;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
+import android.support.annotation.RequiresApi;
 import android.support.design.widget.Snackbar;
 import android.support.v4.app.Fragment;
 import android.support.v7.widget.LinearSnapHelper;
@@ -257,6 +260,7 @@ public class HomeFragment extends Fragment {
                 return listaEmisoras;
             }
 
+            @RequiresApi(api = Build.VERSION_CODES.M)
             @Override
             protected void onPostExecute(List<Emisora> emisoras) {
                 super.onPostExecute(emisoras);
@@ -273,7 +277,7 @@ public class HomeFragment extends Fragment {
                 ciudad_picker.setOnItemSelectedListener(new HorizontalPicker.OnItemSelected(){
                     @Override
                     public void onItemSelected(int index) {
-                        Toast.makeText(getContext(), ciudad_picker.getValues()[index], Toast.LENGTH_SHORT).show();
+                       Toast.makeText(getContext(), ciudad_picker.getValues()[index], Toast.LENGTH_SHORT).show();
                         SessionConfig.getSessionConfig(getContext()).CrearProvincia(ciudades[index]);
                         System.out.println("Provincia"+ciudades[index]);
 
@@ -311,7 +315,9 @@ public class HomeFragment extends Fragment {
                     public void onScrollStateChanged(@NonNull RecyclerView recyclerView, int newState) {
                         super.onScrollStateChanged(recyclerView, newState);
                         if(newState == RecyclerView.SCROLL_STATE_IDLE){
+                            System.out.println("aqui esta la posicion o estado del scroll idle"+newState);
                             int itemPos= ((CarouselLayoutManager) recyclerView.getLayoutManager()).getCenterItemPosition();
+                            System.out.println("2.aqui esta la posicion o estado del scroll idle"+itemPos);
                             Emisora em=((EmisoraHomeAdapter)recyclerView.getAdapter()).emisoras_keys.get(itemPos);
                             streamingActual= em.getUrl_streaming();
                             if(!streamingActual.equals(RadioStreamService.radioURL) && radion_on && !muted) {
@@ -338,11 +344,13 @@ public class HomeFragment extends Fragment {
                 btn_silenciar.setOnClickListener(btn_mute_listener);
 
                 if(radion_on){
-                    btn_apagar.setBackground(getContext().getDrawable(R.drawable.round_button_enabled_left));
+                    //btn_apagar.setBackground(getContext().getDrawable(R.drawable.round_button_enabled_left));
+                    btn_apagar.setColorFilter(getContext().getColor(R.color.color_text));
                 }
 
                 if(muted){
-                    btn_silenciar.setBackground(getContext().getDrawable(R.drawable.round_button_enabled));
+                    //btn_silenciar.setBackground(getContext().getDrawable(R.drawable.round_button_enabled));
+                    btn_silenciar.setColorFilter(getContext().getColor(R.color.color_text2));
                 }
 
 
@@ -358,16 +366,18 @@ public class HomeFragment extends Fragment {
      */
     private final View.OnClickListener btn_apagar_listener= new View.OnClickListener(){
 
+        @TargetApi(Build.VERSION_CODES.M)
+        @RequiresApi(api = Build.VERSION_CODES.M)
         @Override
         public void onClick(View view) {
             if(!radion_on){
                 System.out.println("Start Playing!!!!!");
                 if(Utils.isNetworkAvailable(getContext())) {
-                    btn_apagar.setBackground(getContext().getDrawable(R.drawable.round_button_enabled_left));
+                    btn_apagar.setColorFilter(getContext().getColor(R.color.color_text));
                     radion_on = true;
                     tarea6=new StartStreamingTask().execute();
                     if(muted){
-                        btn_silenciar.setBackground(getContext().getDrawable(R.drawable.round_button_right));
+                        btn_silenciar.setColorFilter(getContext().getColor(R.color.color_text));
                         muted= false;
                     }
                 }
@@ -377,7 +387,8 @@ public class HomeFragment extends Fragment {
                 }
             }
             else{
-                btn_apagar.setBackground(getContext().getDrawable(R.drawable.round_button_left));
+                //btn_apagar.setBackground(getContext().getDrawable(R.drawable.round_button_left));
+                btn_apagar.setColorFilter(getContext().getColor(R.color.color_text2));
                 Intent intent = new Intent();
                 intent.setAction(RadioStreamService.BROADCAST_TO_SERVICE);
                 intent.putExtra(RadioStreamService.PLAYER_FUNCTION_TYPE, RadioStreamService.STOP_MEDIA_PLAYER);
@@ -392,7 +403,7 @@ public class HomeFragment extends Fragment {
         @Override
         public void onClick(View view) {
             if(!muted){
-                btn_silenciar.setBackground(getContext().getDrawable(R.drawable.round_button_enabled));
+                btn_silenciar.setColorFilter(getContext().getColor(R.color.color_text));
                 Intent intent = new Intent();
                 intent.setAction(RadioStreamService.BROADCAST_TO_SERVICE);
                 intent.putExtra(RadioStreamService.PLAYER_FUNCTION_TYPE, RadioStreamService.PAUSE_MEDIA_PLAYER);
@@ -400,7 +411,7 @@ public class HomeFragment extends Fragment {
                 muted=true;
             }
             else{
-                btn_silenciar.setBackground(getContext().getDrawable(R.drawable.round_button_right));
+                btn_silenciar.setColorFilter(getContext().getColor(R.color.color_text2));
                 Intent intent = new Intent();
 
                 if(RadioStreamService.radioURL.equals(streamingActual)) {
@@ -617,6 +628,7 @@ public class HomeFragment extends Fragment {
                         if (adapter.emisoras_keys.get(i).getUrl_streaming().equals(RadioStreamService.radioURL)) {
                             rv_home.scrollToPosition(i);
                             streamingActual = adapter.emisoras_keys.get(i).getUrl_streaming();
+                            System.out.println("oyeeeeeee + "+adapter.emisoras_keys.get(i));
                         }
                     }
 

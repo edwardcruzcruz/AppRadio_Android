@@ -41,12 +41,14 @@ public class SegmentosAdapter extends RecyclerView.Adapter<SegmentosAdapter.View
     public static class ViewHolder extends  RecyclerView.ViewHolder{
 
         Button btn_titulo_segmento;
+        TextView titulo_segmento;
         Button btn_horario_segmento;
 
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
             this.btn_titulo_segmento= itemView.findViewById(R.id.btn_segmento_titulo);
             this.btn_horario_segmento= itemView.findViewById(R.id.btn_segmento_horario);
+            this.titulo_segmento= itemView.findViewById(R.id.programa_nombre);
         }
     }
 
@@ -62,7 +64,8 @@ public class SegmentosAdapter extends RecyclerView.Adapter<SegmentosAdapter.View
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
         Horario hor= keysList.get(position);
         Segmento seg= segmentos_dataset.get(hor);
-        holder.btn_titulo_segmento.setText(seg.getNombre());
+        //holder.btn_titulo_segmento.setText(seg.getNombre());
+        holder.titulo_segmento.setText(seg.getNombre());
         holder.btn_horario_segmento.setText( hor.getFecha_inicio().substring(0,5) + " - " + hor.getFecha_fin().substring(0,5));
 
         holder.btn_titulo_segmento.setOnClickListener((View v)->{

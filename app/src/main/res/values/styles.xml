@@ -5,7 +5,7 @@
         <!-- Customize your theme here. -->
         <item name="colorPrimary">@color/appColorTheme</item>
         <item name="colorPrimaryDark">@color/appColorTheme</item>
-        <item name="colorAccent">@color/seleccion_nav</item>
+        <item name="colorAccent">@color/color_text</item>
         <item name="android:fontFamily">@font/app_font</item>
         <item name="coordinatorLayoutStyle">@style/Widget.Design.NavigationView</item>
         <item name="bottomNavigationStyle">@style/Widget.Design.BottomNavigationView</item>
@@ -13,7 +13,7 @@
 
 
     <style name="CircularProgress" parent="Theme.AppCompat.Light">
-        <item name="colorAccent">@color/seleccion_nav</item>
+        <item name="colorAccent">@color/color_text</item>
     </style>
 
 

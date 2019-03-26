@@ -15,9 +15,7 @@ import com.innovasystem.appradio.Activities.HomeActivity;
 import com.innovasystem.appradio.Classes.ItemClickListener;
 import com.innovasystem.appradio.Classes.Models.Emisora;
 import com.innovasystem.appradio.Fragments.EmisoraContentFragment;
-import com.innovasystem.appradio.Fragments.EmisorasFragment;
 import com.innovasystem.appradio.R;
-import com.squareup.picasso.Picasso;
 
 import java.util.List;
 
@@ -84,6 +82,12 @@ public class EmisorasAdapter extends  RecyclerView.Adapter<RecyclerView.ViewHold
             Emisora em= (Emisora) emisoras_dataset.get(position);
             holder.tv_titulo_emisora.setText(em.getNombre());
             holder.tv_info_emisora.setText(em.getFrecuencia_dial());
+            if(em.getNombre().equals("Radio Diblu")){
+                holder.iv_emisora.setBackground(this.context.getDrawable(R.drawable.logo_diblu));
+            }
+            if(em.getNombre().equals("Radio Caravana")){
+                holder.iv_emisora.setBackground(this.context.getDrawable(R.drawable.logo_caravana));
+            }
             /*Picasso.with(context)
                     .load(em.getLogotipo())
                     .placeholder(R.drawable.radio_banner2)

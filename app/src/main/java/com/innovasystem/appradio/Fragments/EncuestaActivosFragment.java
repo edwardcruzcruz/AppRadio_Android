@@ -13,8 +13,11 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.innovasystem.appradio.Classes.Adapters.ConcursosActivosAdapter;
+import com.innovasystem.appradio.Classes.Adapters.EncuestasActivosAdapter;
+import com.innovasystem.appradio.Classes.Models.Alternativa;
 import com.innovasystem.appradio.Classes.Models.Emisora;
 import com.innovasystem.appradio.Classes.Models.Encuesta;
+import com.innovasystem.appradio.Classes.Models.Pregunta;
 import com.innovasystem.appradio.Classes.Models.Segmento;
 import com.innovasystem.appradio.Classes.RestServices;
 import com.innovasystem.appradio.Classes.SessionConfig;
@@ -115,23 +118,32 @@ public class EncuestaActivosFragment extends Fragment {
      */
     private class RestFetchConcursoActivoTask extends AsyncTask<Void,Void,Void>{
         List<Segmento> Segmentos;
-        List<Integer> PosicionesSegmentosConcursosActivos;
         List<List<Encuesta>> encuestas;
-        List<Encuesta> encuestas_resultado;
-        List<Segmento> segmentos_resultado;
+        List<List<Pregunta>> preguntas;
+        List<List<Alternativa>> alternativas;
         @Override
         protected Void doInBackground(Void... voids) {
             encuestas=new ArrayList<>();
-            segmentos_resultado=new ArrayList<>();
-            Segmentos=RestServices.consultarSegmentosToday(getActivity().getApplicationContext());
+            alternativas    =new ArrayList<>();
+            preguntas=new ArrayList<>();
+            Segmentos=(RestServices.consultarSegmentosToday(getActivity().getApplicationContext()));
             for (int i = 0 ; i < Segmentos.size() ; i++){
                 List<Encuesta> encuesta=RestServices.consultarEncuesta(getActivity().getApplicationContext(),Segmentos.get(i).getId().intValue());
                 if(encuesta.size()!=0){
                     for(int j = 0 ; j < encuesta.size() ; j++){
-                        segmentos_resultado.add(Segmentos.get(i));
+                        if(encuesta.get(j).getActivo().equals("A")){
+                            List<Pregunta> pregunta=RestServices.consultarPreguntasEncuesta(getActivity().getApplicationContext(),encuesta.get(j).getId().intValue());
+                            preguntas.add(pregunta);
+                        }
                     }
-                    encuestas.add(encuesta);
                 }
+            }
+            for(int i=0;i<preguntas.size();i++){
+                for(int j=0;j<preguntas.get(i).size();j++){
+                    List<Alternativa> alternativa=RestServices.consultarAlternativasPregunta(getActivity().getApplicationContext(),preguntas.get(i).get(j).getId().intValue());
+                    alternativas.add(alternativa);
+                }
+
             }
             return null;
         }
@@ -141,34 +153,19 @@ public class EncuestaActivosFragment extends Fragment {
             super.onPostExecute(aVoid);
             progressBar.setVisibility(View.GONE);
             System.out.println("IMPRIMIENDO RESULTADO_______");
-            if(encuestas == null){
+            if(preguntas == null){
                 Toast.makeText(getContext(), "Ocurrio un error con el servidor, intente mas tarde", Toast.LENGTH_SHORT).show();
                 tv_mensaje.setVisibility(View.VISIBLE);
                 return;
             }
 
-            if(encuestas.size() == 0){
+            if(preguntas.size() == 0){
                 tv_mensaje.setVisibility(View.VISIBLE);
                 return;
             }
-            encuestas_resultado=new ArrayList<>();
-            int cont=0;
-            PosicionesSegmentosConcursosActivos=new ArrayList<>();
-            for (int i = 0 ; i < encuestas.size() ; i++) {
-                for (int j = 0; j < encuestas.get(i).size(); j++){
 
-                    if(encuestas.get(i).get(j).getActivo().equals("A")){
-                        PosicionesSegmentosConcursosActivos.add(cont);
-                        encuestas_resultado.add(encuestas.get(i).get(j));
-                    }
-                    cont++;
-                }
-            }
-            List<Segmento> copia=new ArrayList<>(segmentos_resultado);
-            segmentos_resultado.clear();
-            for(int i =0; i<PosicionesSegmentosConcursosActivos.size(); i++) {
-                segmentos_resultado.add(copia.get(PosicionesSegmentosConcursosActivos.get(i)));
-            }
+
+            //System.out.println("termino_bien 1 a 1 pasar al adapter con el for o items");
             /*
             Map<Horario,Segmento> mapa_segmentos=new TreeMap<>();
             for (int i = 0; i < listaSegmentos.size(); i++) {
@@ -183,7 +180,7 @@ public class EncuestaActivosFragment extends Fragment {
                 System.out.println("-->horario: " + hor.getFecha_inicio() + " - " + hor.getFecha_fin());
             }
             */
-            ConcursosActivosAdapter segmentoAdapter=new ConcursosActivosAdapter(getContext(),encuestas_resultado,segmentos_resultado);
+            EncuestasActivosAdapter segmentoAdapter=new EncuestasActivosAdapter(getContext(),preguntas,alternativas);
             rv_segmentos_concurso.setAdapter(segmentoAdapter);
             rv_segmentos_concurso.getAdapter().notifyDataSetChanged();
 

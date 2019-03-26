@@ -79,6 +79,7 @@
                 android:layout_height="50dp"
                 android:layout_marginTop="5dp"
                 android:background="@color/bgCintaCiudad"
+                android:visibility="gone"
                 android:backgroundTint="@color/bgCintaCiudad"
                 android:fontFamily="@font/app_font"
                 android:marqueeRepeatLimit="-1"
@@ -90,65 +91,72 @@
 
             <ImageView
                 android:id="@+id/iv_izq"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
                 android:layout_marginStart="8dp"
                 android:layout_marginTop="8dp"
-                android:layout_marginEnd="130dp"
+                android:layout_marginEnd="8dp"
                 android:layout_marginBottom="8dp"
                 android:elevation="10dp"
-                android:src="@drawable/izquierda"
-                app:layout_constraintBottom_toTopOf="@+id/rv_home"
-                app:layout_constraintEnd_toEndOf="@+id/ciudad_picker"
-                app:layout_constraintStart_toStartOf="@+id/ciudad_picker"
-                app:layout_constraintTop_toTopOf="@+id/ciudad_picker" />
+                android:src="@drawable/boton_atras"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.022"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.199" />
 
             <ImageView
                 android:id="@+id/iv_der"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
                 android:layout_marginStart="130dp"
                 android:layout_marginTop="8dp"
                 android:layout_marginEnd="8dp"
                 android:layout_marginBottom="8dp"
                 android:elevation="10dp"
-                android:src="@drawable/derecha"
-                app:layout_constraintBottom_toTopOf="@+id/rv_home"
-                app:layout_constraintEnd_toEndOf="@+id/ciudad_picker"
-                app:layout_constraintStart_toStartOf="@+id/ciudad_picker"
-                app:layout_constraintTop_toTopOf="@+id/ciudad_picker" />
+                android:src="@drawable/boton_adelante"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.99"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.199"/>
 
             <android.support.v7.widget.RecyclerView
                 android:id="@+id/rv_home"
-                android:layout_width="match_parent"
-                android:layout_height="270dp"
+                android:layout_width="384dp"
+                android:layout_height="324dp"
+                android:clipToPadding="false"
                 android:background="@drawable/background_app"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/ciudad_picker"/>
+                app:layout_constraintTop_toBottomOf="@+id/ciudad_picker" />
 
             <ImageButton
                 android:id="@+id/btn_apagar"
-                android:layout_width="50dp"
-                android:layout_height="27dp"
-                android:layout_marginEnd="76dp"
-                android:adjustViewBounds="true"
+                android:layout_width="47dp"
+                android:layout_height="37dp"
+                android:adjustViewBounds="false"
                 android:background="@null"
                 android:cropToPadding="true"
-                android:padding="7dp"
-                android:paddingStart="12dp"
-                android:paddingEnd="20dp"
+                android:padding="5dp"
+                android:paddingStart="14dp"
+                android:paddingEnd="8dp"
                 android:scaleType="fitXY"
-                android:src="@drawable/apagarmdpi"
+                android:src="@drawable/onoff"
                 android:tint="@color/color_text2"
+                app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/rv_home" />
+                app:layout_constraintHorizontal_bias="0.85"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.478" />
 
             <ImageButton
                 android:id="@+id/btn_mute"
                 android:layout_width="47dp"
-                android:layout_height="27dp"
-                android:layout_marginStart="5dp"
+                android:layout_height="37dp"
                 android:adjustViewBounds="false"
                 android:background="@null"
                 android:cropToPadding="true"
@@ -156,10 +164,14 @@
                 android:paddingStart="15dp"
                 android:paddingEnd="10dp"
                 android:scaleType="fitXY"
-                android:src="@drawable/silenciar"
+                android:src="@drawable/boton_sonido"
                 android:tint="@color/color_text2"
-                app:layout_constraintStart_toEndOf="@+id/btn_apagar"
-                app:layout_constraintTop_toBottomOf="@+id/rv_home"/>
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.99"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.478"/>
 
             <LinearLayout
                 android:id="@+id/linearLayout"
@@ -243,6 +255,7 @@
                     android:layout_weight="1"
                     android:fontFamily="@font/app_font"
                     android:text="EMISORA"
+                    android:visibility="invisible"
                     android:textAlignment="textStart"
                     android:textColor="@color/color_text2"
                     android:textSize="11sp" />
@@ -269,5 +282,7 @@
 
         </android.support.constraint.ConstraintLayout>
     </ScrollView>
+
+
 
 </FrameLayout>

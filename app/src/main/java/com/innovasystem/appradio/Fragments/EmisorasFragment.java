@@ -75,7 +75,7 @@ public class EmisorasFragment extends Fragment{
 
         rv_emisoras= root.findViewById(R.id.rv_emisoras);
         rv_emisoras.setHasFixedSize(true);
-        lmanager= new GridLayoutManager(getContext(),2);
+        lmanager= new GridLayoutManager(getContext(),1);
         rv_emisoras.setLayoutManager(lmanager);
         progressBar= root.findViewById(R.id.progressBar_emisoras);
 

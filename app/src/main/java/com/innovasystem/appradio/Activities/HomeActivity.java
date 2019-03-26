@@ -103,7 +103,8 @@ public class HomeActivity extends AppCompatActivity {
             public void onClick(View v) {
                 SessionConfig.getSessionConfig(getApplication()).logoutUser();
                 stopService(intentService);
-                finish();
+                unregisterReceiver(receiverFromservice);
+                   finish();
             }
         });
 
@@ -147,14 +148,17 @@ public class HomeActivity extends AppCompatActivity {
 
 
             if(getSupportFragmentManager().findFragmentById(R.id.frame_container)instanceof HomeFragment){
+                System.out.println("se cambia de fragmento");
                 finish();
             }
             //Si no queda ningun elemento en el Stack del Manager, entonces volvemos al home
             if(getSupportFragmentManager().getBackStackEntryCount() == 0){
                 navigation.setSelectedItemId(R.id.navigation_home);
+                System.out.println("se cambia al home");
             }
             else{
                 getSupportFragmentManager().popBackStackImmediate();
+                System.out.println("no se -----------");
             }
 
             return true;
@@ -178,8 +182,8 @@ public class HomeActivity extends AppCompatActivity {
         FragmentManager fm = getSupportFragmentManager();
         FragmentTransaction ft = fm.beginTransaction();
         ft.replace(viewResource, fragment);
-        //if(addToStack)
-        //    ft.addToBackStack(null); //Esto hace que el fragmentManager mantenga en su stack este fragment
+        if(addToStack)
+            ft.addToBackStack(null); //Esto hace que el fragmentManager mantenga en su stack este fragment
         ft.commit();
     }
 

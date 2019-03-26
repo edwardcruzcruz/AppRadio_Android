@@ -3,7 +3,7 @@ package com.innovasystem.appradio.Utils;
 public class Constants {
 
     public static final String serverDomain = "http://etcruz.pythonanywhere.com";
-    //public static final String serverDomain = "http://10.107.17.18:8000";
+    //public static final String serverDomain = "http://192.168.1.2:8000";
 
     //Uri para servicios de logueo
     public static final String uriLogIn = "/api/rest-auth/login/";
@@ -13,6 +13,8 @@ public class Constants {
     public static final String uriHora= "/api/hora_actual/";
     public static final String uriEmisoras= "/api/emisoras/";
     public static final String uriSegmentos= "/api/segmentos";
+    public static final String uripreguntas= "/api/preguntasEncuesta/%d";
+    public static final String urialternativas= "/api/alternativaspregunta/%d";
     public static final String uriSegmentosEmisora= "/api/%d/segmentos";
     public static final String uriSegmentosConcurso= "/api/segmentos/%d/encuestas/1";
     public static final String uriSegmentosEncuesta= "/api/segmentos/%d/encuestas/0";

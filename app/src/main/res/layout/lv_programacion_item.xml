@@ -30,7 +30,7 @@
                 android:textSize="14sp" />
 
             <TextView
-                android:id="@+id/tv_programacion_transmision"
+                android:id="@+id/tv_programacion_emisora"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="8dp"
@@ -38,11 +38,13 @@
                 android:layout_weight="0.3"
                 android:fontFamily="@font/app_font"
                 android:gravity="center_vertical"
-                android:text="• En transmisión •"
+                android:text="TextView"
+                android:visibility="visible"
                 android:textAlignment="textStart"
-                android:textColor="@color/seleccion_nav"
+                android:textColor="@color/color_text"
                 android:textSize="11sp"
                 android:textStyle="bold" />
+
         </LinearLayout>
 
         <LinearLayout
@@ -71,20 +73,20 @@
                 android:adjustViewBounds="true"
                 android:cropToPadding="false"
                 android:visibility="gone"
-                app:srcCompat="@drawable/favoritos_nav_lateralmdpi" />
+                app:srcCompat="@drawable/heart" />
 
         </LinearLayout>
-
         <TextView
-            android:id="@+id/tv_programacion_emisora"
+            android:id="@+id/tv_programacion_transmision"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
             android:layout_weight="0.3"
             android:fontFamily="@font/app_font"
             android:gravity="center_vertical"
-            android:text="TextView"
-            android:textColor="@color/text_color"
-            android:textSize="14sp" />
+            android:text="• En vivo •"
+            android:textColor="@color/color_text"
+            android:textSize="14sp"
+            android:textStyle="bold"/>
     </LinearLayout>
 </RelativeLayout>
