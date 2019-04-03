@@ -29,6 +29,7 @@
                 android:layout_gravity="left"
                 android:layout_weight="5"
                 android:paddingRight="50dp"
+                android:visibility="invisible"
                 android:src="@drawable/ic_navigate_before_black_24dp" />
 
             <LinearLayout

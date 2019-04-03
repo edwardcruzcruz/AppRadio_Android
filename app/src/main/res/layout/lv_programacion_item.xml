@@ -15,7 +15,7 @@
         <LinearLayout
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_weight="0.3"
+            android:layout_weight="0.4"
             android:orientation="vertical">
 
             <TextView
@@ -23,6 +23,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="0.3"
+                android:layout_marginRight="1dp"
                 android:fontFamily="@font/app_font"
                 android:gravity="center_vertical"
                 android:text="TextView"
@@ -39,7 +40,7 @@
                 android:fontFamily="@font/app_font"
                 android:gravity="center_vertical"
                 android:text="TextView"
-                android:visibility="visible"
+                android:visibility="gone"
                 android:textAlignment="textStart"
                 android:textColor="@color/color_text"
                 android:textSize="11sp"
@@ -50,7 +51,8 @@
         <LinearLayout
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_weight="0.3"
+            android:layout_marginLeft="1dp"
+            android:layout_weight="0.5"
             android:orientation="horizontal">
 
             <TextView
@@ -88,5 +90,19 @@
             android:textColor="@color/color_text"
             android:textSize="14sp"
             android:textStyle="bold"/>
+        <TextView
+            android:id="@+id/tv_programacion_transmision2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_weight="0.3"
+            android:fontFamily="@font/app_font"
+            android:gravity="center_vertical"
+            android:text="     -     "
+            android:visibility="gone"
+            android:textColor="@color/color_text"
+            android:textSize="14sp"
+            android:textStyle="bold"/>
+
     </LinearLayout>
 </RelativeLayout>

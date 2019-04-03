@@ -2,6 +2,7 @@ package com.innovasystem.appradio.Classes.Adapters;
 
 import android.content.Context;
 import android.graphics.Bitmap;
+import android.graphics.drawable.TransitionDrawable;
 import android.support.annotation.NonNull;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
@@ -39,16 +40,18 @@ public class EmisoraHomeAdapter extends  RecyclerView.Adapter<EmisoraHomeAdapter
 
     public static class ViewHolder extends  RecyclerView.ViewHolder{
         TextView tv_radio, tv_frecuencia,tv_segmento,tv_horario,tv_txtfavorito;
-        ImageButton btn_chat,btn_addfav;
-        ImageView img_segmento;
+        ImageButton btn_chat,btn_addfav,btn_deletefav;
+        ImageView img_segmento,portada;
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
             this.tv_radio= itemView.findViewById(R.id.tv_hitem_radio);
+            this.portada=itemView.findViewById(R.id.logo);
             this.tv_frecuencia= itemView.findViewById(R.id.tv_hitem_frecuencia);
             this.tv_segmento= itemView.findViewById(R.id.tv_hitem_prog_actual);
             this.tv_horario= itemView.findViewById(R.id.tv_hitem_horario);
             this.btn_chat= itemView.findViewById(R.id.btn_hitem_chat);
             this.btn_addfav= itemView.findViewById(R.id.btn_hitem_favorito);
+            this.btn_deletefav= itemView.findViewById(R.id.btn_favorito_deshacer);
             this.img_segmento= itemView.findViewById(R.id.img_hitem_segmento);
             this.tv_txtfavorito= itemView.findViewById(R.id.tv_hitem_favorito);
         }
@@ -67,7 +70,13 @@ public class EmisoraHomeAdapter extends  RecyclerView.Adapter<EmisoraHomeAdapter
         Emisora emisora= this.emisoras_keys.get(i);
         viewHolder.tv_radio.setText(emisora.getNombre());
         viewHolder.tv_frecuencia.setText(emisora.getFrecuencia_dial());
-
+        if(emisora.getNombre().equals("Radio Diblu")){
+            viewHolder.portada.setBackground(context.getDrawable(R.drawable.icono_diblu));
+        }
+        if(emisora.getNombre().equals("Radio Caravana")){
+            viewHolder.portada.setBackground(context.getDrawable(R.drawable.logo_radio_caravana1));
+            //viewHolder.portada.requestLayout();
+        }
         if(this.emisoras_dataset.get(emisora) != null) {
             viewHolder.tv_segmento.setText(this.emisoras_dataset.get(emisora).getNombre());
             viewHolder.tv_horario.setText(String.format("%s - %s",
@@ -90,8 +99,8 @@ public class EmisoraHomeAdapter extends  RecyclerView.Adapter<EmisoraHomeAdapter
                 viewHolder.tv_txtfavorito.setText("• Programa Favorito •");
                 viewHolder.btn_addfav.setClickable(false);
                 //aquiii revisar el tamaño _________________________________________________________________________
-                viewHolder.btn_addfav.setImageDrawable(context.getResources().getDrawable(R.drawable.heart));
-                viewHolder.btn_addfav.getImageMatrix().setScale(5,5);
+                viewHolder.btn_addfav.setImageResource(R.drawable.heart1);
+                //viewHolder.btn_deletefav.setVisibility(View.VISIBLE);
             }
         }
         else{
@@ -126,7 +135,8 @@ public class EmisoraHomeAdapter extends  RecyclerView.Adapter<EmisoraHomeAdapter
                     Toast.makeText(context, "agregado a favoritos", Toast.LENGTH_SHORT).show();
                     viewHolder.tv_txtfavorito.setText("• Programa Favorito •");
                     viewHolder.btn_addfav.setClickable(false);
-                    viewHolder.btn_addfav.setImageDrawable(context.getResources().getDrawable(R.drawable.heart));
+                    //viewHolder.btn_addfav.setImageDrawable(context.getResources().getDrawable(R.drawable.heart));
+                    Picasso.with(context).load(R.drawable.heart).resize(15,15).into(viewHolder.btn_addfav);
                 }
                 else{
                     Toast.makeText(context, "Ha ocurrido un error al procesar su solicitud, intente luego", Toast.LENGTH_SHORT).show();

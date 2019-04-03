@@ -118,7 +118,7 @@ public class EncuestaActivosFragment extends Fragment {
      */
     private class RestFetchConcursoActivoTask extends AsyncTask<Void,Void,Void>{
         List<Segmento> Segmentos;
-        List<List<Encuesta>> encuestas;
+        List<Encuesta> encuestas;
         List<List<Pregunta>> preguntas;
         List<List<Alternativa>> alternativas;
         @Override
@@ -132,6 +132,7 @@ public class EncuestaActivosFragment extends Fragment {
                 if(encuesta.size()!=0){
                     for(int j = 0 ; j < encuesta.size() ; j++){
                         if(encuesta.get(j).getActivo().equals("A")){
+                            encuestas.add(encuesta.get(j));
                             List<Pregunta> pregunta=RestServices.consultarPreguntasEncuesta(getActivity().getApplicationContext(),encuesta.get(j).getId().intValue());
                             preguntas.add(pregunta);
                         }

@@ -83,10 +83,12 @@ public class EmisorasAdapter extends  RecyclerView.Adapter<RecyclerView.ViewHold
             holder.tv_titulo_emisora.setText(em.getNombre());
             holder.tv_info_emisora.setText(em.getFrecuencia_dial());
             if(em.getNombre().equals("Radio Diblu")){
-                holder.iv_emisora.setBackground(this.context.getDrawable(R.drawable.logo_diblu));
+                holder.iv_emisora.setBackground(this.context.getDrawable(R.drawable.icono_diblu));
             }
             if(em.getNombre().equals("Radio Caravana")){
-                holder.iv_emisora.setBackground(this.context.getDrawable(R.drawable.logo_caravana));
+                holder.iv_emisora.setBackground(this.context.getDrawable(R.drawable.icono_caravana));
+                holder.iv_emisora.requestLayout();
+                holder.iv_emisora.getLayoutParams().height=60;
             }
             /*Picasso.with(context)
                     .load(em.getLogotipo())

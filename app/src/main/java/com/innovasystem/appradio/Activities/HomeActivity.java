@@ -103,8 +103,8 @@ public class HomeActivity extends AppCompatActivity {
             public void onClick(View v) {
                 SessionConfig.getSessionConfig(getApplication()).logoutUser();
                 stopService(intentService);
-                unregisterReceiver(receiverFromservice);
-                   finish();
+                finish();
+                onDestroy();
             }
         });
 

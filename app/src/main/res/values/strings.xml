@@ -45,7 +45,7 @@
     <string name="text_forgot_password">¿Olvidaste tu contraseña?</string>
     <string name="text_enter_with">Ingresar con</string>
     <string name="text_register">No tienes cuenta?</string>
-    <string name="text_register_here"><u>¿Usuario Nuevo? Regístrese Ahora</u></string>
+    <string name="text_register_here">¿Usuario Nuevo? Regístrese Ahora</string>
     <string name="hint_username">Usuario</string>
     <string name="hint_password">Contraseña</string>
     <string name="text_loading">Cargando....</string>

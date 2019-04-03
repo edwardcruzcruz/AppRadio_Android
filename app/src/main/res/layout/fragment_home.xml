@@ -89,16 +89,16 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
-            <ImageView
+            <ImageButton
                 android:id="@+id/iv_izq"
-                android:layout_width="25dp"
+                android:layout_width="15dp"
                 android:layout_height="25dp"
                 android:layout_marginStart="8dp"
                 android:layout_marginTop="8dp"
-                android:layout_marginEnd="8dp"
+                android:layout_marginEnd="6dp"
                 android:layout_marginBottom="8dp"
                 android:elevation="10dp"
-                android:src="@drawable/boton_atras"
+                android:background="@drawable/left_arrow"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.022"
@@ -106,16 +106,17 @@
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintVertical_bias="0.199" />
 
-            <ImageView
-                android:id="@+id/iv_der"
-                android:layout_width="25dp"
+            <ImageButton
+                android:id="@+id/btn_der"
+                android:layout_width="15dp"
                 android:layout_height="25dp"
                 android:layout_marginStart="130dp"
                 android:layout_marginTop="8dp"
                 android:layout_marginEnd="8dp"
                 android:layout_marginBottom="8dp"
+                android:cropToPadding="true"
                 android:elevation="10dp"
-                android:src="@drawable/boton_adelante"
+                android:background="@drawable/right_arrow"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.99"
@@ -177,7 +178,7 @@
                 android:id="@+id/linearLayout"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="50dp"
+                android:layout_marginTop="30dp"
                 android:layout_weight="1"
                 android:orientation="horizontal"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -202,7 +203,7 @@
                     android:text="PROGRAMACIÓN"
                     android:textAlignment="center"
                     android:textColor="@color/color_text"
-                    android:textSize="14sp" />
+                    android:textSize="18sp" />
 
                 <View
                     android:id="@+id/divider3"
@@ -219,9 +220,9 @@
                 android:id="@+id/linearTitle"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
-                android:layout_marginLeft="10dp"
+                android:layout_marginLeft="14dp"
                 android:layout_marginTop="12dp"
-                android:layout_marginRight="10dp"
+                android:layout_marginRight="14dp"
                 android:layout_weight="1"
                 android:orientation="horizontal"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -234,18 +235,22 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:fontFamily="@font/app_font"
+                    android:paddingLeft="7dp"
                     android:text="HORARIO"
-                    android:textColor="@color/color_text2"
+                    android:textColor="@color/text_color"
+                    android:textStyle="bold"
                     android:textSize="11sp" />
 
                 <TextView
                     android:id="@+id/textView17"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:paddingLeft="20dp"
                     android:layout_weight="1"
                     android:fontFamily="@font/app_font"
                     android:text="PROGRAMA"
-                    android:textColor="@color/color_text2"
+                    android:textStyle="bold"
+                    android:textColor="@color/text_color"
                     android:textSize="11sp" />
 
                 <TextView
@@ -253,11 +258,12 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
+                    android:paddingLeft="40dp"
+                    android:textStyle="bold"
                     android:fontFamily="@font/app_font"
-                    android:text="EMISORA"
-                    android:visibility="invisible"
+                    android:text="TRANSMISION"
                     android:textAlignment="textStart"
-                    android:textColor="@color/color_text2"
+                    android:textColor="@color/text_color"
                     android:textSize="11sp" />
 
             </LinearLayout>

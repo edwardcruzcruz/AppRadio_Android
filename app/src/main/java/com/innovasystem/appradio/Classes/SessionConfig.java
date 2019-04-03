@@ -27,7 +27,7 @@ public class SessionConfig{
     private static SessionConfig sessionConfig;
 
     public static final String provincia="provincia";
-    public static final String AsyncTaskHome="vacio";
+    public static final String Emisora="vacio";
 
     public SessionConfig(Context context) {
         this._context = context;
@@ -49,8 +49,8 @@ public class SessionConfig{
         editor.putString(provincia, Provincia);
         editor.commit();
     }
-    public void AsignarTareahome(String tarea){
-        editor.putString(AsyncTaskHome, tarea);
+    public void AsignarEmisora(String tarea){
+        editor.putString(Emisora, tarea);
         editor.commit();
     }
     public boolean checkLogin() {

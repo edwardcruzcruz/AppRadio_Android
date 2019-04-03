@@ -9,12 +9,12 @@
     <android.support.v7.widget.CardView
         android:layout_width="180dp"
         android:layout_height="180dp"
-        android:layout_marginBottom="5dp"
         android:layout_marginEnd="5dp"
-        android:layout_marginStart="90dp"
-        android:layout_marginTop="30dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="60dp"
         android:animateLayoutChanges="true"
-        android:backgroundTint="@color/background"
+        app:cardCornerRadius="10dp"
+        android:backgroundTint="@color/color_casillas_boton"
         app:cardElevation="10dp">
 
         <android.support.constraint.ConstraintLayout
@@ -25,7 +25,9 @@
             <ImageView
                 android:id="@+id/iv_emisora_item"
                 android:layout_width="match_parent"
-                android:layout_height="0dp"
+                android:layout_height="60dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
                 android:contentDescription="segmentoImagen"
                 android:scaleType="fitXY"
                 android:tint="@null"
@@ -49,7 +51,7 @@
                     android:layout_marginTop="15dp"
                     android:gravity="center"
                     android:lines="2"
-                    android:visibility="invisible"
+                    android:visibility="gone"
                     android:text="Titulo Emisora"
                     android:textAllCaps="true"
                     android:textColor="@android:color/background_light"
@@ -64,11 +66,12 @@
                     android:layout_marginEnd="5dp"
                     android:layout_marginStart="5dp"
                     android:gravity="center"
-                    android:visibility="invisible"
+                    android:visibility="gone"
                     android:text="Frecuencia"
                     android:textColor="@android:color/background_light"
                     android:textSize="15sp" />
             </LinearLayout>
+
 
         </android.support.constraint.ConstraintLayout>
 

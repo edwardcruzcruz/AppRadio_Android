@@ -38,7 +38,7 @@ public class EmisoraInfoFragment extends Fragment {
 
     JustifiedTextView tv_descripcion_emisora;
     TextView tv_web_emisora,tv_telef_emisora,tv_ubicacion_emisora;
-    LinearLayout layoutManager;
+    LinearLayout layoutManager,redesSociales;
     ImageView logo;
     Emisora emisora;
 
@@ -60,12 +60,12 @@ public class EmisoraInfoFragment extends Fragment {
         tv_telef_emisora= root.findViewById(R.id.tv_telef_emisora);
         tv_ubicacion_emisora= root.findViewById(R.id.tv_ubicacion_emisora);
         layoutManager= root.findViewById(R.id.lin_layout_info_emisora);
-
+        redesSociales=root.findViewById(R.id.tv_redesSociales);
 
         emisora= EmisoraContentFragment.emisora;
 
         tv_descripcion_emisora.setText(emisora.getDescripcion());
-        tv_web_emisora.setText(emisora.getSitio_web());
+        tv_web_emisora.setText(emisora.getSitio_web().substring(7));
         //tv_telef_emisora.setText("1234567890 - 11122233345");
         tv_ubicacion_emisora.setText(emisora.getDireccion());
 
@@ -116,31 +116,37 @@ public class EmisoraInfoFragment extends Fragment {
                 for(RedSocialEmisora red: redes){
                     if(red.getNombre().equalsIgnoreCase("Facebook")){
                         imgView= new ImageView(getContext());
-                        Picasso.with(getContext()).load(R.drawable.facebook).resize(90,100).into(imgView);
+                        Picasso.with(getContext()).load(R.drawable.facebook_info).resize(30,35).into(imgView);
 
                     }
                     else if(red.getNombre().equalsIgnoreCase("Twitter")){
                         imgView= new ImageView(getContext());
-                        Picasso.with(getContext()).load(R.drawable.twitter_icon).resize(90,100).into(imgView);
+                        Picasso.with(getContext()).load(R.drawable.twiter_info).resize(30,35).into(imgView);
                     }
                     else if(red.getNombre().equalsIgnoreCase("Youtube")){
                         imgView= new ImageView(getContext());
-                        Picasso.with(getContext()).load(R.drawable.youtube_icon).resize(90,100).into(imgView);
+                        Picasso.with(getContext()).load(R.drawable.youtube_icon).resize(25,35).into(imgView);
                     }
                     else{
                         imgView= new ImageView(getContext());
                         Picasso.with(getContext()).load(R.drawable.social_media_icon).centerInside().into(imgView);
                     }
-                    LinearLayout.LayoutParams layoutParams= new LinearLayout.LayoutParams(0, ViewGroup.LayoutParams.WRAP_CONTENT,0.05f);
-                    layoutParams.setMarginStart(30);
-                    layoutParams.setMarginEnd(60);
+                    LinearLayout.LayoutParams layoutParams= new LinearLayout.LayoutParams(0, ViewGroup.LayoutParams.MATCH_PARENT,0.05f);
+                    layoutParams.setMarginStart(10);
+                    layoutParams.setMarginEnd(10);
                     layoutParams.gravity= Gravity.CENTER;
                     imgView.setLayoutParams(layoutParams);
 
                     SpannableString username;
-                    if(red.getLink().matches("(.*)\\.com/(\\w|\\s|\\d)+")){
+                    ///(?:http://)?(?:www.)?facebook.com/(?:(?:w)*#!/)?(?:pages/)?(?:[w-]*/)*([w-]*)/
+
+                    if(red.getLink().matches("(.*)\\.com/(\\w|\\s|\\d)+")|| red.getLink().matches("(.*)\\.com/(\\w|\\s)+[0-9][0-9]\\.[0-9]/")|| red.getLink().matches("(.*)\\.com/(\\w|\\s)+/")){
                         int index= red.getLink().indexOf("com/");
-                        username= new SpannableString(red.getLink().substring(index+4,red.getLink().length() ) );
+                        if(red.getNombre().equals("Facebook")){
+                            username= new SpannableString(red.getLink().substring(index+4,red.getLink().length()-1 ) );
+                        }else{
+                            username= new SpannableString(red.getLink().substring(index+4,red.getLink().length() ) );
+                        }
                     }
                     else{
                         username= new SpannableString(red.getLink());
@@ -150,11 +156,11 @@ public class EmisoraInfoFragment extends Fragment {
                     button=new Button(getContext());
                     button.setBackgroundColor(getContext().getResources().getColor(android.R.color.transparent));
                     button.setText(username);
-                    button.setTextSize(16);
+                    button.setTextSize(12);
                     button.setTextAlignment(View.TEXT_ALIGNMENT_VIEW_START);
                     button.setAllCaps(false);
-                    button.setTextColor(getContext().getResources().getColor(R.color.text_color));
-                    button.setLayoutParams(new LinearLayout.LayoutParams(0, ViewGroup.LayoutParams.WRAP_CONTENT,0.95f));
+                    button.setTextColor(getContext().getResources().getColor(R.color.color_text));
+                    button.setLayoutParams(new LinearLayout.LayoutParams(0, ViewGroup.LayoutParams.WRAP_CONTENT,0.45f));
                     button.setOnClickListener((View v)->{
                         WebFragment fragment= new WebFragment();
                         Bundle args= new Bundle();
@@ -167,7 +173,7 @@ public class EmisoraInfoFragment extends Fragment {
                     container.addView(imgView);
                     container.addView(button);
 
-                    layoutManager.addView(container);
+                    redesSociales.addView(container);
 
 
                 }

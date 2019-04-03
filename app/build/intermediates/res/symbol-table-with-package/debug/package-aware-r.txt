@@ -1255,6 +1255,7 @@ drawable exo_notification_small_icon
 drawable exo_notification_stop
 drawable facebook
 drawable facebook_blanco
+drawable facebook_info
 drawable facebookmdpi
 drawable favorito1
 drawable favorito1mdpi
@@ -1264,8 +1265,11 @@ drawable favoritos_nav_lateralhdpi
 drawable favoritos_nav_lateralmdpi
 drawable favoritos_nav_lateralxhdpi
 drawable google
+drawable google_blanco
 drawable googlemdpi
 drawable heart
+drawable heart1
+drawable heart2
 drawable heart_2
 drawable horariohdpi
 drawable horariomdpi
@@ -1285,10 +1289,17 @@ drawable ic_password
 drawable ic_person_iniciar_session
 drawable ic_radio
 drawable ic_ver_concurso_24dp
+drawable icono_caravana
+drawable icono_caravana_2
+drawable icono_diblu
+drawable icono_ohconde
 drawable image_placeholder
 drawable info_radio
 drawable izquierda
 drawable izquierdamdpi
+drawable left_arrow
+drawable left_arrow_1
+drawable left_arrow_2
 drawable line_divider
 drawable line_divider_top_border
 drawable logo
@@ -1296,7 +1307,8 @@ drawable logo_caravana
 drawable logo_caravana_login
 drawable logo_caravana_splash
 drawable logo_diblu
-drawable logo_radio_caravana
+drawable logo_ohconde
+drawable logo_radio_caravana1
 drawable logout
 drawable menu
 drawable menu_encuesta_gris
@@ -1353,6 +1365,7 @@ drawable radio_logo
 drawable radio_placeholder
 drawable radio_placeholder2
 drawable radiomdpi
+drawable right_arrow
 drawable round_button
 drawable round_button2
 drawable round_button_enabled
@@ -1376,6 +1389,9 @@ drawable telefono_emisoramdpi
 drawable telefono_emisoraxhdpi
 drawable tooltip_frame_dark
 drawable tooltip_frame_light
+drawable trans_off
+drawable trans_on
+drawable twiter_info
 drawable twitter_icon
 drawable ubicacion
 drawable ubicacion_emisorahdpi
@@ -1441,7 +1457,9 @@ id bnt_close_modal_video
 id bottom
 id box_count
 id btn_apagar
+id btn_der
 id btn_favitem_favorito
+id btn_favorito_deshacer
 id btn_galeria
 id btn_hitem_chat
 id btn_hitem_favorito
@@ -1499,6 +1517,7 @@ id design_menu_item_action_area
 id design_menu_item_action_area_stub
 id design_menu_item_text
 id design_navigation_view
+id dias_restante
 id dimensions
 id direct
 id disableHome
@@ -1582,7 +1601,6 @@ id inline
 id invisible
 id italic
 id item_touch_helper_previous_elevation
-id iv_der
 id iv_emisora_item
 id iv_imagen_galeria
 id iv_imagen_locutor
@@ -1610,6 +1628,7 @@ id listv_programas
 id loading_view
 id login_form
 id login_progress
+id logo
 id logo_radio
 id masked
 id media_actions
@@ -1642,6 +1661,7 @@ id normal
 id notification_background
 id notification_main_column
 id notification_main_column_container
+id ohconde
 id one
 id open_graph
 id outline
@@ -1852,6 +1872,8 @@ id tv_programacion_emisora
 id tv_programacion_horario
 id tv_programacion_segmento
 id tv_programacion_transmision
+id tv_programacion_transmision2
+id tv_redesSociales
 id tv_segmento_descripcion
 id tv_segmento_horarios
 id tv_segmento_info_titulo
@@ -1959,7 +1981,6 @@ layout exo_player_control_view
 layout exo_player_view
 layout exo_simple_player_view
 layout exo_track_selection_dialog
-layout fragment_blank
 layout fragment_chat
 layout fragment_concursos
 layout fragment_concursos_titulo
@@ -2022,11 +2043,6 @@ layout support_simple_spinner_dropdown_item
 menu menu_lateral
 menu navigation_emisora
 menu navigation_main
-mipmap ic_back
-mipmap ic_back_navigation
-mipmap ic_back_round
-mipmap ic_launcher
-mipmap ic_launcher_round
 mipmap launcher
 mipmap logo_caravana_launcher
 string abc_action_bar_home_description

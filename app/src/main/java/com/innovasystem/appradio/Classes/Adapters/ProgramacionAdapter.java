@@ -1,5 +1,6 @@
 package com.innovasystem.appradio.Classes.Adapters;
 
+import android.annotation.SuppressLint;
 import android.content.Context;
 import android.graphics.Color;
 import android.media.Image;
@@ -15,6 +16,7 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
+import com.innovasystem.appradio.Classes.Models.Emisora;
 import com.innovasystem.appradio.Classes.Models.Fecha;
 import com.innovasystem.appradio.Classes.Models.Horario;
 import com.innovasystem.appradio.Classes.Models.Segmento;
@@ -54,6 +56,7 @@ public class ProgramacionAdapter extends BaseAdapter{
         return 0;
     }
 
+    @SuppressLint("ResourceAsColor")
     @Override
     public View getView(int i, View view, ViewGroup parent) {
         final View itemView;
@@ -64,7 +67,6 @@ public class ProgramacionAdapter extends BaseAdapter{
         else{
             itemView= view;
         }
-
         Segmento segmento= segmentos.get(i);
         Horario horario= horarios.get(i);
 
@@ -72,12 +74,14 @@ public class ProgramacionAdapter extends BaseAdapter{
         TextView tv_segmento= itemView.findViewById(R.id.tv_programacion_segmento);
         TextView tv_emisora= itemView.findViewById(R.id.tv_programacion_emisora);
         TextView tv_transimision= itemView.findViewById(R.id.tv_programacion_transmision);
+        TextView tv_transimision2= itemView.findViewById(R.id.tv_programacion_transmision2);
         LinearLayout linear_container= itemView.findViewById(R.id.proginfo_container);
         ImageView iv_fav= itemView.findViewById(R.id.iv_programacion_fav);
 
 
         //linear_container.setBackgroundColor(context.getResources().getColor(R.color.seleccion_nav));
         tv_transimision.setVisibility(View.VISIBLE);
+        tv_transimision2.setVisibility(View.GONE);
         iv_fav.setVisibility(View.GONE);
 
         String hora_inicio= horario.getFecha_inicio();
@@ -96,7 +100,10 @@ public class ProgramacionAdapter extends BaseAdapter{
             System.out.println("HORA EN VIVO!");
             System.out.println(String.format("HORAS: %s - %s - %s\n",h_inicio,h_fin,horaActual.getHora()));
             //linear_container.setBackgroundColor(Color.TRANSPARENT);
-            tv_transimision.setVisibility(View.INVISIBLE);
+            //tv_transimision.setText("Fuera de linea");
+            //tv_transimision.setTextColor(R.color.color_text);
+            tv_transimision.setVisibility(View.GONE);
+            tv_transimision2.setVisibility(View.VISIBLE);
         }
 
         if(favoritos.contains(segmento)){

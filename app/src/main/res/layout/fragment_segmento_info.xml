@@ -46,7 +46,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="DESCRIPCIÓN"
-            android:textColor="@android:color/holo_orange_dark"
+            android:textColor="@color/color_text"
             android:textSize="16sp" />
 
         <com.uncopt.android.widget.text.justify.JustifiedTextView
@@ -64,7 +64,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
             android:text="HORARIOS"
-            android:textColor="@android:color/holo_orange_dark"
+            android:textColor="@color/color_text"
             android:textSize="16sp" />
 
         <com.uncopt.android.widget.text.justify.JustifiedTextView
@@ -82,7 +82,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="15dp"
             android:text="LOCUTORES"
-            android:textColor="@android:color/holo_orange_dark"
+            android:textColor="@color/color_text"
             android:textSize="16sp" />
 
         <com.uncopt.android.widget.text.justify.JustifiedTextView
@@ -91,8 +91,8 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
             android:text="TextView"
-            android:textColor="@color/text_color"
-            android:visibility="gone" />
+            android:visibility="gone"
+            android:textColor="@color/text_color" />
 
         <android.support.v7.widget.RecyclerView
             android:id="@+id/rv_conductores"
@@ -110,9 +110,9 @@
             android:layout_marginBottom="20dp"
             android:layout_marginTop="35dp"
             android:background="@drawable/round_button"
-            android:backgroundTint="@color/seleccion_nav"
+            android:backgroundTint="@color/color_text"
             android:text="GALERÍA"
-            android:textColor="@color/text_color" />
+            android:textColor="@color/color_text2" />
 
     </LinearLayout>
 

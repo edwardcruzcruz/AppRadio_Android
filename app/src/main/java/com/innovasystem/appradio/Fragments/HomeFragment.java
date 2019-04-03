@@ -11,6 +11,7 @@ import android.support.annotation.NonNull;
 import android.support.annotation.RequiresApi;
 import android.support.design.widget.Snackbar;
 import android.support.v4.app.Fragment;
+import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.LinearSnapHelper;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.SnapHelper;
@@ -52,6 +53,7 @@ import java.util.Date;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Map;
+import java.util.Objects;
 import java.util.Set;
 import java.util.TreeMap;
 import java.util.TreeSet;
@@ -72,6 +74,7 @@ public class HomeFragment extends Fragment {
     static AsyncTask tarea1,tarea2,tarea3,tarea4,tarea5,tarea6,tarea7;
     String[] ciudades;
     String provinciaActual="";
+    String EmisoraActual="";
     Snackbar snackMessage;
 
     //Layout views
@@ -79,7 +82,7 @@ public class HomeFragment extends Fragment {
     private HorizontalPicker ciudad_picker;
     private ListView listview_programacion;
     private ProgressBar progress_emisoras, progress_programacion;
-    private ImageButton btn_apagar, btn_silenciar;
+    private ImageButton btn_apagar, btn_silenciar,btn_next,btn_prev;
     private TextView tv_mensaje_programacion;
     private TextView tv_mensaje_emisoras_envivo;
 
@@ -119,8 +122,10 @@ public class HomeFragment extends Fragment {
         listview_programacion= root.findViewById(R.id.listv_programas);
         progress_emisoras= root.findViewById(R.id.progressBar_emisoras);
         progress_programacion= root.findViewById(R.id.progressBar_programacion);
+        btn_next=root.findViewById(R.id.btn_der);
         btn_apagar= root.findViewById(R.id.btn_apagar);
         btn_silenciar= root.findViewById(R.id.btn_mute);
+        btn_prev=root.findViewById(R.id.iv_izq);
         tv_mensaje_programacion= root.findViewById(R.id.tv_mensaje_home);
         tv_mensaje_emisoras_envivo= root.findViewById(R.id.tv_mensaje_emisoras_envivo);
 
@@ -133,7 +138,7 @@ public class HomeFragment extends Fragment {
         //tarea3=new Consular_emisora().execute(null);
         //Extraccion de datos de emisoras y programacion
         tarea1=new RestFetchEmisoraHomeTask().execute();
-        tarea2=new RestFetchProgramacionTask().execute();
+        //System.out.println("heyyyy ---------------------------------------------------------------"+SessionConfig.getSessionConfig(getContext()).getValue(SessionConfig.Emisora));
 
         /*List<Emisora> emisoras= RestServices.consultarEmisoras(getContext(),null);
         ArrayList<String> ciudadesEmisoras= new ArrayList<String>();
@@ -232,7 +237,7 @@ public class HomeFragment extends Fragment {
     public void onDetach() {
         super.onDetach();
         tarea1.cancel(true);
-        tarea2.cancel(true);
+        //tarea2.cancel(true);
         //tarea3.cancel(true);
     }
     /*----Metodos Utilitarios-----*/
@@ -305,22 +310,28 @@ public class HomeFragment extends Fragment {
                 }
 
                 //Inicializacion de recyclerview para las tarjetas
-                final CarouselLayoutManager lmanager = new CarouselLayoutManager(CarouselLayoutManager.HORIZONTAL,true);
-                lmanager.setPostLayoutListener(new CarouselZoomPostLayoutListener());
-                rv_home.setLayoutManager(lmanager);
-                rv_home.setHasFixedSize(true);
-                rv_home.addOnScrollListener(new CenterScrollListener());
+                //final CarouselLayoutManager lmanager = new CarouselLayoutManager(CarouselLayoutManager.HORIZONTAL,true);
+                //lmanager.setPostLayoutListener(new CarouselZoomPostLayoutListener());
+                //rv_home.setLayoutManager(lmanager);
+                rv_home.setLayoutManager(new LinearLayoutManager(getContext(),LinearLayoutManager.HORIZONTAL,false));
+
+                //rv_home.setHasFixedSize(true);
+                //rv_home.addOnScrollListener(new CenterScrollListener());
                 rv_home.addOnScrollListener(new RecyclerView.OnScrollListener() {
                     @Override
                     public void onScrollStateChanged(@NonNull RecyclerView recyclerView, int newState) {
                         super.onScrollStateChanged(recyclerView, newState);
                         if(newState == RecyclerView.SCROLL_STATE_IDLE){
-                            System.out.println("aqui esta la posicion o estado del scroll idle"+newState);
-                            int itemPos= ((CarouselLayoutManager) recyclerView.getLayoutManager()).getCenterItemPosition();
-                            System.out.println("2.aqui esta la posicion o estado del scroll idle"+itemPos);
+                            //System.out.println("aqui esta la posicion o estado del scroll idle"+newState);
+                            //int itemPos= ((CarouselLayoutManager) recyclerView.getLayoutManager()).getCenterItemPosition();
+                            int itemPos= ((LinearLayoutManager)recyclerView.getLayoutManager()).findFirstVisibleItemPosition();
+
                             Emisora em=((EmisoraHomeAdapter)recyclerView.getAdapter()).emisoras_keys.get(itemPos);
+                            SessionConfig.getSessionConfig(getContext()).AsignarEmisora(em.getNombre());
+                            System.out.println(SessionConfig.getSessionConfig(getContext()).getValue(SessionConfig.Emisora));
                             streamingActual= em.getUrl_streaming();
                             if(!streamingActual.equals(RadioStreamService.radioURL) && radion_on && !muted) {
+                                new RestFetchProgramacionTask().execute(SessionConfig.getSessionConfig(getContext()).getValue(SessionConfig.Emisora));
                                 Intent intent = new Intent();
                                 intent.setAction(RadioStreamService.BROADCAST_TO_SERVICE);
                                 intent.putExtra(RadioStreamService.PLAYER_FUNCTION_TYPE, RadioStreamService.CHANGE_PLAYER_TRACK);
@@ -340,8 +351,17 @@ public class HomeFragment extends Fragment {
                 snapHelper.attachToRecyclerView(rv_home);
 
                 //Inicializacion de listeners de botones
+                btn_prev.setOnClickListener(btn_back_listener);
+                btn_next.setOnClickListener(btn_next_listener);
                 btn_apagar.setOnClickListener(btn_apagar_listener);
                 btn_silenciar.setOnClickListener(btn_mute_listener);
+
+                if(((LinearLayoutManager)rv_home.getLayoutManager()).findFirstVisibleItemPosition()==0){
+                    btn_prev.setImageResource(R.drawable.left_arrow_1);
+                }
+                if(((LinearLayoutManager)rv_home.getLayoutManager()).findFirstVisibleItemPosition()==1){
+                    //btn_next.setImageResource();
+                }
 
                 if(radion_on){
                     //btn_apagar.setBackground(getContext().getDrawable(R.drawable.round_button_enabled_left));
@@ -358,17 +378,43 @@ public class HomeFragment extends Fragment {
         }.execute(provincia);
     }
 
-
     /*---------- Listeners ---------*/
 
+    public final View.OnClickListener btn_back_listener=new View.OnClickListener(){
+        @TargetApi(Build.VERSION_CODES.M)
+        @RequiresApi(api = Build.VERSION_CODES.M)
+        @Override
+        public void onClick(View view) {
+            //System.out.println("aqui esta la posicion---------------"+((LinearLayoutManager)rv_home.getLayoutManager()).findFirstVisibleItemPosition());
+            int firstVisibleItemIndex = ((LinearLayoutManager)rv_home.getLayoutManager()).findFirstCompletelyVisibleItemPosition();
+            if (firstVisibleItemIndex > 0) {
+                ((LinearLayoutManager)rv_home.getLayoutManager()).smoothScrollToPosition(rv_home,null,firstVisibleItemIndex-1);
+            }
+            //System.out.println("holaxD");
+        }
+    };
+    public final View.OnClickListener btn_next_listener=new View.OnClickListener(){
+        @TargetApi(Build.VERSION_CODES.M)
+        @RequiresApi(api = Build.VERSION_CODES.M)
+        @Override
+        public void onClick(View view) {
+            //System.out.println("aqui esta la posicion---------------"+((LinearLayoutManager)rv_home.getLayoutManager()).findFirstVisibleItemPosition());
+            int totalItemCount = rv_home.getAdapter().getItemCount();
+            if (totalItemCount <= 0) return;
+            int lastVisibleItemIndex = ((LinearLayoutManager)rv_home.getLayoutManager()).findLastVisibleItemPosition();
+
+            if (lastVisibleItemIndex >= totalItemCount) return;
+            ((LinearLayoutManager)rv_home.getLayoutManager()).smoothScrollToPosition(rv_home,null,lastVisibleItemIndex+1);
+            //System.out.println("holaxD");
+        }
+    };
     /**
      * Listener para el boton de Apagar, Detiene por completo el streaming de la emisora
      */
     private final View.OnClickListener btn_apagar_listener= new View.OnClickListener(){
 
         @TargetApi(Build.VERSION_CODES.M)
-        @RequiresApi(api = Build.VERSION_CODES.M)
-        @Override
+        @RequiresApi(api = Build.VERSION_CODES.M)        @Override
         public void onClick(View view) {
             if(!radion_on){
                 System.out.println("Start Playing!!!!!");
@@ -432,7 +478,7 @@ public class HomeFragment extends Fragment {
 
 
     /*---------- Tasks -------------*/
-
+/*
     private class Consular_emisora extends AsyncTask<String,Void,List<Emisora>> {
         @Override
         protected List<Emisora> doInBackground(String... strings) {
@@ -532,7 +578,7 @@ public class HomeFragment extends Fragment {
 
         }
 
-    }
+    }*/
     /**
      * Esta clase asincrona obtiene los datos de emisoras para presentarlos en la pantalla principal
      * como tarjetas
@@ -613,7 +659,6 @@ public class HomeFragment extends Fragment {
                 }
             }
 
-
             EmisoraHomeAdapter adapter = new EmisoraHomeAdapter(mapa_emisoras,favoritos, getContext());
             rv_home.setAdapter(adapter);
 
@@ -628,12 +673,14 @@ public class HomeFragment extends Fragment {
                         if (adapter.emisoras_keys.get(i).getUrl_streaming().equals(RadioStreamService.radioURL)) {
                             rv_home.scrollToPosition(i);
                             streamingActual = adapter.emisoras_keys.get(i).getUrl_streaming();
-                            System.out.println("oyeeeeeee + "+adapter.emisoras_keys.get(i));
+                            //System.out.println("oyeeeeeee + "+adapter.emisoras_keys.get(i));
                         }
                     }
 
                 } else if (!RadioStreamService.radioURL.equals(adapter.emisoras_keys.get(0).getUrl_streaming())) {
                     streamingActual = adapter.emisoras_keys.get(0).getUrl_streaming();
+                    SessionConfig.getSessionConfig(getContext()).AsignarEmisora(adapter.emisoras_keys.get(0).getNombre());
+                    new RestFetchProgramacionTask().execute(SessionConfig.getSessionConfig(getContext()).getValue(SessionConfig.Emisora));
                     if (radion_on && !muted) {
                         tarea7=new StartStreamingTask().execute();
                     }
@@ -694,7 +741,7 @@ public class HomeFragment extends Fragment {
     /**
      * Clase Asincrona para extraer La info de La programacion del dia y presentarla en una ListView
      */
-    private class RestFetchProgramacionTask extends AsyncTask<Void,Void,List<Segmento>>{
+    private class RestFetchProgramacionTask extends AsyncTask<String,Void,List<Segmento>>{
         Fecha horaActual;
         ArrayList<Segmento> favoritos;
 
@@ -704,11 +751,19 @@ public class HomeFragment extends Fragment {
         }
 
         @Override
-        protected List<Segmento> doInBackground(Void... voids) {
+        protected List<Segmento> doInBackground(String... strings) {
             horaActual= RestServices.consultarHoraActual(getContext());
             String favoritoSession=SessionConfig.getSessionConfig(getContext()).getValue(SessionConfig.userEmail);
             favoritos= (ArrayList) RestServices.consultarFavoritos(getContext(), (favoritoSession!=null)?favoritoSession:"default");
             List<Segmento> listaSegmentos = RestServices.consultarSegmentosDelDia(getContext(),SessionConfig.getSessionConfig(getContext()).getValue(SessionConfig.provincia));
+            List<Segmento> copia=new ArrayList<>(listaSegmentos);
+            listaSegmentos.clear();
+            for(int i=0;i<copia.size();i++){
+                String emisora=strings[0];
+                if(copia.get(i).getEmisora().getNombre().equals(emisora)){
+                    listaSegmentos.add(copia.get(i));
+                }
+            }
             return  listaSegmentos;
         }
 

@@ -7,6 +7,7 @@ import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 import android.os.AsyncTask;
 import android.os.Bundle;
+import android.os.StrictMode;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
@@ -139,7 +140,7 @@ public class NoticiasFragment extends Fragment {
 
     private class RestFetchEmisoraRedesTask extends AsyncTask<Void,Void,Void> {
         List<RedSocialEmisora> redesG;
-        List<RedSocialEmisora> redesTwitter;
+        //List<RedSocialEmisora> redesTwitter;
 
         @Override
         protected Void doInBackground(Void... voids) {
@@ -200,6 +201,7 @@ public class NoticiasFragment extends Fragment {
                 if(redesTwitter.size()>0){
                     //webview.loadUrl(redesTwitter.get(0).getLink());
                     getTweets();
+                    //new RestFetchgetTweetsTask().execute(redesTwitter);
                     progressBar.setVisibility(View.GONE);
                 }
             }else{
@@ -239,7 +241,6 @@ public class NoticiasFragment extends Fragment {
         }
     }
 
-
     public void getTweets(){
         ConfigurationBuilder cb = new ConfigurationBuilder();
         cb.setDebugEnabled(true)
@@ -253,6 +254,8 @@ public class NoticiasFragment extends Fragment {
 
 
         try {
+            StrictMode.ThreadPolicy policy = new StrictMode.ThreadPolicy.Builder().permitAll().build();
+            StrictMode.setThreadPolicy(policy);
             List<Status> statuses;
 
 
@@ -281,6 +284,7 @@ public class NoticiasFragment extends Fragment {
         catch (Exception e){
             values.add(new Noticia("No se pudo cargar las noticias","","",new Date()));
             System.out.println(e.toString());
+            e.printStackTrace();
         }
         NoticiaArrayAdapter adapter = new NoticiaArrayAdapter (getContext(),R.layout.list_view_item,values);
         listViewTweets.setAdapter(adapter);

@@ -761,7 +761,7 @@ public class RadioStreamService extends Service implements AudioManager.OnAudioF
             play_pauseAction = playbackAction(0);
         }
 
-        Bitmap largeIcon = BitmapFactory.decodeResource(getResources(),R.drawable.logo_radio_caravana); //replace with your own image
+        Bitmap largeIcon = BitmapFactory.decodeResource(getResources(),R.drawable.logo_radio_caravana1); //replace with your own image
 
         // Create a new Notification
 
