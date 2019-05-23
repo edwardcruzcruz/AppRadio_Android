@@ -80,6 +80,7 @@ public class NoticiasFragment extends Fragment {
     ProgressBar progressBar;
     ListView listViewTweets;
     ArrayList<Noticia> values;
+    ArrayList<Status> status;
     List<RedSocialEmisora> redesTwitter;
 
 
@@ -268,6 +269,7 @@ public class NoticiasFragment extends Fragment {
             }
 
             statuses = twitter.getUserTimeline(user);
+            status=new ArrayList<>(statuses);
             System.out.println("Showing @" + user + "'s user timeline.");
             for (Status status : statuses) {
                 System.out.println("@" + status.getUser().getScreenName() + " - " + status.getText());
@@ -286,7 +288,7 @@ public class NoticiasFragment extends Fragment {
             System.out.println(e.toString());
             e.printStackTrace();
         }
-        NoticiaArrayAdapter adapter = new NoticiaArrayAdapter (getContext(),R.layout.list_view_item,values);
+        NoticiaArrayAdapter adapter = new NoticiaArrayAdapter (getContext(),R.layout.list_view_item,values,status);
         listViewTweets.setAdapter(adapter);
         progressBar.setVisibility(View.GONE);
     }

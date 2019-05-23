@@ -1,14 +1,89 @@
 <?xml version="1.0" encoding="utf-8"?>
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/background_app2"
     tools:context=".Fragments.ChatFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <LinearLayout
+        android:id="@+id/menu"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="CHATT" />
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/line_divider">
+
+        <TextView
+            android:id="@+id/textview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="15dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="5dp"
+            android:fontFamily="@font/app_font"
+            android:text="CHAT"
+            android:textAlignment="center"
+            android:textColor="@color/color_text"
+            android:textSize="24sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/tv_radio_frecuencia"
+            android:layout_width="wrap_content"
+            android:layout_height="21dp"
+            android:textAllCaps="true"
+            android:layout_gravity="center"
+            android:text="Radio"
+            android:textAlignment="center"
+            android:textColor="@color/color_text2"
+            android:textSize="12sp" />
+        <TextView
+            android:id="@+id/tv_segmento_chat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Segmento"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:textColor="@color/text_color"
+            android:textSize="14sp"/>
+
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerView_chat"
+        android:layout_width="match_parent"
+        android:layout_height="388dp"
+        android:layout_marginTop="140dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/menu" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="53dp"
+        android:layout_marginBottom="5dp"
+        android:layout_gravity="bottom|center_vertical">
+        <EditText
+            android:id="@+id/mensaje_actual"
+            android:layout_width="300dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:paddingLeft="15dp"
+            android:hint="@string/text_chat"
+            android:textSize="12dp"
+            android:background="@drawable/round_button_enabled"/>
+        <ImageButton
+            android:id="@+id/enviar_msg_chat"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/ic_send_24dp"/>
+    </LinearLayout>
+
+
 
 </FrameLayout>

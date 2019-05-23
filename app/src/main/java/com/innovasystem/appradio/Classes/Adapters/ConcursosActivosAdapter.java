@@ -20,13 +20,11 @@ public class ConcursosActivosAdapter extends RecyclerView.Adapter<ConcursosActiv
     List<Encuesta> encuestas_dataset;
     List<Segmento> Segmentos;
     Context context;
-
     public ConcursosActivosAdapter(Context c, List<Encuesta> lista_encuestas, List<Segmento> lista_segmentos){
         this.context= c;
         this.encuestas_dataset= lista_encuestas;
         this.Segmentos= lista_segmentos;
     }
-
     @NonNull
     @Override
     public ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int i) {
@@ -34,7 +32,6 @@ public class ConcursosActivosAdapter extends RecyclerView.Adapter<ConcursosActiv
         ConcursosActivosAdapter.ViewHolder vh = new ConcursosActivosAdapter.ViewHolder(v);
         return vh;
     }
-
     @Override
     public void onBindViewHolder(@NonNull ConcursosActivosAdapter.ViewHolder vholder, int i) {
         Encuesta en =encuestas_dataset.get(i);
@@ -43,23 +40,18 @@ public class ConcursosActivosAdapter extends RecyclerView.Adapter<ConcursosActiv
         vholder.radio.setText(seg.getEmisora().getNombre());
         vholder.segmento.setText(seg.getNombre());
     }
-
     @Override
     public int getItemCount() {
         return Segmentos.size();
     }
-
     public static class ViewHolder extends  RecyclerView.ViewHolder{
         TextView segmento,radio,tv_Concurso;
         ImageButton btn_ver;
-
-
         public ViewHolder(@NonNull View itemView){
             super(itemView);
             segmento= itemView.findViewById(R.id.tv_Concursosegmento);
             radio= itemView.findViewById(R.id.tv_ConcursoEmisora);
             tv_Concurso= itemView.findViewById(R.id.tv_Concursoitem_Concurso);
-
         }
     }
 }

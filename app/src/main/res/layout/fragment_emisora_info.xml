@@ -33,7 +33,6 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_marginLeft="10dp"
-                android:layout_marginTop="20dp"
                 android:text="Descripcion"
                 android:textColor="@color/text_color" />
 
@@ -120,7 +119,79 @@
 
         </LinearLayout>
         <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="5dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="15dp"
+                android:layout_height="25dp"
+                android:layout_gravity="center"
+                android:layout_marginStart="5dp"
+                android:layout_weight="0.05"
+                android:adjustViewBounds="true"
+                android:src="@drawable/instagram" />
+
+            <TextView
+                android:id="@+id/tv_instagram"
+                android:layout_width="20dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="12dp"
+                android:layout_weight="0.95"
+                android:text="Ninguna"
+                android:textColor="@color/color_text"
+                android:textSize="12sp" />
+
+            <ImageView
+                android:layout_width="15dp"
+                android:layout_height="25dp"
+                android:layout_gravity="center"
+                android:layout_marginStart="5dp"
+                android:layout_weight="0.05"
+                android:adjustViewBounds="true"
+                android:baselineAlignBottom="false"
+                android:cropToPadding="false"
+                android:src="@drawable/facebook_info" />
+
+            <TextView
+                android:id="@+id/tv_facebook"
+                android:layout_width="20dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="20dp"
+                android:layout_weight="0.95"
+                android:text="Ninguna"
+                android:textColor="@color/color_text"
+                android:textSize="12sp" />
+            <ImageView
+                android:layout_width="15dp"
+                android:layout_height="25dp"
+                android:layout_gravity="center"
+                android:layout_marginStart="5dp"
+                android:layout_weight="0.05"
+                android:adjustViewBounds="true"
+                android:cropToPadding="false"
+                android:src="@drawable/twiter_info" />
+
+            <TextView
+                android:id="@+id/tv_twitter"
+                android:layout_width="20dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginStart="15dp"
+                android:layout_weight="0.95"
+                android:lines="2"
+                android:text="Ninguna"
+                android:textColor="@color/color_text"
+                android:textSize="12sp" />
+        </LinearLayout>
+        <LinearLayout
             android:id="@+id/tv_redesSociales"
+            android:visibility="gone"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="10dp"

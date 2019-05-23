@@ -1288,6 +1288,7 @@ drawable ic_notifications_black_24dp
 drawable ic_password
 drawable ic_person_iniciar_session
 drawable ic_radio
+drawable ic_send_24dp
 drawable ic_ver_concurso_24dp
 drawable icono_caravana
 drawable icono_caravana_2
@@ -1295,6 +1296,7 @@ drawable icono_diblu
 drawable icono_ohconde
 drawable image_placeholder
 drawable info_radio
+drawable instagram
 drawable izquierda
 drawable izquierdamdpi
 drawable left_arrow
@@ -1477,6 +1479,7 @@ id btn_ver_concurso
 id btn_ver_perfil
 id button
 id buttonPanel
+id buttonsend
 id calendarView
 id cancel_action
 id cancel_button
@@ -1542,6 +1545,7 @@ id end
 id end_padder
 id enterAlways
 id enterAlwaysCollapsed
+id enviar_msg_chat
 id exitUntilCollapsed
 id exo_artwork
 id exo_buffering
@@ -1584,6 +1588,7 @@ id groups
 id home
 id homeAsUp
 id home_drawer
+id hora_msg_usuario
 id icon
 id icon_group
 id ifRoom
@@ -1632,6 +1637,9 @@ id logo
 id logo_radio
 id masked
 id media_actions
+id mensaje_actual
+id mensaje_usuario
+id menu
 id message
 id messenger_send_button
 id middle
@@ -1694,6 +1702,7 @@ id radio3
 id radio4
 id radio5
 id radioSelect
+id recyclerView_chat
 id registerView
 id right
 id right_icon
@@ -1835,6 +1844,7 @@ id tv_cerrar_sesion
 id tv_descripcion_emisora
 id tv_econtent_frecuencia
 id tv_econtent_nombre
+id tv_facebook
 id tv_favitem_ciudad
 id tv_favitem_emisora
 id tv_favitem_frecuencia
@@ -1849,6 +1859,7 @@ id tv_hitem_prog_actual
 id tv_hitem_radio
 id tv_info_conductores
 id tv_info_emisora_item
+id tv_instagram
 id tv_item_titulo_ciudad
 id tv_locutor_apodo
 id tv_locutor_biografia
@@ -1873,13 +1884,16 @@ id tv_programacion_horario
 id tv_programacion_segmento
 id tv_programacion_transmision
 id tv_programacion_transmision2
+id tv_radio_frecuencia
 id tv_redesSociales
+id tv_segmento_chat
 id tv_segmento_descripcion
 id tv_segmento_horarios
 id tv_segmento_info_titulo
 id tv_telef_emisora
 id tv_titulo_emisora_item
 id tv_titulo_encuesta
+id tv_twitter
 id tv_ubicacion_emisora
 id tv_web_emisora
 id uniform
@@ -1888,6 +1902,7 @@ id unlabeled
 id up
 id useLogo
 id username
+id usuario
 id view_offset_helper
 id visible
 id vpager
@@ -1956,6 +1971,8 @@ layout activity_register
 layout activity_register_one
 layout activity_register_two
 layout activity_splash
+layout chat_item_left
+layout chat_item_right
 layout com_facebook_activity_layout
 layout com_facebook_device_auth_dialog_fragment
 layout com_facebook_login_fragment
@@ -2178,6 +2195,7 @@ string search_menu_title
 string status_bar_notification_info_overflow
 string text_birthday
 string text_btn_send
+string text_chat
 string text_concursar
 string text_day
 string text_enter_with

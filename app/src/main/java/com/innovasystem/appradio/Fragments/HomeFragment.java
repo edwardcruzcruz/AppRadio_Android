@@ -9,6 +9,7 @@ import android.os.Build;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.annotation.RequiresApi;
+import android.support.design.circularreveal.CircularRevealLinearLayout;
 import android.support.design.widget.Snackbar;
 import android.support.v4.app.Fragment;
 import android.support.v7.widget.LinearLayoutManager;
@@ -85,6 +86,7 @@ public class HomeFragment extends Fragment {
     private ImageButton btn_apagar, btn_silenciar,btn_next,btn_prev;
     private TextView tv_mensaje_programacion;
     private TextView tv_mensaje_emisoras_envivo;
+
 
     public HomeFragment() {
         // Required empty public constructor
@@ -237,8 +239,11 @@ public class HomeFragment extends Fragment {
     public void onDetach() {
         super.onDetach();
         tarea1.cancel(true);
-        //tarea2.cancel(true);
+        tarea2.cancel(true);
         //tarea3.cancel(true);
+        //tarea4.cancel(true);
+        //tarea6.cancel(true);
+        //tarea7.cancel(true);
     }
     /*----Metodos Utilitarios-----*/
 
@@ -258,7 +263,7 @@ public class HomeFragment extends Fragment {
             getActivity().sendBroadcast(intent);
     }
     public void consultaEmisora(final String provincia){
-        new AsyncTask<String,Void,List<Emisora>>() {
+        tarea2=new AsyncTask<String,Void,List<Emisora>>() {
             @Override
             protected List<Emisora> doInBackground(String... strings) {
                 List<Emisora> listaEmisoras=RestServices.consultarEmisoras(getContext(),provincia);
@@ -292,8 +297,8 @@ public class HomeFragment extends Fragment {
                         //editor.putString("provincia",ciudades[index]);
                         //editor.apply();
                         //editor.commit();
-                        tarea4=new RestFetchEmisoraHomeTask().execute();
-                        tarea5=new RestFetchProgramacionTask().execute();
+                        new RestFetchEmisoraHomeTask().execute();
+                        new RestFetchProgramacionTask().execute();
                     }
                 });
                 String provincia=SessionConfig.getSessionConfig(getContext()).getValue(SessionConfig.provincia);
@@ -310,10 +315,10 @@ public class HomeFragment extends Fragment {
                 }
 
                 //Inicializacion de recyclerview para las tarjetas
-                //final CarouselLayoutManager lmanager = new CarouselLayoutManager(CarouselLayoutManager.HORIZONTAL,true);
+                //final CarouselLayoutManager lmanager = new CarouselLayoutManager(CarouselLayoutManager.HORIZONTAL, true);
                 //lmanager.setPostLayoutListener(new CarouselZoomPostLayoutListener());
                 //rv_home.setLayoutManager(lmanager);
-                rv_home.setLayoutManager(new LinearLayoutManager(getContext(),LinearLayoutManager.HORIZONTAL,false));
+                rv_home.setLayoutManager(new LinearLayoutManager(getContext(), LinearLayoutManager.HORIZONTAL, false));
 
                 //rv_home.setHasFixedSize(true);
                 //rv_home.addOnScrollListener(new CenterScrollListener());
@@ -328,6 +333,14 @@ public class HomeFragment extends Fragment {
 
                             Emisora em=((EmisoraHomeAdapter)recyclerView.getAdapter()).emisoras_keys.get(itemPos);
                             SessionConfig.getSessionConfig(getContext()).AsignarEmisora(em.getNombre());
+                            if(SessionConfig.getSessionConfig(getContext()).getValue(SessionConfig.Emisora).equals("Radio Caravana")){
+                                btn_next.setVisibility(View.VISIBLE);
+                                btn_prev.setVisibility(View.GONE);
+                            }
+                            if(SessionConfig.getSessionConfig(getContext()).getValue(SessionConfig.Emisora).equals("Radio Diblu")){
+                                btn_next.setVisibility(View.GONE);
+                                btn_prev.setVisibility(View.VISIBLE);
+                            }
                             System.out.println(SessionConfig.getSessionConfig(getContext()).getValue(SessionConfig.Emisora));
                             streamingActual= em.getUrl_streaming();
                             if(!streamingActual.equals(RadioStreamService.radioURL) && radion_on && !muted) {
@@ -345,6 +358,10 @@ public class HomeFragment extends Fragment {
                     @Override
                     public void onScrolled(@NonNull RecyclerView recyclerView, int dx, int dy) {
                         super.onScrolled(recyclerView, dx, dy);
+                        System.out.println("hey xD"+ dx);
+                        //if(dx<0){
+                            //rv_home.setLayoutManager(new LinearLayoutManager(getContext(),LinearLayoutManager.HORIZONTAL,true));
+                        //}
                     }
                 });
                 SnapHelper snapHelper= new LinearSnapHelper();
@@ -356,12 +373,6 @@ public class HomeFragment extends Fragment {
                 btn_apagar.setOnClickListener(btn_apagar_listener);
                 btn_silenciar.setOnClickListener(btn_mute_listener);
 
-                if(((LinearLayoutManager)rv_home.getLayoutManager()).findFirstVisibleItemPosition()==0){
-                    btn_prev.setImageResource(R.drawable.left_arrow_1);
-                }
-                if(((LinearLayoutManager)rv_home.getLayoutManager()).findFirstVisibleItemPosition()==1){
-                    //btn_next.setImageResource();
-                }
 
                 if(radion_on){
                     //btn_apagar.setBackground(getContext().getDrawable(R.drawable.round_button_enabled_left));
@@ -387,10 +398,14 @@ public class HomeFragment extends Fragment {
         public void onClick(View view) {
             //System.out.println("aqui esta la posicion---------------"+((LinearLayoutManager)rv_home.getLayoutManager()).findFirstVisibleItemPosition());
             int firstVisibleItemIndex = ((LinearLayoutManager)rv_home.getLayoutManager()).findFirstCompletelyVisibleItemPosition();
+            int lastVisibleItemIndex = ((LinearLayoutManager)rv_home.getLayoutManager()).findLastVisibleItemPosition();
             if (firstVisibleItemIndex > 0) {
                 ((LinearLayoutManager)rv_home.getLayoutManager()).smoothScrollToPosition(rv_home,null,firstVisibleItemIndex-1);
             }
-            //System.out.println("holaxD");
+            btn_next.setVisibility(View.VISIBLE);
+            btn_prev.setVisibility(View.GONE);
+
+            //System.out.println("holaxD"+ firstVisibleItemIndex);
         }
     };
     public final View.OnClickListener btn_next_listener=new View.OnClickListener(){
@@ -401,11 +416,22 @@ public class HomeFragment extends Fragment {
             //System.out.println("aqui esta la posicion---------------"+((LinearLayoutManager)rv_home.getLayoutManager()).findFirstVisibleItemPosition());
             int totalItemCount = rv_home.getAdapter().getItemCount();
             if (totalItemCount <= 0) return;
+            int firstVisibleItemIndex = ((LinearLayoutManager)rv_home.getLayoutManager()).findFirstCompletelyVisibleItemPosition();
             int lastVisibleItemIndex = ((LinearLayoutManager)rv_home.getLayoutManager()).findLastVisibleItemPosition();
+            btn_prev.setVisibility(View.VISIBLE);
+            btn_next.setVisibility(View.GONE);
 
-            if (lastVisibleItemIndex >= totalItemCount) return;
+
+
+            if (lastVisibleItemIndex >= totalItemCount-1){
+                //((LinearLayoutManager) rv_home.getLayoutManager()).setReverseLayout(true);
+                //((LinearLayoutManager)rv_home.getLayoutManager()).smoothScrollToPosition(rv_home,null,firstVisibleItemIndex-1);
+
+                //((LinearLayoutManager) rv_home.getLayoutManager()).setReverseLayout(false);
+                return;
+            }
             ((LinearLayoutManager)rv_home.getLayoutManager()).smoothScrollToPosition(rv_home,null,lastVisibleItemIndex+1);
-            //System.out.println("holaxD");
+            //System.out.println("holaxD"+ lastVisibleItemIndex);
         }
     };
     /**
@@ -676,13 +702,14 @@ public class HomeFragment extends Fragment {
                             //System.out.println("oyeeeeeee + "+adapter.emisoras_keys.get(i));
                         }
                     }
+                    new RestFetchProgramacionTask().execute(SessionConfig.getSessionConfig(getContext()).getValue(SessionConfig.Emisora));
 
                 } else if (!RadioStreamService.radioURL.equals(adapter.emisoras_keys.get(0).getUrl_streaming())) {
                     streamingActual = adapter.emisoras_keys.get(0).getUrl_streaming();
                     SessionConfig.getSessionConfig(getContext()).AsignarEmisora(adapter.emisoras_keys.get(0).getNombre());
                     new RestFetchProgramacionTask().execute(SessionConfig.getSessionConfig(getContext()).getValue(SessionConfig.Emisora));
                     if (radion_on && !muted) {
-                        tarea7=new StartStreamingTask().execute();
+                        tarea5=new StartStreamingTask().execute();
                     }
                 }
 
@@ -699,6 +726,15 @@ public class HomeFragment extends Fragment {
                        Utils.mostrarMensajeSnackBar(getActivity().getWindow().getDecorView().getRootView(),"Conectando al servidor de la emisora....");
                     }
                 }
+            }
+
+            if(SessionConfig.getSessionConfig(getContext()).getValue(SessionConfig.Emisora).equals("Radio Caravana")){
+                btn_next.setVisibility(View.VISIBLE);
+                btn_prev.setVisibility(View.GONE);
+            }
+            if(SessionConfig.getSessionConfig(getContext()).getValue(SessionConfig.Emisora).equals("Radio Diblu")){
+                btn_next.setVisibility(View.GONE);
+                btn_prev.setVisibility(View.VISIBLE);
             }
 
             provinciaActual= SessionConfig.getSessionConfig(getContext()).getValue(SessionConfig.provincia);

@@ -50,6 +50,7 @@
                 android:layout_marginRight="10dp"
                 android:layout_marginTop="10dp"
                 android:background="@drawable/white_round_button"
+                android:textColor="@color/text_color"
                 android:ems="10"
                 android:hint="@string/hint_names_lastnames"
                 android:inputType="textPersonName"
@@ -75,6 +76,7 @@
                 android:background="@drawable/white_round_button"
                 android:ems="10"
                 android:hint="@string/hint_lastnames"
+                android:textColor="@color/text_color"
                 android:inputType="textPersonName"
                 android:textColorHint="@color/color_text2"
                 android:padding="3dp" />
@@ -97,6 +99,7 @@
                 android:layout_marginTop="10dp"
                 android:background="@drawable/white_round_button"
                 android:ems="10"
+                android:textColor="@color/text_color"
                 android:hint="@string/hint_mail"
                 android:inputType="textPersonName"
                 android:textColorHint="@color/color_text2"

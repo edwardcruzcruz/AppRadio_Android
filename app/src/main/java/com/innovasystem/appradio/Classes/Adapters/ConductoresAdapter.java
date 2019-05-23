@@ -1,5 +1,6 @@
 package com.innovasystem.appradio.Classes.Adapters;
 
+import android.annotation.SuppressLint;
 import android.content.Context;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
@@ -12,6 +13,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.example.picassodemo.CircleTransform;
 import com.innovasystem.appradio.Activities.HomeActivity;
 import com.innovasystem.appradio.Classes.Models.Conductor;
 import com.innovasystem.appradio.Fragments.LocutorInfoFragment;
@@ -39,6 +41,7 @@ public class ConductoresAdapter extends RecyclerView.Adapter<ConductoresAdapter.
         return vh;
     }
 
+    @SuppressLint("ResourceAsColor")
     @Override
     public void onBindViewHolder(@NonNull ViewHolder viewHolder, int i) {
         Conductor loc= conductores_dataset.get(i);
@@ -46,7 +49,7 @@ public class ConductoresAdapter extends RecyclerView.Adapter<ConductoresAdapter.
         if(loc.getImagen() != null) {
             Picasso.with(context)
                     .load(loc.getImagen())
-                    .fit()
+                    .transform(new CircleTransform())
                     .into(viewHolder.img_locutor);
         }
 

@@ -45,11 +45,11 @@
     },
     {
         "merged": "/home/edward/Documents/DJANGO/AppRadio-Android/app/build/intermediates/res/merged/debug/drawable_messenger_button_blue_bg_round.xml.flat",
-        "source": "/home/edward/.gradle/caches/transforms-1/files-1.1/facebook-messenger-4.41.0.aar/2b0177b3d500b5c3f88e75f78c058225/res/drawable/messenger_button_blue_bg_round.xml"
+        "source": "/home/edward/.gradle/caches/transforms-1/files-1.1/facebook-messenger-4.42.0.aar/1d5e595dfbb6c2473d68cb39ae6ce2a4/res/drawable/messenger_button_blue_bg_round.xml"
     },
     {
         "merged": "/home/edward/Documents/DJANGO/AppRadio-Android/app/build/intermediates/res/merged/debug/layout_com_facebook_smart_device_dialog_fragment.xml.flat",
-        "source": "/home/edward/.gradle/caches/transforms-1/files-1.1/facebook-common-4.41.0.aar/e7f2a9979ecbe553e621cd21bbaf9cf6/res/layout/com_facebook_smart_device_dialog_fragment.xml"
+        "source": "/home/edward/.gradle/caches/transforms-1/files-1.1/facebook-common-4.42.0.aar/e51fffa7db0f207ac7aaa99c51cb41b5/res/layout/com_facebook_smart_device_dialog_fragment.xml"
     },
     {
         "merged": "/home/edward/Documents/DJANGO/AppRadio-Android/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_abc_text_select_handle_middle_mtrl_light.png.flat",
@@ -65,7 +65,7 @@
     },
     {
         "merged": "/home/edward/Documents/DJANGO/AppRadio-Android/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_messenger_bubble_large_blue.png.flat",
-        "source": "/home/edward/.gradle/caches/transforms-1/files-1.1/facebook-messenger-4.41.0.aar/2b0177b3d500b5c3f88e75f78c058225/res/drawable-hdpi-v4/messenger_bubble_large_blue.png"
+        "source": "/home/edward/.gradle/caches/transforms-1/files-1.1/facebook-messenger-4.42.0.aar/1d5e595dfbb6c2473d68cb39ae6ce2a4/res/drawable-hdpi-v4/messenger_bubble_large_blue.png"
     },
     {
         "merged": "/home/edward/Documents/DJANGO/AppRadio-Android/app/build/intermediates/res/merged/debug/color_abc_search_url_text.xml.flat",
@@ -81,7 +81,7 @@
     },
     {
         "merged": "/home/edward/Documents/DJANGO/AppRadio-Android/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_com_facebook_tooltip_blue_xout.png.flat",
-        "source": "/home/edward/.gradle/caches/transforms-1/files-1.1/facebook-login-4.41.0.aar/2206671704f0892b0c40f6f59383fe9d/res/drawable-mdpi-v4/com_facebook_tooltip_blue_xout.png"
+        "source": "/home/edward/.gradle/caches/transforms-1/files-1.1/facebook-login-4.42.0.aar/053eb1fe6075db39513413461210bdf2/res/drawable-mdpi-v4/com_facebook_tooltip_blue_xout.png"
     },
     {
         "merged": "/home/edward/Documents/DJANGO/AppRadio-Android/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_abc_textfield_default_mtrl_alpha.9.png.flat",
@@ -205,11 +205,11 @@
     },
     {
         "merged": "/home/edward/Documents/DJANGO/AppRadio-Android/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_messenger_bubble_small_white.png.flat",
-        "source": "/home/edward/.gradle/caches/transforms-1/files-1.1/facebook-messenger-4.41.0.aar/2b0177b3d500b5c3f88e75f78c058225/res/drawable-xhdpi-v4/messenger_bubble_small_white.png"
+        "source": "/home/edward/.gradle/caches/transforms-1/files-1.1/facebook-messenger-4.42.0.aar/1d5e595dfbb6c2473d68cb39ae6ce2a4/res/drawable-xhdpi-v4/messenger_bubble_small_white.png"
     },
     {
         "merged": "/home/edward/Documents/DJANGO/AppRadio-Android/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_messenger_button_send_round_shadow.png.flat",
-        "source": "/home/edward/.gradle/caches/transforms-1/files-1.1/facebook-messenger-4.41.0.aar/2b0177b3d500b5c3f88e75f78c058225/res/drawable-xhdpi-v4/messenger_button_send_round_shadow.png"
+        "source": "/home/edward/.gradle/caches/transforms-1/files-1.1/facebook-messenger-4.42.0.aar/1d5e595dfbb6c2473d68cb39ae6ce2a4/res/drawable-xhdpi-v4/messenger_button_send_round_shadow.png"
     },
     {
         "merged": "/home/edward/Documents/DJANGO/AppRadio-Android/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_exo_icon_play.png.flat",
@@ -221,11 +221,11 @@
     },
     {
         "merged": "/home/edward/Documents/DJANGO/AppRadio-Android/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_messenger_bubble_small_white.png.flat",
-        "source": "/home/edward/.gradle/caches/transforms-1/files-1.1/facebook-messenger-4.41.0.aar/2b0177b3d500b5c3f88e75f78c058225/res/drawable-hdpi-v4/messenger_bubble_small_white.png"
+        "source": "/home/edward/.gradle/caches/transforms-1/files-1.1/facebook-messenger-4.42.0.aar/1d5e595dfbb6c2473d68cb39ae6ce2a4/res/drawable-hdpi-v4/messenger_bubble_small_white.png"
     },
     {
         "merged": "/home/edward/Documents/DJANGO/AppRadio-Android/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_com_facebook_button_send_icon_white.png.flat",
-        "source": "/home/edward/.gradle/caches/transforms-1/files-1.1/facebook-share-4.41.0.aar/0062a19928b5ca48d87609faa8ecdcac/res/drawable-xxhdpi-v4/com_facebook_button_send_icon_white.png"
+        "source": "/home/edward/.gradle/caches/transforms-1/files-1.1/facebook-share-4.42.0.aar/2f0e42aab78284cdec1d6298ae099253/res/drawable-xxhdpi-v4/com_facebook_button_send_icon_white.png"
     },
     {
         "merged": "/home/edward/Documents/DJANGO/AppRadio-Android/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_exo_controls_repeat_one.png.flat",
@@ -245,7 +245,7 @@
     },
     {
         "merged": "/home/edward/Documents/DJANGO/AppRadio-Android/app/build/intermediates/res/merged/debug/layout_com_facebook_device_auth_dialog_fragment.xml.flat",
-        "source": "/home/edward/.gradle/caches/transforms-1/files-1.1/facebook-common-4.41.0.aar/e7f2a9979ecbe553e621cd21bbaf9cf6/res/layout/com_facebook_device_auth_dialog_fragment.xml"
+        "source": "/home/edward/.gradle/caches/transforms-1/files-1.1/facebook-common-4.42.0.aar/e51fffa7db0f207ac7aaa99c51cb41b5/res/layout/com_facebook_device_auth_dialog_fragment.xml"
     },
     {
         "merged": "/home/edward/Documents/DJANGO/AppRadio-Android/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_abc_ic_menu_selectall_mtrl_alpha.png.flat",
@@ -265,7 +265,7 @@
     },
     {
         "merged": "/home/edward/Documents/DJANGO/AppRadio-Android/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_com_facebook_tooltip_blue_xout.png.flat",
-        "source": "/home/edward/.gradle/caches/transforms-1/files-1.1/facebook-login-4.41.0.aar/2206671704f0892b0c40f6f59383fe9d/res/drawable-hdpi-v4/com_facebook_tooltip_blue_xout.png"
+        "source": "/home/edward/.gradle/caches/transforms-1/files-1.1/facebook-login-4.42.0.aar/053eb1fe6075db39513413461210bdf2/res/drawable-hdpi-v4/com_facebook_tooltip_blue_xout.png"
     },
     {
         "merged": "/home/edward/Documents/DJANGO/AppRadio-Android/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_abc_ic_star_black_16dp.png.flat",
@@ -281,7 +281,7 @@
     },
     {
         "merged": "/home/edward/Documents/DJANGO/AppRadio-Android/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_com_facebook_tooltip_black_background.9.png.flat",
-        "source": "/home/edward/.gradle/caches/transforms-1/files-1.1/facebook-login-4.41.0.aar/2206671704f0892b0c40f6f59383fe9d/res/drawable-hdpi-v4/com_facebook_tooltip_black_background.9.png"
+        "source": "/home/edward/.gradle/caches/transforms-1/files-1.1/facebook-login-4.42.0.aar/053eb1fe6075db39513413461210bdf2/res/drawable-hdpi-v4/com_facebook_tooltip_black_background.9.png"
     },
     {
         "merged": "/home/edward/Documents/DJANGO/AppRadio-Android/app/build/intermediates/res/merged/debug/drawable_bottom_nav_item_colors.xml.flat",
@@ -377,7 +377,7 @@
     },
     {
         "merged": "/home/edward/Documents/DJANGO/AppRadio-Android/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_messenger_bubble_large_blue.png.flat",
-        "source": "/home/edward/.gradle/caches/transforms-1/files-1.1/facebook-messenger-4.41.0.aar/2b0177b3d500b5c3f88e75f78c058225/res/drawable-mdpi-v4/messenger_bubble_large_blue.png"
+        "source": "/home/edward/.gradle/caches/transforms-1/files-1.1/facebook-messenger-4.42.0.aar/1d5e595dfbb6c2473d68cb39ae6ce2a4/res/drawable-mdpi-v4/messenger_bubble_large_blue.png"
     },
     {
         "merged": "/home/edward/Documents/DJANGO/AppRadio-Android/app/build/intermediates/res/merged/debug/drawable-anydpi-v21_exo_icon_stop.xml.flat",
@@ -449,7 +449,7 @@
     },
     {
         "merged": "/home/edward/Documents/DJANGO/AppRadio-Android/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_com_facebook_close.png.flat",
-        "source": "/home/edward/.gradle/caches/transforms-1/files-1.1/facebook-common-4.41.0.aar/e7f2a9979ecbe553e621cd21bbaf9cf6/res/drawable-xhdpi-v4/com_facebook_close.png"
+        "source": "/home/edward/.gradle/caches/transforms-1/files-1.1/facebook-common-4.42.0.aar/e51fffa7db0f207ac7aaa99c51cb41b5/res/drawable-xhdpi-v4/com_facebook_close.png"
     },
     {
         "merged": "/home/edward/Documents/DJANGO/AppRadio-Android/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_abc_list_divider_mtrl_alpha.9.png.flat",
@@ -473,7 +473,7 @@
     },
     {
         "merged": "/home/edward/Documents/DJANGO/AppRadio-Android/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_com_facebook_tooltip_blue_topnub.png.flat",
-        "source": "/home/edward/.gradle/caches/transforms-1/files-1.1/facebook-login-4.41.0.aar/2206671704f0892b0c40f6f59383fe9d/res/drawable-mdpi-v4/com_facebook_tooltip_blue_topnub.png"
+        "source": "/home/edward/.gradle/caches/transforms-1/files-1.1/facebook-login-4.42.0.aar/053eb1fe6075db39513413461210bdf2/res/drawable-mdpi-v4/com_facebook_tooltip_blue_topnub.png"
     },
     {
         "merged": "/home/edward/Documents/DJANGO/AppRadio-Android/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_exo_icon_next.png.flat",
@@ -529,7 +529,7 @@
     },
     {
         "merged": "/home/edward/Documents/DJANGO/AppRadio-Android/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_com_facebook_button_send_icon_white.png.flat",
-        "source": "/home/edward/.gradle/caches/transforms-1/files-1.1/facebook-share-4.41.0.aar/0062a19928b5ca48d87609faa8ecdcac/res/drawable-mdpi-v4/com_facebook_button_send_icon_white.png"
+        "source": "/home/edward/.gradle/caches/transforms-1/files-1.1/facebook-share-4.42.0.aar/2f0e42aab78284cdec1d6298ae099253/res/drawable-mdpi-v4/com_facebook_button_send_icon_white.png"
     },
     {
         "merged": "/home/edward/Documents/DJANGO/AppRadio-Android/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_design_ic_visibility.png.flat",
@@ -565,7 +565,7 @@
     },
     {
         "merged": "/home/edward/Documents/DJANGO/AppRadio-Android/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_com_facebook_button_icon_white.png.flat",
-        "source": "/home/edward/.gradle/caches/transforms-1/files-1.1/facebook-common-4.41.0.aar/e7f2a9979ecbe553e621cd21bbaf9cf6/res/drawable-mdpi-v4/com_facebook_button_icon_white.png"
+        "source": "/home/edward/.gradle/caches/transforms-1/files-1.1/facebook-common-4.42.0.aar/e51fffa7db0f207ac7aaa99c51cb41b5/res/drawable-mdpi-v4/com_facebook_button_icon_white.png"
     },
     {
         "merged": "/home/edward/Documents/DJANGO/AppRadio-Android/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_notification_bg_low_normal.9.png.flat",
@@ -605,7 +605,7 @@
     },
     {
         "merged": "/home/edward/Documents/DJANGO/AppRadio-Android/app/build/intermediates/res/merged/debug/drawable_com_facebook_button_login_silver_background.xml.flat",
-        "source": "/home/edward/.gradle/caches/transforms-1/files-1.1/facebook-login-4.41.0.aar/2206671704f0892b0c40f6f59383fe9d/res/drawable/com_facebook_button_login_silver_background.xml"
+        "source": "/home/edward/.gradle/caches/transforms-1/files-1.1/facebook-login-4.42.0.aar/053eb1fe6075db39513413461210bdf2/res/drawable/com_facebook_button_login_silver_background.xml"
     },
     {
         "merged": "/home/edward/Documents/DJANGO/AppRadio-Android/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_abc_scrubber_control_off_mtrl_alpha.png.flat",
@@ -641,7 +641,7 @@
     },
     {
         "merged": "/home/edward/Documents/DJANGO/AppRadio-Android/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_com_facebook_tooltip_blue_topnub.png.flat",
-        "source": "/home/edward/.gradle/caches/transforms-1/files-1.1/facebook-login-4.41.0.aar/2206671704f0892b0c40f6f59383fe9d/res/drawable-hdpi-v4/com_facebook_tooltip_blue_topnub.png"
+        "source": "/home/edward/.gradle/caches/transforms-1/files-1.1/facebook-login-4.42.0.aar/053eb1fe6075db39513413461210bdf2/res/drawable-hdpi-v4/com_facebook_tooltip_blue_topnub.png"
     },
     {
         "merged": "/home/edward/Documents/DJANGO/AppRadio-Android/app/build/intermediates/res/merged/debug/layout_notification_template_lines_media.xml.flat",
@@ -685,7 +685,7 @@
     },
     {
         "merged": "/home/edward/Documents/DJANGO/AppRadio-Android/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_com_facebook_tooltip_black_bottomnub.png.flat",
-        "source": "/home/edward/.gradle/caches/transforms-1/files-1.1/facebook-login-4.41.0.aar/2206671704f0892b0c40f6f59383fe9d/res/drawable-hdpi-v4/com_facebook_tooltip_black_bottomnub.png"
+        "source": "/home/edward/.gradle/caches/transforms-1/files-1.1/facebook-login-4.42.0.aar/053eb1fe6075db39513413461210bdf2/res/drawable-hdpi-v4/com_facebook_tooltip_black_bottomnub.png"
     },
     {
         "merged": "/home/edward/Documents/DJANGO/AppRadio-Android/app/build/intermediates/res/merged/debug/drawable_social_media_icon.png.flat",
@@ -697,23 +697,23 @@
     },
     {
         "merged": "/home/edward/Documents/DJANGO/AppRadio-Android/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_com_facebook_tooltip_black_background.9.png.flat",
-        "source": "/home/edward/.gradle/caches/transforms-1/files-1.1/facebook-login-4.41.0.aar/2206671704f0892b0c40f6f59383fe9d/res/drawable-mdpi-v4/com_facebook_tooltip_black_background.9.png"
+        "source": "/home/edward/.gradle/caches/transforms-1/files-1.1/facebook-login-4.42.0.aar/053eb1fe6075db39513413461210bdf2/res/drawable-mdpi-v4/com_facebook_tooltip_black_background.9.png"
     },
     {
         "merged": "/home/edward/Documents/DJANGO/AppRadio-Android/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_com_facebook_button_icon_white.png.flat",
-        "source": "/home/edward/.gradle/caches/transforms-1/files-1.1/facebook-common-4.41.0.aar/e7f2a9979ecbe553e621cd21bbaf9cf6/res/drawable-xhdpi-v4/com_facebook_button_icon_white.png"
+        "source": "/home/edward/.gradle/caches/transforms-1/files-1.1/facebook-common-4.42.0.aar/e51fffa7db0f207ac7aaa99c51cb41b5/res/drawable-xhdpi-v4/com_facebook_button_icon_white.png"
     },
     {
         "merged": "/home/edward/Documents/DJANGO/AppRadio-Android/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_abc_scrubber_primary_mtrl_alpha.9.png.flat",
         "source": "/home/edward/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0-alpha1.aar/d23513c54d692dee502b176c855d54fe/res/drawable-xxhdpi-v4/abc_scrubber_primary_mtrl_alpha.9.png"
     },
     {
-        "merged": "/home/edward/Documents/DJANGO/AppRadio-Android/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_abc_menu_hardkey_panel_mtrl_mult.9.png.flat",
-        "source": "/home/edward/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0-alpha1.aar/d23513c54d692dee502b176c855d54fe/res/drawable-xhdpi-v4/abc_menu_hardkey_panel_mtrl_mult.9.png"
-    },
-    {
         "merged": "/home/edward/Documents/DJANGO/AppRadio-Android/app/build/intermediates/res/merged/debug/drawable_twitter_icon.png.flat",
         "source": "/home/edward/Documents/DJANGO/AppRadio-Android/app/src/main/res/drawable/twitter_icon.png"
+    },
+    {
+        "merged": "/home/edward/Documents/DJANGO/AppRadio-Android/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_abc_menu_hardkey_panel_mtrl_mult.9.png.flat",
+        "source": "/home/edward/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0-alpha1.aar/d23513c54d692dee502b176c855d54fe/res/drawable-xhdpi-v4/abc_menu_hardkey_panel_mtrl_mult.9.png"
     },
     {
         "merged": "/home/edward/Documents/DJANGO/AppRadio-Android/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_abc_cab_background_top_mtrl_alpha.9.png.flat",
@@ -753,11 +753,11 @@
     },
     {
         "merged": "/home/edward/Documents/DJANGO/AppRadio-Android/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_com_facebook_tooltip_black_xout.png.flat",
-        "source": "/home/edward/.gradle/caches/transforms-1/files-1.1/facebook-login-4.41.0.aar/2206671704f0892b0c40f6f59383fe9d/res/drawable-hdpi-v4/com_facebook_tooltip_black_xout.png"
+        "source": "/home/edward/.gradle/caches/transforms-1/files-1.1/facebook-login-4.42.0.aar/053eb1fe6075db39513413461210bdf2/res/drawable-hdpi-v4/com_facebook_tooltip_black_xout.png"
     },
     {
         "merged": "/home/edward/Documents/DJANGO/AppRadio-Android/app/build/intermediates/res/merged/debug/layout_messenger_button_send_white_round.xml.flat",
-        "source": "/home/edward/.gradle/caches/transforms-1/files-1.1/facebook-messenger-4.41.0.aar/2b0177b3d500b5c3f88e75f78c058225/res/layout/messenger_button_send_white_round.xml"
+        "source": "/home/edward/.gradle/caches/transforms-1/files-1.1/facebook-messenger-4.42.0.aar/1d5e595dfbb6c2473d68cb39ae6ce2a4/res/layout/messenger_button_send_white_round.xml"
     },
     {
         "merged": "/home/edward/Documents/DJANGO/AppRadio-Android/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_abc_text_select_handle_middle_mtrl_light.png.flat",
@@ -765,7 +765,7 @@
     },
     {
         "merged": "/home/edward/Documents/DJANGO/AppRadio-Android/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_com_facebook_button_like_icon_selected.png.flat",
-        "source": "/home/edward/.gradle/caches/transforms-1/files-1.1/facebook-common-4.41.0.aar/e7f2a9979ecbe553e621cd21bbaf9cf6/res/drawable-xhdpi-v4/com_facebook_button_like_icon_selected.png"
+        "source": "/home/edward/.gradle/caches/transforms-1/files-1.1/facebook-common-4.42.0.aar/e51fffa7db0f207ac7aaa99c51cb41b5/res/drawable-xhdpi-v4/com_facebook_button_like_icon_selected.png"
     },
     {
         "merged": "/home/edward/Documents/DJANGO/AppRadio-Android/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_abc_scrubber_control_to_pressed_mtrl_000.png.flat",
@@ -785,7 +785,7 @@
     },
     {
         "merged": "/home/edward/Documents/DJANGO/AppRadio-Android/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_messenger_bubble_large_white.png.flat",
-        "source": "/home/edward/.gradle/caches/transforms-1/files-1.1/facebook-messenger-4.41.0.aar/2b0177b3d500b5c3f88e75f78c058225/res/drawable-xxhdpi-v4/messenger_bubble_large_white.png"
+        "source": "/home/edward/.gradle/caches/transforms-1/files-1.1/facebook-messenger-4.42.0.aar/1d5e595dfbb6c2473d68cb39ae6ce2a4/res/drawable-xxhdpi-v4/messenger_bubble_large_white.png"
     },
     {
         "merged": "/home/edward/Documents/DJANGO/AppRadio-Android/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_abc_list_focused_holo.9.png.flat",
@@ -821,7 +821,7 @@
     },
     {
         "merged": "/home/edward/Documents/DJANGO/AppRadio-Android/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_com_facebook_tooltip_blue_background.9.png.flat",
-        "source": "/home/edward/.gradle/caches/transforms-1/files-1.1/facebook-login-4.41.0.aar/2206671704f0892b0c40f6f59383fe9d/res/drawable-xhdpi-v4/com_facebook_tooltip_blue_background.9.png"
+        "source": "/home/edward/.gradle/caches/transforms-1/files-1.1/facebook-login-4.42.0.aar/053eb1fe6075db39513413461210bdf2/res/drawable-xhdpi-v4/com_facebook_tooltip_blue_background.9.png"
     },
     {
         "merged": "/home/edward/Documents/DJANGO/AppRadio-Android/app/build/intermediates/res/merged/debug/drawable_navigation_segmentos.png.flat",
@@ -861,7 +861,7 @@
     },
     {
         "merged": "/home/edward/Documents/DJANGO/AppRadio-Android/app/build/intermediates/res/merged/debug/drawable_com_facebook_auth_dialog_header_background.xml.flat",
-        "source": "/home/edward/.gradle/caches/transforms-1/files-1.1/facebook-common-4.41.0.aar/e7f2a9979ecbe553e621cd21bbaf9cf6/res/drawable/com_facebook_auth_dialog_header_background.xml"
+        "source": "/home/edward/.gradle/caches/transforms-1/files-1.1/facebook-common-4.42.0.aar/e51fffa7db0f207ac7aaa99c51cb41b5/res/drawable/com_facebook_auth_dialog_header_background.xml"
     },
     {
         "merged": "/home/edward/Documents/DJANGO/AppRadio-Android/app/build/intermediates/res/merged/debug/color-v23_abc_tint_switch_track.xml.flat",
@@ -893,7 +893,7 @@
     },
     {
         "merged": "/home/edward/Documents/DJANGO/AppRadio-Android/app/build/intermediates/res/merged/debug/drawable_com_facebook_auth_dialog_cancel_background.xml.flat",
-        "source": "/home/edward/.gradle/caches/transforms-1/files-1.1/facebook-common-4.41.0.aar/e7f2a9979ecbe553e621cd21bbaf9cf6/res/drawable/com_facebook_auth_dialog_cancel_background.xml"
+        "source": "/home/edward/.gradle/caches/transforms-1/files-1.1/facebook-common-4.42.0.aar/e51fffa7db0f207ac7aaa99c51cb41b5/res/drawable/com_facebook_auth_dialog_cancel_background.xml"
     },
     {
         "merged": "/home/edward/Documents/DJANGO/AppRadio-Android/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_abc_list_selector_disabled_holo_dark.9.png.flat",
@@ -909,7 +909,7 @@
     },
     {
         "merged": "/home/edward/Documents/DJANGO/AppRadio-Android/app/build/intermediates/res/merged/debug/drawable_com_facebook_button_login_background.xml.flat",
-        "source": "/home/edward/.gradle/caches/transforms-1/files-1.1/facebook-login-4.41.0.aar/2206671704f0892b0c40f6f59383fe9d/res/drawable/com_facebook_button_login_background.xml"
+        "source": "/home/edward/.gradle/caches/transforms-1/files-1.1/facebook-login-4.42.0.aar/053eb1fe6075db39513413461210bdf2/res/drawable/com_facebook_button_login_background.xml"
     },
     {
         "merged": "/home/edward/Documents/DJANGO/AppRadio-Android/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_abc_btn_check_to_on_mtrl_015.png.flat",
@@ -1041,7 +1041,7 @@
     },
     {
         "merged": "/home/edward/Documents/DJANGO/AppRadio-Android/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_com_facebook_tooltip_blue_background.9.png.flat",
-        "source": "/home/edward/.gradle/caches/transforms-1/files-1.1/facebook-login-4.41.0.aar/2206671704f0892b0c40f6f59383fe9d/res/drawable-hdpi-v4/com_facebook_tooltip_blue_background.9.png"
+        "source": "/home/edward/.gradle/caches/transforms-1/files-1.1/facebook-login-4.42.0.aar/053eb1fe6075db39513413461210bdf2/res/drawable-hdpi-v4/com_facebook_tooltip_blue_background.9.png"
     },
     {
         "merged": "/home/edward/Documents/DJANGO/AppRadio-Android/app/build/intermediates/res/merged/debug/layout_abc_search_dropdown_item_icons_2line.xml.flat",
@@ -1049,7 +1049,7 @@
     },
     {
         "merged": "/home/edward/Documents/DJANGO/AppRadio-Android/app/build/intermediates/res/merged/debug/drawable_com_facebook_button_send_background.xml.flat",
-        "source": "/home/edward/.gradle/caches/transforms-1/files-1.1/facebook-share-4.41.0.aar/0062a19928b5ca48d87609faa8ecdcac/res/drawable/com_facebook_button_send_background.xml"
+        "source": "/home/edward/.gradle/caches/transforms-1/files-1.1/facebook-share-4.42.0.aar/2f0e42aab78284cdec1d6298ae099253/res/drawable/com_facebook_button_send_background.xml"
     },
     {
         "merged": "/home/edward/Documents/DJANGO/AppRadio-Android/app/build/intermediates/res/merged/debug/drawable_abc_ic_voice_search_api_material.xml.flat",
@@ -1233,7 +1233,7 @@
     },
     {
         "merged": "/home/edward/Documents/DJANGO/AppRadio-Android/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_com_facebook_tooltip_blue_xout.png.flat",
-        "source": "/home/edward/.gradle/caches/transforms-1/files-1.1/facebook-login-4.41.0.aar/2206671704f0892b0c40f6f59383fe9d/res/drawable-xhdpi-v4/com_facebook_tooltip_blue_xout.png"
+        "source": "/home/edward/.gradle/caches/transforms-1/files-1.1/facebook-login-4.42.0.aar/053eb1fe6075db39513413461210bdf2/res/drawable-xhdpi-v4/com_facebook_tooltip_blue_xout.png"
     },
     {
         "merged": "/home/edward/Documents/DJANGO/AppRadio-Android/app/build/intermediates/res/merged/debug/drawable_round_button.xml.flat",
@@ -1245,7 +1245,7 @@
     },
     {
         "merged": "/home/edward/Documents/DJANGO/AppRadio-Android/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_messenger_bubble_small_white.png.flat",
-        "source": "/home/edward/.gradle/caches/transforms-1/files-1.1/facebook-messenger-4.41.0.aar/2b0177b3d500b5c3f88e75f78c058225/res/drawable-xxhdpi-v4/messenger_bubble_small_white.png"
+        "source": "/home/edward/.gradle/caches/transforms-1/files-1.1/facebook-messenger-4.42.0.aar/1d5e595dfbb6c2473d68cb39ae6ce2a4/res/drawable-xxhdpi-v4/messenger_bubble_small_white.png"
     },
     {
         "merged": "/home/edward/Documents/DJANGO/AppRadio-Android/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_exo_controls_fullscreen_exit.png.flat",
@@ -1332,12 +1332,12 @@
         "source": "/home/edward/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0-alpha1.aar/d23513c54d692dee502b176c855d54fe/res/drawable-xhdpi-v4/abc_ic_star_black_48dp.png"
     },
     {
-        "merged": "/home/edward/Documents/DJANGO/AppRadio-Android/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_abc_cab_background_top_mtrl_alpha.9.png.flat",
-        "source": "/home/edward/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0-alpha1.aar/d23513c54d692dee502b176c855d54fe/res/drawable-mdpi-v4/abc_cab_background_top_mtrl_alpha.9.png"
-    },
-    {
         "merged": "/home/edward/Documents/DJANGO/AppRadio-Android/app/build/intermediates/res/merged/debug/drawable-v21_abc_btn_colored_material.xml.flat",
         "source": "/home/edward/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0-alpha1.aar/d23513c54d692dee502b176c855d54fe/res/drawable-v21/abc_btn_colored_material.xml"
+    },
+    {
+        "merged": "/home/edward/Documents/DJANGO/AppRadio-Android/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_abc_cab_background_top_mtrl_alpha.9.png.flat",
+        "source": "/home/edward/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0-alpha1.aar/d23513c54d692dee502b176c855d54fe/res/drawable-mdpi-v4/abc_cab_background_top_mtrl_alpha.9.png"
     },
     {
         "merged": "/home/edward/Documents/DJANGO/AppRadio-Android/app/build/intermediates/res/merged/debug/layout-v21_notification_action.xml.flat",
@@ -1417,7 +1417,7 @@
     },
     {
         "merged": "/home/edward/Documents/DJANGO/AppRadio-Android/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_com_facebook_tooltip_black_topnub.png.flat",
-        "source": "/home/edward/.gradle/caches/transforms-1/files-1.1/facebook-login-4.41.0.aar/2206671704f0892b0c40f6f59383fe9d/res/drawable-xhdpi-v4/com_facebook_tooltip_black_topnub.png"
+        "source": "/home/edward/.gradle/caches/transforms-1/files-1.1/facebook-login-4.42.0.aar/053eb1fe6075db39513413461210bdf2/res/drawable-xhdpi-v4/com_facebook_tooltip_black_topnub.png"
     },
     {
         "merged": "/home/edward/Documents/DJANGO/AppRadio-Android/app/build/intermediates/res/merged/debug/layout_design_menu_item_action_area.xml.flat",
@@ -1461,7 +1461,7 @@
     },
     {
         "merged": "/home/edward/Documents/DJANGO/AppRadio-Android/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_com_facebook_tooltip_blue_bottomnub.png.flat",
-        "source": "/home/edward/.gradle/caches/transforms-1/files-1.1/facebook-login-4.41.0.aar/2206671704f0892b0c40f6f59383fe9d/res/drawable-hdpi-v4/com_facebook_tooltip_blue_bottomnub.png"
+        "source": "/home/edward/.gradle/caches/transforms-1/files-1.1/facebook-login-4.42.0.aar/053eb1fe6075db39513413461210bdf2/res/drawable-hdpi-v4/com_facebook_tooltip_blue_bottomnub.png"
     },
     {
         "merged": "/home/edward/Documents/DJANGO/AppRadio-Android/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_abc_ic_star_half_black_16dp.png.flat",
@@ -1496,16 +1496,16 @@
         "source": "/home/edward/.gradle/caches/transforms-1/files-1.1/exoplayer-ui-2.9.0.aar/a1f0bc420557ad7dc09909e246a8ce71/res/drawable-hdpi-v4/exo_icon_stop.png"
     },
     {
-        "merged": "/home/edward/Documents/DJANGO/AppRadio-Android/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_exo_icon_rewind.png.flat",
-        "source": "/home/edward/.gradle/caches/transforms-1/files-1.1/exoplayer-ui-2.9.0.aar/a1f0bc420557ad7dc09909e246a8ce71/res/drawable-xhdpi-v4/exo_icon_rewind.png"
-    },
-    {
         "merged": "/home/edward/Documents/DJANGO/AppRadio-Android/app/build/intermediates/res/merged/debug/drawable_left_arrow.png.flat",
         "source": "/home/edward/Documents/DJANGO/AppRadio-Android/app/src/main/res/drawable/left_arrow.png"
     },
     {
+        "merged": "/home/edward/Documents/DJANGO/AppRadio-Android/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_exo_icon_rewind.png.flat",
+        "source": "/home/edward/.gradle/caches/transforms-1/files-1.1/exoplayer-ui-2.9.0.aar/a1f0bc420557ad7dc09909e246a8ce71/res/drawable-xhdpi-v4/exo_icon_rewind.png"
+    },
+    {
         "merged": "/home/edward/Documents/DJANGO/AppRadio-Android/app/build/intermediates/res/merged/debug/layout_messenger_button_send_blue_round.xml.flat",
-        "source": "/home/edward/.gradle/caches/transforms-1/files-1.1/facebook-messenger-4.41.0.aar/2b0177b3d500b5c3f88e75f78c058225/res/layout/messenger_button_send_blue_round.xml"
+        "source": "/home/edward/.gradle/caches/transforms-1/files-1.1/facebook-messenger-4.42.0.aar/1d5e595dfbb6c2473d68cb39ae6ce2a4/res/layout/messenger_button_send_blue_round.xml"
     },
     {
         "merged": "/home/edward/Documents/DJANGO/AppRadio-Android/app/build/intermediates/res/merged/debug/layout_abc_activity_chooser_view_list_item.xml.flat",
@@ -1537,7 +1537,7 @@
     },
     {
         "merged": "/home/edward/Documents/DJANGO/AppRadio-Android/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_messenger_bubble_large_white.png.flat",
-        "source": "/home/edward/.gradle/caches/transforms-1/files-1.1/facebook-messenger-4.41.0.aar/2b0177b3d500b5c3f88e75f78c058225/res/drawable-hdpi-v4/messenger_bubble_large_white.png"
+        "source": "/home/edward/.gradle/caches/transforms-1/files-1.1/facebook-messenger-4.42.0.aar/1d5e595dfbb6c2473d68cb39ae6ce2a4/res/drawable-hdpi-v4/messenger_bubble_large_white.png"
     },
     {
         "merged": "/home/edward/Documents/DJANGO/AppRadio-Android/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_abc_list_selector_disabled_holo_light.9.png.flat",
@@ -1545,7 +1545,7 @@
     },
     {
         "merged": "/home/edward/Documents/DJANGO/AppRadio-Android/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_com_facebook_tooltip_black_bottomnub.png.flat",
-        "source": "/home/edward/.gradle/caches/transforms-1/files-1.1/facebook-login-4.41.0.aar/2206671704f0892b0c40f6f59383fe9d/res/drawable-xhdpi-v4/com_facebook_tooltip_black_bottomnub.png"
+        "source": "/home/edward/.gradle/caches/transforms-1/files-1.1/facebook-login-4.42.0.aar/053eb1fe6075db39513413461210bdf2/res/drawable-xhdpi-v4/com_facebook_tooltip_black_bottomnub.png"
     },
     {
         "merged": "/home/edward/Documents/DJANGO/AppRadio-Android/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4_abc_tab_indicator_mtrl_alpha.9.png.flat",
@@ -1601,7 +1601,7 @@
     },
     {
         "merged": "/home/edward/Documents/DJANGO/AppRadio-Android/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_com_facebook_button_like_icon_selected.png.flat",
-        "source": "/home/edward/.gradle/caches/transforms-1/files-1.1/facebook-common-4.41.0.aar/e7f2a9979ecbe553e621cd21bbaf9cf6/res/drawable-hdpi-v4/com_facebook_button_like_icon_selected.png"
+        "source": "/home/edward/.gradle/caches/transforms-1/files-1.1/facebook-common-4.42.0.aar/e51fffa7db0f207ac7aaa99c51cb41b5/res/drawable-hdpi-v4/com_facebook_button_like_icon_selected.png"
     },
     {
         "merged": "/home/edward/Documents/DJANGO/AppRadio-Android/app/build/intermediates/res/merged/debug/drawable_play_button.png.flat",
@@ -1669,7 +1669,7 @@
     },
     {
         "merged": "/home/edward/Documents/DJANGO/AppRadio-Android/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_com_facebook_profile_picture_blank_portrait.png.flat",
-        "source": "/home/edward/.gradle/caches/transforms-1/files-1.1/facebook-login-4.41.0.aar/2206671704f0892b0c40f6f59383fe9d/res/drawable-mdpi-v4/com_facebook_profile_picture_blank_portrait.png"
+        "source": "/home/edward/.gradle/caches/transforms-1/files-1.1/facebook-login-4.42.0.aar/053eb1fe6075db39513413461210bdf2/res/drawable-mdpi-v4/com_facebook_profile_picture_blank_portrait.png"
     },
     {
         "merged": "/home/edward/Documents/DJANGO/AppRadio-Android/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_abc_list_longpressed_holo.9.png.flat",
@@ -1685,7 +1685,7 @@
     },
     {
         "merged": "/home/edward/Documents/DJANGO/AppRadio-Android/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_com_facebook_tooltip_black_xout.png.flat",
-        "source": "/home/edward/.gradle/caches/transforms-1/files-1.1/facebook-login-4.41.0.aar/2206671704f0892b0c40f6f59383fe9d/res/drawable-mdpi-v4/com_facebook_tooltip_black_xout.png"
+        "source": "/home/edward/.gradle/caches/transforms-1/files-1.1/facebook-login-4.42.0.aar/053eb1fe6075db39513413461210bdf2/res/drawable-mdpi-v4/com_facebook_tooltip_black_xout.png"
     },
     {
         "merged": "/home/edward/Documents/DJANGO/AppRadio-Android/app/build/intermediates/res/merged/debug/layout_fragment_imagenes.xml.flat",
@@ -1701,7 +1701,7 @@
     },
     {
         "merged": "/home/edward/Documents/DJANGO/AppRadio-Android/app/build/intermediates/res/merged/debug/color_com_facebook_send_button_text_color.xml.flat",
-        "source": "/home/edward/.gradle/caches/transforms-1/files-1.1/facebook-share-4.41.0.aar/0062a19928b5ca48d87609faa8ecdcac/res/color/com_facebook_send_button_text_color.xml"
+        "source": "/home/edward/.gradle/caches/transforms-1/files-1.1/facebook-share-4.42.0.aar/2f0e42aab78284cdec1d6298ae099253/res/color/com_facebook_send_button_text_color.xml"
     },
     {
         "merged": "/home/edward/Documents/DJANGO/AppRadio-Android/app/build/intermediates/res/merged/debug/layout_design_navigation_menu_item.xml.flat",
@@ -1733,7 +1733,7 @@
     },
     {
         "merged": "/home/edward/Documents/DJANGO/AppRadio-Android/app/build/intermediates/res/merged/debug/color_com_facebook_button_text_color.xml.flat",
-        "source": "/home/edward/.gradle/caches/transforms-1/files-1.1/facebook-common-4.41.0.aar/e7f2a9979ecbe553e621cd21bbaf9cf6/res/color/com_facebook_button_text_color.xml"
+        "source": "/home/edward/.gradle/caches/transforms-1/files-1.1/facebook-common-4.42.0.aar/e51fffa7db0f207ac7aaa99c51cb41b5/res/color/com_facebook_button_text_color.xml"
     },
     {
         "merged": "/home/edward/Documents/DJANGO/AppRadio-Android/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_abc_tab_indicator_mtrl_alpha.9.png.flat",
@@ -1753,7 +1753,7 @@
     },
     {
         "merged": "/home/edward/Documents/DJANGO/AppRadio-Android/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_com_facebook_tooltip_blue_topnub.png.flat",
-        "source": "/home/edward/.gradle/caches/transforms-1/files-1.1/facebook-login-4.41.0.aar/2206671704f0892b0c40f6f59383fe9d/res/drawable-xhdpi-v4/com_facebook_tooltip_blue_topnub.png"
+        "source": "/home/edward/.gradle/caches/transforms-1/files-1.1/facebook-login-4.42.0.aar/053eb1fe6075db39513413461210bdf2/res/drawable-xhdpi-v4/com_facebook_tooltip_blue_topnub.png"
     },
     {
         "merged": "/home/edward/Documents/DJANGO/AppRadio-Android/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_abc_btn_radio_to_on_mtrl_000.png.flat",
@@ -1765,7 +1765,7 @@
     },
     {
         "merged": "/home/edward/Documents/DJANGO/AppRadio-Android/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_messenger_bubble_small_blue.png.flat",
-        "source": "/home/edward/.gradle/caches/transforms-1/files-1.1/facebook-messenger-4.41.0.aar/2b0177b3d500b5c3f88e75f78c058225/res/drawable-xxhdpi-v4/messenger_bubble_small_blue.png"
+        "source": "/home/edward/.gradle/caches/transforms-1/files-1.1/facebook-messenger-4.42.0.aar/1d5e595dfbb6c2473d68cb39ae6ce2a4/res/drawable-xxhdpi-v4/messenger_bubble_small_blue.png"
     },
     {
         "merged": "/home/edward/Documents/DJANGO/AppRadio-Android/app/build/intermediates/res/merged/debug/layout_rv_imagen_item.xml.flat",
@@ -1792,8 +1792,12 @@
         "source": "/home/edward/.gradle/caches/transforms-1/files-1.1/design-widget-28.0.0-alpha1.aar/b48ac6293f2b56c5d3baaa4fcfff7274/res/layout/design_layout_snackbar.xml"
     },
     {
+        "merged": "/home/edward/Documents/DJANGO/AppRadio-Android/app/build/intermediates/res/merged/debug/drawable_instagram.png.flat",
+        "source": "/home/edward/Documents/DJANGO/AppRadio-Android/app/src/main/res/drawable/instagram.png"
+    },
+    {
         "merged": "/home/edward/Documents/DJANGO/AppRadio-Android/app/build/intermediates/res/merged/debug/drawable_com_facebook_favicon_blue.xml.flat",
-        "source": "/home/edward/.gradle/caches/transforms-1/files-1.1/facebook-common-4.41.0.aar/e7f2a9979ecbe553e621cd21bbaf9cf6/res/drawable/com_facebook_favicon_blue.xml"
+        "source": "/home/edward/.gradle/caches/transforms-1/files-1.1/facebook-common-4.42.0.aar/e51fffa7db0f207ac7aaa99c51cb41b5/res/drawable/com_facebook_favicon_blue.xml"
     },
     {
         "merged": "/home/edward/Documents/DJANGO/AppRadio-Android/app/build/intermediates/res/merged/debug/layout_rv_encuesta_items.xml.flat",
@@ -1813,7 +1817,7 @@
     },
     {
         "merged": "/home/edward/Documents/DJANGO/AppRadio-Android/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_com_facebook_close.png.flat",
-        "source": "/home/edward/.gradle/caches/transforms-1/files-1.1/facebook-common-4.41.0.aar/e7f2a9979ecbe553e621cd21bbaf9cf6/res/drawable-hdpi-v4/com_facebook_close.png"
+        "source": "/home/edward/.gradle/caches/transforms-1/files-1.1/facebook-common-4.42.0.aar/e51fffa7db0f207ac7aaa99c51cb41b5/res/drawable-hdpi-v4/com_facebook_close.png"
     },
     {
         "merged": "/home/edward/Documents/DJANGO/AppRadio-Android/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_abc_ic_commit_search_api_mtrl_alpha.png.flat",
@@ -1849,7 +1853,7 @@
     },
     {
         "merged": "/home/edward/Documents/DJANGO/AppRadio-Android/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_com_facebook_tooltip_black_topnub.png.flat",
-        "source": "/home/edward/.gradle/caches/transforms-1/files-1.1/facebook-login-4.41.0.aar/2206671704f0892b0c40f6f59383fe9d/res/drawable-hdpi-v4/com_facebook_tooltip_black_topnub.png"
+        "source": "/home/edward/.gradle/caches/transforms-1/files-1.1/facebook-login-4.42.0.aar/053eb1fe6075db39513413461210bdf2/res/drawable-hdpi-v4/com_facebook_tooltip_black_topnub.png"
     },
     {
         "merged": "/home/edward/Documents/DJANGO/AppRadio-Android/app/build/intermediates/res/merged/debug/drawable-anydpi-v21_exo_controls_fullscreen_exit.xml.flat",
@@ -1869,7 +1873,7 @@
     },
     {
         "merged": "/home/edward/Documents/DJANGO/AppRadio-Android/app/build/intermediates/res/merged/debug/drawable_com_facebook_button_login_logo.xml.flat",
-        "source": "/home/edward/.gradle/caches/transforms-1/files-1.1/facebook-login-4.41.0.aar/2206671704f0892b0c40f6f59383fe9d/res/drawable/com_facebook_button_login_logo.xml"
+        "source": "/home/edward/.gradle/caches/transforms-1/files-1.1/facebook-login-4.42.0.aar/053eb1fe6075db39513413461210bdf2/res/drawable/com_facebook_button_login_logo.xml"
     },
     {
         "merged": "/home/edward/Documents/DJANGO/AppRadio-Android/app/build/intermediates/res/merged/debug/color_abc_tint_seek_thumb.xml.flat",
@@ -1909,7 +1913,7 @@
     },
     {
         "merged": "/home/edward/Documents/DJANGO/AppRadio-Android/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_messenger_button_send_round_shadow.png.flat",
-        "source": "/home/edward/.gradle/caches/transforms-1/files-1.1/facebook-messenger-4.41.0.aar/2b0177b3d500b5c3f88e75f78c058225/res/drawable-xxhdpi-v4/messenger_button_send_round_shadow.png"
+        "source": "/home/edward/.gradle/caches/transforms-1/files-1.1/facebook-messenger-4.42.0.aar/1d5e595dfbb6c2473d68cb39ae6ce2a4/res/drawable-xxhdpi-v4/messenger_button_send_round_shadow.png"
     },
     {
         "merged": "/home/edward/Documents/DJANGO/AppRadio-Android/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_notification_bg_normal_pressed.9.png.flat",
@@ -1929,7 +1933,7 @@
     },
     {
         "merged": "/home/edward/Documents/DJANGO/AppRadio-Android/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_com_facebook_button_icon_white.png.flat",
-        "source": "/home/edward/.gradle/caches/transforms-1/files-1.1/facebook-common-4.41.0.aar/e7f2a9979ecbe553e621cd21bbaf9cf6/res/drawable-xxhdpi-v4/com_facebook_button_icon_white.png"
+        "source": "/home/edward/.gradle/caches/transforms-1/files-1.1/facebook-common-4.42.0.aar/e51fffa7db0f207ac7aaa99c51cb41b5/res/drawable-xxhdpi-v4/com_facebook_button_icon_white.png"
     },
     {
         "merged": "/home/edward/Documents/DJANGO/AppRadio-Android/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_abc_cab_background_top_mtrl_alpha.9.png.flat",
@@ -1961,11 +1965,11 @@
     },
     {
         "merged": "/home/edward/Documents/DJANGO/AppRadio-Android/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_com_facebook_button_icon_blue.png.flat",
-        "source": "/home/edward/.gradle/caches/transforms-1/files-1.1/facebook-common-4.41.0.aar/e7f2a9979ecbe553e621cd21bbaf9cf6/res/drawable-xxhdpi-v4/com_facebook_button_icon_blue.png"
+        "source": "/home/edward/.gradle/caches/transforms-1/files-1.1/facebook-common-4.42.0.aar/e51fffa7db0f207ac7aaa99c51cb41b5/res/drawable-xxhdpi-v4/com_facebook_button_icon_blue.png"
     },
     {
         "merged": "/home/edward/Documents/DJANGO/AppRadio-Android/app/build/intermediates/res/merged/debug/layout_com_facebook_tooltip_bubble.xml.flat",
-        "source": "/home/edward/.gradle/caches/transforms-1/files-1.1/facebook-login-4.41.0.aar/2206671704f0892b0c40f6f59383fe9d/res/layout/com_facebook_tooltip_bubble.xml"
+        "source": "/home/edward/.gradle/caches/transforms-1/files-1.1/facebook-login-4.42.0.aar/053eb1fe6075db39513413461210bdf2/res/layout/com_facebook_tooltip_bubble.xml"
     },
     {
         "merged": "/home/edward/Documents/DJANGO/AppRadio-Android/app/build/intermediates/res/merged/debug/drawable_nav_consursos.png.flat",
@@ -2001,7 +2005,7 @@
     },
     {
         "merged": "/home/edward/Documents/DJANGO/AppRadio-Android/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_com_facebook_tooltip_blue_bottomnub.png.flat",
-        "source": "/home/edward/.gradle/caches/transforms-1/files-1.1/facebook-login-4.41.0.aar/2206671704f0892b0c40f6f59383fe9d/res/drawable-mdpi-v4/com_facebook_tooltip_blue_bottomnub.png"
+        "source": "/home/edward/.gradle/caches/transforms-1/files-1.1/facebook-login-4.42.0.aar/053eb1fe6075db39513413461210bdf2/res/drawable-mdpi-v4/com_facebook_tooltip_blue_bottomnub.png"
     },
     {
         "merged": "/home/edward/Documents/DJANGO/AppRadio-Android/app/build/intermediates/res/merged/debug/drawable_notification_tile_bg.xml.flat",
@@ -2033,7 +2037,7 @@
     },
     {
         "merged": "/home/edward/Documents/DJANGO/AppRadio-Android/app/build/intermediates/res/merged/debug/layout_com_facebook_activity_layout.xml.flat",
-        "source": "/home/edward/.gradle/caches/transforms-1/files-1.1/facebook-common-4.41.0.aar/e7f2a9979ecbe553e621cd21bbaf9cf6/res/layout/com_facebook_activity_layout.xml"
+        "source": "/home/edward/.gradle/caches/transforms-1/files-1.1/facebook-common-4.42.0.aar/e51fffa7db0f207ac7aaa99c51cb41b5/res/layout/com_facebook_activity_layout.xml"
     },
     {
         "merged": "/home/edward/Documents/DJANGO/AppRadio-Android/app/build/intermediates/res/merged/debug/drawable_tooltip_frame_dark.xml.flat",
@@ -2057,7 +2061,7 @@
     },
     {
         "merged": "/home/edward/Documents/DJANGO/AppRadio-Android/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_com_facebook_tooltip_blue_bottomnub.png.flat",
-        "source": "/home/edward/.gradle/caches/transforms-1/files-1.1/facebook-login-4.41.0.aar/2206671704f0892b0c40f6f59383fe9d/res/drawable-xhdpi-v4/com_facebook_tooltip_blue_bottomnub.png"
+        "source": "/home/edward/.gradle/caches/transforms-1/files-1.1/facebook-login-4.42.0.aar/053eb1fe6075db39513413461210bdf2/res/drawable-xhdpi-v4/com_facebook_tooltip_blue_bottomnub.png"
     },
     {
         "merged": "/home/edward/Documents/DJANGO/AppRadio-Android/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_abc_text_select_handle_right_mtrl_dark.png.flat",
@@ -2117,7 +2121,7 @@
     },
     {
         "merged": "/home/edward/Documents/DJANGO/AppRadio-Android/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_com_facebook_button_send_icon_blue.png.flat",
-        "source": "/home/edward/.gradle/caches/transforms-1/files-1.1/facebook-share-4.41.0.aar/0062a19928b5ca48d87609faa8ecdcac/res/drawable-hdpi-v4/com_facebook_button_send_icon_blue.png"
+        "source": "/home/edward/.gradle/caches/transforms-1/files-1.1/facebook-share-4.42.0.aar/2f0e42aab78284cdec1d6298ae099253/res/drawable-hdpi-v4/com_facebook_button_send_icon_blue.png"
     },
     {
         "merged": "/home/edward/Documents/DJANGO/AppRadio-Android/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_abc_btn_switch_to_on_mtrl_00001.9.png.flat",
@@ -2165,7 +2169,7 @@
     },
     {
         "merged": "/home/edward/Documents/DJANGO/AppRadio-Android/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_com_facebook_tooltip_black_bottomnub.png.flat",
-        "source": "/home/edward/.gradle/caches/transforms-1/files-1.1/facebook-login-4.41.0.aar/2206671704f0892b0c40f6f59383fe9d/res/drawable-mdpi-v4/com_facebook_tooltip_black_bottomnub.png"
+        "source": "/home/edward/.gradle/caches/transforms-1/files-1.1/facebook-login-4.42.0.aar/053eb1fe6075db39513413461210bdf2/res/drawable-mdpi-v4/com_facebook_tooltip_black_bottomnub.png"
     },
     {
         "merged": "/home/edward/Documents/DJANGO/AppRadio-Android/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_abc_ic_menu_selectall_mtrl_alpha.png.flat",
@@ -2213,7 +2217,7 @@
     },
     {
         "merged": "/home/edward/Documents/DJANGO/AppRadio-Android/app/build/intermediates/res/merged/debug/drawable_messenger_button_blue_bg_selector.xml.flat",
-        "source": "/home/edward/.gradle/caches/transforms-1/files-1.1/facebook-messenger-4.41.0.aar/2b0177b3d500b5c3f88e75f78c058225/res/drawable/messenger_button_blue_bg_selector.xml"
+        "source": "/home/edward/.gradle/caches/transforms-1/files-1.1/facebook-messenger-4.42.0.aar/1d5e595dfbb6c2473d68cb39ae6ce2a4/res/drawable/messenger_button_blue_bg_selector.xml"
     },
     {
         "merged": "/home/edward/Documents/DJANGO/AppRadio-Android/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_exo_controls_shuffle.png.flat",
@@ -2237,7 +2241,7 @@
     },
     {
         "merged": "/home/edward/Documents/DJANGO/AppRadio-Android/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_com_facebook_button_icon_blue.png.flat",
-        "source": "/home/edward/.gradle/caches/transforms-1/files-1.1/facebook-common-4.41.0.aar/e7f2a9979ecbe553e621cd21bbaf9cf6/res/drawable-mdpi-v4/com_facebook_button_icon_blue.png"
+        "source": "/home/edward/.gradle/caches/transforms-1/files-1.1/facebook-common-4.42.0.aar/e51fffa7db0f207ac7aaa99c51cb41b5/res/drawable-mdpi-v4/com_facebook_button_icon_blue.png"
     },
     {
         "merged": "/home/edward/Documents/DJANGO/AppRadio-Android/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_abc_popup_background_mtrl_mult.9.png.flat",
@@ -2261,7 +2265,7 @@
     },
     {
         "merged": "/home/edward/Documents/DJANGO/AppRadio-Android/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_com_facebook_profile_picture_blank_square.png.flat",
-        "source": "/home/edward/.gradle/caches/transforms-1/files-1.1/facebook-login-4.41.0.aar/2206671704f0892b0c40f6f59383fe9d/res/drawable-mdpi-v4/com_facebook_profile_picture_blank_square.png"
+        "source": "/home/edward/.gradle/caches/transforms-1/files-1.1/facebook-login-4.42.0.aar/053eb1fe6075db39513413461210bdf2/res/drawable-mdpi-v4/com_facebook_profile_picture_blank_square.png"
     },
     {
         "merged": "/home/edward/Documents/DJANGO/AppRadio-Android/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_exo_icon_stop.png.flat",
@@ -2341,15 +2345,19 @@
     },
     {
         "merged": "/home/edward/Documents/DJANGO/AppRadio-Android/app/build/intermediates/res/merged/debug/drawable_com_facebook_button_like_background.xml.flat",
-        "source": "/home/edward/.gradle/caches/transforms-1/files-1.1/facebook-common-4.41.0.aar/e7f2a9979ecbe553e621cd21bbaf9cf6/res/drawable/com_facebook_button_like_background.xml"
+        "source": "/home/edward/.gradle/caches/transforms-1/files-1.1/facebook-common-4.42.0.aar/e51fffa7db0f207ac7aaa99c51cb41b5/res/drawable/com_facebook_button_like_background.xml"
     },
     {
         "merged": "/home/edward/Documents/DJANGO/AppRadio-Android/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_com_facebook_tooltip_black_xout.png.flat",
-        "source": "/home/edward/.gradle/caches/transforms-1/files-1.1/facebook-login-4.41.0.aar/2206671704f0892b0c40f6f59383fe9d/res/drawable-xhdpi-v4/com_facebook_tooltip_black_xout.png"
+        "source": "/home/edward/.gradle/caches/transforms-1/files-1.1/facebook-login-4.42.0.aar/053eb1fe6075db39513413461210bdf2/res/drawable-xhdpi-v4/com_facebook_tooltip_black_xout.png"
     },
     {
         "merged": "/home/edward/Documents/DJANGO/AppRadio-Android/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_abc_scrubber_control_to_pressed_mtrl_000.png.flat",
         "source": "/home/edward/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0-alpha1.aar/d23513c54d692dee502b176c855d54fe/res/drawable-hdpi-v4/abc_scrubber_control_to_pressed_mtrl_000.png"
+    },
+    {
+        "merged": "/home/edward/Documents/DJANGO/AppRadio-Android/app/build/intermediates/res/merged/debug/layout_chat_item_left.xml.flat",
+        "source": "/home/edward/Documents/DJANGO/AppRadio-Android/app/src/main/res/layout/chat_item_left.xml"
     },
     {
         "merged": "/home/edward/Documents/DJANGO/AppRadio-Android/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4_exo_notification_small_icon.png.flat",
@@ -2425,7 +2433,7 @@
     },
     {
         "merged": "/home/edward/Documents/DJANGO/AppRadio-Android/app/build/intermediates/res/merged/debug/drawable_com_facebook_auth_dialog_background.xml.flat",
-        "source": "/home/edward/.gradle/caches/transforms-1/files-1.1/facebook-common-4.41.0.aar/e7f2a9979ecbe553e621cd21bbaf9cf6/res/drawable/com_facebook_auth_dialog_background.xml"
+        "source": "/home/edward/.gradle/caches/transforms-1/files-1.1/facebook-common-4.42.0.aar/e51fffa7db0f207ac7aaa99c51cb41b5/res/drawable/com_facebook_auth_dialog_background.xml"
     },
     {
         "merged": "/home/edward/Documents/DJANGO/AppRadio-Android/app/build/intermediates/res/merged/debug/drawable_facebook_blanco.png.flat",
@@ -2452,6 +2460,10 @@
         "source": "/home/edward/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0-alpha1.aar/d23513c54d692dee502b176c855d54fe/res/anim/abc_fade_in.xml"
     },
     {
+        "merged": "/home/edward/Documents/DJANGO/AppRadio-Android/app/build/intermediates/res/merged/debug/drawable_ic_send_24dp.xml.flat",
+        "source": "/home/edward/Documents/DJANGO/AppRadio-Android/app/src/main/res/drawable/ic_send_24dp.xml"
+    },
+    {
         "merged": "/home/edward/Documents/DJANGO/AppRadio-Android/app/build/intermediates/res/merged/debug/drawable_notificaciones_nav_lateralmdpi.png.flat",
         "source": "/home/edward/Documents/DJANGO/AppRadio-Android/app/src/main/res/drawable/notificaciones_nav_lateralmdpi.png"
     },
@@ -2473,7 +2485,7 @@
     },
     {
         "merged": "/home/edward/Documents/DJANGO/AppRadio-Android/app/build/intermediates/res/merged/debug/layout_messenger_button_send_white_small.xml.flat",
-        "source": "/home/edward/.gradle/caches/transforms-1/files-1.1/facebook-messenger-4.41.0.aar/2b0177b3d500b5c3f88e75f78c058225/res/layout/messenger_button_send_white_small.xml"
+        "source": "/home/edward/.gradle/caches/transforms-1/files-1.1/facebook-messenger-4.42.0.aar/1d5e595dfbb6c2473d68cb39ae6ce2a4/res/layout/messenger_button_send_white_small.xml"
     },
     {
         "merged": "/home/edward/Documents/DJANGO/AppRadio-Android/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_abc_textfield_search_activated_mtrl_alpha.9.png.flat",
@@ -2481,7 +2493,7 @@
     },
     {
         "merged": "/home/edward/Documents/DJANGO/AppRadio-Android/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_messenger_bubble_large_white.png.flat",
-        "source": "/home/edward/.gradle/caches/transforms-1/files-1.1/facebook-messenger-4.41.0.aar/2b0177b3d500b5c3f88e75f78c058225/res/drawable-xhdpi-v4/messenger_bubble_large_white.png"
+        "source": "/home/edward/.gradle/caches/transforms-1/files-1.1/facebook-messenger-4.42.0.aar/1d5e595dfbb6c2473d68cb39ae6ce2a4/res/drawable-xhdpi-v4/messenger_bubble_large_white.png"
     },
     {
         "merged": "/home/edward/Documents/DJANGO/AppRadio-Android/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_abc_btn_check_to_on_mtrl_015.png.flat",
@@ -2513,11 +2525,11 @@
     },
     {
         "merged": "/home/edward/Documents/DJANGO/AppRadio-Android/app/build/intermediates/res/merged/debug/drawable_com_facebook_button_background.xml.flat",
-        "source": "/home/edward/.gradle/caches/transforms-1/files-1.1/facebook-common-4.41.0.aar/e7f2a9979ecbe553e621cd21bbaf9cf6/res/drawable/com_facebook_button_background.xml"
+        "source": "/home/edward/.gradle/caches/transforms-1/files-1.1/facebook-common-4.42.0.aar/e51fffa7db0f207ac7aaa99c51cb41b5/res/drawable/com_facebook_button_background.xml"
     },
     {
         "merged": "/home/edward/Documents/DJANGO/AppRadio-Android/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_messenger_bubble_large_blue.png.flat",
-        "source": "/home/edward/.gradle/caches/transforms-1/files-1.1/facebook-messenger-4.41.0.aar/2b0177b3d500b5c3f88e75f78c058225/res/drawable-xhdpi-v4/messenger_bubble_large_blue.png"
+        "source": "/home/edward/.gradle/caches/transforms-1/files-1.1/facebook-messenger-4.42.0.aar/1d5e595dfbb6c2473d68cb39ae6ce2a4/res/drawable-xhdpi-v4/messenger_bubble_large_blue.png"
     },
     {
         "merged": "/home/edward/Documents/DJANGO/AppRadio-Android/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_abc_scrubber_control_off_mtrl_alpha.png.flat",
@@ -2537,7 +2549,7 @@
     },
     {
         "merged": "/home/edward/Documents/DJANGO/AppRadio-Android/app/build/intermediates/res/merged/debug/layout_messenger_button_send_white_large.xml.flat",
-        "source": "/home/edward/.gradle/caches/transforms-1/files-1.1/facebook-messenger-4.41.0.aar/2b0177b3d500b5c3f88e75f78c058225/res/layout/messenger_button_send_white_large.xml"
+        "source": "/home/edward/.gradle/caches/transforms-1/files-1.1/facebook-messenger-4.42.0.aar/1d5e595dfbb6c2473d68cb39ae6ce2a4/res/layout/messenger_button_send_white_large.xml"
     },
     {
         "merged": "/home/edward/Documents/DJANGO/AppRadio-Android/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_abc_btn_radio_to_on_mtrl_015.png.flat",
@@ -2565,7 +2577,7 @@
     },
     {
         "merged": "/home/edward/Documents/DJANGO/AppRadio-Android/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_com_facebook_button_send_icon_blue.png.flat",
-        "source": "/home/edward/.gradle/caches/transforms-1/files-1.1/facebook-share-4.41.0.aar/0062a19928b5ca48d87609faa8ecdcac/res/drawable-mdpi-v4/com_facebook_button_send_icon_blue.png"
+        "source": "/home/edward/.gradle/caches/transforms-1/files-1.1/facebook-share-4.42.0.aar/2f0e42aab78284cdec1d6298ae099253/res/drawable-mdpi-v4/com_facebook_button_send_icon_blue.png"
     },
     {
         "merged": "/home/edward/Documents/DJANGO/AppRadio-Android/app/build/intermediates/res/merged/debug/color_abc_background_cache_hint_selector_material_dark.xml.flat",
@@ -2669,7 +2681,7 @@
     },
     {
         "merged": "/home/edward/Documents/DJANGO/AppRadio-Android/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_com_facebook_button_icon_blue.png.flat",
-        "source": "/home/edward/.gradle/caches/transforms-1/files-1.1/facebook-common-4.41.0.aar/e7f2a9979ecbe553e621cd21bbaf9cf6/res/drawable-xhdpi-v4/com_facebook_button_icon_blue.png"
+        "source": "/home/edward/.gradle/caches/transforms-1/files-1.1/facebook-common-4.42.0.aar/e51fffa7db0f207ac7aaa99c51cb41b5/res/drawable-xhdpi-v4/com_facebook_button_icon_blue.png"
     },
     {
         "merged": "/home/edward/Documents/DJANGO/AppRadio-Android/app/build/intermediates/res/merged/debug/font_lato.ttf.flat",
@@ -2689,7 +2701,7 @@
     },
     {
         "merged": "/home/edward/Documents/DJANGO/AppRadio-Android/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_messenger_bubble_small_blue.png.flat",
-        "source": "/home/edward/.gradle/caches/transforms-1/files-1.1/facebook-messenger-4.41.0.aar/2b0177b3d500b5c3f88e75f78c058225/res/drawable-mdpi-v4/messenger_bubble_small_blue.png"
+        "source": "/home/edward/.gradle/caches/transforms-1/files-1.1/facebook-messenger-4.42.0.aar/1d5e595dfbb6c2473d68cb39ae6ce2a4/res/drawable-mdpi-v4/messenger_bubble_small_blue.png"
     },
     {
         "merged": "/home/edward/Documents/DJANGO/AppRadio-Android/app/build/intermediates/res/merged/debug/drawable-v21_notification_action_background.xml.flat",
@@ -2761,7 +2773,7 @@
     },
     {
         "merged": "/home/edward/Documents/DJANGO/AppRadio-Android/app/build/intermediates/res/merged/debug/layout_com_facebook_login_fragment.xml.flat",
-        "source": "/home/edward/.gradle/caches/transforms-1/files-1.1/facebook-common-4.41.0.aar/e7f2a9979ecbe553e621cd21bbaf9cf6/res/layout/com_facebook_login_fragment.xml"
+        "source": "/home/edward/.gradle/caches/transforms-1/files-1.1/facebook-common-4.42.0.aar/e51fffa7db0f207ac7aaa99c51cb41b5/res/layout/com_facebook_login_fragment.xml"
     },
     {
         "merged": "/home/edward/Documents/DJANGO/AppRadio-Android/app/build/intermediates/res/merged/debug/drawable_sugerencias_nav_lateralxhdpi.png.flat",
@@ -2793,11 +2805,11 @@
     },
     {
         "merged": "/home/edward/Documents/DJANGO/AppRadio-Android/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_com_facebook_button_send_icon_white.png.flat",
-        "source": "/home/edward/.gradle/caches/transforms-1/files-1.1/facebook-share-4.41.0.aar/0062a19928b5ca48d87609faa8ecdcac/res/drawable-hdpi-v4/com_facebook_button_send_icon_white.png"
+        "source": "/home/edward/.gradle/caches/transforms-1/files-1.1/facebook-share-4.42.0.aar/2f0e42aab78284cdec1d6298ae099253/res/drawable-hdpi-v4/com_facebook_button_send_icon_white.png"
     },
     {
         "merged": "/home/edward/Documents/DJANGO/AppRadio-Android/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_com_facebook_button_like_icon_selected.png.flat",
-        "source": "/home/edward/.gradle/caches/transforms-1/files-1.1/facebook-common-4.41.0.aar/e7f2a9979ecbe553e621cd21bbaf9cf6/res/drawable-mdpi-v4/com_facebook_button_like_icon_selected.png"
+        "source": "/home/edward/.gradle/caches/transforms-1/files-1.1/facebook-common-4.42.0.aar/e51fffa7db0f207ac7aaa99c51cb41b5/res/drawable-mdpi-v4/com_facebook_button_like_icon_selected.png"
     },
     {
         "merged": "/home/edward/Documents/DJANGO/AppRadio-Android/app/build/intermediates/res/merged/debug/drawable_abc_ic_ab_back_material.xml.flat",
@@ -2929,7 +2941,7 @@
     },
     {
         "merged": "/home/edward/Documents/DJANGO/AppRadio-Android/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_messenger_button_send_round_shadow.png.flat",
-        "source": "/home/edward/.gradle/caches/transforms-1/files-1.1/facebook-messenger-4.41.0.aar/2b0177b3d500b5c3f88e75f78c058225/res/drawable-hdpi-v4/messenger_button_send_round_shadow.png"
+        "source": "/home/edward/.gradle/caches/transforms-1/files-1.1/facebook-messenger-4.42.0.aar/1d5e595dfbb6c2473d68cb39ae6ce2a4/res/drawable-hdpi-v4/messenger_button_send_round_shadow.png"
     },
     {
         "merged": "/home/edward/Documents/DJANGO/AppRadio-Android/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_abc_ic_menu_cut_mtrl_alpha.png.flat",
@@ -2945,7 +2957,7 @@
     },
     {
         "merged": "/home/edward/Documents/DJANGO/AppRadio-Android/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_com_facebook_tooltip_blue_background.9.png.flat",
-        "source": "/home/edward/.gradle/caches/transforms-1/files-1.1/facebook-login-4.41.0.aar/2206671704f0892b0c40f6f59383fe9d/res/drawable-mdpi-v4/com_facebook_tooltip_blue_background.9.png"
+        "source": "/home/edward/.gradle/caches/transforms-1/files-1.1/facebook-login-4.42.0.aar/053eb1fe6075db39513413461210bdf2/res/drawable-mdpi-v4/com_facebook_tooltip_blue_background.9.png"
     },
     {
         "merged": "/home/edward/Documents/DJANGO/AppRadio-Android/app/build/intermediates/res/merged/debug/drawable_banner.jpg.flat",
@@ -2965,7 +2977,7 @@
     },
     {
         "merged": "/home/edward/Documents/DJANGO/AppRadio-Android/app/build/intermediates/res/merged/debug/drawable_messenger_button_white_bg_round.xml.flat",
-        "source": "/home/edward/.gradle/caches/transforms-1/files-1.1/facebook-messenger-4.41.0.aar/2b0177b3d500b5c3f88e75f78c058225/res/drawable/messenger_button_white_bg_round.xml"
+        "source": "/home/edward/.gradle/caches/transforms-1/files-1.1/facebook-messenger-4.42.0.aar/1d5e595dfbb6c2473d68cb39ae6ce2a4/res/drawable/messenger_button_white_bg_round.xml"
     },
     {
         "merged": "/home/edward/Documents/DJANGO/AppRadio-Android/app/build/intermediates/res/merged/debug/layout_abc_list_menu_item_icon.xml.flat",
@@ -2985,15 +2997,15 @@
     },
     {
         "merged": "/home/edward/Documents/DJANGO/AppRadio-Android/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_com_facebook_button_send_icon_blue.png.flat",
-        "source": "/home/edward/.gradle/caches/transforms-1/files-1.1/facebook-share-4.41.0.aar/0062a19928b5ca48d87609faa8ecdcac/res/drawable-xhdpi-v4/com_facebook_button_send_icon_blue.png"
+        "source": "/home/edward/.gradle/caches/transforms-1/files-1.1/facebook-share-4.42.0.aar/2f0e42aab78284cdec1d6298ae099253/res/drawable-xhdpi-v4/com_facebook_button_send_icon_blue.png"
     },
     {
         "merged": "/home/edward/Documents/DJANGO/AppRadio-Android/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_com_facebook_button_icon_blue.png.flat",
-        "source": "/home/edward/.gradle/caches/transforms-1/files-1.1/facebook-common-4.41.0.aar/e7f2a9979ecbe553e621cd21bbaf9cf6/res/drawable-hdpi-v4/com_facebook_button_icon_blue.png"
+        "source": "/home/edward/.gradle/caches/transforms-1/files-1.1/facebook-common-4.42.0.aar/e51fffa7db0f207ac7aaa99c51cb41b5/res/drawable-hdpi-v4/com_facebook_button_icon_blue.png"
     },
     {
         "merged": "/home/edward/Documents/DJANGO/AppRadio-Android/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_com_facebook_tooltip_black_background.9.png.flat",
-        "source": "/home/edward/.gradle/caches/transforms-1/files-1.1/facebook-login-4.41.0.aar/2206671704f0892b0c40f6f59383fe9d/res/drawable-xhdpi-v4/com_facebook_tooltip_black_background.9.png"
+        "source": "/home/edward/.gradle/caches/transforms-1/files-1.1/facebook-login-4.42.0.aar/053eb1fe6075db39513413461210bdf2/res/drawable-xhdpi-v4/com_facebook_tooltip_black_background.9.png"
     },
     {
         "merged": "/home/edward/Documents/DJANGO/AppRadio-Android/app/build/intermediates/res/merged/debug/layout_notification_media_cancel_action.xml.flat",
@@ -3012,6 +3024,10 @@
         "source": "/home/edward/Documents/DJANGO/AppRadio-Android/app/src/main/res/layout/fragment_videos.xml"
     },
     {
+        "merged": "/home/edward/Documents/DJANGO/AppRadio-Android/app/build/intermediates/res/merged/debug/layout_chat_item_right.xml.flat",
+        "source": "/home/edward/Documents/DJANGO/AppRadio-Android/app/src/main/res/layout/chat_item_right.xml"
+    },
+    {
         "merged": "/home/edward/Documents/DJANGO/AppRadio-Android/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_abc_btn_switch_to_on_mtrl_00012.9.png.flat",
         "source": "/home/edward/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0-alpha1.aar/d23513c54d692dee502b176c855d54fe/res/drawable-hdpi-v4/abc_btn_switch_to_on_mtrl_00012.9.png"
     },
@@ -3025,7 +3041,7 @@
     },
     {
         "merged": "/home/edward/Documents/DJANGO/AppRadio-Android/app/build/intermediates/res/merged/debug/layout_messenger_button_send_blue_small.xml.flat",
-        "source": "/home/edward/.gradle/caches/transforms-1/files-1.1/facebook-messenger-4.41.0.aar/2b0177b3d500b5c3f88e75f78c058225/res/layout/messenger_button_send_blue_small.xml"
+        "source": "/home/edward/.gradle/caches/transforms-1/files-1.1/facebook-messenger-4.42.0.aar/1d5e595dfbb6c2473d68cb39ae6ce2a4/res/layout/messenger_button_send_blue_small.xml"
     },
     {
         "merged": "/home/edward/Documents/DJANGO/AppRadio-Android/app/build/intermediates/res/merged/debug/drawable-ldpi-v4_exo_controls_repeat_one.png.flat",
@@ -3041,7 +3057,7 @@
     },
     {
         "merged": "/home/edward/Documents/DJANGO/AppRadio-Android/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_messenger_bubble_small_blue.png.flat",
-        "source": "/home/edward/.gradle/caches/transforms-1/files-1.1/facebook-messenger-4.41.0.aar/2b0177b3d500b5c3f88e75f78c058225/res/drawable-xhdpi-v4/messenger_bubble_small_blue.png"
+        "source": "/home/edward/.gradle/caches/transforms-1/files-1.1/facebook-messenger-4.42.0.aar/1d5e595dfbb6c2473d68cb39ae6ce2a4/res/drawable-xhdpi-v4/messenger_bubble_small_blue.png"
     },
     {
         "merged": "/home/edward/Documents/DJANGO/AppRadio-Android/app/build/intermediates/res/merged/debug/color_mtrl_chip_background_color.xml.flat",
@@ -3069,7 +3085,7 @@
     },
     {
         "merged": "/home/edward/Documents/DJANGO/AppRadio-Android/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_com_facebook_button_icon_white.png.flat",
-        "source": "/home/edward/.gradle/caches/transforms-1/files-1.1/facebook-common-4.41.0.aar/e7f2a9979ecbe553e621cd21bbaf9cf6/res/drawable-hdpi-v4/com_facebook_button_icon_white.png"
+        "source": "/home/edward/.gradle/caches/transforms-1/files-1.1/facebook-common-4.42.0.aar/e51fffa7db0f207ac7aaa99c51cb41b5/res/drawable-hdpi-v4/com_facebook_button_icon_white.png"
     },
     {
         "merged": "/home/edward/Documents/DJANGO/AppRadio-Android/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_abc_text_select_handle_middle_mtrl_light.png.flat",
@@ -3120,12 +3136,12 @@
         "source": "/home/edward/Documents/DJANGO/AppRadio-Android/app/src/main/res/drawable/youtube_iconmdpi.png"
     },
     {
-        "merged": "/home/edward/Documents/DJANGO/AppRadio-Android/app/build/intermediates/res/merged/debug/drawable_emisorasmdpi.png.flat",
-        "source": "/home/edward/Documents/DJANGO/AppRadio-Android/app/src/main/res/drawable/emisorasmdpi.png"
-    },
-    {
         "merged": "/home/edward/Documents/DJANGO/AppRadio-Android/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_design_ic_visibility_off.png.flat",
         "source": "/home/edward/.gradle/caches/transforms-1/files-1.1/design-textfield-28.0.0-alpha1.aar/60ab611258bc0b30594ebd9942638d35/res/drawable-xhdpi-v4/design_ic_visibility_off.png"
+    },
+    {
+        "merged": "/home/edward/Documents/DJANGO/AppRadio-Android/app/build/intermediates/res/merged/debug/drawable_emisorasmdpi.png.flat",
+        "source": "/home/edward/Documents/DJANGO/AppRadio-Android/app/src/main/res/drawable/emisorasmdpi.png"
     },
     {
         "merged": "/home/edward/Documents/DJANGO/AppRadio-Android/app/build/intermediates/res/merged/debug/animator_mtrl_chip_state_list_anim.xml.flat",
@@ -3149,7 +3165,7 @@
     },
     {
         "merged": "/home/edward/Documents/DJANGO/AppRadio-Android/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_messenger_bubble_small_white.png.flat",
-        "source": "/home/edward/.gradle/caches/transforms-1/files-1.1/facebook-messenger-4.41.0.aar/2b0177b3d500b5c3f88e75f78c058225/res/drawable-mdpi-v4/messenger_bubble_small_white.png"
+        "source": "/home/edward/.gradle/caches/transforms-1/files-1.1/facebook-messenger-4.42.0.aar/1d5e595dfbb6c2473d68cb39ae6ce2a4/res/drawable-mdpi-v4/messenger_bubble_small_white.png"
     },
     {
         "merged": "/home/edward/Documents/DJANGO/AppRadio-Android/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_abc_text_select_handle_right_mtrl_light.png.flat",
@@ -3161,7 +3177,7 @@
     },
     {
         "merged": "/home/edward/Documents/DJANGO/AppRadio-Android/app/build/intermediates/res/merged/debug/drawable_messenger_button_white_bg_selector.xml.flat",
-        "source": "/home/edward/.gradle/caches/transforms-1/files-1.1/facebook-messenger-4.41.0.aar/2b0177b3d500b5c3f88e75f78c058225/res/drawable/messenger_button_white_bg_selector.xml"
+        "source": "/home/edward/.gradle/caches/transforms-1/files-1.1/facebook-messenger-4.42.0.aar/1d5e595dfbb6c2473d68cb39ae6ce2a4/res/drawable/messenger_button_white_bg_selector.xml"
     },
     {
         "merged": "/home/edward/Documents/DJANGO/AppRadio-Android/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_abc_spinner_mtrl_am_alpha.9.png.flat",
@@ -3181,7 +3197,7 @@
     },
     {
         "merged": "/home/edward/Documents/DJANGO/AppRadio-Android/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_com_facebook_button_like_icon_selected.png.flat",
-        "source": "/home/edward/.gradle/caches/transforms-1/files-1.1/facebook-common-4.41.0.aar/e7f2a9979ecbe553e621cd21bbaf9cf6/res/drawable-xxhdpi-v4/com_facebook_button_like_icon_selected.png"
+        "source": "/home/edward/.gradle/caches/transforms-1/files-1.1/facebook-common-4.42.0.aar/e51fffa7db0f207ac7aaa99c51cb41b5/res/drawable-xxhdpi-v4/com_facebook_button_like_icon_selected.png"
     },
     {
         "merged": "/home/edward/Documents/DJANGO/AppRadio-Android/app/build/intermediates/res/merged/debug/font_lato_light.xml.flat",
@@ -3193,7 +3209,7 @@
     },
     {
         "merged": "/home/edward/Documents/DJANGO/AppRadio-Android/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_com_facebook_button_send_icon_white.png.flat",
-        "source": "/home/edward/.gradle/caches/transforms-1/files-1.1/facebook-share-4.41.0.aar/0062a19928b5ca48d87609faa8ecdcac/res/drawable-xhdpi-v4/com_facebook_button_send_icon_white.png"
+        "source": "/home/edward/.gradle/caches/transforms-1/files-1.1/facebook-share-4.42.0.aar/2f0e42aab78284cdec1d6298ae099253/res/drawable-xhdpi-v4/com_facebook_button_send_icon_white.png"
     },
     {
         "merged": "/home/edward/Documents/DJANGO/AppRadio-Android/app/build/intermediates/res/merged/debug/layout_fragment_concursos.xml.flat",
@@ -3245,15 +3261,15 @@
     },
     {
         "merged": "/home/edward/Documents/DJANGO/AppRadio-Android/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_messenger_bubble_small_blue.png.flat",
-        "source": "/home/edward/.gradle/caches/transforms-1/files-1.1/facebook-messenger-4.41.0.aar/2b0177b3d500b5c3f88e75f78c058225/res/drawable-hdpi-v4/messenger_bubble_small_blue.png"
-    },
-    {
-        "merged": "/home/edward/Documents/DJANGO/AppRadio-Android/app/build/intermediates/res/merged/debug/color_mtrl_btn_bg_color_selector.xml.flat",
-        "source": "/home/edward/.gradle/caches/transforms-1/files-1.1/design-button-28.0.0-alpha1.aar/ec09c470b1bb2e287c9163f630dc3f80/res/color/mtrl_btn_bg_color_selector.xml"
+        "source": "/home/edward/.gradle/caches/transforms-1/files-1.1/facebook-messenger-4.42.0.aar/1d5e595dfbb6c2473d68cb39ae6ce2a4/res/drawable-hdpi-v4/messenger_bubble_small_blue.png"
     },
     {
         "merged": "/home/edward/Documents/DJANGO/AppRadio-Android/app/build/intermediates/res/merged/debug/drawable_right_arrow.png.flat",
         "source": "/home/edward/Documents/DJANGO/AppRadio-Android/app/src/main/res/drawable/right_arrow.png"
+    },
+    {
+        "merged": "/home/edward/Documents/DJANGO/AppRadio-Android/app/build/intermediates/res/merged/debug/color_mtrl_btn_bg_color_selector.xml.flat",
+        "source": "/home/edward/.gradle/caches/transforms-1/files-1.1/design-button-28.0.0-alpha1.aar/ec09c470b1bb2e287c9163f630dc3f80/res/color/mtrl_btn_bg_color_selector.xml"
     },
     {
         "merged": "/home/edward/Documents/DJANGO/AppRadio-Android/app/build/intermediates/res/merged/debug/layout_exo_playback_control_view.xml.flat",
@@ -3265,7 +3281,7 @@
     },
     {
         "merged": "/home/edward/Documents/DJANGO/AppRadio-Android/app/build/intermediates/res/merged/debug/drawable_com_facebook_send_button_icon.xml.flat",
-        "source": "/home/edward/.gradle/caches/transforms-1/files-1.1/facebook-share-4.41.0.aar/0062a19928b5ca48d87609faa8ecdcac/res/drawable/com_facebook_send_button_icon.xml"
+        "source": "/home/edward/.gradle/caches/transforms-1/files-1.1/facebook-share-4.42.0.aar/2f0e42aab78284cdec1d6298ae099253/res/drawable/com_facebook_send_button_icon.xml"
     },
     {
         "merged": "/home/edward/Documents/DJANGO/AppRadio-Android/app/build/intermediates/res/merged/debug/drawable_underline_background.xml.flat",
@@ -3273,7 +3289,7 @@
     },
     {
         "merged": "/home/edward/Documents/DJANGO/AppRadio-Android/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_messenger_bubble_large_blue.png.flat",
-        "source": "/home/edward/.gradle/caches/transforms-1/files-1.1/facebook-messenger-4.41.0.aar/2b0177b3d500b5c3f88e75f78c058225/res/drawable-xxhdpi-v4/messenger_bubble_large_blue.png"
+        "source": "/home/edward/.gradle/caches/transforms-1/files-1.1/facebook-messenger-4.42.0.aar/1d5e595dfbb6c2473d68cb39ae6ce2a4/res/drawable-xxhdpi-v4/messenger_bubble_large_blue.png"
     },
     {
         "merged": "/home/edward/Documents/DJANGO/AppRadio-Android/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_design_ic_visibility_off.png.flat",
@@ -3281,7 +3297,7 @@
     },
     {
         "merged": "/home/edward/Documents/DJANGO/AppRadio-Android/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_com_facebook_close.png.flat",
-        "source": "/home/edward/.gradle/caches/transforms-1/files-1.1/facebook-common-4.41.0.aar/e7f2a9979ecbe553e621cd21bbaf9cf6/res/drawable-mdpi-v4/com_facebook_close.png"
+        "source": "/home/edward/.gradle/caches/transforms-1/files-1.1/facebook-common-4.42.0.aar/e51fffa7db0f207ac7aaa99c51cb41b5/res/drawable-mdpi-v4/com_facebook_close.png"
     },
     {
         "merged": "/home/edward/Documents/DJANGO/AppRadio-Android/app/build/intermediates/res/merged/debug/drawable_navigation_chat.png.flat",
@@ -3293,7 +3309,7 @@
     },
     {
         "merged": "/home/edward/Documents/DJANGO/AppRadio-Android/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_messenger_bubble_large_white.png.flat",
-        "source": "/home/edward/.gradle/caches/transforms-1/files-1.1/facebook-messenger-4.41.0.aar/2b0177b3d500b5c3f88e75f78c058225/res/drawable-mdpi-v4/messenger_bubble_large_white.png"
+        "source": "/home/edward/.gradle/caches/transforms-1/files-1.1/facebook-messenger-4.42.0.aar/1d5e595dfbb6c2473d68cb39ae6ce2a4/res/drawable-mdpi-v4/messenger_bubble_large_white.png"
     },
     {
         "merged": "/home/edward/Documents/DJANGO/AppRadio-Android/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_abc_ic_star_half_black_48dp.png.flat",
@@ -3305,7 +3321,7 @@
     },
     {
         "merged": "/home/edward/Documents/DJANGO/AppRadio-Android/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_messenger_button_send_round_shadow.png.flat",
-        "source": "/home/edward/.gradle/caches/transforms-1/files-1.1/facebook-messenger-4.41.0.aar/2b0177b3d500b5c3f88e75f78c058225/res/drawable-mdpi-v4/messenger_button_send_round_shadow.png"
+        "source": "/home/edward/.gradle/caches/transforms-1/files-1.1/facebook-messenger-4.42.0.aar/1d5e595dfbb6c2473d68cb39ae6ce2a4/res/drawable-mdpi-v4/messenger_button_send_round_shadow.png"
     },
     {
         "merged": "/home/edward/Documents/DJANGO/AppRadio-Android/app/build/intermediates/res/merged/debug/drawable-ldrtl-xxxhdpi-v17_abc_ic_menu_cut_mtrl_alpha.png.flat",
@@ -3317,7 +3333,7 @@
     },
     {
         "merged": "/home/edward/Documents/DJANGO/AppRadio-Android/app/build/intermediates/res/merged/debug/drawable_com_facebook_button_icon.xml.flat",
-        "source": "/home/edward/.gradle/caches/transforms-1/files-1.1/facebook-common-4.41.0.aar/e7f2a9979ecbe553e621cd21bbaf9cf6/res/drawable/com_facebook_button_icon.xml"
+        "source": "/home/edward/.gradle/caches/transforms-1/files-1.1/facebook-common-4.42.0.aar/e51fffa7db0f207ac7aaa99c51cb41b5/res/drawable/com_facebook_button_icon.xml"
     },
     {
         "merged": "/home/edward/Documents/DJANGO/AppRadio-Android/app/build/intermediates/res/merged/debug/drawable_abc_switch_thumb_material.xml.flat",
@@ -3369,7 +3385,7 @@
     },
     {
         "merged": "/home/edward/Documents/DJANGO/AppRadio-Android/app/build/intermediates/res/merged/debug/layout_messenger_button_send_blue_large.xml.flat",
-        "source": "/home/edward/.gradle/caches/transforms-1/files-1.1/facebook-messenger-4.41.0.aar/2b0177b3d500b5c3f88e75f78c058225/res/layout/messenger_button_send_blue_large.xml"
+        "source": "/home/edward/.gradle/caches/transforms-1/files-1.1/facebook-messenger-4.42.0.aar/1d5e595dfbb6c2473d68cb39ae6ce2a4/res/layout/messenger_button_send_blue_large.xml"
     },
     {
         "merged": "/home/edward/Documents/DJANGO/AppRadio-Android/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_abc_btn_check_to_on_mtrl_015.png.flat",
@@ -3445,7 +3461,7 @@
     },
     {
         "merged": "/home/edward/Documents/DJANGO/AppRadio-Android/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_com_facebook_tooltip_black_topnub.png.flat",
-        "source": "/home/edward/.gradle/caches/transforms-1/files-1.1/facebook-login-4.41.0.aar/2206671704f0892b0c40f6f59383fe9d/res/drawable-mdpi-v4/com_facebook_tooltip_black_topnub.png"
+        "source": "/home/edward/.gradle/caches/transforms-1/files-1.1/facebook-login-4.42.0.aar/053eb1fe6075db39513413461210bdf2/res/drawable-mdpi-v4/com_facebook_tooltip_black_topnub.png"
     },
     {
         "merged": "/home/edward/Documents/DJANGO/AppRadio-Android/app/build/intermediates/res/merged/debug/drawable_corner_edge.xml.flat",

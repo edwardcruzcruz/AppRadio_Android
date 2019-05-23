@@ -3,7 +3,9 @@ package com.innovasystem.appradio.Classes.Adapters;
 import android.content.Context;
 import android.graphics.Bitmap;
 import android.graphics.drawable.TransitionDrawable;
+import android.os.Bundle;
 import android.support.annotation.NonNull;
+import android.support.v4.app.Fragment;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -14,10 +16,13 @@ import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.innovasystem.appradio.Activities.HomeActivity;
 import com.innovasystem.appradio.Classes.Models.Emisora;
 import com.innovasystem.appradio.Classes.Models.Segmento;
 import com.innovasystem.appradio.Classes.RestServices;
 import com.innovasystem.appradio.Classes.SessionConfig;
+import com.innovasystem.appradio.Fragments.ChatFragment;
+import com.innovasystem.appradio.Fragments.SegmentoInfoFragment;
 import com.innovasystem.appradio.R;
 import com.squareup.picasso.Picasso;
 
@@ -76,6 +81,7 @@ public class EmisoraHomeAdapter extends  RecyclerView.Adapter<EmisoraHomeAdapter
         if(emisora.getNombre().equals("Radio Caravana")){
             viewHolder.portada.setBackground(context.getDrawable(R.drawable.logo_radio_caravana1));
             //viewHolder.portada.requestLayout();
+            //viewHolder.portada.getLayoutParams().width=170;
         }
         if(this.emisoras_dataset.get(emisora) != null) {
             viewHolder.tv_segmento.setText(this.emisoras_dataset.get(emisora).getNombre());
@@ -123,7 +129,19 @@ public class EmisoraHomeAdapter extends  RecyclerView.Adapter<EmisoraHomeAdapter
         viewHolder.btn_chat.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view) {
-                Toast.makeText(context, "Viendo Programacion", Toast.LENGTH_SHORT).show();
+                Emisora emisora= emisoras_keys.get(i);
+                Segmento seg=emisoras_dataset.get(emisora);
+                if(seg!=null){
+                    Bundle args= new Bundle();
+                    args.putParcelable("emisora",emisora);
+                    args.putParcelable("segmento",seg);
+                    ChatFragment fragment= new ChatFragment();
+                    fragment.setArguments(args);
+                    ((HomeActivity) context).changeFragment(fragment,R.id.frame_container,true);
+                    Toast.makeText(context, "Iniciando chat", Toast.LENGTH_SHORT).show();
+                }else{
+                    Toast.makeText(context, "No se puede iniciar el chat sin ningun programa activo", Toast.LENGTH_SHORT).show();
+                }
             }
         });
 
@@ -131,16 +149,27 @@ public class EmisoraHomeAdapter extends  RecyclerView.Adapter<EmisoraHomeAdapter
 
             @Override
             public void onClick(View view) {
-                if(RestServices.agregarFavorito(context, SessionConfig.getSessionConfig(context).getValue(SessionConfig.userEmail),emisoras_dataset.get(emisora).getId())) {
-                    Toast.makeText(context, "agregado a favoritos", Toast.LENGTH_SHORT).show();
-                    viewHolder.tv_txtfavorito.setText("• Programa Favorito •");
-                    viewHolder.btn_addfav.setClickable(false);
-                    //viewHolder.btn_addfav.setImageDrawable(context.getResources().getDrawable(R.drawable.heart));
-                    Picasso.with(context).load(R.drawable.heart).resize(15,15).into(viewHolder.btn_addfav);
+                try {
+                    if(viewHolder.tv_txtfavorito.getText().equals("AGREGAR A FAVORITOS")) {
+                        Toast.makeText(context, "agregando a favoritos", Toast.LENGTH_SHORT).show();
+                        viewHolder.tv_txtfavorito.setText("• Programa Favorito •");
+                        //viewHolder.btn_addfav.setClickable(false);
+                        //viewHolder.btn_addfav.setImageDrawable(context.getResources().getDrawable(R.drawable.heart));
+                        viewHolder.btn_addfav.setImageResource(R.drawable.heart1);
+                        RestServices.agregarFavorito(context, SessionConfig.getSessionConfig(context).getValue(SessionConfig.userEmail),emisoras_dataset.get(emisora).getId());
+                    }
+                    else{
+                        Toast.makeText(context, "Quitando de favoritos", Toast.LENGTH_SHORT).show();
+                        viewHolder.tv_txtfavorito.setText("AGREGAR A FAVORITOS");
+                        //viewHolder.btn_addfav.setClickable(false);
+                        //viewHolder.btn_addfav.setImageDrawable(context.getResources().getDrawable(R.drawable.heart));
+                        viewHolder.btn_addfav.setImageResource(R.drawable.heart2);
+                        RestServices.quitarFavorito(context, SessionConfig.getSessionConfig(context).getValue(SessionConfig.userEmail),emisoras_dataset.get(emisora).getId());
+                    }
+                }catch (Exception e){
+                    e.printStackTrace();
                 }
-                else{
-                    Toast.makeText(context, "Ha ocurrido un error al procesar su solicitud, intente luego", Toast.LENGTH_SHORT).show();
-                }
+
             }
         });
 

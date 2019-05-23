@@ -86,9 +86,7 @@ public class EmisorasAdapter extends  RecyclerView.Adapter<RecyclerView.ViewHold
                 holder.iv_emisora.setBackground(this.context.getDrawable(R.drawable.icono_diblu));
             }
             if(em.getNombre().equals("Radio Caravana")){
-                holder.iv_emisora.setBackground(this.context.getDrawable(R.drawable.icono_caravana));
-                holder.iv_emisora.requestLayout();
-                holder.iv_emisora.getLayoutParams().height=60;
+                holder.iv_emisora.setBackground(this.context.getDrawable(R.drawable.logo_radio_caravana1));
             }
             /*Picasso.with(context)
                     .load(em.getLogotipo())

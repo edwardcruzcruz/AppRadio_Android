@@ -39,6 +39,7 @@
     <string name="text_login">Iniciar sesíon</string>
     <string name="text_concursar">CONCURSAR</string>
     <string name="text_votar">VOTAR</string>
+    <string name="text_chat">Escribe un mensaje...</string>
     <string name="text_log_fb">INICIA CON FACEBOOK</string>
     <string name="text_log_tw">INICIA CON TWITTER</string>
     <string name="text_log_Google">INICIA CON GOOGLE</string>

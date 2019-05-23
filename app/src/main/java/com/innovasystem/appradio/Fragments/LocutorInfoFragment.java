@@ -14,6 +14,7 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
+import com.example.picassodemo.CircleTransform;
 import com.innovasystem.appradio.Activities.HomeActivity;
 import com.innovasystem.appradio.Classes.Models.Conductor;
 import com.innovasystem.appradio.Classes.Models.RedSocialEmisora;
@@ -61,7 +62,7 @@ public class LocutorInfoFragment extends Fragment {
         if(loc.getImagen() != null) {
             Picasso.with(getContext())
                     .load(loc.getImagen())
-                    .fit()
+                    .transform(new CircleTransform())
                     .into(img_locutor);
         }
         //Creacion de botones de redes sociales

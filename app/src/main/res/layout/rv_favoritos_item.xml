@@ -80,7 +80,7 @@
             android:layout_weight="0.1"
             android:background="@android:color/transparent"
             android:scaleType="fitCenter"
-            app:srcCompat="@drawable/favoritos_nav_lateralhdpi"
+            app:srcCompat="@drawable/heart"
             tools:layout_editor_absoluteX="59dp" />
     </LinearLayout>
 

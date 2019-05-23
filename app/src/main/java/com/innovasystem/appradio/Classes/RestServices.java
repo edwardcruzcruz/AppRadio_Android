@@ -630,5 +630,56 @@ public class RestServices {
         }
         return false;
     }
+    public static boolean quitarFavorito(Context c,String username,long idSegmento){
+        /*ResultadoRegister resultadoLogIn;
+        try {
+            // Set the Content-Type header
+            HttpHeaders requestHeaders = new HttpHeaders();
+            requestHeaders.setContentType(new MediaType("application", "json"));
+            requestHeaders.set("Authorization", SessionConfig.getSessionConfig(c).userToken);
+            Favorito fav= new Favorito(username,idSegmento);
+            HttpEntity<Favorito> requestEntity = new HttpEntity<>(fav, requestHeaders);
 
+            RestTemplate restTemplate = new RestTemplate();
+            restTemplate.getMessageConverters().add(new MappingJackson2HttpMessageConverter());
+
+            ResponseEntity<String> responseEntity = restTemplate.exchange(Constants.serverDomain + Constants.uriAgregarFavoritos, HttpMethod.POST, requestEntity, String.class);
+            System.out.println("Cuerpo de RespuestaRegister:" + responseEntity.getBody());
+
+            resultadoLogIn = new ResultadoRegister(responseEntity.getBody(), responseEntity.getStatusCode().value());
+            HttpStatus status = responseEntity.getStatusCode();
+            System.out.println("status Post Register " + status);
+
+            return true;
+
+        } catch (HttpStatusCodeException exception) {
+            int statusCode = exception.getStatusCode().value();
+            resultadoLogIn = new ResultadoRegister("", statusCode);
+            resultadoLogIn.setErrorMessage(exception.getResponseBodyAsString());
+            return false;
+
+        } catch (Exception e) {
+            resultadoLogIn = new ResultadoRegister("", 500);
+            return false;
+        }*/
+
+        HttpHeaders reqHeaders = new HttpHeaders();
+        reqHeaders.setAccept(Collections.singletonList(new MediaType("application", "json")));
+        String token=SessionConfig.getSessionConfig(c).getValue(SessionConfig.userToken);
+        String tokenDesencriptado=SessionConfig.getSessionConfig(c).DesencriptarToken(token);
+        reqHeaders.set("Authorization", tokenDesencriptado);
+        HttpEntity<?> requestEntity = new HttpEntity<Object>(reqHeaders);
+        RestTemplate restTemplate= new RestTemplate();
+        String url = Constants.serverDomain + String.format(Constants.uriQuitarFavoritosFalse,idSegmento,username);
+        try {
+            ResponseEntity<String> responseEntity = restTemplate.exchange(url, HttpMethod.GET, requestEntity, String.class);
+            if (responseEntity.getStatusCode() == HttpStatus.OK) {
+                return true;
+            }
+        } catch (Exception e) {
+            Log.e("RestGetError", e.getMessage());
+            return false;
+        }
+        return false;
+    }
 }
